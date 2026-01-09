@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Kana Master - Learn Hiragana & Katakana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Menu -->
+        <div id="main-menu" class="screen active">
+            <h1>🇯🇵 Kana Master</h1>
+            <p class="subtitle">Master Hiragana & Katakana through fun games!</p>
+            
+            <div class="stats-preview">
+                <div class="stat">
+                    <span class="stat-value" id="total-score">0</span>
+                    <span class="stat-label">Total Score</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="streak-count">0</span>
+                    <span class="stat-label">Best Streak</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="mastered-count">0</span>
+                    <span class="stat-label">Mastered</span>
+                </div>
+            </div>
+
+            <div class="menu-buttons">
+                <button class="menu-btn" onclick="showScreen('mode-select')">
+                    <span class="btn-icon">🎮</span>
+                    <span class="btn-text">Play Game</span>
+                </button>
+                <button class="menu-btn" onclick="showScreen('study-mode')">
+                    <span class="btn-icon">📖</span>
+                    <span class="btn-text">Study Mode</span>
+                </button>
+                <button class="menu-btn" onclick="showScreen('progress-screen')">
+                    <span class="btn-icon">📊</span>
+                    <span class="btn-text">Progress</span>
+                </button>
+                <button class="menu-btn" onclick="showScreen('settings-screen')">
+                    <span class="btn-icon">⚙️</span>
+                    <span class="btn-text">Settings</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mode Select -->
+        <div id="mode-select" class="screen">
+            <button class="back-btn" onclick="showScreen('main-menu')">← Back</button>
+            <h2>Select Game Mode</h2>
+            
+            <div class="kana-toggle">
+                <button id="toggle-hiragana" class="toggle-btn active" onclick="toggleKanaType('hiragana')">Hiragana ひらがな</button>
+                <button id="toggle-katakana" class="toggle-btn" onclick="toggleKanaType('katakana')">Katakana カタカナ</button>
+                <button id="toggle-both" class="toggle-btn" onclick="toggleKanaType('both')">Both 両方</button>
+            </div>
+
+            <div class="game-modes">
+                <div class="game-mode-card" onclick="startGame('recognition')">
+                    <div class="mode-icon">👁️</div>
+                    <h3>Recognition</h3>
+                    <p>See a kana, pick the correct romaji</p>
+                    <span class="difficulty easy">Beginner</span>
+                </div>
+                <div class="game-mode-card" onclick="startGame('reverse')">
+                    <div class="mode-icon">🔄</div>
+                    <h3>Reverse</h3>
+                    <p>See romaji, pick the correct kana</p>
+                    <span class="difficulty easy">Beginner</span>
+                </div>
+                <div class="game-mode-card" onclick="startGame('typing')">
+                    <div class="mode-icon">⌨️</div>
+                    <h3>Typing Challenge</h3>
+                    <p>Type the romaji for each kana</p>
+                    <span class="difficulty medium">Intermediate</span>
+                </div>
+                <div class="game-mode-card" onclick="startGame('speed')">
+                    <div class="mode-icon">⚡</div>
+                    <h3>Speed Round</h3>
+                    <p>Answer as many as you can in 60 seconds!</p>
+                    <span class="difficulty medium">Intermediate</span>
+                </div>
+                <div class="game-mode-card" onclick="startGame('pairs')">
+                    <div class="mode-icon">🃏</div>
+                    <h3>Memory Match</h3>
+                    <p>Match kana with their romaji pairs</p>
+                    <span class="difficulty medium">Intermediate</span>
+                </div>
+                <div class="game-mode-card" onclick="startGame('wordBuilder')">
+                    <div class="mode-icon">📝</div>
+                    <h3>Word Builder</h3>
+                    <p>Combine kana to form Japanese words</p>
+                    <span class="difficulty hard">Advanced</span>
+                </div>
+                <div class="game-mode-card" onclick="startGame('listening')">
+                    <div class="mode-icon">🔊</div>
+                    <h3>Listening</h3>
+                    <p>Hear the sound, pick the kana</p>
+                    <span class="difficulty hard">Advanced</span>
+                </div>
+                <div class="game-mode-card" onclick="startGame('endless')">
+                    <div class="mode-icon">∞</div>
+                    <h3>Endless Mode</h3>
+                    <p>Keep going until you make 3 mistakes</p>
+                    <span class="difficulty expert">Expert</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen">
+            <div class="game-header">
+                <button class="back-btn" onclick="endGame()">✕</button>
+                <div class="game-info">
+                    <span id="current-mode">Recognition</span>
+                    <span id="question-counter">1/10</span>
+                </div>
+                <div class="game-stats">
+                    <span id="current-score">Score: 0</span>
+                    <span id="current-streak">🔥 0</span>
+                </div>
+            </div>
+
+            <div id="timer-bar" class="timer-bar hidden">
+                <div id="timer-fill" class="timer-fill"></div>
+            </div>
+
+            <div id="game-content" class="game-content">
+                <!-- Dynamic game content will be inserted here -->
+            </div>
+
+            <div id="feedback" class="feedback hidden">
+                <div id="feedback-text"></div>
+            </div>
+
+            <div id="answer-options" class="answer-options">
+                <!-- Answer buttons will be inserted here -->
+            </div>
+
+            <div id="typing-input" class="typing-input hidden">
+                <input type="text" id="type-answer" placeholder="Type the romaji..." autocomplete="off">
+                <button onclick="checkTypingAnswer()">Submit</button>
+            </div>
+        </div>
+
+        <!-- Memory Match Game Screen -->
+        <div id="pairs-screen" class="screen">
+            <div class="game-header">
+                <button class="back-btn" onclick="endGame()">✕</button>
+                <div class="game-info">
+                    <span>Memory Match</span>
+                    <span id="pairs-moves">Moves: 0</span>
+                </div>
+                <div class="game-stats">
+                    <span id="pairs-matched">Matched: 0/8</span>
+                    <span id="pairs-timer">Time: 0:00</span>
+                </div>
+            </div>
+            <div id="pairs-grid" class="pairs-grid">
+                <!-- Cards will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Word Builder Screen -->
+        <div id="word-screen" class="screen">
+            <div class="game-header">
+                <button class="back-btn" onclick="endGame()">✕</button>
+                <div class="game-info">
+                    <span>Word Builder</span>
+                    <span id="word-counter">1/10</span>
+                </div>
+                <div class="game-stats">
+                    <span id="word-score">Score: 0</span>
+                </div>
+            </div>
+            <div class="word-content">
+                <div id="word-prompt" class="word-prompt"></div>
+                <div id="word-meaning" class="word-meaning"></div>
+                <div id="word-answer-area" class="word-answer-area"></div>
+                <div id="word-options" class="word-options"></div>
+                <button id="word-submit" class="submit-btn" onclick="checkWordAnswer()">Check Answer</button>
+                <button id="word-clear" class="clear-btn" onclick="clearWordAnswer()">Clear</button>
+            </div>
+        </div>
+
+        <!-- Study Mode -->
+        <div id="study-mode" class="screen">
+            <button class="back-btn" onclick="showScreen('main-menu')">← Back</button>
+            <h2>Study Reference</h2>
+            
+            <div class="study-tabs">
+                <button class="tab-btn active" onclick="showStudyTab('hiragana')">Hiragana</button>
+                <button class="tab-btn" onclick="showStudyTab('katakana')">Katakana</button>
+            </div>
+
+            <div id="study-content" class="study-content">
+                <!-- Kana charts will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Progress Screen -->
+        <div id="progress-screen" class="screen">
+            <button class="back-btn" onclick="showScreen('main-menu')">← Back</button>
+            <h2>Your Progress</h2>
+            
+            <div class="progress-overview">
+                <div class="progress-card">
+                    <h3>Hiragana Progress</h3>
+                    <div class="progress-bar">
+                        <div id="hiragana-progress" class="progress-fill" style="width: 0%"></div>
+                    </div>
+                    <span id="hiragana-percent">0%</span>
+                </div>
+                <div class="progress-card">
+                    <h3>Katakana Progress</h3>
+                    <div class="progress-bar">
+                        <div id="katakana-progress" class="progress-fill" style="width: 0%"></div>
+                    </div>
+                    <span id="katakana-percent">0%</span>
+                </div>
+            </div>
+
+            <div class="detailed-progress">
+                <h3>Kana Mastery</h3>
+                <div id="mastery-grid" class="mastery-grid">
+                    <!-- Individual kana progress will be shown here -->
+                </div>
+            </div>
+
+            <button class="reset-btn" onclick="resetProgress()">Reset All Progress</button>
+        </div>
+
+        <!-- Settings Screen -->
+        <div id="settings-screen" class="screen">
+            <button class="back-btn" onclick="showScreen('main-menu')">← Back</button>
+            <h2>Settings</h2>
+            
+            <div class="settings-group">
+                <label class="setting-item">
+                    <span>Sound Effects</span>
+                    <input type="checkbox" id="sound-toggle" checked onchange="toggleSound()">
+                </label>
+                <label class="setting-item">
+                    <span>Show Romaji Hints</span>
+                    <input type="checkbox" id="hints-toggle" onchange="toggleHints()">
+                </label>
+                <label class="setting-item">
+                    <span>Include Dakuten (が, ざ, etc.)</span>
+                    <input type="checkbox" id="dakuten-toggle" checked onchange="toggleDakuten()">
+                </label>
+                <label class="setting-item">
+                    <span>Include Combo Kana (きゃ, しゅ, etc.)</span>
+                    <input type="checkbox" id="combo-toggle" onchange="toggleCombo()">
+                </label>
+                <label class="setting-item">
+                    <span>Questions per Round</span>
+                    <select id="questions-count" onchange="setQuestionsCount()">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="gameover-screen" class="screen">
+            <h2 id="gameover-title">Game Complete!</h2>
+            <div class="gameover-stats">
+                <div class="stat-large">
+                    <span id="final-score">0</span>
+                    <span>Points</span>
+                </div>
+                <div class="stat-row">
+                    <div class="stat">
+                        <span id="correct-count">0</span>
+                        <span>Correct</span>
+                    </div>
+                    <div class="stat">
+                        <span id="wrong-count">0</span>
+                        <span>Wrong</span>
+                    </div>
+                    <div class="stat">
+                        <span id="accuracy-percent">0%</span>
+                        <span>Accuracy</span>
+                    </div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat">
+                        <span id="best-streak">0</span>
+                        <span>Best Streak</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gameover-buttons">
+                <button class="menu-btn" onclick="restartGame()">Play Again</button>
+                <button class="menu-btn secondary" onclick="showScreen('mode-select')">Change Mode</button>
+                <button class="menu-btn secondary" onclick="showScreen('main-menu')">Main Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="kanaData.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
