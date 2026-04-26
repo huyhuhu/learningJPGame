@@ -747,16 +747,33 @@ function showStudyTab(type) {
     const content = document.getElementById('study-content');
     const kanaData = type === 'hiragana' ? KANA_DATABASE.hiragana : KANA_DATABASE.katakana;
     
+    const vowelOrder = ['a', 'i', 'u', 'e', 'o'];
+    const basicByRow = [];
+    let currentRow = null;
+    kanaData.basic.forEach(k => {
+        if (!currentRow || currentRow.row !== k.row) {
+            currentRow = { row: k.row, slots: [null, null, null, null, null] };
+            basicByRow.push(currentRow);
+        }
+        const lastChar = k.romaji[k.romaji.length - 1];
+        const col = vowelOrder.indexOf(lastChar);
+        currentRow.slots[col !== -1 ? col : 0] = k;
+    });
+    const basicGridHTML = basicByRow.map(group =>
+        group.slots.map(k => k
+            ? `<div class="chart-item" onclick="speakKana('${k.kana}')">
+                <span class="chart-kana">${k.kana}</span>
+                <span class="chart-romaji">${k.romaji}</span>
+               </div>`
+            : '<div class="chart-item chart-filler"></div>'
+        ).join('')
+    ).join('');
+
     content.innerHTML = `
         <div class="kana-chart">
             <h3>Basic Characters (Gojūon)</h3>
             <div class="chart-grid">
-                ${kanaData.basic.map(k => `
-                    <div class="chart-item" onclick="speakKana('${k.kana}')">
-                        <span class="chart-kana">${k.kana}</span>
-                        <span class="chart-romaji">${k.romaji}</span>
-                    </div>
-                `).join('')}
+                ${basicGridHTML}
             </div>
         </div>
         

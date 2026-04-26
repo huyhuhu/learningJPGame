@@ -657,6 +657,11 @@ h2 {
     background: var(--primary);
 }
 
+.chart-filler {
+    background: transparent;
+    pointer-events: none;
+}
+
 .chart-kana {
     font-size: 2rem;
     display: block;
