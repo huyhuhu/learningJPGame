@@ -253,7 +253,8 @@ function nextQuestion() {
     
     updateGameUI();
     hideFeedback();
-    
+    gameState.answered = false;
+
     switch (gameState.currentMode) {
         case 'recognition':
             showRecognitionQuestion();
@@ -381,6 +382,9 @@ function checkTypingAnswer() {
 }
 
 function processAnswer(isCorrect, selected) {
+    if (gameState.answered) return;
+    gameState.answered = true;
+
     // Update kana stats
     if (!userProgress.kanaStats[gameState.currentKana.kana]) {
         userProgress.kanaStats[gameState.currentKana.kana] = { correct: 0, wrong: 0 };
@@ -431,12 +435,24 @@ function processAnswer(isCorrect, selected) {
     
     gameState.currentQuestion++;
     saveProgress();
-    
-    // Next question after delay
-    setTimeout(() => {
-        if (gameState.currentMode === 'endless' && gameState.lives <= 0) return;
-        nextQuestion();
-    }, 1500);
+
+    // Show a Next button — user controls advancement so they can study the correct answer.
+    if (gameState.currentMode === 'speed') {
+        // Speed mode is timer-driven; auto-advance to keep pace.
+        setTimeout(() => nextQuestion(), 600);
+        return;
+    }
+    if (gameState.currentMode === 'endless' && gameState.lives <= 0) {
+        return;
+    }
+
+    const isLast = gameState.currentMode !== 'endless' &&
+                   gameState.currentQuestion >= gameState.totalQuestions;
+    const label = isLast ? 'See Results →' : 'Next →';
+    const action = isLast ? 'endGame()' : 'nextQuestion()';
+    const feedback = document.getElementById('feedback');
+    feedback.insertAdjacentHTML('beforeend',
+        `<button class="menu-btn" onclick="${action}" style="margin-top: 12px;"><span class="btn-text">${label}</span></button>`);
 }
 
 function showFeedback(isCorrect) {
@@ -455,7 +471,9 @@ function showFeedback(isCorrect) {
 }
 
 function hideFeedback() {
-    document.getElementById('feedback').classList.add('hidden');
+    const fb = document.getElementById('feedback');
+    fb.classList.add('hidden');
+    fb.innerHTML = '<div id="feedback-text"></div>';
 }
 
 // ===== MEMORY MATCH GAME =====
@@ -603,6 +621,7 @@ function nextWord() {
         endGame();
         return;
     }
+    wordState.answered = false;
     
     // Get all vocabulary
     const allWords = [];
@@ -671,9 +690,12 @@ function clearWordAnswer() {
 }
 
 function checkWordAnswer() {
+    if (wordState.answered) return;
+    wordState.answered = true;
+
     const userAnswer = wordState.selectedKana.join('');
     const correctAnswer = wordState.currentWord.word;
-    
+
     if (userAnswer === correctAnswer) {
         gameState.score += 50;
         gameState.correct++;
@@ -686,10 +708,13 @@ function checkWordAnswer() {
     }
     
     wordState.wordIndex++;
-    
-    setTimeout(() => {
-        nextWord();
-    }, 2000);
+
+    const isLast = wordState.wordIndex >= wordState.totalWords;
+    const label = isLast ? 'See Results →' : 'Next Word →';
+    const action = isLast ? 'endGame()' : 'nextWord()';
+    const answerArea = document.getElementById('word-answer-area');
+    answerArea.insertAdjacentHTML('beforeend',
+        `<button class="menu-btn" onclick="${action}" style="margin-top: 15px; flex-basis: 100%;"><span class="btn-text">${label}</span></button>`);
 }
 
 function showWordFeedback(correct, correctAnswer = '') {

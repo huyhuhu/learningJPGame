@@ -39,6 +39,10 @@
                     <span class="btn-icon">📖</span>
                     <span class="btn-text">Study Mode</span>
                 </button>
+                <button class="menu-btn" onclick="openTangoCho()">
+                    <span class="btn-icon">📓</span>
+                    <span class="btn-text">単語帳 (My Notebook)</span>
+                </button>
                 <button class="menu-btn" onclick="showScreen('progress-screen')">
                     <span class="btn-icon">📊</span>
                     <span class="btn-text">Progress</span>
@@ -270,6 +274,271 @@
             </div>
         </div>
 
+        <!-- Tango-cho Hub Screen -->
+        <div id="tango-hub" class="screen">
+            <button class="back-btn" onclick="showScreen('main-menu')">← Back</button>
+            <h2>📓 単語帳 — My Notebook</h2>
+            <p class="subtitle">Custom kanji & sentence study from your own questions</p>
+
+            <div class="tango-stats">
+                <div class="stat">
+                    <span class="stat-value" id="tango-q-count">0</span>
+                    <span class="stat-label">Questions</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="tango-k-count">0</span>
+                    <span class="stat-label">My Kanji</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="tango-w-count">0</span>
+                    <span class="stat-label">My Words</span>
+                </div>
+            </div>
+
+            <div class="menu-buttons">
+                <button class="menu-btn" onclick="showScreen('tango-quiz-setup')">
+                    <span class="btn-icon">🎯</span>
+                    <span class="btn-text">Start Quiz</span>
+                </button>
+                <button class="menu-btn secondary" onclick="openTangoLibrary()">
+                    <span class="btn-icon">📚</span>
+                    <span class="btn-text">My Kanji & Words</span>
+                </button>
+                <button class="menu-btn secondary" onclick="openTangoQuestions()">
+                    <span class="btn-icon">📝</span>
+                    <span class="btn-text">Manage Questions</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Tango-cho Quiz Setup -->
+        <div id="tango-quiz-setup" class="screen">
+            <button class="back-btn" onclick="showScreen('tango-hub')">← Back</button>
+            <h2>Quiz Setup</h2>
+
+            <div class="settings-group">
+                <label class="setting-item">
+                    <span>Filter by</span>
+                    <select id="tango-filter-mode" onchange="renderTangoFilterOptions()">
+                        <option value="all">All Questions</option>
+                        <option value="kanji">By selected Kanji</option>
+                        <option value="word">By selected Word</option>
+                    </select>
+                </label>
+                <label class="setting-item">
+                    <span>Question count</span>
+                    <select id="tango-q-num">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="0">All</option>
+                    </select>
+                </label>
+            </div>
+
+            <div id="tango-filter-list" class="tango-filter-list"></div>
+
+            <button class="menu-btn" onclick="startTangoQuiz()" style="margin-top: 20px;">
+                <span class="btn-icon">▶️</span>
+                <span class="btn-text">Start Quiz</span>
+            </button>
+        </div>
+
+        <!-- Tango-cho Quiz Screen -->
+        <div id="tango-quiz" class="screen">
+            <div class="game-header">
+                <button class="back-btn" onclick="endTangoQuiz()">✕</button>
+                <div class="game-info">
+                    <span>単語帳 Quiz</span>
+                    <span id="tango-quiz-counter">1/10</span>
+                </div>
+                <div class="game-stats">
+                    <span id="tango-quiz-score">Score: 0</span>
+                </div>
+            </div>
+
+            <div class="tango-question-area">
+                <div id="tango-question-text" class="tango-question-text"></div>
+                <div id="tango-hint-row" class="tango-hint-row"></div>
+                <div id="tango-hint-panel" class="tango-hint-panel hidden"></div>
+            </div>
+
+            <div id="tango-answer-options" class="answer-options"></div>
+
+            <div id="tango-feedback" class="feedback hidden">
+                <div id="tango-feedback-text"></div>
+            </div>
+        </div>
+
+        <!-- Tango-cho Library (My Kanji & Words) -->
+        <div id="tango-library" class="screen">
+            <button class="back-btn" onclick="showScreen('tango-hub')">← Back</button>
+            <h2>My Kanji & Words</h2>
+
+            <div class="study-tabs">
+                <button class="tab-btn active" id="lib-tab-kanji" onclick="showLibraryTab('kanji')">My Kanji</button>
+                <button class="tab-btn" id="lib-tab-words" onclick="showLibraryTab('words')">My Words</button>
+            </div>
+
+            <div id="tango-library-list" class="tango-library-list"></div>
+        </div>
+
+        <!-- Tango-cho Questions Manager -->
+        <div id="tango-questions" class="screen">
+            <button class="back-btn" onclick="showScreen('tango-hub')">← Back</button>
+            <h2>Manage Questions</h2>
+
+            <div class="tango-add-actions">
+                <button class="menu-btn secondary" onclick="showScreen('tango-import')">
+                    <span class="btn-icon">📥</span>
+                    <span class="btn-text">Bulk Import</span>
+                </button>
+                <button class="menu-btn secondary" onclick="showTangoAddSingle()">
+                    <span class="btn-icon">➕</span>
+                    <span class="btn-text">Add Single</span>
+                </button>
+                <button class="menu-btn secondary" onclick="exportTangoJson()">
+                    <span class="btn-icon">📤</span>
+                    <span class="btn-text">Export JSON</span>
+                </button>
+            </div>
+
+            <div id="tango-questions-list" class="tango-questions-list"></div>
+        </div>
+
+        <!-- Tango-cho Bulk Import -->
+        <div id="tango-import" class="screen">
+            <button class="back-btn" onclick="showScreen('tango-hub')">← Back</button>
+            <h2>Bulk Import Questions</h2>
+            <p class="subtitle">Paste AI-generated text or JSON. Wrap target words in |...| to highlight.</p>
+
+            <div class="import-format-help">
+                <details>
+                    <summary>📋 Show format examples</summary>
+                    <div class="format-block">
+                        <h4>Text format (recommended for AI):</h4>
+<pre>Q: What is the meaning of |新|?
+A: new
+E: 新 (しん / あたら) is a common kanji meaning "new".
+- new
+- old
+- big
+- small
+---
+Q: How to read |新しい|くるまですね?
+A: あたらしい
+E: 新しい is read あたらしい — the reading is irregular.
+- あたらしい
+- あだらしい
+- あらたしい
+- あらだしい
+
+(E: line is optional — explanation shown after answering.)</pre>
+                        <h4>JSON (simple — questions only):</h4>
+<pre>[
+  {
+    "question": "What is the meaning of |新|?",
+    "choices": ["new", "old", "big", "small"],
+    "answer": "new",
+    "explanation": "新 means 'new'. Common readings: しん, あたら(しい)."
+  }
+]</pre>
+                        <h4>JSON (rich — includes annotations, no manual reading/meaning entry):</h4>
+<pre>{
+  "questions": [
+    {
+      "question": "How to read |新しい|くるまですね?",
+      "choices": ["あたらしい", "あだらしい", "あらたしい", "あらだしい"],
+      "answer": "あたらしい",
+      "explanation": "新しい is read あたらしい. The reading is irregular — note the い ending."
+    }
+  ],
+  "kanji": {
+    "新": { "reading": "しん, あたら", "meaning": "new" },
+    "車": { "reading": "しゃ, くるま", "meaning": "car" }
+  },
+  "words": {
+    "新しい": { "reading": "あたらしい", "meaning": "new" }
+  }
+}
+
+The "explanation" field is optional — it appears after the user answers.</pre>
+                    </div>
+                </details>
+            </div>
+
+            <textarea id="tango-import-text" class="tango-import-text" placeholder="Paste questions here..."></textarea>
+
+            <div class="tango-import-actions">
+                <button class="menu-btn secondary" onclick="parseTangoImport()">
+                    <span class="btn-text">Preview & Parse</span>
+                </button>
+            </div>
+
+            <div id="tango-import-preview" class="tango-import-preview hidden"></div>
+        </div>
+
+        <!-- Tango-cho Single Question Add -->
+        <div id="tango-add-single" class="screen">
+            <button class="back-btn" onclick="showScreen('tango-hub')">← Back</button>
+            <h2 id="tango-add-title">Add Question</h2>
+            <p class="subtitle">Wrap target words in |...| to highlight them in the quiz.</p>
+
+            <div class="settings-group">
+                <label class="setting-item-stacked">
+                    <span>Question text</span>
+                    <textarea id="tango-q-text" class="tango-input-field" rows="3" placeholder="e.g. How to read |新しい|くるまですね?"></textarea>
+                </label>
+                <label class="setting-item-stacked">
+                    <span>Choice 1 (✓ = correct)</span>
+                    <div class="tango-choice-row">
+                        <input type="radio" name="tango-correct" value="0" checked>
+                        <input type="text" id="tango-c-0" class="tango-input-field" placeholder="Choice 1">
+                    </div>
+                </label>
+                <label class="setting-item-stacked">
+                    <span>Choice 2</span>
+                    <div class="tango-choice-row">
+                        <input type="radio" name="tango-correct" value="1">
+                        <input type="text" id="tango-c-1" class="tango-input-field" placeholder="Choice 2">
+                    </div>
+                </label>
+                <label class="setting-item-stacked">
+                    <span>Choice 3</span>
+                    <div class="tango-choice-row">
+                        <input type="radio" name="tango-correct" value="2">
+                        <input type="text" id="tango-c-2" class="tango-input-field" placeholder="Choice 3">
+                    </div>
+                </label>
+                <label class="setting-item-stacked">
+                    <span>Choice 4</span>
+                    <div class="tango-choice-row">
+                        <input type="radio" name="tango-correct" value="3">
+                        <input type="text" id="tango-c-3" class="tango-input-field" placeholder="Choice 4">
+                    </div>
+                </label>
+                <label class="setting-item-stacked">
+                    <span>Explanation (optional — shown after answering)</span>
+                    <textarea id="tango-q-explanation" class="tango-input-field" rows="2" placeholder="e.g. 新しい (あたらしい) means 'new'. The reading is irregular."></textarea>
+                </label>
+            </div>
+
+            <button class="menu-btn" onclick="saveTangoSingleQuestion()" style="margin-top: 20px;">
+                <span class="btn-text">Save Question</span>
+            </button>
+        </div>
+
+        <!-- Tango-cho Annotation Modal -->
+        <div id="tango-annotate" class="screen">
+            <h2>Annotate New Items</h2>
+            <p class="subtitle">Add reading & meaning so revision works.</p>
+            <div id="tango-annotate-list" class="tango-annotate-list"></div>
+            <button class="menu-btn" onclick="finishAnnotation()" style="margin-top: 20px;">
+                <span class="btn-text">Save All & Continue</span>
+            </button>
+        </div>
+
         <!-- Game Over Screen -->
         <div id="gameover-screen" class="screen">
             <h2 id="gameover-title">Game Complete!</h2>
@@ -309,6 +578,8 @@
 
     <script src="kanaData.js"></script>
     <script src="game.js"></script>
+    <script src="tangoSeedData.js"></script>
+    <script src="tango.js"></script>
     <script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
