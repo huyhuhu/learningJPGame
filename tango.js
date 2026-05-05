@@ -32,13 +32,123 @@ function loadTangoData() {
             if (!tangoData.kanji) tangoData.kanji = {};
             if (!tangoData.words) tangoData.words = {};
             if (typeof tangoData.seedVersion !== 'number') tangoData.seedVersion = 0;
+            if (typeof tangoData.week2SeedVersion !== 'number') tangoData.week2SeedVersion = 0;
         } catch (e) {
-            tangoData = { questions: [], kanji: {}, words: {}, seedVersion: 0 };
+            tangoData = { questions: [], kanji: {}, words: {}, seedVersion: 0, week2SeedVersion: 0 };
         }
     } else {
-        tangoData = { questions: [], kanji: {}, words: {}, seedVersion: 0 };
+        tangoData = { questions: [], kanji: {}, words: {}, seedVersion: 0, week2SeedVersion: 0 };
     }
+    // Schema migration: ensure all entries have a label field
+    Object.values(tangoData.kanji).forEach(v => { if (!('label' in v)) v.label = ''; });
+    Object.values(tangoData.words).forEach(v => { if (!('label' in v)) v.label = ''; });
     mergeSeedData();
+    backfillLibraryFromQuestions();
+    // Async fetch of external JSON seed (Week2). Doesn't block; refreshes hub when done.
+    loadExternalSeed('./tangoSeedData-week2.json', 'week2SeedVersion', 'Week2');
+}
+
+async function loadExternalSeed(url, versionKey, defaultLabel) {
+    try {
+        const resp = await fetch(url);
+        if (!resp.ok) return;
+        const data = await resp.json();
+        if ((data.version || 0) <= (tangoData[versionKey] || 0)) return;
+
+        // Auto-apply default label to every kanji/word from this source.
+        const labelled = (map) => {
+            const out = {};
+            Object.entries(map || {}).forEach(([k, v]) => {
+                out[k] = {
+                    reading: (v && v.reading) || '',
+                    meaning: (v && v.meaning) || '',
+                    label: (v && v.label) || defaultLabel
+                };
+            });
+            return out;
+        };
+
+        const seedView = {
+            version: data.version || 1,
+            questions: (data.questions || []).map(q => ({ ...q, _label: defaultLabel })),
+            kanji: labelled(data.kanji),
+            words: labelled(data.words)
+        };
+
+        // Merge questions (skip dup by id or text)
+        const byId = {};
+        const byText = {};
+        tangoData.questions.forEach(q => {
+            if (q.id) byId[q.id] = q;
+            if (q.question) byText[q.question] = q;
+        });
+        seedView.questions.forEach(q => {
+            if (!q.question || !q.choices || !q.answer) return;
+            if ((q.id && byId[q.id]) || byText[q.question]) return;
+            tangoData.questions.push({
+                id: q.id || ('seed-' + Date.now() + Math.random().toString(36).slice(2, 7)),
+                question: q.question,
+                choices: [...q.choices],
+                answer: q.answer,
+                explanation: q.explanation || ''
+            });
+        });
+
+        // Merge kanji/words with label-aware fill
+        const fill = (target, seedMap) => {
+            Object.entries(seedMap).forEach(([k, v]) => {
+                if (!target[k]) {
+                    target[k] = { reading: v.reading, meaning: v.meaning, label: v.label };
+                } else {
+                    if (!target[k].reading && v.reading) target[k].reading = v.reading;
+                    if (!target[k].meaning && v.meaning) target[k].meaning = v.meaning;
+                    if (!target[k].label && v.label) target[k].label = v.label;
+                }
+            });
+        };
+        fill(tangoData.kanji, seedView.kanji);
+        fill(tangoData.words, seedView.words);
+
+        tangoData[versionKey] = seedView.version;
+        backfillLibraryFromQuestions();
+        saveTangoData();
+
+        // Refresh hub counts if user is on the hub
+        if (document.getElementById('tango-hub')?.classList.contains('active')) {
+            refreshTangoHub();
+        }
+    } catch (e) {
+        console.warn(`Could not load external seed ${url}:`, e);
+    }
+}
+
+// Ensure every kanji/marked-word that appears in any question has a library entry.
+// Empty entries are added so the hint UI and library list can find them — the dev
+// or user fills in reading/meaning later. Idempotent: only adds what's missing.
+function backfillLibraryFromQuestions() {
+    let changed = false;
+    tangoData.questions.forEach(q => {
+        const ext = extractFromQuestion(q);
+        ext.kanji.forEach(k => {
+            if (!tangoData.kanji[k]) {
+                tangoData.kanji[k] = { reading: '', meaning: '', label: '' };
+                changed = true;
+            } else if (!('label' in tangoData.kanji[k])) {
+                tangoData.kanji[k].label = '';
+                changed = true;
+            }
+        });
+        ext.words.forEach(w => {
+            if (!tangoData.words[w]) {
+                tangoData.words[w] = { reading: '', meaning: '', label: '' };
+                changed = true;
+            } else if (!('label' in tangoData.words[w])) {
+                tangoData.words[w].label = '';
+                changed = true;
+            }
+        });
+    });
+    if (changed) saveTangoData();
 }
 
 function mergeSeedData() {
@@ -70,17 +180,28 @@ function mergeSeedData() {
         });
     });
 
-    // Merge kanji & words — never overwrite existing user entries
-    Object.entries(seed.kanji || {}).forEach(([k, v]) => {
-        if (!tangoData.kanji[k]) {
-            tangoData.kanji[k] = { reading: v.reading || '', meaning: v.meaning || '' };
-        }
-    });
-    Object.entries(seed.words || {}).forEach(([k, v]) => {
-        if (!tangoData.words[k]) {
-            tangoData.words[k] = { reading: v.reading || '', meaning: v.meaning || '' };
-        }
-    });
+    // Merge kanji & words. Add missing entries; for existing entries,
+    // backfill only EMPTY fields (so user edits are never overwritten).
+    // Per-entry `label` wins; if absent, falls back to seed.defaultLabel.
+    const defaultLabel = seed.defaultLabel || '';
+    const fillFromSeed = (target, seedMap) => {
+        Object.entries(seedMap || {}).forEach(([k, v]) => {
+            const lab = v.label || defaultLabel;
+            if (!target[k]) {
+                target[k] = {
+                    reading: v.reading || '',
+                    meaning: v.meaning || '',
+                    label: lab
+                };
+            } else {
+                if (!target[k].reading && v.reading) target[k].reading = v.reading;
+                if (!target[k].meaning && v.meaning) target[k].meaning = v.meaning;
+                if (!target[k].label && lab) target[k].label = lab;
+            }
+        });
+    };
+    fillFromSeed(tangoData.kanji, seed.kanji);
+    fillFromSeed(tangoData.words, seed.words);
 
     tangoData.seedVersion = seed.version;
     saveTangoData();
@@ -92,6 +213,17 @@ function saveTangoData() {
 
 // ===== EXPORT =====
 function exportTangoJson() {
+    const stripEntries = (m) => {
+        const out = {};
+        Object.entries(m || {}).forEach(([k, v]) => {
+            out[k] = {
+                reading: v.reading || '',
+                meaning: v.meaning || '',
+                label: v.label || ''
+            };
+        });
+        return out;
+    };
     const out = {
         version: tangoData.seedVersion || 1,
         questions: tangoData.questions.map(q => ({
@@ -101,8 +233,8 @@ function exportTangoJson() {
             answer: q.answer,
             explanation: q.explanation || ''
         })),
-        kanji: tangoData.kanji,
-        words: tangoData.words
+        kanji: stripEntries(tangoData.kanji),
+        words: stripEntries(tangoData.words)
     };
     const json = JSON.stringify(out, null, 2);
     const blob = new Blob([json], { type: 'application/json' });
@@ -206,19 +338,35 @@ function saveTangoSingleQuestion() {
     });
 }
 
-function addQuestionsAndAnnotate(newQuestions, after, providedAnnotations) {
+function addQuestionsAndAnnotate(newQuestions, after, providedAnnotations, defaultLabel) {
     tangoData.questions.push(...newQuestions);
 
     // Apply provided annotations first (from rich JSON imports)
     const ann = providedAnnotations || { kanji: {}, words: {} };
     Object.entries(ann.kanji || {}).forEach(([k, v]) => {
         if (!tangoData.kanji[k]) {
-            tangoData.kanji[k] = { reading: v.reading || '', meaning: v.meaning || '' };
+            tangoData.kanji[k] = {
+                reading: v.reading || '',
+                meaning: v.meaning || '',
+                label: v.label || ''
+            };
+        } else {
+            if (!tangoData.kanji[k].reading && v.reading) tangoData.kanji[k].reading = v.reading;
+            if (!tangoData.kanji[k].meaning && v.meaning) tangoData.kanji[k].meaning = v.meaning;
+            if (!tangoData.kanji[k].label && v.label) tangoData.kanji[k].label = v.label;
         }
     });
     Object.entries(ann.words || {}).forEach(([k, v]) => {
         if (!tangoData.words[k]) {
-            tangoData.words[k] = { reading: v.reading || '', meaning: v.meaning || '' };
+            tangoData.words[k] = {
+                reading: v.reading || '',
+                meaning: v.meaning || '',
+                label: v.label || ''
+            };
+        } else {
+            if (!tangoData.words[k].reading && v.reading) tangoData.words[k].reading = v.reading;
+            if (!tangoData.words[k].meaning && v.meaning) tangoData.words[k].meaning = v.meaning;
+            if (!tangoData.words[k].label && v.label) tangoData.words[k].label = v.label;
         }
     });
 
@@ -228,10 +376,24 @@ function addQuestionsAndAnnotate(newQuestions, after, providedAnnotations) {
     newQuestions.forEach(q => {
         const ext = extractFromQuestion(q);
         ext.kanji.forEach(k => {
-            if (!tangoData.kanji[k]) newKanji.add(k);
+            if (!tangoData.kanji[k]) {
+                if (defaultLabel) {
+                    tangoData.kanji[k] = { reading: '', meaning: '', label: defaultLabel };
+                }
+                newKanji.add(k);
+            } else if (defaultLabel && !tangoData.kanji[k].label) {
+                tangoData.kanji[k].label = defaultLabel;
+            }
         });
         ext.words.forEach(w => {
-            if (!tangoData.words[w]) newWords.add(w);
+            if (!tangoData.words[w]) {
+                if (defaultLabel) {
+                    tangoData.words[w] = { reading: '', meaning: '', label: defaultLabel };
+                }
+                newWords.add(w);
+            } else if (defaultLabel && !tangoData.words[w].label) {
+                tangoData.words[w].label = defaultLabel;
+            }
         });
     });
 
@@ -327,11 +489,13 @@ function parseTangoImport() {
                 arr = json;
             } else if (Array.isArray(json.questions)) {
                 arr = json.questions;
+                const defLabel = json.defaultLabel || '';
                 if (json.kanji && typeof json.kanji === 'object') {
                     Object.entries(json.kanji).forEach(([k, v]) => {
                         importedAnnotations.kanji[k] = {
                             reading: (v && v.reading) || '',
-                            meaning: (v && v.meaning) || ''
+                            meaning: (v && v.meaning) || '',
+                            label: (v && v.label) || defLabel
                         };
                     });
                 }
@@ -339,7 +503,8 @@ function parseTangoImport() {
                     Object.entries(json.words).forEach(([k, v]) => {
                         importedAnnotations.words[k] = {
                             reading: (v && v.reading) || '',
-                            meaning: (v && v.meaning) || ''
+                            meaning: (v && v.meaning) || '',
+                            label: (v && v.label) || defLabel
                         };
                     });
                 }
@@ -443,14 +608,16 @@ let pendingImportAnnotations = { kanji: {}, words: {} };
 function confirmTangoImport() {
     const parsed = pendingImportParsed;
     if (!parsed || parsed.length === 0) return;
+    const defaultLabel = (document.getElementById('tango-import-default-label')?.value || '').trim();
     addQuestionsAndAnnotate(parsed, () => {
         document.getElementById('tango-import-text').value = '';
+        document.getElementById('tango-import-default-label').value = '';
         document.getElementById('tango-import-preview').classList.add('hidden');
         document.getElementById('tango-import-preview').innerHTML = '';
         pendingImportAnnotations = { kanji: {}, words: {} };
         showScreen('tango-hub');
         refreshTangoHub();
-    }, pendingImportAnnotations);
+    }, pendingImportAnnotations, defaultLabel);
 }
 
 function escapeHtml(s) {
@@ -463,35 +630,113 @@ function escapeHtml(s) {
 let currentLibTab = 'kanji';
 
 function openTangoLibrary() {
+    bulkMode = false;
+    bulkSelected.clear();
+    document.getElementById('bulk-mode-label').textContent = 'Bulk Label';
+    document.getElementById('tango-bulk-bar').classList.add('hidden');
+    refreshLabelControls();
     showLibraryTab('kanji');
     showScreen('tango-library');
 }
+
+let bulkMode = false;
+let bulkSelected = new Set();
 
 function showLibraryTab(tab) {
     currentLibTab = tab;
     document.getElementById('lib-tab-kanji').classList.toggle('active', tab === 'kanji');
     document.getElementById('lib-tab-words').classList.toggle('active', tab === 'words');
+    bulkSelected.clear();
+    refreshLabelControls();
     renderLibrary();
+}
+
+function refreshLabelControls() {
+    const labels = collectLabels();
+    const filter = document.getElementById('lib-label-filter');
+    if (filter) {
+        const current = filter.value;
+        filter.innerHTML = '<option value="">All labels</option>'
+            + '<option value="__none__">(no label)</option>'
+            + labels.map(l => `<option value="${escapeHtml(l)}">${escapeHtml(l)}</option>`).join('');
+        filter.value = labels.includes(current) || current === '__none__' ? current : '';
+    }
+    const datalist = document.getElementById('tango-label-suggest');
+    if (datalist) {
+        datalist.innerHTML = labels.map(l => `<option value="${escapeHtml(l)}">`).join('');
+    }
+}
+
+function toggleBulkMode() {
+    bulkMode = !bulkMode;
+    bulkSelected.clear();
+    document.getElementById('bulk-mode-label').textContent = bulkMode ? 'Exit Bulk Mode' : 'Bulk Label';
+    document.getElementById('tango-bulk-bar').classList.toggle('hidden', !bulkMode);
+    renderLibrary();
+}
+
+function selectAllInLibrary(state) {
+    document.querySelectorAll('#tango-library-list .tango-lib-bulk-cb').forEach(cb => {
+        cb.checked = state;
+        const k = cb.dataset.key;
+        if (state) bulkSelected.add(k);
+        else bulkSelected.delete(k);
+    });
+}
+
+function toggleBulkSelect(cb) {
+    const k = cb.dataset.key;
+    if (cb.checked) bulkSelected.add(k);
+    else bulkSelected.delete(k);
+}
+
+function applyBulkLabel() {
+    if (bulkSelected.size === 0) {
+        alert('Select at least one item first.');
+        return;
+    }
+    const newLabel = document.getElementById('tango-bulk-label-input').value.trim();
+    const target = currentLibTab === 'kanji' ? tangoData.kanji : tangoData.words;
+    bulkSelected.forEach(k => {
+        if (target[k]) target[k].label = newLabel;
+    });
+    saveTangoData();
+    bulkSelected.clear();
+    refreshLabelControls();
+    renderLibrary();
+    alert(`Applied label "${newLabel || '(empty)'}" to selected items.`);
 }
 
 function renderLibrary() {
     const list = document.getElementById('tango-library-list');
     const source = currentLibTab === 'kanji' ? tangoData.kanji : tangoData.words;
-    const keys = Object.keys(source);
+    const filterVal = document.getElementById('lib-label-filter')?.value || '';
+
+    let keys = Object.keys(source);
+    if (filterVal === '__none__') {
+        keys = keys.filter(k => !source[k].label);
+    } else if (filterVal) {
+        keys = keys.filter(k => source[k].label === filterVal);
+    }
 
     if (keys.length === 0) {
-        list.innerHTML = `<p class="hint-text" style="text-align:center; padding: 40px;">No ${currentLibTab} yet. Add questions first.</p>`;
+        list.innerHTML = `<p class="hint-text" style="text-align:center; padding: 40px;">No ${currentLibTab}${filterVal ? ' for this label' : ''} yet.</p>`;
         return;
     }
 
     list.innerHTML = keys.map(k => {
         const item = source[k];
+        const checkbox = bulkMode
+            ? `<input type="checkbox" class="tango-lib-bulk-cb" data-key="${escapeHtml(k)}" ${bulkSelected.has(k) ? 'checked' : ''} onchange="toggleBulkSelect(this)">`
+            : '';
         return `
-            <div class="tango-lib-item">
+            <div class="tango-lib-item ${bulkMode ? 'bulk-mode' : ''}">
+                ${checkbox}
                 <div class="tango-lib-char">${k}</div>
                 <div class="tango-lib-fields">
                     <input type="text" value="${escapeHtml(item.reading || '')}" placeholder="Reading" data-type="${currentLibTab}" data-key="${escapeHtml(k)}" data-field="reading" onchange="updateLibraryItem(this)" class="tango-input-field">
                     <input type="text" value="${escapeHtml(item.meaning || '')}" placeholder="Meaning" data-type="${currentLibTab}" data-key="${escapeHtml(k)}" data-field="meaning" onchange="updateLibraryItem(this)" class="tango-input-field">
+                    <input type="text" value="${escapeHtml(item.label || '')}" placeholder="Label (e.g. Week2)" data-type="${currentLibTab}" data-key="${escapeHtml(k)}" data-field="label" onchange="updateLibraryItem(this); refreshLabelControls();" list="tango-label-suggest" class="tango-input-field tango-label-field">
                 </div>
                 <button class="tango-lib-del" onclick="deleteLibraryItem('${currentLibTab}', '${escapeHtml(k)}')" title="Delete">🗑️</button>
             </div>
@@ -504,7 +749,7 @@ function updateLibraryItem(inp) {
     const key = inp.dataset.key;
     const field = inp.dataset.field;
     const target = type === 'kanji' ? tangoData.kanji : tangoData.words;
-    if (!target[key]) target[key] = { reading: '', meaning: '' };
+    if (!target[key]) target[key] = { reading: '', meaning: '', label: '' };
     target[key][field] = inp.value.trim();
     saveTangoData();
 }
@@ -566,6 +811,21 @@ function renderTangoFilterOptions() {
         return;
     }
 
+    if (mode === 'label') {
+        const labels = collectLabels();
+        if (labels.length === 0) {
+            list.innerHTML = `<p class="hint-text">No labels yet. Set labels in My Kanji & Words.</p>`;
+            return;
+        }
+        list.innerHTML = `
+            <p class="hint-text">Select label(s) to revise. Pool = questions containing kanji/words with chosen label(s):</p>
+            <div class="tango-filter-chips">
+                ${labels.map(l => `<label class="tango-chip"><input type="checkbox" value="${escapeHtml(l)}" data-filter="label"> ${escapeHtml(l)}</label>`).join('')}
+            </div>
+        `;
+        return;
+    }
+
     const source = mode === 'kanji' ? tangoData.kanji : tangoData.words;
     const keys = Object.keys(source);
 
@@ -577,9 +837,19 @@ function renderTangoFilterOptions() {
     list.innerHTML = `
         <p class="hint-text">Select ${mode === 'kanji' ? 'kanji' : 'words'} to revise (questions containing them will be quizzed):</p>
         <div class="tango-filter-chips">
-            ${keys.map(k => `<label class="tango-chip"><input type="checkbox" value="${escapeHtml(k)}" data-filter="${mode}"> ${escapeHtml(k)}</label>`).join('')}
+            ${keys.map(k => {
+                const lab = source[k].label ? ` <span class="lib-label-pill">${escapeHtml(source[k].label)}</span>` : '';
+                return `<label class="tango-chip"><input type="checkbox" value="${escapeHtml(k)}" data-filter="${mode}"> ${escapeHtml(k)}${lab}</label>`;
+            }).join('')}
         </div>
     `;
+}
+
+function collectLabels() {
+    const set = new Set();
+    Object.values(tangoData.kanji).forEach(v => { if (v.label) set.add(v.label); });
+    Object.values(tangoData.words).forEach(v => { if (v.label) set.add(v.label); });
+    return [...set].sort();
 }
 
 function startTangoQuiz() {
@@ -597,14 +867,26 @@ function startTangoQuiz() {
             alert(`Select at least one ${mode} to filter by.`);
             return;
         }
-        pool = pool.filter(q => {
-            const text = q.question + ' ' + q.choices.join(' ');
-            if (mode === 'kanji') {
-                return selected.some(k => text.includes(k));
-            } else {
-                return selected.some(w => text.includes(w));
+        if (mode === 'label') {
+            // Build the set of kanji/words tagged with any of the selected labels.
+            const tagged = new Set();
+            Object.entries(tangoData.kanji).forEach(([k, v]) => { if (selected.includes(v.label)) tagged.add(k); });
+            Object.entries(tangoData.words).forEach(([k, v]) => { if (selected.includes(v.label)) tagged.add(k); });
+            if (tagged.size === 0) {
+                alert('No kanji or words have the selected label(s).');
+                return;
             }
-        });
+            pool = pool.filter(q => {
+                const text = q.question + ' ' + q.choices.join(' ');
+                for (const t of tagged) if (text.includes(t)) return true;
+                return false;
+            });
+        } else {
+            pool = pool.filter(q => {
+                const text = q.question + ' ' + q.choices.join(' ');
+                return selected.some(s => text.includes(s));
+            });
+        }
     }
 
     if (pool.length === 0) {
@@ -692,11 +974,15 @@ function toggleHint(key, type) {
     panel.classList.remove('hidden');
     panel.dataset.activeKey = key;
     panel.dataset.activeType = type;
+    const labelLine = item.label
+        ? `<span class="hint-detail"><strong>Label:</strong> <span class="lib-label-pill">${escapeHtml(item.label)}</span></span>`
+        : '';
     panel.innerHTML = `
         <div class="hint-card">
             <span class="hint-char">${escapeHtml(key)}</span>
             <span class="hint-detail"><strong>Reading:</strong> ${escapeHtml(item.reading) || '<em>(not set)</em>'}</span>
             <span class="hint-detail"><strong>Meaning:</strong> ${escapeHtml(item.meaning) || '<em>(not set)</em>'}</span>
+            ${labelLine}
         </div>
     `;
 

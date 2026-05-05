@@ -19,7 +19,9 @@
 //   - meaning: short English meaning.
 
 const TANGO_SEED_DATA = {
-    version: 3,
+    version: 5,
+    // Default label applied to every kanji/word in this seed (per-entry `label` overrides).
+    defaultLabel: "Week2",
 
     questions: [
         {
@@ -248,7 +250,37 @@ const TANGO_SEED_DATA = {
         // ===== Week 2 — Other =====
         "人": { reading: "じん, にん, ひと", meaning: "person" },
         "円": { reading: "えん, まる(い)", meaning: "yen, circle" },
-        "山": { reading: "さん, やま", meaning: "mountain" }
+        "山": { reading: "さん, やま", meaning: "mountain" },
+
+        // ===== Week 2 — Common kanji used in questions =====
+        "行": { reading: "こう, い(く), おこな(う)", meaning: "go, conduct" },
+        "時": { reading: "じ, とき", meaning: "time, hour" },
+        "曜": { reading: "よう", meaning: "weekday" },
+        "電": { reading: "でん", meaning: "electricity" },
+        "何": { reading: "なに, なん", meaning: "what" },
+        "起": { reading: "き, お(きる)", meaning: "wake up, rise" },
+        "寝": { reading: "しん, ね(る)", meaning: "sleep, lie down" },
+        "来": { reading: "らい, く(る)", meaning: "come" },
+        "帰": { reading: "き, かえ(る)", meaning: "return home" },
+        "食": { reading: "しょく, た(べる)", meaning: "eat, food" },
+        "飲": { reading: "いん, の(む)", meaning: "drink" },
+        "読": { reading: "どく, よ(む)", meaning: "read" },
+        "見": { reading: "けん, み(る)", meaning: "see, look" },
+        "働": { reading: "どう, はたら(く)", meaning: "work" },
+        "会": { reading: "かい, あ(う)", meaning: "meeting, meet" },
+        "社": { reading: "しゃ", meaning: "company, shrine" },
+        "駅": { reading: "えき", meaning: "station" },
+        "自": { reading: "じ, し", meaning: "self" },
+        "転": { reading: "てん, ころ(がる)", meaning: "turn, roll" },
+        "飛": { reading: "ひ, と(ぶ)", meaning: "fly" },
+        "機": { reading: "き", meaning: "machine, opportunity" },
+        "幹": { reading: "かん, みき", meaning: "trunk, main" },
+        "線": { reading: "せん", meaning: "line" },
+        "千": { reading: "せん, ち", meaning: "thousand" },
+        "今": { reading: "こん, いま", meaning: "now" },
+        "午": { reading: "ご", meaning: "noon" },
+        "前": { reading: "ぜん, まえ", meaning: "before, front" },
+        "後": { reading: "ご, こう, あと, うし(ろ)", meaning: "after, behind" }
     },
 
     words: {

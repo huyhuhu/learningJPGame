@@ -321,6 +321,7 @@
                     <span>Filter by</span>
                     <select id="tango-filter-mode" onchange="renderTangoFilterOptions()">
                         <option value="all">All Questions</option>
+                        <option value="label">By Label</option>
                         <option value="kanji">By selected Kanji</option>
                         <option value="word">By selected Word</option>
                     </select>
@@ -379,6 +380,29 @@
             <div class="study-tabs">
                 <button class="tab-btn active" id="lib-tab-kanji" onclick="showLibraryTab('kanji')">My Kanji</button>
                 <button class="tab-btn" id="lib-tab-words" onclick="showLibraryTab('words')">My Words</button>
+            </div>
+
+            <div class="tango-lib-toolbar">
+                <select id="lib-label-filter" onchange="renderLibrary()">
+                    <option value="">All labels</option>
+                </select>
+                <button class="menu-btn secondary" onclick="toggleBulkMode()">
+                    <span id="bulk-mode-label" class="btn-text">Bulk Label</span>
+                </button>
+            </div>
+
+            <div id="tango-bulk-bar" class="tango-bulk-bar hidden">
+                <input type="text" id="tango-bulk-label-input" class="tango-input-field" placeholder="Label to apply (e.g. Week3)" list="tango-label-suggest">
+                <datalist id="tango-label-suggest"></datalist>
+                <button class="menu-btn" onclick="applyBulkLabel()">
+                    <span class="btn-text">Apply to Selected</span>
+                </button>
+                <button class="menu-btn secondary" onclick="selectAllInLibrary(true)">
+                    <span class="btn-text">Select All</span>
+                </button>
+                <button class="menu-btn secondary" onclick="selectAllInLibrary(false)">
+                    <span class="btn-text">Clear</span>
+                </button>
             </div>
 
             <div id="tango-library-list" class="tango-library-list"></div>
@@ -469,6 +493,13 @@ The "explanation" field is optional — it appears after the user answers.</pre>
             </div>
 
             <textarea id="tango-import-text" class="tango-import-text" placeholder="Paste questions here..."></textarea>
+
+            <div class="tango-import-default-label">
+                <label>
+                    <span>Default label for new items (optional):</span>
+                    <input type="text" id="tango-import-default-label" class="tango-input-field" placeholder="e.g. Week3" list="tango-label-suggest">
+                </label>
+            </div>
 
             <div class="tango-import-actions">
                 <button class="menu-btn secondary" onclick="parseTangoImport()">
