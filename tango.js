@@ -32,94 +32,17 @@ function loadTangoData() {
             if (!tangoData.kanji) tangoData.kanji = {};
             if (!tangoData.words) tangoData.words = {};
             if (typeof tangoData.seedVersion !== 'number') tangoData.seedVersion = 0;
-            if (typeof tangoData.week2SeedVersion !== 'number') tangoData.week2SeedVersion = 0;
         } catch (e) {
-            tangoData = { questions: [], kanji: {}, words: {}, seedVersion: 0, week2SeedVersion: 0 };
+            tangoData = { questions: [], kanji: {}, words: {}, seedVersion: 0 };
         }
     } else {
-        tangoData = { questions: [], kanji: {}, words: {}, seedVersion: 0, week2SeedVersion: 0 };
+        tangoData = { questions: [], kanji: {}, words: {}, seedVersion: 0 };
     }
     // Schema migration: ensure all entries have a label field
     Object.values(tangoData.kanji).forEach(v => { if (!('label' in v)) v.label = ''; });
     Object.values(tangoData.words).forEach(v => { if (!('label' in v)) v.label = ''; });
     mergeSeedData();
     backfillLibraryFromQuestions();
-    // Async fetch of external JSON seed (Week2). Doesn't block; refreshes hub when done.
-    loadExternalSeed('./tangoSeedData-week2.json', 'week2SeedVersion', 'Week2');
-}
-
-async function loadExternalSeed(url, versionKey, defaultLabel) {
-    try {
-        const resp = await fetch(url);
-        if (!resp.ok) return;
-        const data = await resp.json();
-        if ((data.version || 0) <= (tangoData[versionKey] || 0)) return;
-
-        // Auto-apply default label to every kanji/word from this source.
-        const labelled = (map) => {
-            const out = {};
-            Object.entries(map || {}).forEach(([k, v]) => {
-                out[k] = {
-                    reading: (v && v.reading) || '',
-                    meaning: (v && v.meaning) || '',
-                    label: (v && v.label) || defaultLabel
-                };
-            });
-            return out;
-        };
-
-        const seedView = {
-            version: data.version || 1,
-            questions: (data.questions || []).map(q => ({ ...q, _label: defaultLabel })),
-            kanji: labelled(data.kanji),
-            words: labelled(data.words)
-        };
-
-        // Merge questions (skip dup by id or text)
-        const byId = {};
-        const byText = {};
-        tangoData.questions.forEach(q => {
-            if (q.id) byId[q.id] = q;
-            if (q.question) byText[q.question] = q;
-        });
-        seedView.questions.forEach(q => {
-            if (!q.question || !q.choices || !q.answer) return;
-            if ((q.id && byId[q.id]) || byText[q.question]) return;
-            tangoData.questions.push({
-                id: q.id || ('seed-' + Date.now() + Math.random().toString(36).slice(2, 7)),
-                question: q.question,
-                choices: [...q.choices],
-                answer: q.answer,
-                explanation: q.explanation || ''
-            });
-        });
-
-        // Merge kanji/words with label-aware fill
-        const fill = (target, seedMap) => {
-            Object.entries(seedMap).forEach(([k, v]) => {
-                if (!target[k]) {
-                    target[k] = { reading: v.reading, meaning: v.meaning, label: v.label };
-                } else {
-                    if (!target[k].reading && v.reading) target[k].reading = v.reading;
-                    if (!target[k].meaning && v.meaning) target[k].meaning = v.meaning;
-                    if (!target[k].label && v.label) target[k].label = v.label;
-                }
-            });
-        };
-        fill(tangoData.kanji, seedView.kanji);
-        fill(tangoData.words, seedView.words);
-
-        tangoData[versionKey] = seedView.version;
-        backfillLibraryFromQuestions();
-        saveTangoData();
-
-        // Refresh hub counts if user is on the hub
-        if (document.getElementById('tango-hub')?.classList.contains('active')) {
-            refreshTangoHub();
-        }
-    } catch (e) {
-        console.warn(`Could not load external seed ${url}:`, e);
-    }
 }
 
 // Ensure every kanji/marked-word that appears in any question has a library entry.
