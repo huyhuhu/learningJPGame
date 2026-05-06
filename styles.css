@@ -771,6 +771,17 @@ h2 {
     margin: 0 auto;
 }
 
+.settings-danger {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.settings-hint {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
 .setting-item {
     display: flex;
     justify-content: space-between;

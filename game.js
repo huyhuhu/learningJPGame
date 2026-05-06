@@ -910,6 +910,19 @@ function resetProgress() {
     }
 }
 
+async function clearAppCache() {
+    if (!confirm('Clear browser cache and reload?\n\nYour study data (scores, notebook) will NOT be affected.')) return;
+    if ('caches' in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map(k => caches.delete(k)));
+    }
+    if ('serviceWorker' in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map(r => r.unregister()));
+    }
+    window.location.reload(true);
+}
+
 // ===== SETTINGS =====
 function toggleSound() {
     gameState.settings.sound = document.getElementById('sound-toggle').checked;

@@ -1,0 +1,143 @@
+#!/usr/bin/env node
+// Reads myNotebookData/<Label>/*.json and writes notebookData.js.
+// Run with:  node build-notebook.js
+//
+// Folder structure:
+//   myNotebookData/
+//     Week2/
+//       questions.json   <- array OR {questions, kanji, words} object
+//       vocabulary.json
+//     Week3/
+//       ...
+//
+// Each subfolder name becomes the label for all content in that folder.
+// Folder label always wins over any label field inside the JSON.
+
+const fs   = require('fs');
+const path = require('path');
+
+const dataDir = path.join(__dirname, 'myNotebookData');
+const outFile = path.join(__dirname, 'notebookData.js');
+
+// ── helpers ──────────────────────────────────────────────────────────────────
+
+function parseFileIntoResult(json, label, result, filename) {
+    let arr;
+    if (Array.isArray(json)) {
+        arr = json;
+    } else if (json && typeof json === 'object' && Array.isArray(json.questions)) {
+        arr = json.questions;
+        if (json.kanji && typeof json.kanji === 'object') {
+            Object.entries(json.kanji).forEach(([k, v]) => {
+                result.kanji[k] = {
+                    reading: (v && v.reading) || '',
+                    meaning: (v && v.meaning) || '',
+                    label
+                };
+            });
+        }
+        if (json.words && typeof json.words === 'object') {
+            Object.entries(json.words).forEach(([k, v]) => {
+                result.words[k] = {
+                    reading: (v && v.reading) || '',
+                    meaning: (v && v.meaning) || '',
+                    label
+                };
+            });
+        }
+    } else if (json && typeof json === 'object' && json.question) {
+        arr = [json];
+    } else {
+        console.warn(`  ⚠  ${filename}: unrecognized format (expected array or {questions:[...]})`);
+        return;
+    }
+
+    (arr || []).forEach((item, i) => {
+        const n = i + 1;
+        if (!item || !item.question || !item.choices || !item.answer) {
+            console.warn(`  ⚠  ${filename} item ${n}: missing question / choices / answer — skipped`);
+            return;
+        }
+        if (!Array.isArray(item.choices) || item.choices.length < 2) {
+            console.warn(`  ⚠  ${filename} item ${n}: choices must be an array of 2+ — skipped`);
+            return;
+        }
+        if (!item.choices.includes(item.answer)) {
+            console.warn(`  ⚠  ${filename} item ${n}: answer "${item.answer}" not found in choices — skipped`);
+            return;
+        }
+        result.questions.push({
+            id:          item.id   || null,
+            question:    String(item.question).trim(),
+            choices:     item.choices.map(c => String(c).trim()),
+            answer:      String(item.answer).trim(),
+            explanation: item.explanation ? String(item.explanation).trim() : '',
+            label
+        });
+    });
+}
+
+// ── main ─────────────────────────────────────────────────────────────────────
+
+const NOTEBOOK_DATA = {};
+
+if (!fs.existsSync(dataDir)) {
+    console.log('myNotebookData/ not found — writing empty notebookData.js');
+    fs.writeFileSync(outFile, '// Auto-generated — run build-notebook.js to update.\nconst NOTEBOOK_DATA = {};\n');
+    process.exit(0);
+}
+
+const subfolders = fs.readdirSync(dataDir).filter(name => {
+    try { return fs.statSync(path.join(dataDir, name)).isDirectory(); } catch { return false; }
+});
+
+if (!subfolders.length) {
+    console.log('No subfolders found in myNotebookData/ — writing empty notebookData.js');
+    fs.writeFileSync(outFile, '// Auto-generated — run build-notebook.js to update.\nconst NOTEBOOK_DATA = {};\n');
+    process.exit(0);
+}
+
+for (const label of subfolders) {
+    const labelDir = path.join(dataDir, label);
+    const jsonFiles = fs.readdirSync(labelDir).filter(f => f.endsWith('.json'));
+
+    if (!jsonFiles.length) {
+        console.log(`  [${label}] no JSON files — skipped`);
+        continue;
+    }
+
+    NOTEBOOK_DATA[label] = { questions: [], kanji: {}, words: {} };
+
+    for (const file of jsonFiles) {
+        const filePath = path.join(labelDir, file);
+        let json;
+        try {
+            json = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        } catch (e) {
+            console.warn(`  ⚠  ${label}/${file}: JSON parse error — ${e.message}`);
+            continue;
+        }
+        parseFileIntoResult(json, label, NOTEBOOK_DATA[label], `${label}/${file}`);
+    }
+
+    const q = NOTEBOOK_DATA[label].questions.length;
+    const k = Object.keys(NOTEBOOK_DATA[label].kanji).length;
+    const w = Object.keys(NOTEBOOK_DATA[label].words).length;
+    console.log(`  [${label}]  ${q} question(s)  ${k} kanji  ${w} word(s)`);
+}
+
+const totalLabels = Object.keys(NOTEBOOK_DATA).length;
+const totalQ      = Object.values(NOTEBOOK_DATA).reduce((s, d) => s + d.questions.length, 0);
+
+const banner = [
+    '// Auto-generated by build-notebook.js — do not edit manually.',
+    '// Source: myNotebookData/<Label>/*.json  (subfolder name = label)',
+    `// Labels: ${Object.keys(NOTEBOOK_DATA).join(', ') || '(none)'}`,
+    `// Total : ${totalQ} question(s) across ${totalLabels} label(s)`,
+    '//',
+    '// To update: edit files in myNotebookData/ then run:',
+    '//   node build-notebook.js',
+].join('\n');
+
+fs.writeFileSync(outFile, `${banner}\nconst NOTEBOOK_DATA = ${JSON.stringify(NOTEBOOK_DATA, null, 2)};\n`);
+console.log(`\nWrote notebookData.js  (${totalLabels} label(s), ${totalQ} question(s))`);

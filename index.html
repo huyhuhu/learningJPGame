@@ -272,6 +272,11 @@
                     </select>
                 </label>
             </div>
+
+            <div class="settings-group settings-danger">
+                <button class="reset-btn" onclick="clearAppCache()">Clear Cache</button>
+                <p class="settings-hint">Forces the browser to fetch the latest files. Your study data is not affected.</p>
+            </div>
         </div>
 
         <!-- Tango-cho Hub Screen -->
@@ -610,6 +615,7 @@ The "explanation" field is optional — it appears after the user answers.</pre>
     <script src="kanaData.js"></script>
     <script src="game.js"></script>
     <script src="tangoSeedData.js"></script>
+    <script src="notebookData.js"></script>
     <script src="tango.js"></script>
     <script>
         if ("serviceWorker" in navigator) {
