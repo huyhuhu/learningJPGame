@@ -911,14 +911,17 @@ function resetProgress() {
 }
 
 async function clearAppCache() {
-    if (!confirm('Clear browser cache and reload?\n\nYour study data (scores, notebook) will NOT be affected.')) return;
+    if (!confirm('Clear this app\'s cache and reload?\n\nYour study data (scores, notebook) will NOT be affected.')) return;
+    // Only delete caches that belong to this app (prefixed "kana-master")
     if ('caches' in window) {
         const keys = await caches.keys();
-        await Promise.all(keys.map(k => caches.delete(k)));
+        await Promise.all(keys.filter(k => k.startsWith('kana-master')).map(k => caches.delete(k)));
     }
+    // Only unregister the service worker whose scope covers this page
     if ('serviceWorker' in navigator) {
         const regs = await navigator.serviceWorker.getRegistrations();
-        await Promise.all(regs.map(r => r.unregister()));
+        const here = window.location.href;
+        await Promise.all(regs.filter(r => here.startsWith(r.scope)).map(r => r.unregister()));
     }
     window.location.reload(true);
 }
