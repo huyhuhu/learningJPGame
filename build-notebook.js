@@ -21,6 +21,17 @@ const outFile = path.join(__dirname, 'notebookData.js');
 
 // ── helpers ──────────────────────────────────────────────────────────────────
 
+// Global dedup state — reset per build-notebook.js run
+const seenQuestions = new Set();  // question text already added
+const usedIds       = new Set();  // ids already assigned
+let   autoIdCounter = 1;
+
+function nextUniqueId() {
+    let id;
+    do { id = `auto_${autoIdCounter++}`; } while (usedIds.has(id));
+    return id;
+}
+
 function parseFileIntoResult(json, label, result, filename) {
     let arr;
     if (Array.isArray(json)) {
@@ -66,9 +77,24 @@ function parseFileIntoResult(json, label, result, filename) {
             console.warn(`  ⚠  ${filename} item ${n}: answer "${item.answer}" not found in choices — skipped`);
             return;
         }
+        const questionText = String(item.question).trim();
+        if (seenQuestions.has(questionText)) {
+            console.warn(`  ⚠  ${filename} item ${n}: duplicate question — skipped`);
+            return;
+        }
+        seenQuestions.add(questionText);
+
+        let itemId = item.id != null ? item.id : null;
+        if (itemId !== null && usedIds.has(itemId)) {
+            const newId = nextUniqueId();
+            console.warn(`  ⚠  ${filename} item ${n}: id "${itemId}" already used — reassigned to "${newId}"`);
+            itemId = newId;
+        }
+        if (itemId !== null) usedIds.add(itemId);
+
         result.questions.push({
-            id:          item.id   || null,
-            question:    String(item.question).trim(),
+            id:          itemId,
+            question:    questionText,
             choices:     item.choices.map(c => String(c).trim()),
             answer:      String(item.answer).trim(),
             explanation: item.explanation ? String(item.explanation).trim() : '',

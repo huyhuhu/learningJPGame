@@ -1,0 +1,1340 @@
+{
+  "questions": [
+    {
+      "id": "w2-001",
+      "question": "Choose the correct reading for the kanji |四時|.",
+      "choices": [
+        "しじ",
+        "よんじ",
+        "よじ",
+        "よっじ"
+      ],
+      "answer": "よじ",
+      "explanation": "According to the Week 2 syllabus, 4:00 is a specific exception and must be pronounced as よじ (yoji)."
+    },
+    {
+      "id": "w2-002",
+      "question": "Which particle is used to indicate a |means of transport|, such as in 'でんしゃ... いきます'?",
+      "choices": [
+        "に",
+        "へ",
+        "で",
+        "を"
+      ],
+      "answer": "で",
+      "explanation": "The particle で is used to denote the means or method of transportation."
+    },
+    {
+      "id": "w2-003",
+      "question": "Identify the correct negative past form of |べんきょうします|.",
+      "choices": [
+        "べんきょうしません",
+        "べんきょうしました",
+        "べんきょうしませでした",
+        "べんきょうしませんでした"
+      ],
+      "answer": "べんきょうしませんでした",
+      "explanation": "The negative past form of ます verbs is ませんでした."
+    },
+    {
+      "id": "w2-004",
+      "question": "What is the correct reading for |七時|?",
+      "choices": [
+        "ななじ",
+        "しちじ",
+        "ななじじ",
+        "しじ"
+      ],
+      "answer": "しちじ",
+      "explanation": "The syllabus notes that 7:00 is pronounced as しちじ (shichiji)."
+    },
+    {
+      "id": "w2-005",
+      "question": "Complete the sentence: 'わたしは |あるいて| がっこうへ いきます。' Which particle follows |あるいて|?",
+      "choices": [
+        "で",
+        "に",
+        "を",
+        "No particle needed"
+      ],
+      "answer": "No particle needed",
+      "explanation": "As noted in the lesson, the term 歩いて (walking) is an exception and does not use the particle で."
+    },
+    {
+      "id": "w2-006",
+      "question": "Which kanji represents |Wednesday|?",
+      "choices": [
+        "月曜日",
+        "火曜日",
+        "水曜日",
+        "木曜日"
+      ],
+      "answer": "水曜日",
+      "explanation": "水曜日 (Suiyoubi) means Wednesday."
+    },
+    {
+      "id": "w2-007",
+      "question": "What is the reading of the kanji |九時|?",
+      "choices": [
+        "きゅうじ",
+        "くじ",
+        "ここのじ",
+        "きゅうじじ"
+      ],
+      "answer": "くじ",
+      "explanation": "9:00 is a designated exception in time-telling and is read as くじ (kuji)."
+    },
+    {
+      "id": "w2-008",
+      "question": "Which particle indicates the |direction| or |destination| of movement?",
+      "choices": [
+        "を",
+        "に",
+        "へ",
+        "で"
+      ],
+      "answer": "へ",
+      "explanation": "The particle へ is used to indicate the direction or destination when using movement verbs like 行きます."
+    },
+    {
+      "id": "w2-009",
+      "question": "Translate: 'I wake up |at 7:00|.'",
+      "choices": [
+        "7じにおきます",
+        "7じでおきます",
+        "7じをおきます",
+        "7じへおきます"
+      ],
+      "answer": "7じにおきます",
+      "explanation": "The particle に is used to mark a specific point in time."
+    },
+    {
+      "id": "w2-010",
+      "question": "Choose the correct kanji for |Monday|.",
+      "choices": [
+        "日曜日",
+        "月曜日",
+        "金曜日",
+        "土曜日"
+      ],
+      "answer": "月曜日",
+      "explanation": "月曜日 (Getsuyoubi) represents Monday."
+    },
+    {
+      "id": "w2-011",
+      "question": "How do you say |10:30| in Japanese?",
+      "choices": [
+        "10じさんじゅっぷん",
+        "10じはん",
+        "10じはんぷん",
+        "Both A and B"
+      ],
+      "answer": "Both A and B",
+      "explanation": "Both ~じさんじゅっぷん and ~じはん (half past) are correct ways to express the half-hour."
+    },
+    {
+      "id": "w2-012",
+      "question": "Which verb means |to work|?",
+      "choices": [
+        "やすみます",
+        "はたらきます",
+        "おきます",
+        "ねます"
+      ],
+      "answer": "はたらきます",
+      "explanation": "はたらきます (hatarakimasu) translates to 'to work'."
+    },
+    {
+      "id": "w2-013",
+      "question": "What does |どこ| ask for?",
+      "choices": [
+        "Who",
+        "What",
+        "When",
+        "Where"
+      ],
+      "answer": "Where",
+      "explanation": "どこ (doko) is the interrogative for location."
+    },
+    {
+      "id": "w2-014",
+      "question": "Identify the kanji for |800 yen|.",
+      "choices": [
+        "八百円",
+        "八百日",
+        "八百人",
+        "八百山"
+      ],
+      "answer": "八百円",
+      "explanation": "円 (en) is the kanji for the Japanese currency, Yen."
+    },
+    {
+      "id": "w2-015",
+      "question": "Which particle means |'together with'| a person?",
+      "choices": [
+        "と",
+        "に",
+        "を",
+        "へ"
+      ],
+      "answer": "と",
+      "explanation": "The particle と is used to indicate the person with whom an action is performed."
+    },
+    {
+      "id": "w2-016",
+      "question": "What is the meaning of the verb |帰ります|?",
+      "choices": [
+        "To go",
+        "To come",
+        "To return home",
+        "To stay"
+      ],
+      "answer": "To return home",
+      "explanation": "帰ります (kaerimasu) specifically means to return back to one's home or base."
+    },
+    {
+      "id": "w2-017",
+      "question": "How is |6 minutes| pronounced?",
+      "choices": [
+        "ろくふん",
+        "ろっぷん",
+        "ろくぷん",
+        "ろっふん"
+      ],
+      "answer": "ろっぷん",
+      "explanation": "As per the rules for minutes, 6 minutes is pronounced as ろっぷん (roppun)."
+    },
+    {
+      "id": "w2-018",
+      "question": "Identify the kanji for |Saturday|.",
+      "choices": [
+        "木曜日",
+        "金曜日",
+        "土曜日",
+        "日曜日"
+      ],
+      "answer": "土曜日",
+      "explanation": "土曜日 (Doyoubi) represents Saturday."
+    },
+    {
+      "id": "w2-019",
+      "question": "Which phrase is used to ask |'How much is this?'|",
+      "choices": [
+        "これはなんですか",
+        "これはいくらですか",
+        "これはどこですか",
+        "これはだれですか"
+      ],
+      "answer": "これはいくらですか",
+      "explanation": "いくら (ikura) is used to inquire about the price of an object."
+    },
+    {
+      "id": "w2-020",
+      "question": "Which particle marks the |direct object| of an action?",
+      "choices": [
+        "は",
+        "を",
+        "に",
+        "で"
+      ],
+      "answer": "を",
+      "explanation": "The particle を follows the noun that is the direct object of the verb."
+    },
+    {
+      "id": "w2-021",
+      "question": "What is the reading of |三階|?",
+      "choices": [
+        "さんがい",
+        "さんかい",
+        "みっかい",
+        "ぞんがい"
+      ],
+      "answer": "さんがい",
+      "explanation": "The counter for the 3rd floor (3階) changes to 'gai' for phonetic reasons: さんがい."
+    },
+    {
+      "id": "w2-022",
+      "question": "Identify the meaning of |あそこ|.",
+      "choices": [
+        "Here",
+        "There",
+        "Over there",
+        "Where"
+      ],
+      "answer": "Over there",
+      "explanation": "あそこ (asoko) refers to a location far from both the speaker and listener."
+    },
+    {
+      "id": "w2-023",
+      "question": "Which kanji means |'person'|?",
+      "choices": [
+        "日",
+        "山",
+        "人",
+        "円"
+      ],
+      "answer": "人",
+      "explanation": "人 (hito/jin) is the kanji for person."
+    },
+    {
+      "id": "w2-024",
+      "question": "What is the correct translation for |'Every day'|?",
+      "choices": [
+        "まいしゅう",
+        "まいにち",
+        "まいねん",
+        "あした"
+      ],
+      "answer": "まいにち",
+      "explanation": "まいにち (mainichi) means every day."
+    },
+    {
+      "id": "w2-025",
+      "question": "Which verb means |'to finish'| or |'to end'|?",
+      "choices": [
+        "はじまります",
+        "おわります",
+        "べんきょうします",
+        "はたらきます"
+      ],
+      "answer": "おわります",
+      "explanation": "おわります (owarimasu) means to end or finish."
+    },
+    {
+      "id": "w2-026",
+      "question": "Translate: 'From 9:00 |to| 5:00.'",
+      "choices": [
+        "9じから 5じに",
+        "9じから 5じまで",
+        "9じに 5じまで",
+        "9じまで 5じから"
+      ],
+      "answer": "9じから 5じまで",
+      "explanation": "から (from) and まで (until) are used to indicate time spans."
+    },
+    {
+      "id": "w2-027",
+      "question": "Which kanji represents |Tuesday|?",
+      "choices": [
+        "月曜日",
+        "火曜日",
+        "水曜日",
+        "木曜日"
+      ],
+      "answer": "火曜日",
+      "explanation": "火曜日 (Kayoubi) is Tuesday."
+    },
+    {
+      "id": "w2-028",
+      "question": "What is the meaning of |じむしょ|?",
+      "choices": [
+        "Classroom",
+        "Office",
+        "Reception",
+        "Toilet"
+      ],
+      "answer": "Office",
+      "explanation": "じむしょ (jimusho) refers to an office."
+    },
+    {
+      "id": "w2-029",
+      "question": "How do you read |五分|?",
+      "choices": [
+        "ごぷん",
+        "ごふん",
+        "いっふん",
+        "いつふん"
+      ],
+      "answer": "ごふん",
+      "explanation": "According to the minute reading rules, 5 minutes is pronounced ごふん (gofun)."
+    },
+    {
+      "id": "w2-030",
+      "question": "What is the kanji for |mountain|?",
+      "choices": [
+        "人",
+        "円",
+        "山",
+        "土"
+      ],
+      "answer": "山",
+      "explanation": "山 (yama) is the kanji for mountain."
+    },
+    {
+      "id": "w2-031",
+      "question": "Identify the meaning of |うけつけ|.",
+      "choices": [
+        "Lobby",
+        "Reception desk",
+        "Room",
+        "Staircase"
+      ],
+      "answer": "Reception desk",
+      "explanation": "うけつけ (uketsuke) means the reception or information counter."
+    },
+    {
+      "id": "w2-032",
+      "question": "Which particle is used for |'Today'| in the sentence: 'Today I work'?",
+      "choices": [
+        "に",
+        "を",
+        "No particle needed",
+        "で"
+      ],
+      "answer": "No particle needed",
+      "explanation": "Relative time words like 今日 (kyou) do not take the particle に."
+    },
+    {
+      "id": "w2-033",
+      "question": "What is the reading of the kanji |六|?",
+      "choices": [
+        "ろく",
+        "ご",
+        "しち",
+        "はち"
+      ],
+      "answer": "ろく",
+      "explanation": "六 is the kanji for the number 6."
+    },
+    {
+      "id": "w2-034",
+      "question": "Which verb means |'to eat'|?",
+      "choices": [
+        "のみます",
+        "たべます",
+        "よみます",
+        "みます"
+      ],
+      "answer": "たべます",
+      "explanation": "たべます (tabemasu) is the verb for eating."
+    },
+    {
+      "id": "w2-035",
+      "question": "Translate: |'What day is it today?'|",
+      "choices": [
+        "きょうはなんじですか",
+        "きょうはなんようびですか",
+        "きょうはいくらですか",
+        "きょうはどこですか"
+      ],
+      "answer": "きょうはなんようびですか",
+      "explanation": "何曜日 (nanyoubi) is the interrogative used for days of the week."
+    },
+    {
+      "id": "w2-036",
+      "question": "Identify the past affirmative form of |ねます|.",
+      "choices": [
+        "ねます",
+        "ねません",
+        "ねました",
+        "ねませんでした"
+      ],
+      "answer": "ねました",
+      "explanation": "The past affirmative form of ます verbs is ました."
+    },
+    {
+      "id": "w2-037",
+      "question": "Which kanji represents |Thursday|?",
+      "choices": [
+        "火曜日",
+        "水曜日",
+        "木曜日",
+        "金曜日"
+      ],
+      "answer": "木曜日",
+      "explanation": "木曜日 (Mokuyoubi) is Thursday."
+    },
+    {
+      "id": "w2-038",
+      "question": "What is the meaning of |でんしゃ|?",
+      "choices": [
+        "Bus",
+        "Taxi",
+        "Train",
+        "Bicycle"
+      ],
+      "answer": "Train",
+      "explanation": "でんしゃ (densha) means electric train."
+    },
+    {
+      "id": "w2-039",
+      "question": "How do you read |八時|?",
+      "choices": [
+        "はちじ",
+        "しちじ",
+        "ろくじ",
+        "くじ"
+      ],
+      "answer": "はちじ",
+      "explanation": "八時 (hachiji) means 8:00."
+    },
+    {
+      "id": "w2-040",
+      "question": "Which verb means |'to read'|?",
+      "choices": [
+        "ききます",
+        "みます",
+        "よみます",
+        "かきます"
+      ],
+      "answer": "よみます",
+      "explanation": "よみます (yomimasu) means to read."
+    },
+    {
+      "id": "w2-041",
+      "question": "Which particle relates the |source and destination| in: 'うち... がっこうまで'?",
+      "choices": [
+        "に",
+        "から",
+        "で",
+        "を"
+      ],
+      "answer": "から",
+      "explanation": "から marks the starting point (from)."
+    },
+    {
+      "id": "w2-042",
+      "question": "What is the reading of the kanji |十|?",
+      "choices": [
+        "いち",
+        "じゅう",
+        "く",
+        "はち"
+      ],
+      "answer": "じゅう",
+      "explanation": "十 is the kanji for the number 10."
+    },
+    {
+      "id": "w2-043",
+      "question": "Which kanji represents |Friday|?",
+      "choices": [
+        "火曜日",
+        "水曜日",
+        "金曜日",
+        "土曜日"
+      ],
+      "answer": "金曜日",
+      "explanation": "金曜日 (Kinyoubi) means Friday."
+    },
+    {
+      "id": "w2-044",
+      "question": "What does |いつ| mean?",
+      "choices": [
+        "Where",
+        "Who",
+        "When",
+        "What"
+      ],
+      "answer": "When",
+      "explanation": "いつ (itsu) is the interrogative for time."
+    },
+    {
+      "id": "w2-045",
+      "question": "Identify the meaning of |かばん|.",
+      "choices": [
+        "Shoes",
+        "Watch",
+        "Bag",
+        "Umbrella"
+      ],
+      "answer": "Bag",
+      "explanation": "かばん (kaban) means bag."
+    },
+    {
+      "id": "w2-046",
+      "question": "Which verb means |'to sleep'| or |'to go to bed'|?",
+      "choices": [
+        "おきます",
+        "ねます",
+        "たべます",
+        "のみます"
+      ],
+      "answer": "ねます",
+      "explanation": "ねます (nemasu) means to sleep."
+    },
+    {
+      "id": "w2-047",
+      "question": "How do you read |三分|?",
+      "choices": [
+        "さんふん",
+        "さんぷん",
+        "さっぷん",
+        "みっぷん"
+      ],
+      "answer": "さんぷん",
+      "explanation": "The reading rule for 3 minutes is さんぷん (sanpun)."
+    },
+    {
+      "id": "w2-048",
+      "question": "Which kanji represents |Sunday|?",
+      "choices": [
+        "月曜日",
+        "火曜日",
+        "土曜日",
+        "日曜日"
+      ],
+      "answer": "日曜日",
+      "explanation": "日曜日 (Nichiyoubi) is Sunday."
+    },
+    {
+      "id": "w2-049",
+      "question": "Identify the meaning of |ひこうき|.",
+      "choices": [
+        "Ship",
+        "Train",
+        "Airplane",
+        "Bus"
+      ],
+      "answer": "Airplane",
+      "explanation": "ひこうき (hikouki) means airplane."
+    },
+    {
+      "id": "w2-050",
+      "question": "Which particle is used for |'by'| a specific method in: '日本語... はなします'?",
+      "choices": [
+        "に",
+        "を",
+        "で",
+        "へ"
+      ],
+      "answer": "で",
+      "explanation": "で is used to indicate the means or tool used for an action."
+    },
+    {
+      "id": "w2-051",
+      "question": "What is the reading of |二|?",
+      "choices": [
+        "いち",
+        "に",
+        "さん",
+        "よん"
+      ],
+      "answer": "に",
+      "explanation": "二 is the kanji for the number 2."
+    },
+    {
+      "id": "w2-052",
+      "question": "Which verb means |'to listen'|?",
+      "choices": [
+        "みます",
+        "ききます",
+        "よみます",
+        "たべます"
+      ],
+      "answer": "ききます",
+      "explanation": "ききます (kikimasu) means to listen."
+    },
+    {
+      "id": "w2-053",
+      "question": "Identify the meaning of |えき|.",
+      "choices": [
+        "Airport",
+        "House",
+        "Station",
+        "Office"
+      ],
+      "answer": "Station",
+      "explanation": "えき (eki) means train station."
+    },
+    {
+      "id": "w2-054",
+      "question": "Translate: |'What time is it now?'|",
+      "choices": [
+        "いまなんじですか",
+        "いまなんようびですか",
+        "いまどこですか",
+        "いまいくらですか"
+      ],
+      "answer": "いまなんじですか",
+      "explanation": "何時 (nanji) is the interrogative used for time."
+    },
+    {
+      "id": "w2-055",
+      "question": "Which particle is used to mean |'and'| between nouns?",
+      "choices": [
+        "は",
+        "と",
+        "に",
+        "で"
+      ],
+      "answer": "と",
+      "explanation": "と is used to connect nouns together."
+    },
+    {
+      "id": "w2-056",
+      "question": "What is the reading of |五|?",
+      "choices": [
+        "よん",
+        "ご",
+        "ろく",
+        "しち"
+      ],
+      "answer": "ご",
+      "explanation": "五 is the kanji for the number 5."
+    },
+    {
+      "id": "w2-057",
+      "question": "Identify the meaning of |じてんしゃ|.",
+      "choices": [
+        "Car",
+        "Bicycle",
+        "Ship",
+        "Bus"
+      ],
+      "answer": "Bicycle",
+      "explanation": "じてんしゃ (jitensha) means bicycle."
+    },
+    {
+      "id": "w2-058",
+      "question": "Which verb means |'to watch'| or |'to see'|?",
+      "choices": [
+        "ききます",
+        "みます",
+        "よみます",
+        "たべます"
+      ],
+      "answer": "みます",
+      "explanation": "みます (mimasu) means to see, watch, or look."
+    },
+    {
+      "id": "w2-059",
+      "question": "Translate: 'I study |at the library|.' Which particle marks the location of the action?",
+      "choices": [
+        "に",
+        "へ",
+        "で",
+        "を"
+      ],
+      "answer": "で",
+      "explanation": "The particle で is used to mark the location where an action takes place."
+    },
+    {
+      "id": "w2-060",
+      "question": "What is the reading of |三|?",
+      "choices": [
+        "いち",
+        "に",
+        "さん",
+        "よん"
+      ],
+      "answer": "さん",
+      "explanation": "三 is the kanji for the number 3."
+    },
+    {
+      "id": "w2-061",
+      "question": "Identify the meaning of |くるま|.",
+      "choices": [
+        "Train",
+        "Car",
+        "Bicycle",
+        "Airplane"
+      ],
+      "answer": "Car",
+      "explanation": "くるま (kuruma) means car."
+    },
+    {
+      "id": "w2-062",
+      "question": "Which verb means |'to drink'|?",
+      "choices": [
+        "たべます",
+        "のみます",
+        "よみます",
+        "みます"
+      ],
+      "answer": "のみます",
+      "explanation": "のみます (nomimasu) means to drink."
+    },
+    {
+      "id": "w2-063",
+      "question": "Translate: |'I go to Japan.'|",
+      "choices": [
+        "日本へいきます",
+        "日本をいきます",
+        "日本でいきます",
+        "日本といきます"
+      ],
+      "answer": "日本へいきます",
+      "explanation": "へ marks the destination for movement verbs like いきます."
+    },
+    {
+      "id": "w2-064",
+      "question": "What is the reading of |八|?",
+      "choices": [
+        "ろく",
+        "しち",
+        "はち",
+        "きゅう"
+      ],
+      "answer": "はち",
+      "explanation": "八 is the kanji for the number 8."
+    },
+    {
+      "id": "w2-065",
+      "question": "Identify the meaning of |くつ|.",
+      "choices": [
+        "Tie",
+        "Bag",
+        "Shoes",
+        "Umbrella"
+      ],
+      "answer": "Shoes",
+      "explanation": "くつ (kutsu) means shoes."
+    },
+    {
+      "id": "w2-066",
+      "question": "Which particle connects a |person| to a destination in: 'ともだち... うちへ いきます'?",
+      "choices": [
+        "に",
+        "と",
+        "を",
+        "で"
+      ],
+      "answer": "と",
+      "explanation": "と indicates the companion with whom the action is performed."
+    },
+    {
+      "id": "w2-067",
+      "question": "What is the reading of |一|?",
+      "choices": [
+        "いち",
+        "に",
+        "さん",
+        "し"
+      ],
+      "answer": "いち",
+      "explanation": "一 is the kanji for the number 1."
+    },
+    {
+      "id": "w2-068",
+      "question": "Identify the meaning of |しんかんせん|.",
+      "choices": [
+        "Train",
+        "Subway",
+        "Bullet train",
+        "Taxi"
+      ],
+      "answer": "Bullet train",
+      "explanation": "しんかんせん (shinkansen) is the Japanese high-speed bullet train."
+    },
+    {
+      "id": "w2-069",
+      "question": "Which verb means |'to start'| or |'to begin'|?",
+      "choices": [
+        "はじまります",
+        "おわります",
+        "べんきょうします",
+        "やすみます"
+      ],
+      "answer": "はじまります",
+      "explanation": "はじまります (hajimarimasu) means to begin."
+    },
+    {
+      "id": "w2-070",
+      "question": "Translate: |'What is your birthday?'|",
+      "choices": [
+        "たんじょうびはいつですか",
+        "たんじょうびはどこですか",
+        "たんじょうびはなんじですか",
+        "たんじょうびはいくらですか"
+      ],
+      "answer": "たんじょうびはいつですか",
+      "explanation": "いつ (itsu) is used to ask when something occurs, such as a birthday."
+    },
+    {
+      "id": "w2-071",
+      "question": "What is the reading of |七|?",
+      "choices": [
+        "ろく",
+        "しち",
+        "はち",
+        "きゅう"
+      ],
+      "answer": "しち",
+      "explanation": "七 is the kanji for the number 7."
+    },
+    {
+      "id": "w2-072",
+      "question": "Identify the meaning of |ねくたい|.",
+      "choices": [
+        "Shirt",
+        "Tie",
+        "Bag",
+        "Shoes"
+      ],
+      "answer": "Tie",
+      "explanation": "ねくたい (nekutai) means necktie."
+    },
+    {
+      "id": "w2-073",
+      "question": "Which particle marks the |topic| of the sentence?",
+      "choices": [
+        "は",
+        "を",
+        "に",
+        "で"
+      ],
+      "answer": "は",
+      "explanation": "は is the topic marker particle."
+    },
+    {
+      "id": "w2-074",
+      "question": "What is the reading of |四|?",
+      "choices": [
+        "さん",
+        "し",
+        "ご",
+        "ろく"
+      ],
+      "answer": "し",
+      "explanation": "四 is the kanji for the number 4."
+    },
+    {
+      "id": "w2-075",
+      "question": "Identify the meaning of |ばんごう|.",
+      "choices": [
+        "Name",
+        "Address",
+        "Number",
+        "Time"
+      ],
+      "answer": "Number",
+      "explanation": "ばんごう (bangou) means number (like a phone number)."
+    },
+    {
+      "id": "w2-076",
+      "question": "Which verb means |'to wake up'|?",
+      "choices": [
+        "おきます",
+        "ねます",
+        "たべます",
+        "のみます"
+      ],
+      "answer": "おきます",
+      "explanation": "おきます (okimasu) means to wake up."
+    },
+    {
+      "id": "w2-077",
+      "question": "What is the reading of |九|?",
+      "choices": [
+        "しち",
+        "はち",
+        "きゅう",
+        "じゅう"
+      ],
+      "answer": "きゅう",
+      "explanation": "九 is the kanji for the number 9."
+    },
+    {
+      "id": "w2-078",
+      "question": "Identify the meaning of |かいだん|.",
+      "choices": [
+        "Elevator",
+        "Staircase",
+        "Escalator",
+        "Room"
+      ],
+      "answer": "Staircase",
+      "explanation": "かいだん (kaidan) means stairs or staircase."
+    },
+    {
+      "id": "w2-079",
+      "question": "Which particle is used to mark |point of origin| in: 'ベトナム... きました'?",
+      "choices": [
+        "に",
+        "から",
+        "で",
+        "を"
+      ],
+      "answer": "から",
+      "explanation": "から indicates origin or starting point."
+    },
+    {
+      "id": "w2-080",
+      "question": "What is the reading of |十|?",
+      "choices": [
+        "じゅう",
+        "きゅう",
+        "はち",
+        "しち"
+      ],
+      "answer": "じゅう",
+      "explanation": "十 is the kanji for the number 10."
+    },
+    {
+      "id": "w2-081",
+      "question": "Identify the meaning of |でんわ|.",
+      "choices": [
+        "Computer",
+        "Television",
+        "Telephone",
+        "Radio"
+      ],
+      "answer": "Telephone",
+      "explanation": "でんわ (denwa) means telephone."
+    },
+    {
+      "id": "w2-082",
+      "question": "Which verb means |'to come'|?",
+      "choices": [
+        "いきます",
+        "きます",
+        "かえります",
+        "おきます"
+      ],
+      "answer": "きます",
+      "explanation": "きます (kimasu) means to come."
+    },
+    {
+      "id": "w2-083",
+      "question": "What is the reading of |日月| in |日曜日| and |月曜日|?",
+      "choices": [
+        "にち・げつ",
+        "か・すい",
+        "もく・きん",
+        "ど・にち"
+      ],
+      "answer": "にち・げつ",
+      "explanation": "日 is read as にち in 日曜日, and 月 is read as げつ in 月曜日."
+    },
+    {
+      "id": "w2-084",
+      "question": "Identify the meaning of |かさ|.",
+      "choices": [
+        "Shoes",
+        "Bag",
+        "Umbrella",
+        "Tie"
+      ],
+      "answer": "Umbrella",
+      "explanation": "かさ (kasa) means umbrella."
+    },
+    {
+      "id": "w2-085",
+      "question": "Which particle indicates the |end point| of time or space?",
+      "choices": [
+        "から",
+        "まで",
+        "に",
+        "を"
+      ],
+      "answer": "まで",
+      "explanation": "まで indicates the ending point (until)."
+    },
+    {
+      "id": "w2-086",
+      "question": "What is the reading of |火水| in |火曜日| and |水曜日|?",
+      "choices": [
+        "にち・げつ",
+        "か・すい",
+        "もく・きん",
+        "ど・にち"
+      ],
+      "answer": "か・すい",
+      "explanation": "火 is read as か, and 水 is read as すい in the context of days of the week."
+    },
+    {
+      "id": "w2-087",
+      "question": "Identify the meaning of |かいしゃ|.",
+      "choices": [
+        "School",
+        "Company",
+        "Bank",
+        "Hospital"
+      ],
+      "answer": "Company",
+      "explanation": "かいしゃ (kaisha) means company or office."
+    },
+    {
+      "id": "w2-088",
+      "question": "Which verb means |'to study'|?",
+      "choices": [
+        "はたらきます",
+        "べんきょうします",
+        "やすみます",
+        "ねます"
+      ],
+      "answer": "べんきょうします",
+      "explanation": "べんきょうします (benkyoushimasu) means to study."
+    },
+    {
+      "id": "w2-089",
+      "question": "What is the reading of |木金| in |木曜日| and |金曜日|?",
+      "choices": [
+        "か・すい",
+        "もく・きん",
+        "ど・にち",
+        "にち・げつ"
+      ],
+      "answer": "もく・きん",
+      "explanation": "木 is read as もく, and 金 is read as きん."
+    },
+    {
+      "id": "w2-090",
+      "question": "Identify the meaning of |ぎんこう|.",
+      "choices": [
+        "School",
+        "Bank",
+        "Library",
+        "Post office"
+      ],
+      "answer": "Bank",
+      "explanation": "ぎんこう (ginkou) means bank."
+    },
+    {
+      "id": "w2-091",
+      "question": "Which particle is used to mark the |destination| for |帰ります|?",
+      "choices": [
+        "に/へ",
+        "を",
+        "で",
+        "と"
+      ],
+      "answer": "に/へ",
+      "explanation": "Either に or へ can be used to indicate the destination of movement."
+    },
+    {
+      "id": "w2-092",
+      "question": "What is the reading of |土| in |土曜日|?",
+      "choices": [
+        "か",
+        "すい",
+        "ど",
+        "にち"
+      ],
+      "answer": "ど",
+      "explanation": "土 is read as ど in the context of Saturday."
+    },
+    {
+      "id": "w2-093",
+      "question": "Identify the meaning of |としょかん|.",
+      "choices": [
+        "Bank",
+        "Library",
+        "School",
+        "Store"
+      ],
+      "answer": "Library",
+      "explanation": "としょかん (toshokan) means library."
+    },
+    {
+      "id": "w2-094",
+      "question": "Which verb means |'to take a holiday'| or |'to rest'|?",
+      "choices": [
+        "はたらきます",
+        "やすみます",
+        "ねます",
+        "おきます"
+      ],
+      "answer": "やすみます",
+      "explanation": "やすみます (yasumimasu) means to rest or take a holiday."
+    },
+    {
+      "id": "w2-095",
+      "question": "What is the reading of |人| in |日本人|?",
+      "choices": [
+        "ひと",
+        "じん",
+        "にん",
+        "ざん"
+      ],
+      "answer": "じん",
+      "explanation": "When used for nationality, 人 is read as じん."
+    },
+    {
+      "id": "w2-096",
+      "question": "Identify the meaning of |ゆうびんきょく|.",
+      "choices": [
+        "Post office",
+        "Bank",
+        "Police station",
+        "Hospital"
+      ],
+      "answer": "Post office",
+      "explanation": "ゆうびんきょく (yuubinkyoku) means post office."
+    },
+    {
+      "id": "w2-097",
+      "question": "Which particle is used to indicate |time| when it's not a specific number (e.g. 'tomorrow')?",
+      "choices": [
+        "に",
+        "を",
+        "No particle needed",
+        "で"
+      ],
+      "answer": "No particle needed",
+      "explanation": "Non-specific time words like あした (tomorrow) do not require particle に."
+    },
+    {
+      "id": "w2-098",
+      "question": "What is the reading of |円|?",
+      "choices": [
+        "えん",
+        "まる",
+        "さん",
+        "じん"
+      ],
+      "answer": "えん",
+      "explanation": "円 is read as えん (en) for currency."
+    },
+    {
+      "id": "w2-099",
+      "question": "Identify the meaning of |デパート|.",
+      "choices": [
+        "Supermarket",
+        "Convenience store",
+        "Department store",
+        "Market"
+      ],
+      "answer": "Department store",
+      "explanation": "デパート (depa-to) means department store."
+    },
+    {
+      "id": "w2-100",
+      "question": "Which verb means |'to go'|?",
+      "choices": [
+        "いきます",
+        "きます",
+        "かえります",
+        "ねます"
+      ],
+      "answer": "いきます",
+      "explanation": "いきます (ikimasu) means to go."
+    }
+  ],
+  "kanji": {
+    "一": {
+      "reading": "いち",
+      "meaning": "One"
+    },
+    "二": {
+      "reading": "に",
+      "meaning": "Two"
+    },
+    "三": {
+      "reading": "さん",
+      "meaning": "Three"
+    },
+    "四": {
+      "reading": "し/よん",
+      "meaning": "Four"
+    },
+    "五": {
+      "reading": "ご",
+      "meaning": "Five"
+    },
+    "六": {
+      "reading": "ろく",
+      "meaning": "Six"
+    },
+    "七": {
+      "reading": "しち/なな",
+      "meaning": "Seven"
+    },
+    "八": {
+      "reading": "はち",
+      "meaning": "Eight"
+    },
+    "九": {
+      "reading": "く/きゅう",
+      "meaning": "Nine"
+    },
+    "十": {
+      "reading": "じゅう",
+      "meaning": "Ten"
+    },
+    "日": {
+      "reading": "にち/ひ",
+      "meaning": "Day/Sun"
+    },
+    "月": {
+      "reading": "げつ/つき",
+      "meaning": "Month/Moon"
+    },
+    "火": {
+      "reading": "か/ひ",
+      "meaning": "Fire"
+    },
+    "水": {
+      "reading": "すい/みず",
+      "meaning": "Water"
+    },
+    "木": {
+      "reading": "もく/き",
+      "meaning": "Tree/Wood"
+    },
+    "金": {
+      "reading": "きん/かね",
+      "meaning": "Gold/Money"
+    },
+    "土": {
+      "reading": "ど/つち",
+      "meaning": "Earth/Soil"
+    },
+    "人": {
+      "reading": "じん/ひと",
+      "meaning": "Person"
+    },
+    "円": {
+      "reading": "えん",
+      "meaning": "Yen/Circle"
+    },
+    "山": {
+      "reading": "さん/やま",
+      "meaning": "Mountain"
+    }
+  },
+  "words": {
+    "じむしょ": {
+      "reading": "じむしょ",
+      "meaning": "Office"
+    },
+    "うけつけ": {
+      "reading": "うけつけ",
+      "meaning": "Reception desk"
+    },
+    "でんしゃ": {
+      "reading": "でんしゃ",
+      "meaning": "Train"
+    },
+    "じてんしゃ": {
+      "reading": "じてんしゃ",
+      "meaning": "Bicycle"
+    },
+    "はたらきます": {
+      "reading": "はたらきます",
+      "meaning": "To work"
+    },
+    "べんきょうします": {
+      "reading": "べんきょうします",
+      "meaning": "To study"
+    },
+    "おきます": {
+      "reading": "おきます",
+      "meaning": "To wake up"
+    },
+    "ねます": {
+      "reading": "ねます",
+      "meaning": "To sleep"
+    },
+    "いきます": {
+      "reading": "いきます",
+      "meaning": "To go"
+    },
+    "きます": {
+      "reading": "きます",
+      "meaning": "To come"
+    },
+    "かえります": {
+      "reading": "かえります",
+      "meaning": "To return home"
+    },
+    "たべます": {
+      "reading": "たべます",
+      "meaning": "To eat"
+    },
+    "のみます": {
+      "reading": "のみます",
+      "meaning": "To drink"
+    }
+  }
+}
