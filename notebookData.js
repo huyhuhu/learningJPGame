@@ -4005,15 +4005,15 @@ const NOTEBOOK_DATA = {
       },
       {
         "id": "w2h-031",
-        "question": "Choose correct: スプーン(___)スープを食べますか?",
+        "question": "Choose correct: スプーン(A)スープを(B)か?",
         "choices": [
-          "で / 飲み",
-          "で / 食べ",
-          "に / 食べ",
-          "と / 飲み"
+          "A=で / B=飲みます",
+          "A=で / B=食べます",
+          "A=に / B=食べます",
+          "A=と / B=飲みます"
         ],
-        "answer": "で / 飲み",
-        "explanation": "⚠ TWO traps: (1) スプーン is a tool → で, NOT に. (2) In Japanese, soup is DRUNK not eaten: スープを飲みます. Whole correct sentence: スプーンでスープを飲みます.",
+        "answer": "A=で / B=飲みます",
+        "explanation": "⚠ Two traps: (1) スプーン is a tool → で, NOT に. (2) Soup is DRUNK in Japanese: スープを飲みます, not 食べます. Full sentence: スプーンでスープを飲みますか.",
         "label": "Week_2_A"
       },
       {
