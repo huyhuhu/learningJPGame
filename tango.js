@@ -794,11 +794,11 @@ function renderTangoFilterOptions() {
     if (mode === 'label') {
         const labels = collectLabels();
         if (labels.length === 0) {
-            list.innerHTML = `<p class="hint-text">No labels yet. Set labels in My Kanji & Words.</p>`;
+            list.innerHTML = `<p class="hint-text">No labels yet. Questions get labels from their source data (e.g. notebook folders).</p>`;
             return;
         }
         list.innerHTML = `
-            <p class="hint-text">Select label(s) to revise. Pool = questions containing kanji/words with chosen label(s):</p>
+            <p class="hint-text">Select label(s) to revise. Pool = questions with the chosen label(s):</p>
             <div class="tango-filter-chips">
                 ${labels.map(l => `<label class="tango-chip"><input type="checkbox" value="${escapeHtml(l)}" data-filter="label"> ${escapeHtml(l)}</label>`).join('')}
             </div>
@@ -827,8 +827,7 @@ function renderTangoFilterOptions() {
 
 function collectLabels() {
     const set = new Set();
-    Object.values(tangoData.kanji).forEach(v => { if (v.label) set.add(v.label); });
-    Object.values(tangoData.words).forEach(v => { if (v.label) set.add(v.label); });
+    tangoData.questions.forEach(q => { if (q.label) set.add(q.label); });
     return [...set].sort();
 }
 
@@ -870,18 +869,7 @@ function buildTangoQuizPool(mode, selected) {
     if (mode === 'all') return pool;
 
     if (mode === 'label') {
-        const tagged = new Set();
-        Object.entries(tangoData.kanji).forEach(([k, v]) => { if (selected.includes(v.label)) tagged.add(k); });
-        Object.entries(tangoData.words).forEach(([k, v]) => { if (selected.includes(v.label)) tagged.add(k); });
-        if (tagged.size === 0) {
-            alert('No kanji or words have the selected label(s).');
-            return null;
-        }
-        return pool.filter(q => {
-            const text = q.question + ' ' + q.choices.join(' ');
-            for (const t of tagged) if (text.includes(t)) return true;
-            return false;
-        });
+        return pool.filter(q => selected.includes(q.label));
     }
 
     return pool.filter(q => {

@@ -1,0 +1,557 @@
+{
+    "questions": [],
+    "kanji": {
+        "百": {
+            "reading": "ひゃく, もも",
+            "meaning": "hundred",
+            "label": "number"
+        },
+        "階": {
+            "reading": "かい",
+            "meaning": "floor, story (counter for floors of a building)",
+            "label": "counter"
+        },
+        "中": {
+            "reading": "ちゅう, なか",
+            "meaning": "middle, inside, during",
+            "label": "concept"
+        },
+        "兄": {
+            "reading": "けい, あに",
+            "meaning": "older brother",
+            "label": "people"
+        },
+        "弟": {
+            "reading": "てい, だい, おとうと",
+            "meaning": "younger brother",
+            "label": "people"
+        },
+        "座": {
+            "reading": "ざ, すわ(る)",
+            "meaning": "sit, seat",
+            "label": "verb"
+        },
+        "年": {
+            "reading": "ねん, とし",
+            "meaning": "year",
+            "label": "time"
+        },
+        "図": {
+            "reading": "ず, と",
+            "meaning": "diagram, map, drawing",
+            "label": "concept"
+        },
+        "書": {
+            "reading": "しょ, か(く)",
+            "meaning": "write, document, book",
+            "label": "verb"
+        },
+        "館": {
+            "reading": "かん",
+            "meaning": "building, hall, mansion (suffix for public buildings)",
+            "label": "place"
+        },
+        "公": {
+            "reading": "こう, おおやけ",
+            "meaning": "public, official",
+            "label": "concept"
+        },
+        "園": {
+            "reading": "えん, その",
+            "meaning": "garden, park (suffix for parks/gardens)",
+            "label": "place"
+        },
+        "子": {
+            "reading": "し, す, こ",
+            "meaning": "child",
+            "label": "people"
+        },
+        "供": {
+            "reading": "きょう, く, とも, そな(える)",
+            "meaning": "companion; offer; (in 子供) child",
+            "label": "people"
+        },
+        "友": {
+            "reading": "ゆう, とも",
+            "meaning": "friend",
+            "label": "people"
+        },
+        "達": {
+            "reading": "たつ, -たち",
+            "meaning": "reach, attain; plural marker for people (友達 = friend(s))",
+            "label": "concept"
+        },
+        "母": {
+            "reading": "ぼ, はは, おかあ(さん)",
+            "meaning": "mother",
+            "label": "people"
+        },
+        "話": {
+            "reading": "わ, はな(す), はなし",
+            "meaning": "talk, speak; story, conversation",
+            "label": "verb"
+        },
+        "鉛": {
+            "reading": "えん, なまり",
+            "meaning": "lead (metal); used in 鉛筆 = pencil",
+            "label": "object"
+        },
+        "筆": {
+            "reading": "ひつ, ふで",
+            "meaning": "writing brush, pen",
+            "label": "object"
+        },
+        "名": {
+            "reading": "めい, みょう, な",
+            "meaning": "name; reputation",
+            "label": "concept"
+        },
+        "歩": {
+            "reading": "ほ, ぶ, ある(く), あゆ(む)",
+            "meaning": "walk, step",
+            "label": "verb"
+        },
+        "週": {
+            "reading": "しゅう",
+            "meaning": "week",
+            "label": "time"
+        },
+        "京": {
+            "reading": "きょう, けい",
+            "meaning": "capital; (in 東京/京都) Tokyo/Kyoto",
+            "label": "place"
+        },
+        "都": {
+            "reading": "と, つ, みやこ",
+            "meaning": "metropolis, capital city; (in 京都) Kyoto",
+            "label": "place"
+        },
+        "朝": {
+            "reading": "ちょう, あさ",
+            "meaning": "morning",
+            "label": "time"
+        },
+        "休": {
+            "reading": "きゅう, やす(む)",
+            "meaning": "rest, take a day off; holiday",
+            "label": "verb"
+        },
+        "薬": {
+            "reading": "やく, くすり",
+            "meaning": "medicine, drug",
+            "label": "object"
+        },
+        "吸": {
+            "reading": "きゅう, す(う)",
+            "meaning": "inhale, suck; smoke (cigarettes)",
+            "label": "verb"
+        },
+        "取": {
+            "reading": "しゅ, と(る)",
+            "meaning": "take, pick up, grasp",
+            "label": "verb"
+        },
+        "私": {
+            "reading": "し, わたし, わたくし",
+            "meaning": "I, me; private",
+            "label": "people"
+        },
+        "肉": {
+            "reading": "にく",
+            "meaning": "meat, flesh",
+            "label": "object"
+        },
+        "全": {
+            "reading": "ぜん, すべ(て), まった(く)",
+            "meaning": "all, whole, entirely",
+            "label": "concept"
+        },
+        "然": {
+            "reading": "ぜん, ねん",
+            "meaning": "state, condition, manner; (in 全然) at all",
+            "label": "concept"
+        },
+        "勉": {
+            "reading": "べん, つと(める)",
+            "meaning": "endeavor, exert oneself; (in 勉強) study",
+            "label": "concept"
+        },
+        "強": {
+            "reading": "きょう, ごう, つよ(い), し(いる)",
+            "meaning": "strong; force; (in 勉強) study",
+            "label": "concept"
+        },
+        "家": {
+            "reading": "か, け, いえ, うち",
+            "meaning": "house, home, family",
+            "label": "place"
+        },
+        "晩": {
+            "reading": "ばん",
+            "meaning": "evening, night",
+            "label": "time"
+        },
+        "出": {
+            "reading": "しゅつ, すい, で(る), だ(す)",
+            "meaning": "go out, exit; put out, take out",
+            "label": "verb"
+        },
+        "戻": {
+            "reading": "れい, もど(る), もど(す)",
+            "meaning": "return (general — distinct from 帰る which means to return home)",
+            "label": "verb"
+        },
+        "先": {
+            "reading": "せん, さき",
+            "meaning": "ahead, previous, future, tip; (in 先生) teacher",
+            "label": "concept"
+        },
+        "生": {
+            "reading": "せい, しょう, い(きる), う(まれる), なま",
+            "meaning": "life, birth, raw; (in 先生) teacher, (in 学生) student",
+            "label": "concept"
+        },
+        "質": {
+            "reading": "しつ, しち, ち",
+            "meaning": "quality; substance; (in 質問) question",
+            "label": "concept"
+        },
+        "問": {
+            "reading": "もん, と(う)",
+            "meaning": "question, ask, inquire",
+            "label": "concept"
+        },
+        "聞": {
+            "reading": "ぶん, もん, き(く)",
+            "meaning": "hear, listen, ask",
+            "label": "verb"
+        },
+        "言": {
+            "reading": "げん, ごん, い(う), こと",
+            "meaning": "say, word, speech",
+            "label": "verb"
+        },
+        "音": {
+            "reading": "おん, いん, おと, ね",
+            "meaning": "sound, noise; (in 音楽) music",
+            "label": "object"
+        },
+        "楽": {
+            "reading": "がく, らく, たの(しい)",
+            "meaning": "music; comfort, ease, fun",
+            "label": "concept"
+        },
+        "雑": {
+            "reading": "ざつ, ぞう",
+            "meaning": "miscellaneous, mixed; (in 雑誌) magazine",
+            "label": "concept"
+        },
+        "誌": {
+            "reading": "し",
+            "meaning": "document, record; (in 雑誌) magazine",
+            "label": "object"
+        },
+        "大": {
+            "reading": "だい, たい, おお(きい)",
+            "meaning": "big, large, great",
+            "label": "concept"
+        },
+        "阪": {
+            "reading": "はん, さか",
+            "meaning": "slope (used almost exclusively in the place name 大阪 Osaka)",
+            "label": "name"
+        },
+        "東": {
+            "reading": "とう, ひがし",
+            "meaning": "east; (in 東京) Tokyo",
+            "label": "place"
+        },
+        "族": {
+            "reading": "ぞく",
+            "meaning": "tribe, clan; (in 家族) family",
+            "label": "people"
+        },
+        "緒": {
+            "reading": "しょ, ちょ, お",
+            "meaning": "together; cord, strap; (in 一緒に) together",
+            "label": "concept"
+        },
+        "男": {
+            "reading": "だん, なん, おとこ",
+            "meaning": "man, male",
+            "label": "people"
+        },
+        "女": {
+            "reading": "じょ, にょ, おんな",
+            "meaning": "woman, female",
+            "label": "people"
+        },
+        "田": {
+            "reading": "でん, た, -だ",
+            "meaning": "rice paddy, field; common in Japanese surnames (山田, 田中)",
+            "label": "name"
+        },
+        "仕": {
+            "reading": "し, じ, つか(える)",
+            "meaning": "serve, do; (in 仕事) work, job",
+            "label": "verb"
+        },
+        "事": {
+            "reading": "じ, ず, こと",
+            "meaning": "thing, matter, affair; (in 仕事) job",
+            "label": "concept"
+        },
+        "父": {
+            "reading": "ふ, ちち, おとう(さん)",
+            "meaning": "father",
+            "label": "people"
+        },
+        "誰": {
+            "reading": "すい, だれ",
+            "meaning": "who",
+            "label": "people"
+        },
+        "紅": {
+            "reading": "こう, く, べに, くれない",
+            "meaning": "red, crimson; (in 紅茶) black tea",
+            "label": "object"
+        },
+        "茶": {
+            "reading": "ちゃ, さ",
+            "meaning": "tea; (お茶 = green tea, 紅茶 = black tea)",
+            "label": "object"
+        },
+        "映": {
+            "reading": "えい, うつ(る), うつ(す), は(える)",
+            "meaning": "reflect, project; (in 映画) movie",
+            "label": "verb"
+        },
+        "画": {
+            "reading": "が, かく",
+            "meaning": "picture, drawing, painting; (in 映画) movie",
+            "label": "object"
+        },
+        "万": {
+            "reading": "まん, ばん",
+            "meaning": "ten thousand (10,000)",
+            "label": "number"
+        },
+        "始": {
+            "reading": "し, はじ(まる), はじ(める)",
+            "meaning": "begin, start",
+            "label": "verb"
+        },
+        "終": {
+            "reading": "しゅう, お(わる), お(える)",
+            "meaning": "end, finish",
+            "label": "verb"
+        },
+        "買": {
+            "reading": "ばい, か(う)",
+            "meaning": "buy, purchase",
+            "label": "verb"
+        },
+        "物": {
+            "reading": "ぶつ, もつ, もの",
+            "meaning": "thing, object; (in 買い物) shopping, (in 食べ物) food",
+            "label": "object"
+        },
+        "去": {
+            "reading": "きょ, こ, さ(る)",
+            "meaning": "leave, past; (in 去年) last year",
+            "label": "concept"
+        },
+        "国": {
+            "reading": "こく, くに",
+            "meaning": "country, nation",
+            "label": "place"
+        },
+        "英": {
+            "reading": "えい",
+            "meaning": "English; hero, excellent; (in 英語) English language",
+            "label": "concept"
+        },
+        "村": {
+            "reading": "そん, むら",
+            "meaning": "village; common in Japanese surnames (木村, 中村)",
+            "label": "name"
+        },
+        "夕": {
+            "reading": "せき, ゆう",
+            "meaning": "evening; (in 夕方) early evening, (in 夕飯) dinner",
+            "label": "time"
+        },
+        "方": {
+            "reading": "ほう, かた",
+            "meaning": "direction, way; person (polite suffix); (in 夕方) evening",
+            "label": "concept"
+        },
+        "間": {
+            "reading": "かん, けん, あいだ, ま",
+            "meaning": "interval, between, time period; (in 時間) time, hour",
+            "label": "concept"
+        },
+        "寺": {
+            "reading": "じ, てら",
+            "meaning": "temple (Buddhist)",
+            "label": "place"
+        },
+        "夜": {
+            "reading": "や, よる, よ",
+            "meaning": "night",
+            "label": "time"
+        }
+    },
+    "words": {
+        "四時": {
+            "reading": "よじ",
+            "meaning": "4 o'clock — exception: NOT しじ or よんじ",
+            "label": "time"
+        },
+        "七時": {
+            "reading": "しちじ",
+            "meaning": "7 o'clock — exception: NOT ななじ in time expressions",
+            "label": "time"
+        },
+        "九時": {
+            "reading": "くじ",
+            "meaning": "9 o'clock — exception: NOT きゅうじ. Most-tested time-reading trap",
+            "label": "time"
+        },
+        "三階": {
+            "reading": "さんがい (also さんかい)",
+            "meaning": "3rd floor — note the voiced reading さんがい is more standard",
+            "label": "counter"
+        },
+        "五分": {
+            "reading": "ごふん",
+            "meaning": "5 minutes — uses ふん (not ぷん) after ご",
+            "label": "time"
+        },
+        "八時": {
+            "reading": "はちじ",
+            "meaning": "8 o'clock",
+            "label": "time"
+        },
+        "三分": {
+            "reading": "さんぷん",
+            "meaning": "3 minutes — uses ぷん with sokuon-like sound shift",
+            "label": "time"
+        },
+        "八": {
+            "reading": "はち, や",
+            "meaning": "eight",
+            "label": "number"
+        },
+        "四": {
+            "reading": "し, よん, よ",
+            "meaning": "four — three readings used in different counters (4時=よじ, 4月=しがつ, 4人=よにん)",
+            "label": "number"
+        },
+        "日月": {
+            "reading": "にちげつ / じつげつ",
+            "meaning": "Rare classical word: 'sun and moon' or 'days and months / time'. Modern usage: more commonly seen as the kanji pair from 日曜日 + 月曜日 (Sun + Mon)",
+            "label": "time"
+        },
+        "火水": {
+            "reading": "(not a standard word)",
+            "meaning": "Not a real Japanese word — appears here as a kanji pair from days of the week: 火曜日 (Tue) + 水曜日 (Wed). Useful for memorizing day kanji together",
+            "label": "time"
+        },
+        "木金": {
+            "reading": "(not a standard word)",
+            "meaning": "Not a real Japanese word — appears here as a kanji pair from days of the week: 木曜日 (Thu) + 金曜日 (Fri). Useful for memorizing day kanji together",
+            "label": "time"
+        },
+        "一日": {
+            "reading": "ついたち / いちにち",
+            "meaning": "TWO readings: ついたち = 1st of the month (date); いちにち = one day (duration). Context decides which",
+            "label": "date"
+        },
+        "二十日": {
+            "reading": "はつか",
+            "meaning": "20th of the month — irregular reading. NOT にじゅうにち",
+            "label": "date"
+        },
+        "八日": {
+            "reading": "ようか",
+            "meaning": "8th of the month — irregular reading. NOT はちにち",
+            "label": "date"
+        },
+        "四日": {
+            "reading": "よっか",
+            "meaning": "4th of the month — irregular. Note: 14日 = じゅうよっか, 24日 = にじゅうよっか follow same pattern",
+            "label": "date"
+        },
+        "十日": {
+            "reading": "とおか",
+            "meaning": "10th of the month — uses kun-yomi とお of 十",
+            "label": "date"
+        },
+        "九日": {
+            "reading": "ここのか",
+            "meaning": "9th of the month — irregular. Compare 9時=くじ — different counters use different number readings",
+            "label": "date"
+        },
+        "七人": {
+            "reading": "しちにん / ななにん",
+            "meaning": "7 people — both readings acceptable; しちにん is slightly more traditional",
+            "label": "counter"
+        },
+        "何人": {
+            "reading": "なんにん / なんじん",
+            "meaning": "TWO readings with DIFFERENT meanings: なんにん = how many people; なんじん = of what nationality",
+            "label": "counter"
+        },
+        "一月": {
+            "reading": "いちがつ",
+            "meaning": "January (month name). Different from ひとつき (= one-month duration, rare usage)",
+            "label": "time"
+        },
+        "四月": {
+            "reading": "しがつ",
+            "meaning": "April — month names use on-yomi consistently. NOT よんがつ or よがつ (compare 4時 = よじ)",
+            "label": "time"
+        },
+        "今月": {
+            "reading": "こんげつ",
+            "meaning": "this month",
+            "label": "time"
+        },
+        "今年": {
+            "reading": "ことし",
+            "meaning": "this year — IRREGULAR reading. NOT こんねん",
+            "label": "time"
+        },
+        "今朝": {
+            "reading": "けさ",
+            "meaning": "this morning — IRREGULAR reading. NOT こんあさ",
+            "label": "time"
+        },
+        "今晩": {
+            "reading": "こんばん",
+            "meaning": "tonight, this evening. Common greeting: 今晩は (こんばんは) = good evening",
+            "label": "time"
+        },
+        "三千五百円": {
+            "reading": "さんぜんごひゃくえん",
+            "meaning": "3,500 yen — note voicing: 三千 = さんぜん (not さんせん)",
+            "label": "number"
+        },
+        "八千": {
+            "reading": "はっせん",
+            "meaning": "8,000 — note small つ sound change",
+            "label": "number"
+        },
+        "一万円": {
+            "reading": "いちまんえん",
+            "meaning": "10,000 yen — must say 一万 (ichi-man), NOT just 万 alone (unlike English 'ten thousand')",
+            "label": "number"
+        },
+        "誰と": {
+            "reading": "だれと",
+            "meaning": "with whom — 誰 (who) + と (together with). Compare: 誰が (who, subject), 誰に (to whom)",
+            "label": "phrase"
+        }
+    }
+}
