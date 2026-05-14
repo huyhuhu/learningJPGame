@@ -391,11 +391,14 @@
             </div>
 
             <div class="tango-lib-toolbar">
-                <select id="lib-label-filter" onchange="renderLibrary()">
+                <select id="lib-label-filter" onchange="libPage=1; renderLibrary()">
                     <option value="">All labels</option>
                 </select>
                 <button class="menu-btn secondary" onclick="toggleBulkMode()">
                     <span id="bulk-mode-label" class="btn-text">Bulk Label</span>
+                </button>
+                <button class="menu-btn secondary" onclick="exportUndefinedItems()">
+                    <span class="btn-text">Export Undefined</span>
                 </button>
             </div>
 

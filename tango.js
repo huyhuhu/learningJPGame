@@ -174,6 +174,41 @@ function exportTangoJson() {
     URL.revokeObjectURL(url);
 }
 
+function exportUndefinedItems() {
+    const isUndefined = v => !v.reading && !v.meaning;
+
+    const kanji = {};
+    Object.entries(tangoData.kanji).forEach(([k, v]) => {
+        if (isUndefined(v)) kanji[k] = { reading: '', meaning: '', label: v.label || '' };
+    });
+
+    const words = {};
+    Object.entries(tangoData.words).forEach(([k, v]) => {
+        if (isUndefined(v)) words[k] = { reading: '', meaning: '', label: v.label || '' };
+    });
+
+    const total = Object.keys(kanji).length + Object.keys(words).length;
+    if (total === 0) {
+        alert('No undefined kanji or words found — everything has been filled in!');
+        return;
+    }
+
+    const out = { questions: [] };
+    if (Object.keys(kanji).length > 0) out.kanji = kanji;
+    if (Object.keys(words).length > 0) out.words = words;
+
+    const json = JSON.stringify(out, null, 4);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `undefined-items-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
 // ===== HUB =====
 function openTangoCho() {
     loadTangoData();
@@ -608,10 +643,13 @@ function escapeHtml(s) {
 
 // ===== LIBRARY VIEW =====
 let currentLibTab = 'kanji';
+let libPage = 1;
+const LIB_PAGE_SIZE = 100;
 
 function openTangoLibrary() {
     bulkMode = false;
     bulkSelected.clear();
+    libPage = 1;
     document.getElementById('bulk-mode-label').textContent = 'Bulk Label';
     document.getElementById('tango-bulk-bar').classList.add('hidden');
     refreshLabelControls();
@@ -624,6 +662,7 @@ let bulkSelected = new Set();
 
 function showLibraryTab(tab) {
     currentLibTab = tab;
+    libPage = 1;
     document.getElementById('lib-tab-kanji').classList.toggle('active', tab === 'kanji');
     document.getElementById('lib-tab-words').classList.toggle('active', tab === 'words');
     bulkSelected.clear();
@@ -704,7 +743,11 @@ function renderLibrary() {
         return;
     }
 
-    list.innerHTML = keys.map(k => {
+    const totalPages = Math.ceil(keys.length / LIB_PAGE_SIZE);
+    if (libPage > totalPages) libPage = totalPages;
+    const pageKeys = keys.slice((libPage - 1) * LIB_PAGE_SIZE, libPage * LIB_PAGE_SIZE);
+
+    const itemsHtml = pageKeys.map(k => {
         const item = source[k];
         const checkbox = bulkMode
             ? `<input type="checkbox" class="tango-lib-bulk-cb" data-key="${escapeHtml(k)}" ${bulkSelected.has(k) ? 'checked' : ''} onchange="toggleBulkSelect(this)">`
@@ -722,6 +765,22 @@ function renderLibrary() {
             </div>
         `;
     }).join('');
+
+    const paginationHtml = totalPages > 1 ? `
+        <div class="tango-pagination">
+            <button class="tango-page-btn" onclick="changeLibPage(-1)" ${libPage <= 1 ? 'disabled' : ''}>◀ Prev</button>
+            <span class="tango-page-info">Page ${libPage} / ${totalPages} (${keys.length} total)</span>
+            <button class="tango-page-btn" onclick="changeLibPage(1)" ${libPage >= totalPages ? 'disabled' : ''}>Next ▶</button>
+        </div>
+    ` : '';
+
+    list.innerHTML = itemsHtml + paginationHtml;
+}
+
+function changeLibPage(delta) {
+    libPage += delta;
+    renderLibrary();
+    document.getElementById('tango-library-list').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function updateLibraryItem(inp) {
@@ -739,12 +798,19 @@ function deleteLibraryItem(type, key) {
     const target = type === 'kanji' ? tangoData.kanji : tangoData.words;
     delete target[key];
     saveTangoData();
+    const remaining = Object.keys(target).length;
+    const totalPages = Math.max(1, Math.ceil(remaining / LIB_PAGE_SIZE));
+    if (libPage > totalPages) libPage = totalPages;
     renderLibrary();
     refreshTangoHub();
 }
 
 // ===== QUESTIONS MANAGER =====
+let questionsPage = 1;
+const QUESTIONS_PAGE_SIZE = 100;
+
 function openTangoQuestions() {
+    questionsPage = 1;
     renderQuestionsList();
     showScreen('tango-questions');
 }
@@ -755,9 +821,16 @@ function renderQuestionsList() {
         list.innerHTML = '<p class="hint-text" style="text-align:center; padding: 40px;">No questions yet.</p>';
         return;
     }
-    list.innerHTML = tangoData.questions.map((q, i) => `
+
+    const total = tangoData.questions.length;
+    const totalPages = Math.ceil(total / QUESTIONS_PAGE_SIZE);
+    if (questionsPage > totalPages) questionsPage = totalPages;
+    const pageQuestions = tangoData.questions.slice((questionsPage - 1) * QUESTIONS_PAGE_SIZE, questionsPage * QUESTIONS_PAGE_SIZE);
+    const offset = (questionsPage - 1) * QUESTIONS_PAGE_SIZE;
+
+    const itemsHtml = pageQuestions.map((q, i) => `
         <div class="tango-q-item">
-            <div class="tango-q-num">Q${i + 1}</div>
+            <div class="tango-q-num">Q${offset + i + 1}</div>
             <div class="tango-q-body">
                 <div class="tango-q-prompt">${renderQuestionPreview(q.question)}</div>
                 <div class="tango-q-choices">
@@ -767,6 +840,22 @@ function renderQuestionsList() {
             <button class="tango-lib-del" onclick="deleteQuestion('${q.id}')" title="Delete">🗑️</button>
         </div>
     `).join('');
+
+    const paginationHtml = totalPages > 1 ? `
+        <div class="tango-pagination">
+            <button class="tango-page-btn" onclick="changeQuestionsPage(-1)" ${questionsPage <= 1 ? 'disabled' : ''}>◀ Prev</button>
+            <span class="tango-page-info">Page ${questionsPage} / ${totalPages} (${total} total)</span>
+            <button class="tango-page-btn" onclick="changeQuestionsPage(1)" ${questionsPage >= totalPages ? 'disabled' : ''}>Next ▶</button>
+        </div>
+    ` : '';
+
+    list.innerHTML = itemsHtml + paginationHtml;
+}
+
+function changeQuestionsPage(delta) {
+    questionsPage += delta;
+    renderQuestionsList();
+    document.getElementById('tango-questions-list').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function renderQuestionPreview(text) {
@@ -777,6 +866,9 @@ function deleteQuestion(id) {
     if (!confirm('Delete this question?')) return;
     tangoData.questions = tangoData.questions.filter(q => q.id !== id);
     saveTangoData();
+    // Clamp page in case the last item on a page was deleted
+    const totalPages = Math.max(1, Math.ceil(tangoData.questions.length / QUESTIONS_PAGE_SIZE));
+    if (questionsPage > totalPages) questionsPage = totalPages;
     renderQuestionsList();
     refreshTangoHub();
 }

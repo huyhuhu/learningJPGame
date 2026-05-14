@@ -1295,6 +1295,41 @@ h2 {
     margin-right: 4px;
 }
 
+.tango-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 18px 0 6px;
+    flex-wrap: wrap;
+}
+
+.tango-page-btn {
+    padding: 8px 18px;
+    background: var(--bg-light);
+    color: var(--text-primary);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.15s, opacity 0.15s;
+}
+
+.tango-page-btn:hover:not(:disabled) {
+    background: var(--secondary);
+    color: #fff;
+}
+
+.tango-page-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.tango-page-info {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
 .tango-lib-item.bulk-mode {
     cursor: pointer;
 }
