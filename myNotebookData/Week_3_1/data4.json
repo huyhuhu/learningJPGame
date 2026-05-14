@@ -1,0 +1,704 @@
+{
+  "questions": [
+    {
+      "id": "w3h-001",
+      "question": "What does |貸します| mean?",
+      "choices": ["lend (give for temporary use)", "borrow (take for temporary use)", "give as a present", "return"],
+      "answer": "lend (give for temporary use)",
+      "explanation": "貸します (かします) = lend. Memorize as pair: 貸します (I lend OUT) ↔ 借ります (かります — I borrow IN). Easy mnemonic: 貸 contains 'shell/money' radical 貝 → giving money/things out."
+    },
+    {
+      "id": "w3h-002",
+      "question": "What does |借ります| mean?",
+      "choices": ["borrow", "lend", "rent out", "buy"],
+      "answer": "borrow",
+      "explanation": "借ります (かります) = borrow. Same kanji is used in 借金 (かりきん, debt) and is the verb you use when renting an apartment (アパートを借ります)."
+    },
+    {
+      "id": "w3h-003",
+      "question": "What does |習います| mean?",
+      "choices": ["learn (from a teacher)", "teach", "study (on own)", "practice"],
+      "answer": "learn (from a teacher)",
+      "explanation": "習います (ならいます) = learn from someone (a teacher / instructor). Different from 勉強します (study independently). 先生に日本語を習います = learn Japanese from a teacher."
+    },
+    {
+      "id": "w3h-004",
+      "question": "Choose particle: 山田さん___本をあげました。 (= 'I gave Yamada a book.')",
+      "choices": ["に", "から", "で", "を"],
+      "answer": "に",
+      "explanation": "あげる takes に for the RECIPIENT. 山田さんに本をあげました = (I) gave a book TO Yamada. ⚠ Trap: do NOT use から with あげる."
+    },
+    {
+      "id": "w3h-005",
+      "question": "Choose particle: 私は友達___プレゼントをもらいました。",
+      "choices": ["に", "から", "Both に and から are acceptable", "を"],
+      "answer": "Both に and から are acceptable",
+      "explanation": "もらう accepts BOTH に and から for the source — IF the source is a person/animal. に is slightly more common in conversation; から emphasizes the source direction."
+    },
+    {
+      "id": "w3h-006",
+      "question": "Choose particle: 私は会社___給料(きゅうりょう)をもらいます。 (給料 = salary)",
+      "choices": ["から", "に", "Both に and から are acceptable", "で"],
+      "answer": "から",
+      "explanation": "⚠ Trap: when the source is an INSTITUTION (会社, 学校, 銀行), only から works. に is restricted to person/animal sources. So 会社からもらう, NOT 会社にもらう."
+    },
+    {
+      "id": "w3h-007",
+      "question": "Which sentence is the most natural for 'Yamada gave me a book'? (N5 grammar)",
+      "choices": ["私は山田さんから本をもらいました。", "山田さんは私に本をあげました。", "私は山田さんに本をあげました。", "山田さんは本をくれました。"],
+      "answer": "私は山田さんから本をもらいました。",
+      "explanation": "⚠ Multiple traps: (1) Option 2 with あげる + 私に sounds unnatural in N5 Japanese (you wouldn't describe yourself as the recipient using あげる). (2) Option 3 reverses the action — it would mean 'I gave Yamada a book.' (3) Option 4 (くれました) is the most natural NATIVE phrasing but it's a lesson-24 verb, not yet available at N5 lesson 7. So the natural N5-level option is 私は…からもらいました."
+    },
+    {
+      "id": "w3h-008",
+      "question": "Which sentence is INCORRECT?",
+      "choices": ["私は山田さんから本をあげました。", "私は山田さんに本をあげました。", "私は山田さんから本をもらいました。", "私は山田さんに本をもらいました。"],
+      "answer": "私は山田さんから本をあげました。",
+      "explanation": "⚠ あげる cannot take から for the recipient — recipient MUST be marked with に. The other three are all grammatically valid."
+    },
+    {
+      "id": "w3h-009",
+      "question": "Choose verb: 先生は学生____日本語を____。 ('The teacher teaches Japanese to students.')",
+      "choices": ["A=に / B=教えます", "A=から / B=教えます", "A=に / B=習います", "A=から / B=習います"],
+      "answer": "A=に / B=教えます",
+      "explanation": "教える (teach) takes に for the LEARNER (recipient of teaching). 習う would reverse the relationship: 学生は先生に日本語を習います = students learn FROM teacher."
+    },
+    {
+      "id": "w3h-010",
+      "question": "Choose verb + particle: 私は友達____お金を____。 ('I borrowed money from a friend.')",
+      "choices": ["A=に or から / B=借りました", "A=に / B=貸しました", "A=から / B=貸しました", "A=で / B=借りました"],
+      "answer": "A=に or から / B=借りました",
+      "explanation": "借りる (borrow) takes the LENDER as source — に or から (both work for people). 貸す would mean 'lend' (reverse direction)."
+    },
+    {
+      "id": "w3h-011",
+      "question": "Translate: 'My older brother taught me English.'",
+      "choices": ["兄は私に英語を教えました。", "兄は私から英語を教えました。", "私は兄に英語を教えました。", "私は兄から英語を習いません。"],
+      "answer": "兄は私に英語を教えました。",
+      "explanation": "兄 (my older brother) is subject (giver of teaching). 私に = to me (recipient). Option 3 reverses meaning (I taught my brother). Option 4 is negative present."
+    },
+    {
+      "id": "w3h-012",
+      "question": "Choose: 母____花____もらいました。",
+      "choices": ["A=に or から / B=を", "A=に / B=が", "A=で / B=を", "A=と / B=を"],
+      "answer": "A=に or から / B=を",
+      "explanation": "もらう construction: [source]に/から + [object]を + もらう. 花を = flower (object received)."
+    },
+    {
+      "id": "w3h-013",
+      "question": "A: 「もうご飯を食べましたか?」 B: 「いいえ、___。」 Choose the most natural reply:",
+      "choices": ["まだです。", "まだ食べません。", "まだ食べました。", "もうです。"],
+      "answer": "まだです。",
+      "explanation": "⚠ Trap: in Japanese, the natural 'not yet' response is just まだです, NOT まだ食べていません (which is grammatical but more advanced) or まだ食べません (which sounds like 'I won't eat yet')."
+    },
+    {
+      "id": "w3h-014",
+      "question": "A: 「もう新しい車を買いましたか?」 B: 「はい、___。」",
+      "choices": ["もう買いました。", "まだ買いました。", "もう買います。", "まだです。"],
+      "answer": "もう買いました。",
+      "explanation": "もう + past affirmative = 'already (did)'. Question pairs with もう…ましたか / はい、もう…ました construction."
+    },
+    {
+      "id": "w3h-015",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["私はまだ学生じゃありません。", "私はまだ学生です。", "もう昼ご飯を食べました。", "もう一杯ビールをください。"],
+      "answer": "私はまだ学生じゃありません。",
+      "explanation": "⚠ Subtle trap: まだ + negative typically means 'not yet'. But まだ学生じゃありません sounds odd ('not yet not a student'?) — would be clearer as もう学生じゃありません ('not a student anymore'). The others are natural: 'I am still a student', 'already ate lunch', 'one more beer please'."
+    },
+    {
+      "id": "w3h-016",
+      "question": "What does |もう一杯| mean?",
+      "choices": ["one more cup/glass", "already one cup", "still one cup", "no more cups"],
+      "answer": "one more cup/glass",
+      "explanation": "⚠ もう has TWO meanings: (1) already + past, (2) more / another (with quantity). もう一杯 = one more cup. 一杯 (いっぱい) = one cup/glass."
+    },
+    {
+      "id": "w3h-017",
+      "question": "Choose particle: 私は鉛筆___名前を書きました。",
+      "choices": ["で", "に", "を", "へ"],
+      "answer": "で",
+      "explanation": "で = INSTRUMENT/TOOL. 鉛筆で = with a pencil. Same particle as 'by transport' — both express MEANS."
+    },
+    {
+      "id": "w3h-018",
+      "question": "Choose particle: 日本語___ニュースを聞きます。",
+      "choices": ["で", "を", "に", "から"],
+      "answer": "で",
+      "explanation": "で marks the LANGUAGE used (a means/method). 日本語で = in Japanese. NOT を — を would mean 'speaking the Japanese language' as a direct object."
+    },
+    {
+      "id": "w3h-019",
+      "question": "Choose particle: 私は一人___映画を見ました。",
+      "choices": ["で", "に", "と", "が"],
+      "answer": "で",
+      "explanation": "⚠ Idiomatic で: 一人で = 'alone, by oneself'. Different で from instrument, but same particle. Compare: 二人で = as a pair, 三人で = as a group of three."
+    },
+    {
+      "id": "w3h-020",
+      "question": "Choose particle: 図書館____勉強します。",
+      "choices": ["で", "に", "へ", "を"],
+      "answer": "で",
+      "explanation": "⚠ Particle distinction: 勉強する is an ACTION verb, so its location takes で (action-place). If the verb were います / あります (existence), it would take に."
+    },
+    {
+      "id": "w3h-021",
+      "question": "What does |新しい| mean?",
+      "choices": ["new", "old", "fresh / raw", "different"],
+      "answer": "new",
+      "explanation": "新しい (あたらしい) = new. ⚠ Reading trap: NOT あらたしい — common misreading. Opposite: 古い (ふるい)."
+    },
+    {
+      "id": "w3h-022",
+      "question": "What does |古い| mean?",
+      "choices": ["old (for things)", "old (for people)", "ancient (only)", "broken"],
+      "answer": "old (for things)",
+      "explanation": "⚠ Important: 古い is for OBJECTS, BUILDINGS, IDEAS — NOT people. For old people, use 年を取った人 (としをとったひと) or お年寄り (おとしより). Saying 古い人 sounds odd unless meaning 'old friend / longtime acquaintance'."
+    },
+    {
+      "id": "w3h-023",
+      "question": "What does |高い| mean?",
+      "choices": ["tall AND expensive (both)", "tall only", "expensive only", "high (only for sky)"],
+      "answer": "tall AND expensive (both)",
+      "explanation": "⚠ 高い has TWO common meanings: tall (height) AND expensive (price). Context decides. Opposite: 低い (low/short) for height, 安い (cheap) for price."
+    },
+    {
+      "id": "w3h-024",
+      "question": "How to read |暑い| in: 今日は|暑い|ですね。",
+      "choices": ["あつい (hot weather)", "あつい (hot object)", "あたつい", "あさい"],
+      "answer": "あつい (hot weather)",
+      "explanation": "⚠ Homophone trap! 暑い = hot WEATHER (temperature outside). 熱い = hot OBJECT (hot tea, hot pot). Both read あつい. Use 暑い for climate/today's weather."
+    },
+    {
+      "id": "w3h-025",
+      "question": "Choose the correct kanji for: 「お茶は___ですから、気をつけて。」 (The tea is hot, so be careful.)",
+      "choices": ["熱い", "暑い", "厚い", "篤い"],
+      "answer": "熱い",
+      "explanation": "⚠ Kanji distinction: 熱い for HOT OBJECTS (tea, soup, metal). 暑い for hot WEATHER. 厚い = thick. 篤い = devout. All read あつい — must distinguish by kanji."
+    },
+    {
+      "id": "w3h-026",
+      "question": "What's the difference between |寒い| and |冷たい|?",
+      "choices": ["寒い = cold weather; 冷たい = cold object/person", "寒い = cold object; 冷たい = cold weather", "Both mean exactly the same", "寒い = winter only; 冷たい = summer cold"],
+      "answer": "寒い = cold weather; 冷たい = cold object/person",
+      "explanation": "⚠ Pairing: 寒い (さむい) is for the climate/feeling cold (今日は寒い). 冷たい (つめたい) is for cold things you touch (冷たいビール) — and also used metaphorically for 'cold-hearted person' (冷たい人)."
+    },
+    {
+      "id": "w3h-027",
+      "question": "What does |易しい| mean?",
+      "choices": ["easy", "kind / gentle", "Both easy AND kind", "difficult"],
+      "answer": "easy",
+      "explanation": "⚠ Reading trap: 易しい (やさしい) = easy. 優しい (also やさしい) = kind, gentle. SAME reading, DIFFERENT kanji. Context and kanji distinguish. For N5, you may see both written in kana やさしい."
+    },
+    {
+      "id": "w3h-028",
+      "question": "What does |面白い| mean?",
+      "choices": ["interesting / fun", "embarrassing", "complicated", "boring"],
+      "answer": "interesting / fun",
+      "explanation": "面白い (おもしろい) = interesting, fun, amusing. Literal kanji meaning: 'face' + 'white' (historical idiom). Opposite: つまらない (boring)."
+    },
+    {
+      "id": "w3h-029",
+      "question": "What does |おいしい| mean?",
+      "choices": ["delicious", "expensive", "spicy", "sweet"],
+      "answer": "delicious",
+      "explanation": "おいしい = delicious. Often written in kana. Polite form: 美味しい (rare in N5). Opposite: まずい (bad-tasting)."
+    },
+    {
+      "id": "w3h-030",
+      "question": "What does |忙しい| mean?",
+      "choices": ["busy", "free / not busy", "tired", "hurried"],
+      "answer": "busy",
+      "explanation": "忙しい (いそがしい) = busy. Note the kanji 忙 = 心 (heart) + 亡 (lost) = 'heart is lost' → busy. Opposite (na-adj): 暇 (ひま) = free."
+    },
+    {
+      "id": "w3h-031",
+      "question": "Is |きれい| a い-adjective or a な-adjective?",
+      "choices": ["な-adjective", "い-adjective", "Both (depends on context)", "Neither (it's a noun)"],
+      "answer": "な-adjective",
+      "explanation": "⚠ CLASSIC TRAP: きれい ENDS in い-sound, but is a な-ADJECTIVE. Kanji is 綺麗. Attach with な: きれいな家. Conjugate like a noun: きれいでした, きれいじゃない."
+    },
+    {
+      "id": "w3h-032",
+      "question": "Is |嫌い| a い-adjective or a な-adjective?",
+      "choices": ["な-adjective", "い-adjective", "Both (depends on context)", "Neither (it's a verb)"],
+      "answer": "な-adjective",
+      "explanation": "⚠ TRAP #2: 嫌い (きらい) = dislike. Ends in い but is な-ADJECTIVE. 嫌いな食べ物 = food (I) dislike. Conjugates like a noun."
+    },
+    {
+      "id": "w3h-033",
+      "question": "Is |有名| a い-adjective or a な-adjective?",
+      "choices": ["な-adjective", "い-adjective", "Both (depends on context)", "Neither (it's an adverb)"],
+      "answer": "な-adjective",
+      "explanation": "有名 (ゆうめい) = famous. Reading ends in い-vowel but kanji doesn't end in い — clue: kanji ends in 名 (めい). な-adjective. 有名な人 = famous person."
+    },
+    {
+      "id": "w3h-034",
+      "question": "Is |おいしい| a い-adjective or a な-adjective?",
+      "choices": ["い-adjective", "な-adjective", "Both (depends on context)", "Neither"],
+      "answer": "い-adjective",
+      "explanation": "おいしい IS a true い-adjective. The okurigana (kana ending after kanji) is しい — pure i-adj pattern. Attach directly: おいしい料理. Conjugates: おいしくない, おいしかった."
+    },
+    {
+      "id": "w3h-035",
+      "question": "Is |上手| a い-adjective or a な-adjective?",
+      "choices": ["な-adjective", "い-adjective", "Both (depends on context)", "Neither (it's an adverb)"],
+      "answer": "な-adjective",
+      "explanation": "上手 (じょうず) = good at, skillful. Pure な-adjective. 上手な人 = skillful person. Opposite: 下手 (へた) = also な-adj. Both use が for the thing one is good/bad at: 日本語が上手です."
+    },
+    {
+      "id": "w3h-036",
+      "question": "Choose the correct attachment: 私は ___ 部屋(へや)が好きです。 (= 'I like quiet rooms.')",
+      "choices": ["静かな", "静かい", "静か", "静かの"],
+      "answer": "静かな",
+      "explanation": "静か is a な-adj → needs な before noun. 静かな部屋 = quiet room. ⚠ 静か alone (without な) before a noun is ungrammatical."
+    },
+    {
+      "id": "w3h-037",
+      "question": "Choose the correct attachment: 大きい___家。",
+      "choices": ["(no insertion needed)", "な", "の", "い"],
+      "answer": "(no insertion needed)",
+      "explanation": "⚠ Trap: 大きい is い-adjective → attaches DIRECTLY to nouns with NO particle. 大きい家 = big house. Inserting な (大きいな家) is WRONG."
+    },
+    {
+      "id": "w3h-038",
+      "question": "Choose the correct attachment: きれい___花。",
+      "choices": ["な", "い", "の", "が"],
+      "answer": "な",
+      "explanation": "⚠ Despite ending in い, きれい is a な-adj. Always insert な: きれいな花 = beautiful flower. The most common student error in Week 3."
+    },
+    {
+      "id": "w3h-039",
+      "question": "Choose the correct attachment: 嫌い___食べ物。",
+      "choices": ["な", "い", "の", "(no insertion)"],
+      "answer": "な",
+      "explanation": "嫌い is a な-adj (despite ending い). Insert な: 嫌いな食べ物 = food (I) dislike."
+    },
+    {
+      "id": "w3h-040",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["これは新しいなパソコンです。", "これは新しいパソコンです。", "あれはきれいな車です。", "あの人は有名な歌手(かしゅ)です。"],
+      "answer": "これは新しいなパソコンです。",
+      "explanation": "⚠ 新しい is い-adj → NO な. The correct form is just 新しいパソコン. The other three correctly use な or no particle as appropriate."
+    },
+    {
+      "id": "w3h-041",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["この公園は静かいです。", "この公園は静かです。", "この公園はにぎやかです。", "この公園はきれいです。"],
+      "answer": "この公園は静かいです。",
+      "explanation": "⚠ 静か is a な-adj used in predicate. 静かです is correct. 静かい is not a word (it's adding い incorrectly, as if it were an い-adjective)."
+    },
+    {
+      "id": "w3h-042",
+      "question": "What is the past affirmative form of |大きい|?",
+      "choices": ["大きかったです", "大きでした", "大きいでした", "大きいかったです"],
+      "answer": "大きかったです",
+      "explanation": "い-adj past affirmative: drop い → add かった. 大き**い** → 大き**かった**です. ⚠ Don't say 大きいでした (treating it as a noun)."
+    },
+    {
+      "id": "w3h-043",
+      "question": "What is the present negative form of |新しい|?",
+      "choices": ["新しくないです", "新しいじゃないです", "新しじゃないです", "新しくありますじゃないです"],
+      "answer": "新しくないです",
+      "explanation": "い-adj present negative: drop い → add くない. 新し**い** → 新し**くない**です. Also acceptable: 新しくありません (more formal)."
+    },
+    {
+      "id": "w3h-044",
+      "question": "What is the past negative form of |寒い|?",
+      "choices": ["寒くなかったです", "寒くないでした", "寒じゃなかったです", "寒いじゃありませんでした"],
+      "answer": "寒くなかったです",
+      "explanation": "い-adj past negative: drop い → くなかった. 寒**い** → 寒**くなかった**です. Pattern: present neg ends in ない → past neg replaces ない with なかった."
+    },
+    {
+      "id": "w3h-045",
+      "question": "What is the present negative form of |いい|?",
+      "choices": ["よくないです", "いくないです", "いいじゃないです", "いいくないです"],
+      "answer": "よくないです",
+      "explanation": "⚠ いい IS IRREGULAR. It uses the older base 良い (よい) for all conjugations except the dictionary form. Present neg: よくないです (NOT いくないです — most common student error)."
+    },
+    {
+      "id": "w3h-046",
+      "question": "What is the past affirmative form of |いい|?",
+      "choices": ["よかったです", "いかったです", "いいでした", "いいかったです"],
+      "answer": "よかったです",
+      "explanation": "⚠ いい past affirmative = よかったです. Famous expression: よかった (= 'Thank goodness! / That was good!'). NEVER say いかった — completely wrong."
+    },
+    {
+      "id": "w3h-047",
+      "question": "What is the past negative form of |いい|?",
+      "choices": ["よくなかったです", "いくなかったです", "いいじゃなかったです", "よかったじゃないです"],
+      "answer": "よくなかったです",
+      "explanation": "いい past negative = よくなかったです. Full irregular set for いい: いい / よくない / よかった / よくなかった. Memorize all four together — they will all appear in N5."
+    },
+    {
+      "id": "w3h-048",
+      "question": "What is the past affirmative form of |静か|?",
+      "choices": ["静かでした", "静かかったです", "静かいでした", "静かたです"],
+      "answer": "静かでした",
+      "explanation": "な-adj past affirmative: replace だ/です with でした. 静か**です** → 静か**でした**. ⚠ Don't use かった (that's for い-adj)."
+    },
+    {
+      "id": "w3h-049",
+      "question": "What is the present negative form of |元気|?",
+      "choices": ["元気じゃないです", "元気くないです", "元気でないです", "元気がないです"],
+      "answer": "元気じゃないです",
+      "explanation": "な-adj present negative: replace です with じゃないです (or じゃありません formal, ではありません formal+). ⚠ Don't use くない (that's for い-adj)."
+    },
+    {
+      "id": "w3h-050",
+      "question": "What is the past negative form of |きれい|?",
+      "choices": ["きれいじゃなかったです", "きれくなかったです", "きれいくなかったです", "きれいでしませんでした"],
+      "answer": "きれいじゃなかったです",
+      "explanation": "⚠ TRAP: even though きれい ends in い, conjugate it as な-adj. Past negative = じゃなかったです. NEVER きれくなかった (treating as i-adj is wrong)."
+    },
+    {
+      "id": "w3h-051",
+      "question": "Find the INCORRECT conjugation:",
+      "choices": ["きれいくなかったです (= was not pretty)", "きれいじゃなかったです (= was not pretty)", "面白くなかったです (= was not interesting)", "静かじゃなかったです (= was not quiet)"],
+      "answer": "きれいくなかったです (= was not pretty)",
+      "explanation": "⚠ きれい is な-adj — must use じゃなかった, NOT くなかった. The classic trap caught here."
+    },
+    {
+      "id": "w3h-052",
+      "question": "Find the INCORRECT conjugation:",
+      "choices": ["いいじゃないです (= is not good)", "よくないです (= is not good)", "よくなかったです (= was not good)", "よかったです (= was good)"],
+      "answer": "いいじゃないです (= is not good)",
+      "explanation": "⚠ いい is い-adj, NOT な-adj. Cannot use じゃない. Must use よくない (irregular stem)."
+    },
+    {
+      "id": "w3h-053",
+      "question": "Translate: 'Yesterday's weather was not good.'",
+      "choices": ["昨日の天気はよくなかったです。", "昨日の天気はいくなかったです。", "昨日の天気はいいじゃなかったです。", "昨日の天気はよかったじゃないです。"],
+      "answer": "昨日の天気はよくなかったです。",
+      "explanation": "昨日 (yesterday) → past. いい negative past = よくなかった. Note: 天気 (てんき) = weather."
+    },
+    {
+      "id": "w3h-054",
+      "question": "Translate: 'This restaurant is not famous.'",
+      "choices": ["このレストランは有名じゃないです。", "このレストランは有名くないです。", "このレストランは有名いです。", "このレストランは有名ありません。"],
+      "answer": "このレストランは有名じゃないです。",
+      "explanation": "有名 is な-adj → negative uses じゃない. ⚠ Trap: 有名 ends in い-vowel but is NOT い-adj — don't conjugate with くない."
+    },
+    {
+      "id": "w3h-055",
+      "question": "Translate: 'The room was clean.'",
+      "choices": ["部屋はきれいでした。", "部屋はきれかったです。", "部屋はきれいかったです。", "部屋はきれくなかったです。"],
+      "answer": "部屋はきれいでした。",
+      "explanation": "きれい is な-adj → past affirmative is でした (not かった). ⚠ Top trap: ending in い does not make it い-adj."
+    },
+    {
+      "id": "w3h-056",
+      "question": "Translate: 'I am not free today.' (free = not busy)",
+      "choices": ["今日は暇じゃないです。", "今日は暇くないです。", "今日は忙しくないです。", "今日は暇ないです。"],
+      "answer": "今日は暇じゃないです。",
+      "explanation": "暇 (ひま, free) is な-adj → negative = じゃないです. ⚠ Option 3 is grammatical but means 'I'm not busy', which is NOT the same as 'I'm not free' (in Japanese these are opposite poles). Word for word: 暇じゃない = not free."
+    },
+    {
+      "id": "w3h-057",
+      "question": "Translate the Japanese: 山田さんは親切でした。でも、あまり面白くなかったです。",
+      "choices": ["Yamada was kind, but not very interesting.", "Yamada is kind and interesting.", "Yamada was unkind and uninteresting.", "Yamada is not kind, but he is interesting."],
+      "answer": "Yamada was kind, but not very interesting.",
+      "explanation": "親切でした = was kind (past + affirmative, な-adj). でも = but. あまり + neg = not very. 面白くなかったです = was not interesting (past + negative, い-adj)."
+    },
+    {
+      "id": "w3h-058",
+      "question": "Translate: 'My older sister is good at cooking.' (cooking = 料理)",
+      "choices": ["姉は料理が上手です。", "姉は料理を上手です。", "姉は料理に上手です。", "姉の料理は上手です。"],
+      "answer": "姉は料理が上手です。",
+      "explanation": "⚠ Trap for Vietnamese learners: 上手 takes が, NOT を. Pattern: [Person]は [Skill]が [上手/下手/好き/嫌い]です. Saying 料理を上手 is wrong."
+    },
+    {
+      "id": "w3h-059",
+      "question": "Choose the correct particle: 私は日本語___わかりません。",
+      "choices": ["が", "を", "に", "で"],
+      "answer": "が",
+      "explanation": "⚠ わかる (understand) takes が, NOT を. Same pattern family as 好き, 嫌い, 上手, 下手, ある, いる: these all use が for what would be the 'object' in English."
+    },
+    {
+      "id": "w3h-060",
+      "question": "Choose the most natural translation of: 'Tokyo is a big city.'",
+      "choices": ["東京は大きい町です。", "東京は大きな町です。", "Both are acceptable, with subtle stylistic differences.", "東京は大きいな町です。"],
+      "answer": "Both are acceptable, with subtle stylistic differences.",
+      "explanation": "Subtle but real: 大きい (i-adj) is the standard form. 大きな is a rare な-form used POETICALLY/literarily with certain abstract nouns (大きな夢 = big dream). Both 大きい町 and 大きな町 are natural. Most other い-adjectives don't have this dual form."
+    },
+    {
+      "id": "w3h-061",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["昨日はあまり寒いでした。", "昨日はあまり寒くなかったです。", "昨日は寒かったです。", "昨日はとても寒くなかったです。"],
+      "answer": "昨日はあまり寒いでした。",
+      "explanation": "⚠ Two errors in option 1: (1) い-adj past should be 寒かった, not 寒いでした. (2) あまり typically pairs with NEGATIVE form, not affirmative. Option 1 has both errors."
+    },
+    {
+      "id": "w3h-062",
+      "question": "Choose the correct combination: 「あまり___です。」 (Pick natural pairing.)",
+      "choices": ["難しくない", "難しい", "難しかった", "難しくなかった"],
+      "answer": "難しくない",
+      "explanation": "⚠ あまり typically pairs with NEGATIVE present (or negative past). 'Not very difficult' = あまり難しくない. Both option 1 and option 4 work — but among these, option 1 (present negative) is the most generic correct answer."
+    },
+    {
+      "id": "w3h-063",
+      "question": "Choose the correct combination: 「___わかりません。」",
+      "choices": ["全然", "とても", "たくさん", "もう"],
+      "answer": "全然",
+      "explanation": "⚠ 全然 (ぜんぜん) = not at all — must pair with NEGATIVE. 全然わかりません = don't understand at all. とても (very) pairs with affirmative."
+    },
+    {
+      "id": "w3h-064",
+      "question": "What does |どんな| mean and how is it used?",
+      "choices": ["What kind of (used before a noun)", "How (used before a verb)", "Why", "Where"],
+      "answer": "What kind of (used before a noun)",
+      "explanation": "どんな = what kind of. ALWAYS followed directly by a noun. 例: どんな人 = what kind of person, どんな映画 = what kind of movie. Don't confuse with どう (how, used before/after verbs)."
+    },
+    {
+      "id": "w3h-065",
+      "question": "Choose correct: 東京は___ですか?",
+      "choices": ["どんな町", "どうな町", "どんな", "どんなに町"],
+      "answer": "どんな町",
+      "explanation": "どんな + noun. 東京はどんな町ですか = 'What kind of city is Tokyo?' Standard pattern: [N1]は どんな [N2]ですか."
+    },
+    {
+      "id": "w3h-066",
+      "question": "Choose: A: 「日本の食べ物は___ですか?」 B: 「とてもおいしいです。」",
+      "choices": ["どう", "どんな", "どこ", "どれ"],
+      "answer": "どう",
+      "explanation": "⚠ どう vs どんな: B's response describes 'how it is' (a quality), so どう is used. どんな would expect a category answer ('Japanese food is X-kind'). どう = 'how is it (taste/feel/experience)'."
+    },
+    {
+      "id": "w3h-067",
+      "question": "Translate: 'What kind of food do you like?'",
+      "choices": ["どんな食べ物が好きですか。", "どう食べ物が好きですか。", "何な食べ物が好きですか。", "どんなに食べ物が好きですか。"],
+      "answer": "どんな食べ物が好きですか。",
+      "explanation": "どんな + 食べ物 (noun). 好き takes が (not を!). Together: どんな食べ物が好きですか."
+    },
+    {
+      "id": "w3h-068",
+      "question": "Choose the most natural reply to: 「あの人はどんな人ですか?」",
+      "choices": ["とても親切な人です。", "とても親切いです。", "親切人です。", "親切な人がいます。"],
+      "answer": "とても親切な人です。",
+      "explanation": "親切 is な-adj → 親切な人 (kind person). Option 2 incorrectly treats 親切 as i-adj. Option 3 forgets な. Option 4 is grammatical ('There is a kind person') but doesn't answer the question."
+    },
+    {
+      "id": "w3h-069",
+      "question": "Choose the natural sentence: 'My new car is red.'",
+      "choices": ["私の新しい車は赤いです。", "私は新しいの車が赤いです。", "私の新しいな車は赤いです。", "私の車は新しい赤いです。"],
+      "answer": "私の新しい車は赤いです。",
+      "explanation": "Standard adj+noun: 新しい車 (no な, no の inserted). Topic: 私の新しい車は. Predicate: 赤いです (i-adj)."
+    },
+    {
+      "id": "w3h-070",
+      "question": "Choose the natural sentence: 'A famous and kind teacher.'",
+      "choices": ["有名で親切な先生", "有名な親切な先生", "有名と親切の先生", "有名い親切な先生"],
+      "answer": "有名で親切な先生",
+      "explanation": "⚠ Connecting two な-adjectives: use で (the te-form of だ). 有名で = 'is famous AND...'. Final adjective before noun keeps な: 親切な先生. ⚠ Don't repeat な on the first adjective when chaining."
+    },
+    {
+      "id": "w3h-071",
+      "question": "Choose the natural sentence: 'A big and old house.'",
+      "choices": ["大きくて古い家", "大きいで古い家", "大きい古い家", "大きくで古い家"],
+      "answer": "大きくて古い家",
+      "explanation": "⚠ Connecting two い-adjectives: use the て-form. 大きい → 大きくて (drop い, add くて). Same pattern: 安くておいしい料理 = cheap and delicious food."
+    },
+    {
+      "id": "w3h-072",
+      "question": "Choose: '___ですが、安いです。' (Pick what fits if the contrast is 'expensive but cheap'... wait, pick what FITS to give a coherent sentence.)",
+      "choices": ["古い", "高い", "おいしい", "新しい"],
+      "answer": "古い",
+      "explanation": "が = but. The sentence sets up a contrast with 安い (cheap). Logical contrast: 'old BUT cheap' — i.e., despite being old, it's cheap. 高いですが安いです would be contradictory. 古いですが安いです makes sense ('It's old, but cheap')."
+    },
+    {
+      "id": "w3h-073",
+      "question": "Translate: 'My room is small but clean.'",
+      "choices": ["私の部屋は小さいですが、きれいです。", "私の部屋は小さくて、きれいです。", "Both are grammatically correct, with subtle difference.", "私の部屋は小さいけれども、きれい。"],
+      "answer": "Both are grammatically correct, with subtle difference.",
+      "explanation": "が emphasizes CONTRAST ('but'). て emphasizes ADDITIVE link ('and'). Both work, but が is more accurate for the 'but' meaning in this translation."
+    },
+    {
+      "id": "w3h-074",
+      "question": "Choose: 「とても___人ですね。」 (Pick a な-adjective.)",
+      "choices": ["ハンサムな", "面白い", "おもしろな", "高い"],
+      "answer": "ハンサムな",
+      "explanation": "ハンサム (handsome, katakana) is な-adj → ハンサムな人. Option 2 (面白い) is i-adj — would attach as 面白い人 (no な)."
+    },
+    {
+      "id": "w3h-075",
+      "question": "Choose: 「日本のお寺はとても___です。」",
+      "choices": ["きれい", "きれいい", "きれいな", "きれくない"],
+      "answer": "きれい",
+      "explanation": "Predicate position (before です): use the bare な-adj WITHOUT な. きれいです (NOT きれいなです). The な is only inserted BEFORE A NOUN."
+    },
+    {
+      "id": "w3h-076",
+      "question": "Order to form the right sentence: [姉] [きれい] [は] [でした] [とても] [昨日]",
+      "choices": ["姉は昨日とてもきれいでした。", "姉はとても昨日きれいでした。", "昨日姉はとてもきれいでした。", "All three orderings are grammatical."],
+      "answer": "All three orderings are grammatical.",
+      "explanation": "Japanese is flexible about time-adverb position. 'Subject は + time + degree + adjective + でした' is the most standard, but variants are valid. Topic は must be near beginning; predicate でした must be at end."
+    },
+    {
+      "id": "w3h-077",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["昨日のテストはとても難しいでした。", "昨日のテストはとても難しかったです。", "昨日のテストはあまり難しくなかったです。", "今日のテストは難しいです。"],
+      "answer": "昨日のテストはとても難しいでした。",
+      "explanation": "⚠ Wrong: 難しい is i-adj, past is 難しかった (NOT 難しいでした). The other three are correctly conjugated."
+    },
+    {
+      "id": "w3h-078",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["この公園は静かいです。", "この公園は静かです。", "この公園は静かじゃないです。", "この公園は静かでした。"],
+      "answer": "この公園は静かいです。",
+      "explanation": "⚠ 静か is な-adj — predicate is just 静かです (no い added). Option 1 incorrectly turns it into an i-adj."
+    },
+    {
+      "id": "w3h-079",
+      "question": "Choose the natural sentence: 'A: How is your new job? B: It's interesting, but a little tough.'",
+      "choices": ["面白いですが、ちょっと大変です。", "面白いでも、ちょっと大変いです。", "面白い、ちょっと大変。", "面白いてちょっと大変です。"],
+      "answer": "面白いですが、ちょっと大変です。",
+      "explanation": "Pattern: [Sentence 1]ですが、[Sentence 2] = '...but ...'. 大変 (たいへん) is な-adj. ちょっと = a little. Note: でも at sentence-beginning is OK (でも、ちょっと大変です) but combining として into the same clause doesn't work."
+    },
+    {
+      "id": "w3h-080",
+      "question": "Translate the Japanese: 京都はとても有名で、きれいな町です。",
+      "choices": ["Kyoto is a very famous and beautiful city.", "Kyoto is famous, but not beautiful.", "Kyoto was famous and beautiful.", "Kyoto has famous and beautiful places."],
+      "answer": "Kyoto is a very famous and beautiful city.",
+      "explanation": "とても = very. 有名で (te-form of na-adj) = 'is famous AND'. きれいな町です = 'is a beautiful city'. Sentence: 'Kyoto is a very famous AND beautiful city.'"
+    },
+    {
+      "id": "w3h-081",
+      "question": "Translate: 山田さんは新しいパソコンを買いました。古いのは妹にあげました。 What did Yamada give to his younger sister?",
+      "choices": ["The old computer.", "A new computer.", "Nothing.", "Cannot be determined."],
+      "answer": "The old computer.",
+      "explanation": "古いの = 'the old one' (の = replacement noun, refers back to パソコン). 妹に = to younger sister. あげました = gave. So: gave THE OLD ONE to younger sister."
+    },
+    {
+      "id": "w3h-082",
+      "question": "Translate: 田中さんは去年友達から大きい辞書(じしょ)をもらいました。 Who received what?",
+      "choices": ["Tanaka received a big dictionary from a friend (last year).", "Tanaka gave a big dictionary to a friend (last year).", "Tanaka's friend received a big dictionary.", "Tanaka borrowed a big dictionary from a friend."],
+      "answer": "Tanaka received a big dictionary from a friend (last year).",
+      "explanation": "Subject: 田中さん. 友達から = from friend. 大きい辞書を = (object) big dictionary. もらいました = received. 去年 = last year."
+    },
+    {
+      "id": "w3h-083",
+      "question": "Read: 私は毎週土曜日に山田先生に日本語を習います。山田先生はとても親切な人です。 Who teaches Japanese in this passage?",
+      "choices": ["Yamada-sensei", "I (the speaker)", "Both", "Cannot be determined"],
+      "answer": "Yamada-sensei",
+      "explanation": "⚠ Direction trap: 山田先生に習います = 'I learn FROM Yamada'. So Yamada is the TEACHER (giver of teaching). The speaker is the learner."
+    },
+    {
+      "id": "w3h-084",
+      "question": "Read: 「先週、母から手紙をもらいました。とても長かったですが、面白かったです。」 The letter was:",
+      "choices": ["Long but interesting.", "Short and interesting.", "Long and not interesting.", "Short and not interesting."],
+      "answer": "Long but interesting.",
+      "explanation": "とても長かった = was very long (past affirmative). が = but. 面白かった = was interesting (past affirmative). 'Long, but interesting'."
+    },
+    {
+      "id": "w3h-085",
+      "question": "Read: 山田さんの新しい家は駅から近いです。でも、あまり大きくないです。家賃(やちん)は安いですから、山田さんは好きです。 Why does Yamada like his house?",
+      "choices": ["Because the rent is cheap.", "Because it's near the station.", "Because it's big.", "Because it's new."],
+      "answer": "Because the rent is cheap.",
+      "explanation": "Reason marker: から = because. The clause before から is the reason: 家賃は安いですから = 'because the rent is cheap'. The other facts (near station, not big, new) are mentioned but not stated as the REASON."
+    },
+    {
+      "id": "w3h-086",
+      "question": "Read: 父は静かな人です。母はにぎやかな人です。私は父より母のほうが好きです。 Whom does the speaker prefer?",
+      "choices": ["Mother (the lively one)", "Father (the quiet one)", "Both equally", "Cannot be determined"],
+      "answer": "Mother (the lively one)",
+      "explanation": "Pattern: AよりBのほうが好きです = 'I prefer B over A' (a touch of N4 grammar). 父より = compared to father, 母のほうが好き = (I) like mother more. Mother is described as にぎやか (lively)."
+    },
+    {
+      "id": "w3h-087",
+      "question": "Read: 「兄は私に古い時計をあげました。新しいのではありませんでしたが、私はとても嬉しかったです。」 What did the speaker receive?",
+      "choices": ["An old watch (and was happy).", "A new watch.", "Nothing.", "Both old and new watches."],
+      "answer": "An old watch (and was happy).",
+      "explanation": "兄は私にあげました = 'My brother gave me'. 古い時計 = old watch. 新しいのではありませんでした = 'was not a new one'. 嬉しかった = was happy. Despite being old, speaker was happy."
+    },
+    {
+      "id": "w3h-088",
+      "question": "Read: 「日本語は難しいですが、面白いですから、毎日勉強します。」 Why does the speaker study Japanese every day?",
+      "choices": ["Because it's interesting.", "Because it's difficult.", "Because it's both difficult and interesting.", "The reason is not stated."],
+      "answer": "Because it's interesting.",
+      "explanation": "から marks the REASON. The clause directly before から is the reason: 面白いですから = 'because (it) is interesting'. 難しい is mentioned but as a concession (with が = but), not the reason."
+    },
+    {
+      "id": "w3h-089",
+      "question": "Read: 「私の町は小さくて静かです。便利じゃないですが、空気(くうき)がきれいです。」 Which adjective does NOT describe the speaker's town?",
+      "choices": ["Convenient", "Small", "Quiet", "(The air is) clean"],
+      "answer": "Convenient",
+      "explanation": "便利じゃない = NOT convenient. The other three are explicitly stated as TRUE: 小さくて = small AND, 静か = quiet, 空気がきれい = air is clean."
+    },
+    {
+      "id": "w3h-090",
+      "question": "Read: 「妹はピアノが上手です。私はピアノが下手ですが、好きです。」 What is true about the speaker?",
+      "choices": ["Bad at piano but likes it.", "Good at piano and likes it.", "Bad at piano and dislikes it.", "Doesn't play piano."],
+      "answer": "Bad at piano but likes it.",
+      "explanation": "私 = speaker. ピアノが下手 = bad at piano. ですが = but. 好きです = likes (it). Note the contrast: bad at it BUT likes it. 妹 (younger sister) is the one who's good (上手)."
+    },
+    {
+      "id": "w3h-091",
+      "question": "Read: 「先週、田中さんから誕生日のプレゼントをもらいました。きれいな花でした。私はとても嬉しかったです。」 Who gave the present?",
+      "choices": ["Tanaka-san", "The speaker", "An unknown person", "Both Tanaka and speaker"],
+      "answer": "Tanaka-san",
+      "explanation": "田中さんから…もらいました = received FROM Tanaka. もらう construction: [source]から + [object]を + もらう. The speaker is the recipient."
+    },
+    {
+      "id": "w3h-092",
+      "question": "Read: 「私は毎晩日本語を勉強します。でも、まだ上手じゃありません。」 What is true?",
+      "choices": ["The speaker studies every night but is not yet good.", "The speaker is already good at Japanese.", "The speaker studies sometimes.", "The speaker doesn't study Japanese."],
+      "answer": "The speaker studies every night but is not yet good.",
+      "explanation": "毎晩 = every night. 勉強します = study. でも = but. まだ + 上手じゃありません = 'not yet skillful'. まだ + negative = 'not yet' in this context."
+    },
+    {
+      "id": "w3h-093",
+      "question": "Read: 「山田さんは英語が上手で、フランス語も上手です。中国語は下手ですが、好きです。」 Which language is Yamada bad at but enjoys?",
+      "choices": ["Chinese", "English", "French", "All of them"],
+      "answer": "Chinese",
+      "explanation": "Parse three languages: 英語が上手 (good at English), フランス語も上手 (also good at French), 中国語は下手ですが、好きです (bad at Chinese BUT likes it)."
+    },
+    {
+      "id": "w3h-094",
+      "question": "Read: 「あの新しいレストランの料理はおいしくて、安いです。それから、店の人もとても親切です。」 Pick the statement that is TRUE about this restaurant:",
+      "choices": ["The food is tasty AND cheap, and the staff is kind.", "The food is expensive but the staff is kind.", "The food is bad but cheap.", "The staff is the new part."],
+      "answer": "The food is tasty AND cheap, and the staff is kind.",
+      "explanation": "おいしくて = tasty AND (te-form). 安いです = cheap. それから = also/moreover. 店の人 = staff/shop people. 親切 = kind. All positive."
+    },
+    {
+      "id": "w3h-095",
+      "question": "Read: 「父は毎朝7時に起きて、新しい新聞を読みます。それから、犬と散歩(さんぽ)に行きます。」 What does Father do FIRST in the morning?",
+      "choices": ["Wakes up at 7.", "Reads the newspaper.", "Walks the dog.", "Eats breakfast."],
+      "answer": "Wakes up at 7.",
+      "explanation": "Sequence: 7時に起きて (wake at 7, te-form connects), then 新聞を読みます (read paper), それから = after that, 散歩に行きます. First action = waking up."
+    },
+    {
+      "id": "w3h-096",
+      "question": "Read: 「兄は背(せ)が高くて、ハンサムです。でも、あまり親切じゃありません。」 (背が高い = tall) What is true about the older brother?",
+      "choices": ["Tall and handsome, but not very kind.", "Tall, handsome, and kind.", "Short and not kind.", "Kind but short."],
+      "answer": "Tall and handsome, but not very kind.",
+      "explanation": "背が高くて = is tall AND. ハンサムです = handsome. でも = but. あまり親切じゃありません = not very kind."
+    },
+    {
+      "id": "w3h-097",
+      "question": "Read this exchange: A: 「日本料理はどうですか?」 B: 「とてもおいしいですが、ちょっと高いです。」 What does B think about Japanese food?",
+      "choices": ["Tasty but a bit expensive.", "Tasty and cheap.", "Bad and expensive.", "Doesn't like it."],
+      "answer": "Tasty but a bit expensive.",
+      "explanation": "とても = very. おいしい = tasty. ですが = but. ちょっと = a little. 高い = expensive (price meaning). Standard contrast pattern: 'A but B'."
+    },
+    {
+      "id": "w3h-098",
+      "question": "Read: 「私の部屋はあまり大きくないですが、明るくて、きれいです。家賃も安いですから、私はこの部屋が好きです。」 Which is the speaker's reason for liking the room?",
+      "choices": ["The cheap rent (explicitly with から).", "The size (it's big).", "It's an expensive room.", "Cannot be determined."],
+      "answer": "The cheap rent (explicitly with から).",
+      "explanation": "から marks the explicit reason. Reading carefully: ...安いですから、...好きです = 'because (it is) cheap, ...like'. The other features (not big, bright, clean) are mentioned but not as the stated reason."
+    },
+    {
+      "id": "w3h-099",
+      "question": "Read: 「先週、有名な歌手のコンサートに行きました。チケットはとても高かったですが、コンサートはとても良かったです。また行きたいです。」 What did the speaker think of the concert?",
+      "choices": ["The ticket was expensive but the concert was great — wants to go again.", "Both ticket and concert were bad.", "Ticket cheap, concert bad.", "Won't go again."],
+      "answer": "The ticket was expensive but the concert was great — wants to go again.",
+      "explanation": "チケットは高かった = ticket was expensive (past affirmative). が = but. コンサートはとても良かった = concert was very good (past affirmative of いい = よかった). また行きたい = want to go again."
+    },
+    {
+      "id": "w3h-100",
+      "question": "Final challenge — read: 「私の友達の田中さんは、若い時、英語が下手でした。でも、毎日とても一生懸命(いっしょうけんめい)勉強しましたから、今はとても上手です。先月、田中さんはアメリカで仕事の機会(きかい)をもらいました。来月、東京から出て、ニューヨークへ行きます。」 What is the MAIN reason Tanaka's English is now good?",
+      "choices": ["He studied very hard every day.", "He received a job in America.", "He moved to New York.", "He was good when young."],
+      "answer": "He studied very hard every day.",
+      "explanation": "Parse: 若い時、下手でした (was bad when young). でも = but. 毎日一生懸命勉強しましたから (because studied hard every day) = REASON marker. 今は上手 = now skillful. The other facts (got a job, will move) are consequences, not causes."
+    }
+  ]
+}

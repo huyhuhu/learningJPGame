@@ -1,0 +1,422 @@
+{
+    "questions": [],
+    "kanji": {
+        "貸": {
+            "reading": "タイ, か(す)",
+            "meaning": "lend, loan",
+            "label": "verb"
+        },
+        "借": {
+            "reading": "シャク, か(りる)",
+            "meaning": "borrow, rent",
+            "label": "verb"
+        },
+        "習": {
+            "reading": "シュウ, なら(う)",
+            "meaning": "learn, study",
+            "label": "verb"
+        },
+        "給": {
+            "reading": "キュウ",
+            "meaning": "salary, supply, provide — appears in 給料 (salary)",
+            "label": "noun"
+        },
+        "料": {
+            "reading": "リョウ",
+            "meaning": "fee, materials, charge — common suffix (料金, 授業料)",
+            "label": "noun-suffix"
+        },
+        "教": {
+            "reading": "キョウ, おし(える), おそ(わる)",
+            "meaning": "teach, instruct",
+            "label": "verb"
+        },
+        "花": {
+            "reading": "カ, はな",
+            "meaning": "flower",
+            "label": "noun"
+        },
+        "飯": {
+            "reading": "ハン, めし",
+            "meaning": "cooked rice, meal — ご飯 (ごはん)",
+            "label": "noun"
+        },
+        "杯": {
+            "reading": "ハイ, さかずき",
+            "meaning": "cup, glass (counter for drinks) — sound changes: 一杯 いっぱい, 三杯 さんばい",
+            "label": "counter"
+        },
+        "古": {
+            "reading": "コ, ふる(い)",
+            "meaning": "old (for objects, not people)",
+            "label": "i-adjective"
+        },
+        "高": {
+            "reading": "コウ, たか(い)",
+            "meaning": "tall, high, expensive",
+            "label": "i-adjective"
+        },
+        "暑": {
+            "reading": "ショ, あつ(い)",
+            "meaning": "hot (weather only) — contrast with 熱い (hot objects)",
+            "label": "i-adjective"
+        },
+        "気": {
+            "reading": "キ, ケ",
+            "meaning": "spirit, mood, feeling, air — 元気, 天気, 病気",
+            "label": "noun"
+        },
+        "熱": {
+            "reading": "ネツ, あつ(い)",
+            "meaning": "heat, fever, hot (to touch) — same あつい reading as 暑い but different use",
+            "label": "i-adjective"
+        },
+        "厚": {
+            "reading": "コウ, あつ(い)",
+            "meaning": "thick, deep (gratitude) — third あつい reading (厚い／熱い／暑い trap)",
+            "label": "i-adjective"
+        },
+        "篤": {
+            "reading": "トク, あつ(い)",
+            "meaning": "deep, serious, cordial — rare; fourth あつい reading (illness/sincerity)",
+            "label": "i-adjective"
+        },
+        "寒": {
+            "reading": "カン, さむ(い)",
+            "meaning": "cold (weather only) — contrast with 冷たい (cold objects)",
+            "label": "i-adjective"
+        },
+        "冷": {
+            "reading": "レイ, つめ(たい), ひ(える), さ(める)",
+            "meaning": "cold (to touch), cool down",
+            "label": "i-adjective"
+        },
+        "易": {
+            "reading": "エキ, イ, やさ(しい)",
+            "meaning": "easy — same やさしい reading as 優しい (kind); context disambiguates",
+            "label": "i-adjective"
+        },
+        "面": {
+            "reading": "メン, おも, つら",
+            "meaning": "face, surface, aspect",
+            "label": "noun"
+        },
+        "白": {
+            "reading": "ハク, しろ(い)",
+            "meaning": "white",
+            "label": "color"
+        },
+        "忙": {
+            "reading": "ボウ, いそが(しい)",
+            "meaning": "busy",
+            "label": "i-adjective"
+        },
+        "嫌": {
+            "reading": "ケン, きら(い), いや",
+            "meaning": "dislike, hate, disagreeable",
+            "label": "na-adjective"
+        },
+        "有": {
+            "reading": "ユウ, ウ, あ(る)",
+            "meaning": "exist, have, possess — 有名 (famous)",
+            "label": "verb"
+        },
+        "上": {
+            "reading": "ジョウ, うえ, あ(げる), のぼ(る)",
+            "meaning": "up, above, top",
+            "label": "direction"
+        },
+        "手": {
+            "reading": "シュ, て",
+            "meaning": "hand",
+            "label": "noun"
+        },
+        "部": {
+            "reading": "ブ",
+            "meaning": "department, part, section, club — 部屋 (room)",
+            "label": "noun"
+        },
+        "屋": {
+            "reading": "オク, や",
+            "meaning": "shop, store, roof — suffix for shops (本屋, 花屋)",
+            "label": "noun-suffix"
+        },
+        "好": {
+            "reading": "コウ, す(き), この(む)",
+            "meaning": "like, fond of",
+            "label": "na-adjective"
+        },
+        "静": {
+            "reading": "セイ, しず(か)",
+            "meaning": "quiet, calm",
+            "label": "na-adjective"
+        },
+        "元": {
+            "reading": "ゲン, ガン, もと",
+            "meaning": "origin, source, former — 元気 (healthy/energetic)",
+            "label": "noun"
+        },
+        "天": {
+            "reading": "テン, あめ",
+            "meaning": "sky, heaven — 天気 (weather)",
+            "label": "noun"
+        },
+        "暇": {
+            "reading": "カ, ひま",
+            "meaning": "free time, leisure",
+            "label": "na-adjective"
+        },
+        "親": {
+            "reading": "シン, おや, した(しい)",
+            "meaning": "parent, intimate, close",
+            "label": "noun"
+        },
+        "切": {
+            "reading": "セツ, サイ, き(る)",
+            "meaning": "cut, earnest — 親切 (kind)",
+            "label": "verb"
+        },
+        "理": {
+            "reading": "リ",
+            "meaning": "reason, logic, principle — 料理 (cooking), 無理 (impossible)",
+            "label": "noun"
+        },
+        "姉": {
+            "reading": "シ, あね, ねえ",
+            "meaning": "older sister — お姉さん (おねえさん, irregular)",
+            "label": "noun"
+        },
+        "町": {
+            "reading": "チョウ, まち",
+            "meaning": "town, neighborhood",
+            "label": "noun"
+        },
+        "難": {
+            "reading": "ナン, むずか(しい), かた(い)",
+            "meaning": "difficult, hard",
+            "label": "i-adjective"
+        },
+        "赤": {
+            "reading": "セキ, あか(い)",
+            "meaning": "red",
+            "label": "color"
+        },
+        "安": {
+            "reading": "アン, やす(い)",
+            "meaning": "cheap, inexpensive, safe, peaceful",
+            "label": "i-adjective"
+        },
+        "小": {
+            "reading": "ショウ, ちい(さい), こ, お",
+            "meaning": "small, little",
+            "label": "i-adjective"
+        },
+        "変": {
+            "reading": "ヘン, か(わる), か(える)",
+            "meaning": "strange, change — 大変 (たいへん, very/terrible)",
+            "label": "na-adjective"
+        },
+        "妹": {
+            "reading": "マイ, いもうと",
+            "meaning": "younger sister",
+            "label": "noun"
+        },
+        "辞": {
+            "reading": "ジ, や(める)",
+            "meaning": "resign, quit, word — 辞書 (dictionary), 辞典",
+            "label": "noun"
+        },
+        "紙": {
+            "reading": "シ, かみ",
+            "meaning": "paper — 手紙 (てがみ, letter)",
+            "label": "noun"
+        },
+        "長": {
+            "reading": "チョウ, なが(い)",
+            "meaning": "long, chief, leader",
+            "label": "i-adjective"
+        },
+        "近": {
+            "reading": "キン, ちか(い)",
+            "meaning": "near, close",
+            "label": "i-adjective"
+        },
+        "賃": {
+            "reading": "チン",
+            "meaning": "fare, fee, wages, rent — 家賃 (rent), 運賃 (fare)",
+            "label": "noun"
+        },
+        "計": {
+            "reading": "ケイ, はか(る)",
+            "meaning": "measure, plan, total — 時計 (clock), 合計 (total)",
+            "label": "noun"
+        },
+        "嬉": {
+            "reading": "キ, うれ(しい)",
+            "meaning": "happy, glad, delighted",
+            "label": "i-adjective"
+        },
+        "便": {
+            "reading": "ベン, ビン, たよ(り)",
+            "meaning": "convenience, mail, flight — 便利 (べんり, convenient)",
+            "label": "noun"
+        },
+        "利": {
+            "reading": "リ, き(く)",
+            "meaning": "advantage, benefit, profit — 便利, 利用",
+            "label": "noun"
+        },
+        "空": {
+            "reading": "クウ, そら, あ(く), から",
+            "meaning": "sky, empty, vacant — 空気 (air), 空港 (airport)",
+            "label": "noun"
+        },
+        "下": {
+            "reading": "カ, ゲ, した, さ(げる), くだ(る)",
+            "meaning": "down, below, under",
+            "label": "direction"
+        },
+        "誕": {
+            "reading": "タン",
+            "meaning": "birth, be born — almost always in 誕生日 (たんじょうび, birthday)",
+            "label": "noun"
+        },
+        "店": {
+            "reading": "テン, みせ",
+            "meaning": "shop, store",
+            "label": "noun"
+        },
+        "犬": {
+            "reading": "ケン, いぬ",
+            "meaning": "dog",
+            "label": "noun"
+        },
+        "散": {
+            "reading": "サン, ち(る)",
+            "meaning": "scatter, disperse — 散歩 (さんぽ, walk/stroll)",
+            "label": "verb"
+        },
+        "背": {
+            "reading": "ハイ, せ, せい",
+            "meaning": "back, height, stature",
+            "label": "noun"
+        },
+        "歌": {
+            "reading": "カ, うた, うた(う)",
+            "meaning": "song, sing",
+            "label": "noun"
+        },
+        "良": {
+            "reading": "リョウ, よ(い)",
+            "meaning": "good, fine — formal version of いい",
+            "label": "i-adjective"
+        },
+        "若": {
+            "reading": "ジャク, わか(い), も(しくは)",
+            "meaning": "young",
+            "label": "i-adjective"
+        },
+        "懸": {
+            "reading": "ケン, ケ, か(ける)",
+            "meaning": "hang, suspend, depend on — 一生懸命 (with all one's might)",
+            "label": "verb"
+        },
+        "命": {
+            "reading": "メイ, ミョウ, いのち",
+            "meaning": "life, command, fate — 一生懸命",
+            "label": "noun"
+        }
+    },
+    "words": {
+        "貸します": {
+            "reading": "かします",
+            "meaning": "to lend (polite) — dictionary form: 貸す. Subject lends TO someone",
+            "label": "verb-godan"
+        },
+        "借ります": {
+            "reading": "かります",
+            "meaning": "to borrow, to rent (polite) — dictionary form: 借りる. Subject borrows FROM someone",
+            "label": "verb-ichidan"
+        },
+        "習います": {
+            "reading": "ならいます",
+            "meaning": "to learn (polite) — dictionary form: 習う. Often paired with に (teacher) or で (place)",
+            "label": "verb-godan"
+        },
+        "もう一杯": {
+            "reading": "もういっぱい",
+            "meaning": "one more cup/glass — note sound change: 一杯 is いっぱい, NOT いちはい",
+            "label": "phrase"
+        },
+        "古い": {
+            "reading": "ふるい",
+            "meaning": "old (for objects only — never for people; use 年寄り or 年上 for people)",
+            "label": "i-adjective"
+        },
+        "高い": {
+            "reading": "たかい",
+            "meaning": "tall, high, expensive — opposite depends on context: 低い (low) or 安い (cheap)",
+            "label": "i-adjective"
+        },
+        "暑い": {
+            "reading": "あつい",
+            "meaning": "hot (weather/climate only) — exception trap: 熱い for objects, 厚い for thickness, all read あつい",
+            "label": "i-adjective"
+        },
+        "寒い": {
+            "reading": "さむい",
+            "meaning": "cold (weather only) — for cold objects/drinks use 冷たい",
+            "label": "i-adjective"
+        },
+        "冷たい": {
+            "reading": "つめたい",
+            "meaning": "cold (to the touch), cold-hearted — for weather use 寒い",
+            "label": "i-adjective"
+        },
+        "易しい": {
+            "reading": "やさしい",
+            "meaning": "easy, simple — exception: same reading as 優しい (kind/gentle); context decides",
+            "label": "i-adjective"
+        },
+        "面白い": {
+            "reading": "おもしろい",
+            "meaning": "interesting, funny, amusing",
+            "label": "i-adjective"
+        },
+        "忙しい": {
+            "reading": "いそがしい",
+            "meaning": "busy",
+            "label": "i-adjective"
+        },
+        "嫌い": {
+            "reading": "きらい",
+            "meaning": "dislike, hate — exception trap: ends in い but is a な-adjective, NOT い-adjective",
+            "label": "na-adjective"
+        },
+        "有名": {
+            "reading": "ゆうめい",
+            "meaning": "famous",
+            "label": "na-adjective"
+        },
+        "上手": {
+            "reading": "じょうず",
+            "meaning": "skillful, good at — exception: NOT うえて or じょうて. Opposite: 下手 (へた)",
+            "label": "na-adjective"
+        },
+        "大きい": {
+            "reading": "おおきい",
+            "meaning": "big, large — note long おお, not お",
+            "label": "i-adjective"
+        },
+        "静か": {
+            "reading": "しずか",
+            "meaning": "quiet, calm — exception trap: な-adjective despite no い ending (uses 静かな/静かに)",
+            "label": "na-adjective"
+        },
+        "元気": {
+            "reading": "げんき",
+            "meaning": "healthy, energetic, in good spirits",
+            "label": "na-adjective"
+        }
+    }
+}
