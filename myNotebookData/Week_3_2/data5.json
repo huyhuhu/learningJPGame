@@ -1,0 +1,704 @@
+{
+  "questions": [
+    {
+      "id": "w3h-101",
+      "question": "Choose particle: 私はコーヒー___好きです。",
+      "choices": ["が", "を", "に", "は"],
+      "answer": "が",
+      "explanation": "⚠ TOP TRAP for Vietnamese/English learners: 好き takes が, NOT を. The 'liked thing' is grammatically the SUBJECT in Japanese, not an object. Pattern: [Person]は [Thing]が 好きです."
+    },
+    {
+      "id": "w3h-102",
+      "question": "Choose particle: 弟は野菜(やさい)___嫌いです。",
+      "choices": ["が", "を", "に", "で"],
+      "answer": "が",
+      "explanation": "嫌い (kirai = dislike) follows the same が-pattern as 好き. 野菜が嫌い = 'dislike vegetables'. Same trap as 好き. 野菜 (やさい) = vegetables."
+    },
+    {
+      "id": "w3h-103",
+      "question": "Choose particle: 山田さんは英語___上手です。",
+      "choices": ["が", "を", "に", "で"],
+      "answer": "が",
+      "explanation": "上手 (skillful) takes が. Pattern: [Person]は [Skill]が 上手です. Same family as 好き/嫌い/下手/分かる — all use が."
+    },
+    {
+      "id": "w3h-104",
+      "question": "Choose particle: 私は日本語___少し分かります。",
+      "choices": ["が", "を", "に", "の"],
+      "answer": "が",
+      "explanation": "⚠ 分かる (understand) takes が, NOT を. Even though English uses 'understand X' (X = object), Japanese treats the understood thing as the subject grammatically."
+    },
+    {
+      "id": "w3h-105",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["私は寿司を好きです。", "私は寿司が好きです。", "妹は猫が嫌いです。", "兄は数学(すうがく)が上手です。"],
+      "answer": "私は寿司を好きです。",
+      "explanation": "⚠ Classic error: 好き takes が, NOT を. The 'liked thing' is the grammatical subject. 寿司を好きです is incorrect — must be 寿司が好きです."
+    },
+    {
+      "id": "w3h-106",
+      "question": "Translate: 'I really like Japanese food.'",
+      "choices": ["私は日本の食べ物が大好きです。", "私は日本の食べ物を大好きです。", "私は日本の食べ物が大好きいです。", "私は日本の食べ物のことが大きい好きです。"],
+      "answer": "私は日本の食べ物が大好きです。",
+      "explanation": "大好き (だいすき) = really like / love. It's a な-adj like 好き, takes が. Note: 大好き is one word; do not separate as 大きい好き."
+    },
+    {
+      "id": "w3h-107",
+      "question": "Translate: 'My older brother is very bad at cooking.'",
+      "choices": ["兄は料理がとても下手です。", "兄は料理をとても下手です。", "兄は料理がとても下手いです。", "兄の料理はとても下手です。"],
+      "answer": "兄は料理がとても下手です。",
+      "explanation": "下手 (へた) = bad at (skill). Takes が, same pattern as 上手. Option 4 changes meaning ('My brother's cooking is bad' — about the food, not the person)."
+    },
+    {
+      "id": "w3h-108",
+      "question": "What is the difference between |上手| and |得意(とくい)|?",
+      "choices": ["上手 = others praising your skill; 得意 = describing your own strength", "They are exactly the same", "上手 = professional skill; 得意 = hobby skill", "上手 = past skill; 得意 = current skill"],
+      "answer": "上手 = others praising your skill; 得意 = describing your own strength",
+      "explanation": "⚠ Cultural nuance: saying 私は日本語が上手です sounds boastful/arrogant in Japanese. Use 得意 for self-description: 私は日本語が得意です. Use 上手 when complimenting OTHERS: 山田さんは日本語が上手ですね."
+    },
+    {
+      "id": "w3h-109",
+      "question": "Translate: 'Are you good at sports?' (asking another person)",
+      "choices": ["スポーツが上手ですか。", "スポーツが得意ですか。", "Both are acceptable.", "スポーツを上手ですか。"],
+      "answer": "Both are acceptable.",
+      "explanation": "When asking ABOUT another person, either 上手 or 得意 works (both polite). The cultural rule only restricts self-praise. Option 4 has wrong particle (を instead of が)."
+    },
+    {
+      "id": "w3h-110",
+      "question": "Choose: 私は犬___好きですが、猫___あまり好き___ありません。",
+      "choices": ["A=が / B=は / C=じゃ", "A=を / B=が / C=じゃ", "A=が / B=を / C=で", "A=は / B=が / C=じゃ"],
+      "answer": "A=が / B=は / C=じゃ",
+      "explanation": "⚠ Subtle distinction: 犬が好き (like dogs — neutral statement). 猫は (TOPIC marker — contrast emphasis, 'as for cats...'). は can replace が in contrastive contexts. じゃありません = negative form for 好き (a な-adj)."
+    },
+    {
+      "id": "w3h-111",
+      "question": "Choose particle for adverb: 私は日本語が___分かります。 (= 'I understand a little Japanese.')",
+      "choices": ["少し", "あまり", "全然", "とても"],
+      "answer": "少し",
+      "explanation": "少し (すこし) = a little — pairs with affirmative. あまり/全然 require negative form. とても (very) doesn't fit 分かる well — would say よく分かる instead. Common natural pairing: 少し分かります."
+    },
+    {
+      "id": "w3h-112",
+      "question": "Choose: 私はスポーツが___好きじゃありません。",
+      "choices": ["あまり", "少し", "とても", "たくさん"],
+      "answer": "あまり",
+      "explanation": "⚠ あまり + negative = 'not very / not much'. Pattern: あまり…じゃありません/ない. Means 'I don't like sports very much' (softer than 嫌い)."
+    },
+    {
+      "id": "w3h-113",
+      "question": "Choose: 私はフランス語が___分かりません。",
+      "choices": ["全然", "少し", "とても", "もう"],
+      "answer": "全然",
+      "explanation": "全然 (ぜんぜん) + negative = 'not at all'. 全然分かりません = don't understand at all. ⚠ Strong word — use only when truly zero understanding."
+    },
+    {
+      "id": "w3h-114",
+      "question": "Choose: A: 「お酒(おさけ)が好きですか?」 B: 「いいえ、___飲みません。」",
+      "choices": ["あまり", "とても", "もう", "少し"],
+      "answer": "あまり",
+      "explanation": "⚠ Soft refusal: あまり…ません = 'don't ... much'. Japanese natives prefer this over saying 嫌いです (which sounds blunt). Standard cultural register for declining."
+    },
+    {
+      "id": "w3h-115",
+      "question": "What does |どうして| mean?",
+      "choices": ["why", "how", "what", "when"],
+      "answer": "why",
+      "explanation": "どうして = why (asking for reason). Synonym: なぜ (slightly more formal). Both ask for cause/reason. Pair with から in answer: どうして…か / …からです."
+    },
+    {
+      "id": "w3h-116",
+      "question": "Choose the natural answer: A: 「どうして昨日学校を休みましたか?」 B: 「___」",
+      "choices": ["頭(あたま)が痛(いた)かったからです。", "頭が痛かったでした。", "から頭が痛かったです。", "頭が痛かったがです。"],
+      "answer": "頭(あたま)が痛(いた)かったからです。",
+      "explanation": "Reason answer pattern: [reason clause] + からです. 'Because (my) head hurt.' から goes at the END of the reason clause, not the beginning. 頭が痛い = have a headache."
+    },
+    {
+      "id": "w3h-117",
+      "question": "Choose: 「明日早く起きますから、今晩早く___。」",
+      "choices": ["寝ます", "寝ました", "寝ません", "起きます"],
+      "answer": "寝ます",
+      "explanation": "から (because) clause precedes the consequence. 'Because (I) wake up early tomorrow, (I) sleep early tonight.' Logical pairing: 早く起きる → 早く寝る. Future habitual = ます."
+    },
+    {
+      "id": "w3h-118",
+      "question": "Find the INCORRECT use of から:",
+      "choices": ["時間がありませんから、すぐ帰ります。", "明日テストがありますから、勉強しません。", "暑いですから、窓(まど)を開(あ)けます。", "雨が降りますから、傘(かさ)を持(も)ちます。"],
+      "answer": "明日テストがありますから、勉強しません。",
+      "explanation": "⚠ Logical contradiction: 'Because (I) have a test tomorrow, (I) DON'T study' makes no sense. The expected response is 勉強します (will study). The other three are logically consistent."
+    },
+    {
+      "id": "w3h-119",
+      "question": "Translate: 'I don't like cold weather, so I don't go out in winter.' (winter = 冬)",
+      "choices": ["寒い天気が好きじゃありませんから、冬は出かけません。", "寒い天気を好きじゃないから、冬は出かけません。", "寒い天気が好きじゃありませんから、冬は出かけます。", "冬は出かけませんから、寒い天気が好きじゃありません。"],
+      "answer": "寒い天気が好きじゃありませんから、冬は出かけません。",
+      "explanation": "Reason → consequence: [don't like cold]から、[don't go out in winter]. Option 4 reverses the logic. Option 3 contradicts itself. Option 2 has wrong particle (を with 好き)."
+    },
+    {
+      "id": "w3h-120",
+      "question": "What is the basic difference between |あります| and |います|?",
+      "choices": ["あります = inanimate things; います = living things that can move (people, animals)", "あります = visible things; います = invisible things", "あります = past; います = present", "あります = singular; います = plural"],
+      "answer": "あります = inanimate things; います = living things that can move (people, animals)",
+      "explanation": "Core rule: あります for objects, plants, places, events, abstractions. います for people and animals that move on their own. ⚠ Trees take あります (don't move autonomously). Insects: います."
+    },
+    {
+      "id": "w3h-121",
+      "question": "Which uses |あります|?",
+      "choices": ["机の上に本が___。", "公園に子供が___。", "庭(にわ)に鳥(とり)が___。", "教室に学生が___。"],
+      "answer": "机の上に本が___。",
+      "explanation": "本 (book) is INANIMATE → あります. The other three involve animate beings (children, birds, students) → います."
+    },
+    {
+      "id": "w3h-122",
+      "question": "Which uses |います|?",
+      "choices": ["池(いけ)に魚(さかな)が___。", "公園に木が___。", "部屋に椅子(いす)が___。", "駅にコンビニが___。"],
+      "answer": "池(いけ)に魚(さかな)が___。",
+      "explanation": "⚠ TRAP: 魚 (fish) is animate → います, even underwater. 木 (trees) is alive but doesn't move autonomously → あります. 椅子/コンビニ are inanimate."
+    },
+    {
+      "id": "w3h-123",
+      "question": "Choose: 庭に大きい木が___。",
+      "choices": ["あります", "います", "Both are acceptable", "立っています"],
+      "answer": "あります",
+      "explanation": "⚠ Trees take あります despite being living. The criterion is AUTONOMOUS MOVEMENT, not biological 'aliveness'. Plants, flowers, mushrooms → あります."
+    },
+    {
+      "id": "w3h-124",
+      "question": "Choose: 池に魚が___。",
+      "choices": ["います", "あります", "Both are acceptable", "立っています"],
+      "answer": "います",
+      "explanation": "Fish move autonomously → います. Pattern: anything that moves on its own (including insects, fish, reptiles) → います."
+    },
+    {
+      "id": "w3h-125",
+      "question": "Choose: 明日試験(しけん)が___。 (試験 = exam)",
+      "choices": ["あります", "います", "します", "なります"],
+      "answer": "あります",
+      "explanation": "⚠ Important: あります has a SECOND meaning — 'there is (a scheduled event)'. 試験があります = 'there is an exam'. パーティーがあります = 'there is a party'. Same with 会議, 授業, 仕事."
+    },
+    {
+      "id": "w3h-126",
+      "question": "Choose: 「私は兄弟が二人___。」",
+      "choices": ["います", "あります", "持(も)ちます", "なります"],
+      "answer": "います",
+      "explanation": "⚠ Important: in Japanese, 'I HAVE family members' uses います (not 持つ which is for physical possession). 兄弟が二人います = 'I have two siblings'."
+    },
+    {
+      "id": "w3h-127",
+      "question": "Choose: 「お金が___。」 (= 'I have money.')",
+      "choices": ["あります", "います", "持ちます", "ありません"],
+      "answer": "あります",
+      "explanation": "お金 is inanimate → あります. In Japanese, 'have money' is literally 'money exists (in my possession)'. Pattern works for time, money, jobs, abilities: 時間があります, 仕事があります."
+    },
+    {
+      "id": "w3h-128",
+      "question": "Translate: 'I don't have time today.'",
+      "choices": ["今日は時間がありません。", "今日は時間がいません。", "今日は時間を持ちません。", "今日は時間じゃありません。"],
+      "answer": "今日は時間がありません。",
+      "explanation": "時間 (time) is inanimate → あります. Negative = ありません. ⚠ Don't use 持つ for abstract things like time."
+    },
+    {
+      "id": "w3h-129",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["駅の前に犬があります。", "駅の前に犬がいます。", "駅の前にコンビニがあります。", "駅の前に車があります。"],
+      "answer": "駅の前に犬があります。",
+      "explanation": "⚠ 犬 (dog) is animate → must use います. The others (コンビニ, 車) are inanimate → あります."
+    },
+    {
+      "id": "w3h-130",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["私には子供が二人あります。", "私には子供が二人います。", "教室に学生が十人います。", "公園に猫が三匹(さんびき)います。"],
+      "answer": "私には子供が二人あります。",
+      "explanation": "⚠ Tricky: in MODERN Japanese, 子供 (children) takes います. The form 子供があります is archaic/poetic (only acceptable in formal documents about birth statistics). For everyday speech: 子供が二人います."
+    },
+    {
+      "id": "w3h-131",
+      "question": "What particle marks LOCATION with あります/います?",
+      "choices": ["に", "で", "へ", "を"],
+      "answer": "に",
+      "explanation": "⚠ Critical particle distinction: あります/います take に for location (state of existence). で is for ACTION location. 公園にいます (be at park) vs 公園で遊びます (play at park)."
+    },
+    {
+      "id": "w3h-132",
+      "question": "Choose particle: 机の上___本があります。",
+      "choices": ["に", "で", "へ", "が"],
+      "answer": "に",
+      "explanation": "Existence location → に. 机の上に本があります = 'There is a book ON the desk'."
+    },
+    {
+      "id": "w3h-133",
+      "question": "Choose particle: 私は図書館___本を読みます。",
+      "choices": ["で", "に", "へ", "を"],
+      "answer": "で",
+      "explanation": "⚠ ACTION verb (読む) → で. 図書館で読みます = 'read AT library'. Compare to 図書館に本があります (existence → に)."
+    },
+    {
+      "id": "w3h-134",
+      "question": "Find the INCORRECT particle use:",
+      "choices": ["公園で猫がいます。", "公園に猫がいます。", "公園で猫と遊びます。", "公園にベンチがあります。"],
+      "answer": "公園で猫がいます。",
+      "explanation": "⚠ いる (state of being) requires に, not で. The error in option 1: should be 公園にいます. Options 2, 3, 4 all use the correct particle for their verb."
+    },
+    {
+      "id": "w3h-135",
+      "question": "Read: 公園の中にきれいな池があります。池には魚がたくさんいます。 What is in the pond?",
+      "choices": ["Many fish.", "Many trees.", "Many flowers.", "Many people."],
+      "answer": "Many fish.",
+      "explanation": "池には = in the pond (に + は for topic emphasis). 魚 (fish) がたくさんいます = many fish exist. たくさん = many."
+    },
+    {
+      "id": "w3h-136",
+      "question": "Choose the natural answer: A: 「鍵(かぎ)はどこに___か?」 B: 「机の上にあります。」",
+      "choices": ["あります", "います", "ありました", "いました"],
+      "answer": "あります",
+      "explanation": "鍵 (key) is inanimate → あります. Present-tense question. ⚠ どこに pairs with あります here, not どこで, because we're asking about LOCATION OF EXISTENCE."
+    },
+    {
+      "id": "w3h-137",
+      "question": "Translate: 'Where is the bathroom (toilet)?'",
+      "choices": ["トイレはどこにありますか。", "トイレはどこですか。", "Both are acceptable.", "トイレはどこにいますか。"],
+      "answer": "Both are acceptable.",
+      "explanation": "Both work. トイレはどこですか is the more conversational/common phrasing. どこにありますか is grammatically explicit. Inanimate item → if using ある, must be あります NOT います."
+    },
+    {
+      "id": "w3h-138",
+      "question": "Translate: 'There is no one in the classroom.'",
+      "choices": ["教室には誰もいません。", "教室に誰もありません。", "教室に誰もいます。", "教室に誰も人がいません。"],
+      "answer": "教室には誰もいません。",
+      "explanation": "誰も (no one) + negative = nobody. 誰 is a person → ます/いません, not あります. には emphasizes the location as topic ('as for the classroom...')."
+    },
+    {
+      "id": "w3h-139",
+      "question": "Translate: 'There's nothing on the desk.'",
+      "choices": ["机の上には何もありません。", "机の上に何もいません。", "机の上に何もあります。", "机の上に何もないです。"],
+      "answer": "机の上には何もありません。",
+      "explanation": "何も + negative = nothing. 何 is inanimate → ません. Option 4 (何もないです) is grammatically valid in colloquial speech but option 1 is the cleaner N5 form."
+    },
+    {
+      "id": "w3h-140",
+      "question": "What does |上| mean as a location word?",
+      "choices": ["above / on top of", "below", "in front of", "behind"],
+      "answer": "above / on top of",
+      "explanation": "上 (うえ) = above, on top of. Used with の: 机の上 = on the desk. Opposite: 下 (した) = below, under."
+    },
+    {
+      "id": "w3h-141",
+      "question": "What does |下| mean as a location word?",
+      "choices": ["below / under", "above", "next to", "in front of"],
+      "answer": "below / under",
+      "explanation": "下 (した) = under, below. 机の下 = under the desk. ⚠ Don't confuse with 下手 (へた = bad at) — same kanji, different reading and meaning."
+    },
+    {
+      "id": "w3h-142",
+      "question": "What does |前| mean as a location word?",
+      "choices": ["in front of / before (time)", "behind", "above", "next to"],
+      "answer": "in front of / before (time)",
+      "explanation": "前 (まえ) has two meanings: (1) in front of (spatial): 駅の前 = in front of the station. (2) before (temporal): 3年前 = 3 years ago. Same kanji."
+    },
+    {
+      "id": "w3h-143",
+      "question": "What does |後ろ| mean?",
+      "choices": ["behind", "in front of", "above", "later (time)"],
+      "answer": "behind",
+      "explanation": "後ろ (うしろ) = behind (SPATIAL). ⚠ Don't confuse with 後 (あと) which is temporal ('after'). Different readings, same kanji. 駅の後ろ = behind the station."
+    },
+    {
+      "id": "w3h-144",
+      "question": "What does |中| mean as a location word?",
+      "choices": ["inside", "outside", "next to", "between"],
+      "answer": "inside",
+      "explanation": "中 (なか) = inside, within. かばんの中 = inside the bag. Same kanji also appears in 中国 (China — 'middle country') with reading ちゅう."
+    },
+    {
+      "id": "w3h-145",
+      "question": "What does |外| mean?",
+      "choices": ["outside", "inside", "above", "next to"],
+      "answer": "outside",
+      "explanation": "外 (そと) = outside. Opposite of 中 (inside). 家の外 = outside the house. On-yomi がい appears in 外国 (がいこく = foreign country)."
+    },
+    {
+      "id": "w3h-146",
+      "question": "What does |右| mean?",
+      "choices": ["right (direction)", "left", "above", "below"],
+      "answer": "right (direction)",
+      "explanation": "右 (みぎ) = right side. Pair: 左 (ひだり) = left. 右手 (みぎて) = right hand."
+    },
+    {
+      "id": "w3h-147",
+      "question": "What does |左| mean?",
+      "choices": ["left", "right", "front", "back"],
+      "answer": "left",
+      "explanation": "左 (ひだり) = left. Spatial direction. Mnemonic: the kanji 左 has horizontal stroke FIRST (different from 右), which is opposite stroke order."
+    },
+    {
+      "id": "w3h-148",
+      "question": "What does |横| mean?",
+      "choices": ["beside / side", "above", "across (a street)", "between"],
+      "answer": "beside / side",
+      "explanation": "横 (よこ) = beside, next to (general 'side'). Less specific than 隣 (となり), which implies similar category items. 横 can be ANY adjacent position."
+    },
+    {
+      "id": "w3h-149",
+      "question": "What is the difference between |隣| and |横|?",
+      "choices": ["隣 = immediately next to (same category); 横 = beside (more general)", "They are exactly the same", "隣 = right side; 横 = left side", "隣 = far; 横 = close"],
+      "answer": "隣 = immediately next to (same category); 横 = beside (more general)",
+      "explanation": "⚠ Subtle distinction: 隣 (となり) implies adjacency of SIMILAR items (next-door house, person next to me in a row). 横 is a more general 'side'. 銀行の隣のコンビニ = the convenience store NEXT TO the bank (both buildings)."
+    },
+    {
+      "id": "w3h-150",
+      "question": "What does |間| mean as a location word?",
+      "choices": ["between (two specific things)", "around", "near", "far from"],
+      "answer": "between (two specific things)",
+      "explanation": "間 (あいだ) = between. Used with 'A と B の間' = between A and B. 銀行とコンビニの間に郵便局があります = post office is between the bank and convenience store."
+    },
+    {
+      "id": "w3h-151",
+      "question": "What does |近く| mean?",
+      "choices": ["near, in the vicinity", "far", "directly next to", "inside"],
+      "answer": "near, in the vicinity",
+      "explanation": "近く (ちかく) = nearby, in the vicinity (less precise than 隣/横). 駅の近く = near the station. The 〜く form is derived from the い-adj 近い (close)."
+    },
+    {
+      "id": "w3h-152",
+      "question": "Choose particle: 机___ 上___本があります。",
+      "choices": ["A=の / B=に", "A=に / B=の", "A=の / B=で", "A=で / B=に"],
+      "answer": "A=の / B=に",
+      "explanation": "Compound location structure: [Object1]の[Location word], then に. 机の上に本があります = on the desk, there is a book. の links the two nouns, に marks the existence location."
+    },
+    {
+      "id": "w3h-153",
+      "question": "Choose particle: 銀行___隣___郵便局があります。",
+      "choices": ["A=の / B=に", "A=に / B=の", "A=の / B=で", "A=で / B=に"],
+      "answer": "A=の / B=に",
+      "explanation": "Same compound pattern. 銀行の隣に = 'next to the bank'. 郵便局 (ゆうびんきょく) = post office."
+    },
+    {
+      "id": "w3h-154",
+      "question": "Translate: 'There is a cat under the table.'",
+      "choices": ["テーブルの下に猫がいます。", "テーブルの下に猫があります。", "テーブルで下に猫がいます。", "テーブル下に猫がいます。"],
+      "answer": "テーブルの下に猫がいます。",
+      "explanation": "テーブルの下 = under the table (compound noun with の). に = existence location. 猫 (cat) is animate → います."
+    },
+    {
+      "id": "w3h-155",
+      "question": "Translate: 'The bookstore is between the bank and the post office.'",
+      "choices": ["銀行と郵便局の間に本屋(ほんや)があります。", "銀行や郵便局の間に本屋があります。", "銀行と郵便局で間に本屋があります。", "銀行と郵便局の間で本屋があります。"],
+      "answer": "銀行と郵便局の間に本屋(ほんや)があります。",
+      "explanation": "Pattern: [A]と[B]の間 = between A and B. と (and) used for two specific items. に marks existence location. 本屋 (bookstore) is inanimate → あります."
+    },
+    {
+      "id": "w3h-156",
+      "question": "Translate: 'Is there a convenience store near here?'",
+      "choices": ["この近くにコンビニがありますか。", "この近くにコンビニがいますか。", "ここ近くにコンビニがありますか。", "この近くでコンビニがありますか。"],
+      "answer": "この近くにコンビニがありますか。",
+      "explanation": "この近く = 'near here' (この + location word). に for existence location. コンビニ is inanimate → あります. Option 3 missing の or particle. Option 4 uses wrong particle で."
+    },
+    {
+      "id": "w3h-157",
+      "question": "Read: 私の家の前に大きい木があります。木の上に小さい鳥がいます。 What is on the tree?",
+      "choices": ["A small bird.", "A big tree.", "The speaker's house.", "Nothing."],
+      "answer": "A small bird.",
+      "explanation": "Trace: 家の前 (in front of house) → 大きい木 (big tree). 木の上 (on top of the tree) → 小さい鳥 (small bird). 鳥 is animate → います."
+    },
+    {
+      "id": "w3h-158",
+      "question": "Read: 駅の前にバス停(てい)があります。バス停の隣にコンビニがあります。コンビニの後ろに公園があります。 Where is the park?",
+      "choices": ["Behind the convenience store.", "Behind the bus stop.", "In front of the station.", "Next to the bus stop."],
+      "answer": "Behind the convenience store.",
+      "explanation": "Trace: 駅の前 → バス停 → バス停の隣 → コンビニ → コンビニの後ろ → 公園. The park is behind the convenience store."
+    },
+    {
+      "id": "w3h-159",
+      "question": "Read: 教室にはテーブルが二つあります。一つは大きくて、もう一つは小さいです。大きいテーブルの上に花瓶(かびん)があります。小さいテーブルの下に猫がいます。 Where is the cat?",
+      "choices": ["Under the small table.", "On the big table.", "On the small table.", "Under the big table."],
+      "answer": "Under the small table.",
+      "explanation": "Two tables described. 小さいテーブルの下に猫がいます = under the SMALL table, there is a cat. ⚠ Don't confuse with 花瓶 (vase) which is on the BIG table."
+    },
+    {
+      "id": "w3h-160",
+      "question": "Read: スーパーは駅から歩いて5分です。スーパーの中に薬局(やっきょく)があります。 What is INSIDE the supermarket?",
+      "choices": ["A pharmacy.", "The station.", "A 5-minute walk.", "A convenience store."],
+      "answer": "A pharmacy.",
+      "explanation": "スーパーの中 = inside the supermarket. 薬局 (やっきょく) = pharmacy. The pharmacy is INSIDE the supermarket — common in Japan."
+    },
+    {
+      "id": "w3h-161",
+      "question": "How to read |一日| in the context: 一日の始まり?",
+      "choices": ["いちにち", "ついたち", "ひとひ", "いちじつ"],
+      "answer": "いちにち",
+      "explanation": "⚠ Context-dependent reading: '始まり' (beginning) refers to the start of a DAY (duration) → いちにち. If it were a calendar date (1st of month), would be ついたち."
+    },
+    {
+      "id": "w3h-162",
+      "question": "How to read |四日| (the 4th of the month)?",
+      "choices": ["よっか", "よんにち", "しにち", "よんか"],
+      "answer": "よっか",
+      "explanation": "⚠ Irregular: 4日 = よっか (kun-yomi based). Pattern for irregular date readings: 1日 ついたち, 2日 ふつか, 3日 みっか, 4日 よっか."
+    },
+    {
+      "id": "w3h-163",
+      "question": "How to read |八日|?",
+      "choices": ["ようか", "はちにち", "やっか", "はちか"],
+      "answer": "ようか",
+      "explanation": "⚠ Irregular: 8日 = ようか. Don't confuse with 4日 (よっか) — different stem despite similar pattern. Also note: 18日 = じゅうはちにち (regular), 28日 = にじゅうはちにち (regular)."
+    },
+    {
+      "id": "w3h-164",
+      "question": "How to read |二十日|?",
+      "choices": ["はつか", "にじゅうにち", "ふつか", "はたか"],
+      "answer": "はつか",
+      "explanation": "⚠ 20日 = はつか (IRREGULAR). NOT にじゅうにち. Most-tested irregular date in JLPT. Memory tip: associate はつ with 初 (はつ = beginning) — '20th = significant date'."
+    },
+    {
+      "id": "w3h-165",
+      "question": "How to read |十日|?",
+      "choices": ["とおか", "じゅうにち", "とうか", "じゅっか"],
+      "answer": "とおか",
+      "explanation": "10日 = とおか. Uses kun-yomi とお of 十. Pattern for the 1st-10th of the month: kun-yomi readings (ついたち, ふつか, みっか, よっか, いつか, むいか, なのか, ようか, ここのか, とおか)."
+    },
+    {
+      "id": "w3h-166",
+      "question": "How to read |九日|?",
+      "choices": ["ここのか", "くにち", "きゅうにち", "くか"],
+      "answer": "ここのか",
+      "explanation": "9日 = ここのか. ⚠ Compare with 9時 = くじ — different counters use different number readings. 9 has THREE main readings used in different contexts: きゅう, く, ここの."
+    },
+    {
+      "id": "w3h-167",
+      "question": "How to read |六日|?",
+      "choices": ["むいか", "ろくにち", "ろっか", "むつか"],
+      "answer": "むいか",
+      "explanation": "6日 = むいか (irregular kun-yomi). Pattern continues: 6日 むいか, 7日 なのか. Common N5 testing point."
+    },
+    {
+      "id": "w3h-168",
+      "question": "How to read |七日|?",
+      "choices": ["なのか", "しちにち", "ななにち", "なな日"],
+      "answer": "なのか",
+      "explanation": "7日 = なのか. Don't confuse with 7時 (しちじ). Each counter has its own quirks for 4, 7, 9."
+    },
+    {
+      "id": "w3h-169",
+      "question": "How to read |誕生日|?",
+      "choices": ["たんじょうび", "たんしょうび", "たんじょうひ", "せいたんび"],
+      "answer": "たんじょうび",
+      "explanation": "誕生日 (たんじょうび) = birthday. 誕 = birth, 生 = life, 日 = day. Common N5 vocab."
+    },
+    {
+      "id": "w3h-170",
+      "question": "Translate: 'My birthday is October 4th.'",
+      "choices": ["私の誕生日は十月四日です。", "私の誕生日は十月四日にです。", "私は誕生日が十月四日です。", "私の誕生日は十月よんにちです。"],
+      "answer": "私の誕生日は十月四日です。",
+      "explanation": "私の誕生日は (topic: my birthday) + 十月四日 (October 4th, read じゅうがつ よっか) + です. ⚠ Don't add に because the date is a predicate, not a time-when clause. Option 4 has wrong reading (よんにち)."
+    },
+    {
+      "id": "w3h-171",
+      "question": "Translate: 'I was born on April 1st.' (use 生まれました)",
+      "choices": ["私は四月一日に生まれました。", "私は四月一日生まれました。", "私は四月一日で生まれました。", "私の四月一日に生まれました。"],
+      "answer": "私は四月一日に生まれました。",
+      "explanation": "Action verb (生まれる = be born) → に for the specific time. Even though 'a specific date' usually takes に for events, here it's marking when the action happened."
+    },
+    {
+      "id": "w3h-172",
+      "question": "Read: A: 「明日は何日ですか?」 B: 「明日は二十日です。」 Today is...?",
+      "choices": ["The 19th (十九日 / じゅうくにち)", "The 20th", "The 21st", "Cannot be determined"],
+      "answer": "The 19th (十九日 / じゅうくにち)",
+      "explanation": "If tomorrow is the 20th (はつか), today must be the 19th. 19日 = じゅうくにち (with reading く for 9 in this context)."
+    },
+    {
+      "id": "w3h-173",
+      "question": "Read: 私は毎月十日に給料(きゅうりょう)をもらいます。今日は八日ですから、二日後(ご)に給料をもらいます。 When will I get paid?",
+      "choices": ["In 2 days (the 10th)", "Today (the 8th)", "In 10 days", "On the 20th"],
+      "answer": "In 2 days (the 10th)",
+      "explanation": "毎月十日 = every month on the 10th. 今日は八日 = today is 8th. 二日後 = 2 days later → 10th. Math: 8 + 2 = 10."
+    },
+    {
+      "id": "w3h-174",
+      "question": "What is the most natural translation of 'There are 3 people in my family' in Japanese?",
+      "choices": ["家族は三人です。", "家族が三人います。", "Both are acceptable and common.", "家族は三人があります。"],
+      "answer": "Both are acceptable and common.",
+      "explanation": "Both phrasings are extremely common. 家族は三人です = 'My family is 3 people' (describing composition). 家族が三人います = 'There are 3 family members'. Native speakers use both."
+    },
+    {
+      "id": "w3h-175",
+      "question": "Choose: 「兄弟が___います。」 (= 'I have a younger brother and an older sister.')",
+      "choices": ["弟と姉", "弟も姉も", "弟や姉", "弟か姉"],
+      "answer": "弟と姉",
+      "explanation": "⚠ Particle distinction for connecting nouns: と = AND (exhaustive list, exactly these). や = AND etc. (non-exhaustive). か = OR. も…も = both…and. For a precise '1 younger brother + 1 older sister', と is best."
+    },
+    {
+      "id": "w3h-176",
+      "question": "Translate: 'I have 2 older brothers and 1 younger sister.'",
+      "choices": ["兄が二人と妹が一人います。", "兄が二人います、妹が一人います。", "兄は二人、妹は一人います。", "Both option 1 and option 3 are natural."],
+      "answer": "Both option 1 and option 3 are natural.",
+      "explanation": "Multiple natural phrasings exist. Option 1: connect with と. Option 3: contrastive は (alongside listing). Option 2 is grammatically possible but awkward (two separate sentences without conjunction)."
+    },
+    {
+      "id": "w3h-177",
+      "question": "How do you politely refer to YOUR OWN father when talking to outsiders?",
+      "choices": ["父", "お父さん", "父さん", "お父様"],
+      "answer": "父",
+      "explanation": "⚠ Critical cultural rule: when talking to OUTSIDERS about YOUR family, use HUMBLE form: 父 (chichi), 母 (haha), 兄 (ani), 姉 (ane). NEVER お父さん about your own dad in formal settings — sounds childish/disrespectful."
+    },
+    {
+      "id": "w3h-178",
+      "question": "How do you politely refer to ANOTHER PERSON'S father?",
+      "choices": ["お父さん", "父", "彼の父", "親父(おやじ)"],
+      "answer": "お父さん",
+      "explanation": "⚠ For others' family: use RESPECTFUL form with お…さん: お父さん, お母さん, お兄さん, お姉さん. Even more formal: お父様 (おとうさま). Reversed of own-family rule."
+    },
+    {
+      "id": "w3h-179",
+      "question": "Find the INCORRECT sentence in a formal business context:",
+      "choices": ["私のお父さんは医者です。", "私の父は医者です。", "山田さんのお父さんは医者です。", "父の名前は太郎です。"],
+      "answer": "私のお父さんは医者です。",
+      "explanation": "⚠ Don't say 私のお父さん in formal contexts — sounds childish. Use 私の父 or just 父. Option 3 correctly uses お父さん for someone ELSE'S father."
+    },
+    {
+      "id": "w3h-180",
+      "question": "Translate: 'My older sister is a teacher.'",
+      "choices": ["姉は先生です。", "お姉さんは先生です。", "私の姉さんは先生です。", "Both options 1 and 2, depending on context."],
+      "answer": "姉は先生です。",
+      "explanation": "Talking about YOUR OWN older sister → use 姉 (humble). Option 2 (お姉さん) is wrong for own family. Option 3 (姉さん) is colloquial/family-internal address."
+    },
+    {
+      "id": "w3h-181",
+      "question": "Read: 「私の家族は四人です。父と母と兄と私です。父は会社員で、母は先生です。兄は今、大学で勉強しています。」 What is the OLDER BROTHER doing now?",
+      "choices": ["Studying at university.", "Working at a company.", "Teaching.", "At home."],
+      "answer": "Studying at university.",
+      "explanation": "Each family member's role: 父 (会社員 = office worker), 母 (先生 = teacher), 兄 (大学で勉強しています = studying at university). 私 (the speaker)."
+    },
+    {
+      "id": "w3h-182",
+      "question": "Read: 「うちには犬が二匹(にひき)と猫が一匹います。犬の名前はポチとシロで、猫の名前はタマです。」 What is the cat's name?",
+      "choices": ["Tama (タマ)", "Pochi (ポチ)", "Shiro (シロ)", "All three are the cat's names."],
+      "answer": "Tama (タマ)",
+      "explanation": "犬の名前はポチとシロ = dogs' names are Pochi and Shiro. 猫の名前はタマ = cat's name is Tama. Reading requires distinguishing dog names from cat name."
+    },
+    {
+      "id": "w3h-183",
+      "question": "Read this passage carefully: 「山田さんは大きな家に住(す)んでいます。家の前に車が二台(にだい)あります。一台は新しいですが、もう一台は古いです。新しい車は山田さんので、古い車はお父さんのです。」 Whose old car is it?",
+      "choices": ["The father's", "Yamada's", "Yamada's mother", "Cannot be determined"],
+      "answer": "The father's",
+      "explanation": "Two cars described. 新しい車は山田さんの = new car is Yamada's. 古い車はお父さんの = old car is (his) father's. Match adjective → owner carefully."
+    },
+    {
+      "id": "w3h-184",
+      "question": "Read: 「私の机の上にはコンピューター、ノート、ペン、本があります。一番(いちばん)右にコンピューターがあって、その左にノートがあります。ノートの左にはペンがあります。一番左に本があります。」 What is to the LEFT of the notebook?",
+      "choices": ["The pen.", "The computer.", "The book.", "Nothing."],
+      "answer": "The pen.",
+      "explanation": "Order from RIGHT to LEFT: コンピューター → ノート → ペン → 本. So to the LEFT of the notebook is the pen. 一番 = number one, used here as 'farthest'."
+    },
+    {
+      "id": "w3h-185",
+      "question": "Read: 「私の妹は大学一年生(いちねんせい)です。今は東京に住んでいます。来月、東京から京都へ引っ越し(ひっこし)します。京都の大学で勉強します。」 Where does the younger sister live NOW?",
+      "choices": ["Tokyo", "Kyoto", "She's between cities now", "Cannot be determined"],
+      "answer": "Tokyo",
+      "explanation": "今は東京に住んでいます = now lives in Tokyo. 来月 = next month, she'll move to Kyoto. The question asks about the present, not future."
+    },
+    {
+      "id": "w3h-186",
+      "question": "Read: 「兄は背が高くて、ハンサムですから、女の子に人気(にんき)があります。でも、性格(せいかく)はあまりよくないです。」 Why is the older brother popular with girls?",
+      "choices": ["Because he's tall and handsome.", "Because his personality is good.", "Because he's nice.", "It doesn't say why."],
+      "answer": "Because he's tall and handsome.",
+      "explanation": "Reason marker: …から (because). 背が高くて、ハンサムですから = 'because (he) is tall AND handsome'. 性格はあまりよくない = personality not very good (a contrast with でも = but)."
+    },
+    {
+      "id": "w3h-187",
+      "question": "Read: 「父は毎日新聞を読みます。母はあまり新聞を読みません。母はテレビが好きですから、ニュースはテレビで見ます。」 How does the mother get news?",
+      "choices": ["By watching TV.", "By reading newspapers.", "Both TV and newspapers.", "She doesn't get news."],
+      "answer": "By watching TV.",
+      "explanation": "母は…あまり新聞を読みません = mother doesn't read newspapers much. テレビが好きですから (because likes TV), ニュースはテレビで見ます = watches news on TV."
+    },
+    {
+      "id": "w3h-188",
+      "question": "Read: 「先週の日曜日、家族と一緒に有名なお寺へ行きました。お寺の中はとても静かでした。お寺の前に大きな桜(さくら)の木がありました。きれいでしたから、たくさん写真(しゃしん)を撮(と)りました。」 What did the speaker do MANY of?",
+      "choices": ["Took many photos.", "Saw many temples.", "Met many family members.", "Saw many cherry trees."],
+      "answer": "Took many photos.",
+      "explanation": "たくさん写真を撮りました = took many photos. The reason: きれいでしたから = because it was beautiful (referring to the cherry tree)."
+    },
+    {
+      "id": "w3h-189",
+      "question": "Read: 「私の好きな食べ物は寿司です。寿司は少し高いですから、毎日は食べません。月に一回(いっかい)ぐらい食べます。」 How often does the speaker eat sushi?",
+      "choices": ["About once a month.", "Every day.", "Once a week.", "Never."],
+      "answer": "About once a month.",
+      "explanation": "月に一回ぐらい = about once a month. 月に〜回 = times per month. ぐらい = about/approximately. Not daily (毎日は食べません = doesn't eat every day)."
+    },
+    {
+      "id": "w3h-190",
+      "question": "Read: 「私のアパートは駅から歩いて10分です。アパートの隣に小さい公園があります。公園には大きな桜の木があります。春(はる)はとてもきれいです。」 Which is TRUE?",
+      "choices": ["There's a small park next to the apartment, with a big cherry tree.", "The apartment is in the park.", "The cherry tree is at the station.", "The apartment is 10 minutes from the park."],
+      "answer": "There's a small park next to the apartment, with a big cherry tree.",
+      "explanation": "Parse: アパートの隣 (next to apartment) = 小さい公園 (small park). 公園には大きな桜の木 (park has big cherry tree). 春はとてもきれい (in spring, very beautiful)."
+    },
+    {
+      "id": "w3h-191",
+      "question": "Read: A: 「明日、何時に駅に来ますか?」 B: 「8時半に来ます。」 What time will B arrive at the station?",
+      "choices": ["8:30", "8:00", "9:30", "9:00"],
+      "answer": "8:30",
+      "explanation": "8時半 = 8:30 (半 = half/30 minutes). Standard time-telling. に marks the specific time, 来ます = will come."
+    },
+    {
+      "id": "w3h-192",
+      "question": "Read: 「私の弟は来年、十八歳(さい)になります。今は十七歳です。」 How old is the younger brother NOW?",
+      "choices": ["17 years old", "18 years old", "19 years old", "16 years old"],
+      "answer": "17 years old",
+      "explanation": "今は十七歳です = NOW is 17. 来年…十八歳になります = next year will turn 18. The question asks present age."
+    },
+    {
+      "id": "w3h-193",
+      "question": "Read: 「うちには猫が三匹います。一匹は黒くて(くろい=black)、二匹は白いです。黒い猫の名前はクロで、白い猫はミミとシロです。」 What is the BLACK cat called?",
+      "choices": ["Kuro (クロ)", "Mimi (ミミ)", "Shiro (シロ)", "Three cats are named the same"],
+      "answer": "Kuro (クロ)",
+      "explanation": "Mapping: 黒い猫 (black cat) = クロ. 白い猫 (white cats, two of them) = ミミ AND シロ. The question targets the black one."
+    },
+    {
+      "id": "w3h-194",
+      "question": "Read: 「先週、誕生日にお父さんから時計をもらいました。お母さんから本をもらいました。妹はお金をくれました。一番嬉しいプレゼントは時計でした。」 (くれました ≈ 'gave to me' here, a common informal usage) Which present did the speaker like MOST?",
+      "choices": ["The watch (from father).", "The book (from mother).", "The money (from sister).", "All equally."],
+      "answer": "The watch (from father).",
+      "explanation": "一番嬉しいプレゼント = 'the happiest present' = 時計 (watch). 一番 + adjective = 'most ~'. The watch is identified as the one received from father."
+    },
+    {
+      "id": "w3h-195",
+      "question": "Read: 「うちの近くには店がたくさんあります。でも、いいレストランはあまりありません。だから、よく家族と隣の町のレストランへ行きます。」 Why does the family often go to the next town's restaurant?",
+      "choices": ["Because there are not many good restaurants near their home.", "Because there are no shops near them.", "Because the next town is closer.", "Because their home has no kitchen."],
+      "answer": "Because there are not many good restaurants near their home.",
+      "explanation": "Parse reason: いいレストランはあまりありません = good restaurants are not many. だから = therefore. The reason for going to next town is the lack of good local restaurants."
+    },
+    {
+      "id": "w3h-196",
+      "question": "Read this conversation: A: 「日曜日、何をしましたか?」 B: 「家族と一緒に動物園(どうぶつえん)へ行きました。動物園にはたくさんの動物がいました。一番好きだったのはパンダです。」 (動物園 = zoo) What was B's favorite animal?",
+      "choices": ["Panda", "Many animals (no specific favorite)", "Zoo animals in general", "Cannot be determined"],
+      "answer": "Panda",
+      "explanation": "一番好きだったのはパンダ = 'the one (I) liked the most was the panda'. 一番 = most. の = nominalizer ('one'). Past tense だった = was."
+    },
+    {
+      "id": "w3h-197",
+      "question": "Read: 「私の町は小さいです。郵便局も銀行もありますが、デパートはありません。買い物がしたい時(とき)は、電車で隣の町へ行きます。」 Why does the speaker go to the next town?",
+      "choices": ["To shop (because no department store in own town).", "Because they don't have a post office.", "Because they don't have a bank.", "To visit family."],
+      "answer": "To shop (because no department store in own town).",
+      "explanation": "Parse: デパートはありません = no department store. 買い物がしたい時 = when (I) want to shop, go to next town. Have post office and bank, but no dept store."
+    },
+    {
+      "id": "w3h-198",
+      "question": "Read: 「父はビールが大好きです。毎晩、晩ご飯と一緒にビールを一本(いっぽん)飲みます。母はお酒が嫌いですから、ジュースを飲みます。」 What does the mother drink?",
+      "choices": ["Juice", "Beer", "Sake", "Nothing"],
+      "answer": "Juice",
+      "explanation": "母はお酒が嫌い = mother dislikes alcohol. ジュースを飲みます = drinks juice. ⚠ Trap: don't pick beer (that's the father)."
+    },
+    {
+      "id": "w3h-199",
+      "question": "Read: 「来月、私は二十歳になります。日本では、二十歳は大人(おとな)です。家族で大きいパーティーがあります。」 Why is there a big party?",
+      "choices": ["Because the speaker is turning 20 (adulthood in Japan).", "Because it's the speaker's birthday in general.", "Because the family is moving.", "There is no specific reason."],
+      "answer": "Because the speaker is turning 20 (adulthood in Japan).",
+      "explanation": "二十歳になります = will turn 20. 日本では二十歳は大人 = in Japan, 20 is adulthood. Cultural reason for the party (成人式 implied but not named). 二十歳 reads はたち (irregular)."
+    },
+    {
+      "id": "w3h-200",
+      "question": "Final challenge — read carefully: 「私の家族は5人です。父、母、兄、私、妹です。父は銀行員で、母は看護師(かんごし)です。兄は大学生で、英語が上手です。妹はまだ小学生(しょうがくせい)ですが、ピアノがとても上手です。私は今高校生で、勉強があまり好きじゃありませんが、スポーツが大好きです。」 Who is good at piano?",
+      "choices": ["The younger sister.", "The older brother.", "The speaker.", "The mother."],
+      "answer": "The younger sister.",
+      "explanation": "Long passage parsing. Map each family member to skill: 兄 → 英語が上手 (good at English). 妹 → ピアノがとても上手 (very good at piano). 私 → スポーツが大好き (loves sports). Question targets piano → 妹."
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+    "questions": [],
+    "kanji": {
+        "野": {
+            "reading": "ヤ, の",
+            "meaning": "field, plain, wild — 野菜 (vegetables), 野球 (baseball)",
+            "label": "noun"
+        },
+        "菜": {
+            "reading": "サイ, な",
+            "meaning": "vegetable, greens — 野菜 (やさい)",
+            "label": "noun"
+        },
+        "少": {
+            "reading": "ショウ, すく(ない), すこ(し)",
+            "meaning": "few, little, a small amount",
+            "label": "i-adjective"
+        },
+        "得": {
+            "reading": "トク, え(る)",
+            "meaning": "gain, profit, acquire — 得意 (good at), 得る (to obtain)",
+            "label": "verb"
+        },
+        "意": {
+            "reading": "イ",
+            "meaning": "mind, will, intention, meaning — 意味, 注意, 得意",
+            "label": "noun"
+        },
+        "猫": {
+            "reading": "ビョウ, ねこ",
+            "meaning": "cat",
+            "label": "noun"
+        },
+        "酒": {
+            "reading": "シュ, さけ, さか",
+            "meaning": "alcohol, sake, rice wine — お酒 (おさけ)",
+            "label": "noun"
+        },
+        "頭": {
+            "reading": "トウ, ズ, あたま",
+            "meaning": "head — also counter for large animals (cattle); 頭がいい (smart)",
+            "label": "noun"
+        },
+        "痛": {
+            "reading": "ツウ, いた(い)",
+            "meaning": "painful, sore — 頭痛 (ずつう, headache)",
+            "label": "i-adjective"
+        },
+        "早": {
+            "reading": "ソウ, はや(い)",
+            "meaning": "early — exception trap: same はやい reading as 速い (fast/speedy); 早い = time, 速い = speed",
+            "label": "i-adjective"
+        },
+        "窓": {
+            "reading": "ソウ, まど",
+            "meaning": "window",
+            "label": "noun"
+        },
+        "開": {
+            "reading": "カイ, ひら(く), あ(く), あ(ける)",
+            "meaning": "open — transitive 開ける (あける), intransitive 開く (あく)",
+            "label": "verb"
+        },
+        "雨": {
+            "reading": "ウ, あめ",
+            "meaning": "rain — 雨が降る (it rains)",
+            "label": "noun"
+        },
+        "降": {
+            "reading": "コウ, ふ(る), お(りる)",
+            "meaning": "fall (precipitation), get off (a vehicle) — 雨が降る, 電車を降りる",
+            "label": "verb"
+        },
+        "傘": {
+            "reading": "サン, かさ",
+            "meaning": "umbrella",
+            "label": "noun"
+        },
+        "持": {
+            "reading": "ジ, も(つ)",
+            "meaning": "hold, carry, possess — 持っている (to have)",
+            "label": "verb"
+        },
+        "冬": {
+            "reading": "トウ, ふゆ",
+            "meaning": "winter",
+            "label": "noun"
+        },
+        "机": {
+            "reading": "キ, つくえ",
+            "meaning": "desk",
+            "label": "noun"
+        },
+        "庭": {
+            "reading": "テイ, にわ",
+            "meaning": "garden, yard",
+            "label": "noun"
+        },
+        "鳥": {
+            "reading": "チョウ, とり",
+            "meaning": "bird",
+            "label": "noun"
+        },
+        "室": {
+            "reading": "シツ, むろ",
+            "meaning": "room — 教室 (classroom), 寝室 (bedroom)",
+            "label": "noun-suffix"
+        },
+        "池": {
+            "reading": "チ, いけ",
+            "meaning": "pond",
+            "label": "noun"
+        },
+        "魚": {
+            "reading": "ギョ, さかな, うお",
+            "meaning": "fish",
+            "label": "noun"
+        },
+        "椅": {
+            "reading": "イ",
+            "meaning": "chair — almost exclusively in 椅子 (いす)",
+            "label": "noun"
+        },
+        "立": {
+            "reading": "リツ, リュウ, た(つ), た(てる)",
+            "meaning": "stand, set up — 立つ (to stand), 立てる (to set up)",
+            "label": "verb"
+        },
+        "試": {
+            "reading": "シ, こころ(みる), ため(す)",
+            "meaning": "try, attempt, test — 試験 (exam), 試す (to try)",
+            "label": "verb"
+        },
+        "験": {
+            "reading": "ケン, ゲン",
+            "meaning": "test, examination, effect — 試験 (しけん), 経験 (experience)",
+            "label": "noun"
+        },
+        "遊": {
+            "reading": "ユウ, あそ(ぶ)",
+            "meaning": "play, have fun",
+            "label": "verb"
+        },
+        "鍵": {
+            "reading": "ケン, かぎ",
+            "meaning": "key",
+            "label": "noun"
+        },
+        "外": {
+            "reading": "ガイ, ゲ, そと, ほか, はず(す)",
+            "meaning": "outside, foreign — 外国 (foreign country), 外人 (foreigner)",
+            "label": "noun"
+        },
+        "右": {
+            "reading": "ウ, ユウ, みぎ",
+            "meaning": "right (direction)",
+            "label": "direction"
+        },
+        "左": {
+            "reading": "サ, ひだり",
+            "meaning": "left (direction)",
+            "label": "direction"
+        },
+        "横": {
+            "reading": "オウ, よこ",
+            "meaning": "side, beside, horizontal — generic 'next to', not necessarily same kind",
+            "label": "noun"
+        },
+        "隣": {
+            "reading": "リン, となり",
+            "meaning": "next to, neighbor — implies same category (e.g. house next to house)",
+            "label": "noun"
+        },
+        "銀": {
+            "reading": "ギン",
+            "meaning": "silver — 銀行 (ぎんこう, bank)",
+            "label": "noun"
+        },
+        "郵": {
+            "reading": "ユウ",
+            "meaning": "mail, post — almost only in 郵便 (mail), 郵便局 (post office)",
+            "label": "noun"
+        },
+        "局": {
+            "reading": "キョク",
+            "meaning": "bureau, office, station — 郵便局 (post office), 放送局 (broadcasting station)",
+            "label": "noun-suffix"
+        },
+        "停": {
+            "reading": "テイ, と(まる)",
+            "meaning": "stop, halt — バス停 (bus stop), 停電 (power outage)",
+            "label": "noun-suffix"
+        },
+        "瓶": {
+            "reading": "ビン",
+            "meaning": "bottle, jar — counter for bottled drinks",
+            "label": "counter"
+        },
+        "様": {
+            "reading": "ヨウ, さま",
+            "meaning": "Mr./Ms. (very polite honorific), appearance, manner — more formal than さん",
+            "label": "honorific"
+        },
+        "彼": {
+            "reading": "ヒ, かれ, かの",
+            "meaning": "he, him, boyfriend — 彼女 (かのじょ, she/girlfriend)",
+            "label": "pronoun"
+        },
+        "医": {
+            "reading": "イ",
+            "meaning": "medicine, doctor — 医者 (doctor), 医学 (medicine, the field)",
+            "label": "noun"
+        },
+        "者": {
+            "reading": "シャ, もの",
+            "meaning": "person — suffix for occupations/types: 医者, 学者, 若者",
+            "label": "noun-suffix"
+        },
+        "太": {
+            "reading": "タイ, タ, ふと(い), ふと(る)",
+            "meaning": "thick, fat, plump — also common in male names (e.g. 太郎)",
+            "label": "i-adjective"
+        },
+        "郎": {
+            "reading": "ロウ",
+            "meaning": "son, male suffix — used in male names like 太郎 (Tarō), 次郎 (Jirō)",
+            "label": "name-suffix"
+        },
+        "員": {
+            "reading": "イン",
+            "meaning": "member, staff — suffix: 社員 (company employee), 店員 (shop clerk), 銀行員 (bank employee)",
+            "label": "noun-suffix"
+        },
+        "匹": {
+            "reading": "ヒツ, ひき",
+            "meaning": "counter for small animals — sound changes: 一匹 いっぴき, 三匹 さんびき, 六匹 ろっぴき",
+            "label": "counter"
+        },
+        "住": {
+            "reading": "ジュウ, す(む)",
+            "meaning": "live, reside — 住所 (address), 住む (to live)",
+            "label": "verb"
+        },
+        "台": {
+            "reading": "ダイ, タイ",
+            "meaning": "stand, platform; counter for vehicles and machines — 一台 いちだい",
+            "label": "counter"
+        },
+        "番": {
+            "reading": "バン",
+            "meaning": "number, turn, order — 一番 (best/number one), 番号 (number)",
+            "label": "noun"
+        },
+        "引": {
+            "reading": "イン, ひ(く)",
+            "meaning": "pull, draw — 引っ越し (moving house), 引く (pull/look up)",
+            "label": "verb"
+        },
+        "越": {
+            "reading": "エツ, こ(える), こ(す)",
+            "meaning": "cross over, exceed, move (residence) — 引っ越し (ひっこし)",
+            "label": "verb"
+        },
+        "性": {
+            "reading": "セイ, ショウ",
+            "meaning": "nature, gender, -ness — 性格 (personality), 女性/男性 (female/male)",
+            "label": "noun-suffix"
+        },
+        "格": {
+            "reading": "カク",
+            "meaning": "status, character, rank, case — 性格 (personality), 合格 (passing an exam)",
+            "label": "noun"
+        },
+        "桜": {
+            "reading": "オウ, さくら",
+            "meaning": "cherry blossom, cherry tree",
+            "label": "noun"
+        },
+        "写": {
+            "reading": "シャ, うつ(す)",
+            "meaning": "copy, photograph, transcribe — 写真 (photo), 写す (to copy/photograph)",
+            "label": "verb"
+        },
+        "真": {
+            "reading": "シン, ま",
+            "meaning": "true, real, genuine — 写真 (photo), 真っ赤 (deep red)",
+            "label": "noun"
+        },
+        "撮": {
+            "reading": "サツ, と(る)",
+            "meaning": "take (a photograph) — exception trap: same とる reading as 取る, 採る, 捕る; 撮る = photograph only",
+            "label": "verb"
+        },
+        "寿": {
+            "reading": "ジュ, ことぶき",
+            "meaning": "long life, congratulations — 寿司 (sushi)",
+            "label": "noun"
+        },
+        "司": {
+            "reading": "シ, つかさど(る)",
+            "meaning": "administer, manage, director — 寿司 (sushi), 司会 (master of ceremonies)",
+            "label": "noun"
+        },
+        "回": {
+            "reading": "カイ, まわ(る), まわ(す)",
+            "meaning": "times, occurrence (counter); rotate, turn — 一回 (one time), 回る (to spin)",
+            "label": "counter"
+        },
+        "春": {
+            "reading": "シュン, はる",
+            "meaning": "spring (season)",
+            "label": "noun"
+        },
+        "歳": {
+            "reading": "サイ, セイ",
+            "meaning": "years old (counter for age) — exceptions: 20歳 はたち (NOT にじゅっさい), often simplified as 才",
+            "label": "counter"
+        },
+        "黒": {
+            "reading": "コク, くろ(い)",
+            "meaning": "black",
+            "label": "color"
+        },
+        "動": {
+            "reading": "ドウ, うご(く), うご(かす)",
+            "meaning": "move, motion — 動物 (animal), 自動車 (car), 運動 (exercise)",
+            "label": "verb"
+        },
+        "看": {
+            "reading": "カン",
+            "meaning": "watch over, look after — 看護師 (nurse), 看板 (signboard)",
+            "label": "verb"
+        },
+        "護": {
+            "reading": "ゴ",
+            "meaning": "protect, defend, guard — 看護 (nursing), 保護 (protection)",
+            "label": "verb"
+        },
+        "師": {
+            "reading": "シ",
+            "meaning": "teacher, master, professional — 看護師 (nurse), 教師 (teacher), 医師 (physician)",
+            "label": "noun-suffix"
+        }
+    },
+    "words": {
+        "得意(とくい)": {
+            "reading": "とくい",
+            "meaning": "good at, one's specialty, proud — opposite of 苦手 (にがて, bad at)",
+            "label": "na-adjective"
+        },
+        "上": {
+            "reading": "うえ",
+            "meaning": "above, on top of, up — positional noun, used with の: 机の上",
+            "label": "position"
+        },
+        "下": {
+            "reading": "した",
+            "meaning": "below, under, beneath — positional noun: 机の下",
+            "label": "position"
+        },
+        "前": {
+            "reading": "まえ",
+            "meaning": "in front of, before — also 'ago' for time: 三年前 (3 years ago)",
+            "label": "position"
+        },
+        "後ろ": {
+            "reading": "うしろ",
+            "meaning": "behind, back — note okurigana ろ; different from 後 (あと/ご) meaning 'after'",
+            "label": "position"
+        },
+        "中": {
+            "reading": "なか",
+            "meaning": "inside, middle, within — also read ちゅう as a suffix (e.g. 勉強中)",
+            "label": "position"
+        },
+        "外": {
+            "reading": "そと",
+            "meaning": "outside",
+            "label": "position"
+        },
+        "右": {
+            "reading": "みぎ",
+            "meaning": "right (direction)",
+            "label": "position"
+        },
+        "左": {
+            "reading": "ひだり",
+            "meaning": "left (direction)",
+            "label": "position"
+        },
+        "横": {
+            "reading": "よこ",
+            "meaning": "side, beside — generic 'next to' (different categories OK, e.g. person next to building)",
+            "label": "position"
+        },
+        "隣": {
+            "reading": "となり",
+            "meaning": "next to (adjacent neighbor) — implies same category, e.g. house next to house, person next to person. Contrast with 横",
+            "label": "position"
+        },
+        "間": {
+            "reading": "あいだ",
+            "meaning": "between, interval, space — also read ま (a pause) or かん (duration, e.g. 時間)",
+            "label": "position"
+        },
+        "近く": {
+            "reading": "ちかく",
+            "meaning": "near, nearby, vicinity — noun form of 近い",
+            "label": "position"
+        },
+        "六日": {
+            "reading": "むいか",
+            "meaning": "6th day of the month, six days — exception: NOT ろくにち",
+            "label": "date"
+        },
+        "七日": {
+            "reading": "なのか",
+            "meaning": "7th day of the month, seven days — exception: NOT しちにち or ななにち",
+            "label": "date"
+        },
+        "誕生日": {
+            "reading": "たんじょうび",
+            "meaning": "birthday",
+            "label": "noun"
+        }
+    }
+}
