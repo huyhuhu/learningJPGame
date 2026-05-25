@@ -1,0 +1,157 @@
+{
+    "questions": [],
+    "kanji": {
+        "温": {
+            "reading": "オン, あたた(かい), あたた(まる)",
+            "meaning": "warm, temperature — 温泉 (hot spring), 温度 (temperature), 温かい (warm)",
+            "label": "i-adjective"
+        },
+        "重": {
+            "reading": "ジュウ, チョウ, おも(い), かさ(ねる), え",
+            "meaning": "heavy, important, layers — 重い (heavy), 重要 (important), counter for layers (一重)",
+            "label": "i-adjective"
+        },
+        "北": {
+            "reading": "ホク, きた",
+            "meaning": "north — 北海道 (Hokkaido), 北口 (north exit), 東北 (Tōhoku)",
+            "label": "direction"
+        },
+        "海": {
+            "reading": "カイ, うみ",
+            "meaning": "sea, ocean — 海 (sea), 北海道 (Hokkaido), 海外 (overseas)",
+            "label": "noun"
+        },
+        "道": {
+            "reading": "ドウ, トウ, みち",
+            "meaning": "road, way, path, the Way — 道 (road), 北海道, 道具 (tool), 柔道 (judo)",
+            "label": "noun"
+        },
+        "悪": {
+            "reading": "アク, オ, わる(い)",
+            "meaning": "bad, evil, wicked — 悪い (bad), 悪魔 (devil), 最悪 (the worst)",
+            "label": "i-adjective"
+        },
+        "広": {
+            "reading": "コウ, ひろ(い)",
+            "meaning": "wide, spacious, broad — 広い (spacious), 広告 (advertisement), 広島 (Hiroshima)",
+            "label": "i-adjective"
+        },
+        "青": {
+            "reading": "セイ, ショウ, あお(い)",
+            "meaning": "blue (traditionally also green for natural things) — 青い (blue), 青信号 (green traffic light), 青年 (youth)",
+            "label": "color"
+        },
+        "色": {
+            "reading": "ショク, シキ, いろ",
+            "meaning": "color — 色 (color), 黄色 (yellow), 景色 (scenery)",
+            "label": "noun"
+        },
+        "緑": {
+            "reading": "リョク, ロク, みどり",
+            "meaning": "green — 緑 (green/greenery), 新緑 (fresh greenery). Modern 'green' as a color word, separate from 青",
+            "label": "color"
+        },
+        "欲": {
+            "reading": "ヨク, ほ(しい), ほっ(する)",
+            "meaning": "want, desire, greed — 欲しい (want), 欲望 (desire), 食欲 (appetite)",
+            "label": "i-adjective"
+        },
+        "活": {
+            "reading": "カツ",
+            "meaning": "lively, activity, life — 生活 (lifestyle/daily life), 活発 (lively), 活動 (activity)",
+            "label": "noun"
+        },
+        "富": {
+            "reading": "フ, フウ, と(む)",
+            "meaning": "wealth, abundant, rich — 富士山 (Mt. Fuji), 豊富 (abundant), 富 (wealth)",
+            "label": "noun"
+        },
+        "士": {
+            "reading": "シ",
+            "meaning": "gentleman, scholar, samurai, professional — 富士山, 武士 (samurai), 弁護士 (lawyer)",
+            "label": "noun-suffix"
+        },
+        "辛": {
+            "reading": "シン, から(い), つら(い)",
+            "meaning": "spicy, hot (taste); painful, hard — exception trap: same kanji, two readings — 辛い(からい) = spicy, 辛い(つらい) = painful/tough emotionally",
+            "label": "i-adjective"
+        },
+        "込": {
+            "reading": "こ(む), こ(める)",
+            "meaning": "crowded, included, put into — kokuji (Japan-made kanji, no on-reading). 込む (crowded), 申し込む (to apply)",
+            "label": "verb"
+        },
+        "漢": {
+            "reading": "カン",
+            "meaning": "Han Chinese, fellow, man — 漢字 (kanji), 漢方 (Chinese medicine), 痴漢 (groper)",
+            "label": "noun"
+        },
+        "字": {
+            "reading": "ジ, あざ",
+            "meaning": "character, letter, writing — 漢字 (kanji), 文字 (もじ, character), 数字 (number/digit)",
+            "label": "noun"
+        },
+        "目": {
+            "reading": "モク, ボク, め",
+            "meaning": "eye; also ordinal suffix (一つ目 = the 1st one) — 目 (eye), 注目 (attention), 目的 (purpose)",
+            "label": "noun"
+        },
+        "閣": {
+            "reading": "カク",
+            "meaning": "tower, pavilion, cabinet (government) — 内閣 (cabinet), 金閣寺 (Golden Pavilion), 銀閣寺 (Silver Pavilion)",
+            "label": "noun"
+        },
+        "美": {
+            "reading": "ビ, ミ, うつく(しい)",
+            "meaning": "beautiful — 美しい (beautiful), 美術館 (art museum), 美人 (beautiful person)",
+            "label": "i-adjective"
+        },
+        "疲": {
+            "reading": "ヒ, つか(れる)",
+            "meaning": "get tired, worn out — 疲れる (to get tired), 疲労 (fatigue), お疲れ様 (good work / thanks for your hard work)",
+            "label": "verb"
+        }
+    },
+    "words": {
+        "楽しい": {
+            "reading": "たのしい",
+            "meaning": "fun, enjoyable, pleasant — speaker's own enjoyment. Contrast with 面白い (interesting/amusing)",
+            "label": "i-adjective"
+        },
+        "便利": {
+            "reading": "べんり",
+            "meaning": "convenient, handy — exception trap: ends in り but is a な-adjective (便利な物, 便利に使う). Opposite: 不便 (ふべん, inconvenient)",
+            "label": "na-adjective"
+        },
+        "安い": {
+            "reading": "やすい",
+            "meaning": "cheap, inexpensive — opposite: 高い. Also note 安 means 'safe/peace' (e.g. 安心)",
+            "label": "i-adjective"
+        },
+        "熱い": {
+            "reading": "あつい",
+            "meaning": "hot to the touch, hot (objects, drinks, fever) — exception trap: same あつい reading as 暑い (hot weather) and 厚い (thick). Use 熱い for objects, 暑い for weather",
+            "label": "i-adjective"
+        },
+        "難しい": {
+            "reading": "むずかしい",
+            "meaning": "difficult, hard — opposite: 易しい (やさしい, easy). Casual short form: むずい",
+            "label": "i-adjective"
+        },
+        "お元気ですか": {
+            "reading": "おげんきですか",
+            "meaning": "How are you? / Are you well? — IMPORTANT cultural note: NOT used as a daily greeting like English 'how are you?'. Reserved for people you haven't seen in a while. Asking someone you just saw yesterday sounds odd",
+            "label": "set-phrase"
+        },
+        "もう一杯いかがですか": {
+            "reading": "もういっぱいいかがですか",
+            "meaning": "Would you like another cup/glass? — polite offering. いかがですか is the polite form of どうですか. Sound change: 一杯 = いっぱい (NOT いちはい)",
+            "label": "set-phrase"
+        },
+        "そろそろ失礼します": {
+            "reading": "そろそろしつれいします",
+            "meaning": "It's about time I should be going — polite way to announce your departure, especially from someone's home or a gathering. そろそろ softens the abruptness; literally 'gradually/about time'",
+            "label": "set-phrase"
+        }
+    }
+}

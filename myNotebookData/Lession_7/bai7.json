@@ -1,0 +1,704 @@
+{
+  "questions": [
+    {
+      "id": "b7h-001",
+      "question": "What does |あげます| mean and from whose perspective?",
+      "choices": ["give — from the giver's perspective (out from speaker or speaker's side)", "give — from the receiver's perspective", "receive", "exchange"],
+      "answer": "give — from the giver's perspective (out from speaker or speaker's side)",
+      "explanation": "あげる describes giving FROM the speaker (or speaker's in-group) TO someone else. ⚠ Cannot use to describe someone giving TO you in N5 — that's くれる (lesson 24). Use もらう instead at N5 level."
+    },
+    {
+      "id": "b7h-002",
+      "question": "What does |もらいます| mean and from whose perspective?",
+      "choices": ["receive — from the receiver's perspective", "give — from the giver's perspective", "exchange", "buy"],
+      "answer": "receive — from the receiver's perspective",
+      "explanation": "もらう describes receiving. The receiver is the SUBJECT of the sentence. Pattern: [Receiver]は [Giver]に/から [Object]を もらいます."
+    },
+    {
+      "id": "b7h-003",
+      "question": "Choose particle: 山田さんは木村さん___花をあげました。",
+      "choices": ["に", "から", "で", "を"],
+      "answer": "に",
+      "explanation": "⚠ あげる takes に for the RECIPIENT. NEVER から (that's only for もらう). 山田 (giver) → 木村 (recipient via に) → 花 (object via を)."
+    },
+    {
+      "id": "b7h-004",
+      "question": "Choose particle: 私は友達___お金をもらいました。",
+      "choices": ["に or から (both work)", "に only", "から only", "で"],
+      "answer": "に or から (both work)",
+      "explanation": "もらう accepts BOTH に and から when the source is a PERSON. に is slightly more conversational; から emphasizes the source direction explicitly."
+    },
+    {
+      "id": "b7h-005",
+      "question": "Choose particle: 私は会社___給料(きゅうりょう)をもらいます。 (= 'I receive salary from the company.')",
+      "choices": ["から", "に", "に or から (both work)", "で"],
+      "answer": "から",
+      "explanation": "⚠ CRITICAL RULE: when the SOURCE is an INSTITUTION (会社, 学校, 銀行, 病院), only から works. に is restricted to person/animal sources. So 会社から OK; 会社に is incorrect."
+    },
+    {
+      "id": "b7h-006",
+      "question": "Choose particle: 銀行___お金を借りました。",
+      "choices": ["から", "に", "で", "を"],
+      "answer": "から",
+      "explanation": "Same rule as もらう: institution (銀行 = bank) → only から. 借りる (borrow) follows the same source-particle rule as もらう."
+    },
+    {
+      "id": "b7h-007",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["私は会社にボーナスをもらいました。", "私は会社からボーナスをもらいました。", "私は友達にプレゼントをもらいました。", "私は田中さんからメールをもらいました。"],
+      "answer": "私は会社にボーナスをもらいました。",
+      "explanation": "⚠ Institution source = から only. 会社にもらう is incorrect — must be 会社からもらう. The other three are valid (friend, person, Tanaka)."
+    },
+    {
+      "id": "b7h-008",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["私は山田さんから本をあげました。", "私は山田さんに本をあげました。", "私は山田さんから本をもらいました。", "私は山田さんに本をもらいました。"],
+      "answer": "私は山田さんから本をあげました。",
+      "explanation": "⚠ あげる NEVER takes から. The recipient is always marked with に. The other three are all valid (に for あげる, に/から for もらう)."
+    },
+    {
+      "id": "b7h-009",
+      "question": "Which sentence correctly translates 'Yamada gave me a watch'? (Using N5 grammar)",
+      "choices": ["私は山田さんに時計をもらいました。", "山田さんは私に時計をあげました。", "Both options 1 and 2 are grammatically valid, but option 1 is more natural in N5 Japanese.", "山田さんは私に時計をくれました。"],
+      "answer": "Both options 1 and 2 are grammatically valid, but option 1 is more natural in N5 Japanese.",
+      "explanation": "⚠ Cultural-linguistic point: option 2 (山田さんは私にあげました) is grammatically OK but sounds slightly unusual — natives prefer くれる (lesson 24) for 'gave TO me'. Option 4 (くれる) is the MOST natural but is beyond N5 lesson 7. Within N5 scope, option 1 (もらう from speaker's perspective) is the safest."
+    },
+    {
+      "id": "b7h-010",
+      "question": "Translate: 'My younger sister gave me chocolate.' (Use N5 lesson 7 grammar.)",
+      "choices": ["私は妹にチョコレートをもらいました。", "妹は私にチョコレートをあげました。", "Both 1 and 2 work; option 1 is more natural at N5 level.", "妹は私からチョコレートをもらいました。"],
+      "answer": "Both 1 and 2 work; option 1 is more natural at N5 level.",
+      "explanation": "Same issue as b7h-009. Restructuring with もらう (option 1) avoids the awkwardness of describing oneself as the recipient via あげる. Option 4 reverses the meaning ('sister received from me')."
+    },
+    {
+      "id": "b7h-011",
+      "question": "What is the difference between |貸します| and |借ります|?",
+      "choices": ["貸す = lend (give for temporary use); 借りる = borrow (take for temporary use)", "貸す = borrow; 借りる = lend", "They are exactly the same", "貸す = rent out; 借りる = rent in"],
+      "answer": "貸す = lend (give for temporary use); 借りる = borrow (take for temporary use)",
+      "explanation": "⚠ Easy mnemonic: 貸 (kashi) has the 貝 'shell/money' radical → giving out. Pair like あげる/もらう: 貸す is GIVER side; 借りる is RECEIVER side. Same particle rules apply."
+    },
+    {
+      "id": "b7h-012",
+      "question": "Choose particle and verb: 私は田中さん___辞書(じしょ)を____。 (= 'I borrowed a dictionary from Tanaka.')",
+      "choices": ["A=に or から / B=借りました", "A=に / B=貸しました", "A=から / B=貸しました", "A=を / B=借りました"],
+      "answer": "A=に or から / B=借りました",
+      "explanation": "Borrow = 借りる. Source person → に or から (like もらう). Option 2/3 would reverse the meaning to 'I lent...'. Option 4 has wrong particle (を) for the source."
+    },
+    {
+      "id": "b7h-013",
+      "question": "Translate: 'I lent my umbrella to Yamada.'",
+      "choices": ["私は山田さんに傘(かさ)を貸しました。", "私は山田さんから傘を貸しました。", "私は山田さんに傘を借りました。", "山田さんは私に傘を貸しました。"],
+      "answer": "私は山田さんに傘(かさ)を貸しました。",
+      "explanation": "貸す = lend (giver action). Recipient → に. Option 2 (から) is wrong — 貸す pairs like あげる, requires に. Option 3 reverses (borrow). Option 4 reverses (Yamada lent to me)."
+    },
+    {
+      "id": "b7h-014",
+      "question": "Translate: 'I borrowed a book from the library.'",
+      "choices": ["私は図書館から本を借りました。", "私は図書館に本を借りました。", "Both work, but option 1 is more standard.", "私は図書館で本を借りました。"],
+      "answer": "私は図書館から本を借りました。",
+      "explanation": "⚠ INSTITUTION source = から only. 図書館 (library) is an institution → must use から. Option 2 (に) is wrong with institution. Option 4 (で) is wrong — で is for action place, not source."
+    },
+    {
+      "id": "b7h-015",
+      "question": "What is the difference between |教えます| and |習います|?",
+      "choices": ["教える = teach (give knowledge); 習う = learn (receive teaching)", "教える = learn; 習う = teach", "They are exactly the same", "教える = self-study; 習う = study at school"],
+      "answer": "教える = teach (give knowledge); 習う = learn (receive teaching)",
+      "explanation": "Same pattern as あげる/もらう: 教える is GIVER (teacher), 習う is RECEIVER (student). Note: 習う specifically means learning FROM a teacher — different from 勉強する (study on own)."
+    },
+    {
+      "id": "b7h-016",
+      "question": "Choose: 私は山田さん___英語を____。 ('I learn English from Yamada.')",
+      "choices": ["A=に / B=習います", "A=に / B=教えます", "A=から / B=教えます", "A=を / B=習います"],
+      "answer": "A=に / B=習います",
+      "explanation": "習う = learn (receiver perspective). Teacher → に. Option 2 reverses ('I teach Yamada English'). Option 3 is bizarre. Option 4 wrong particle."
+    },
+    {
+      "id": "b7h-017",
+      "question": "Choose: 山田先生は学生たち___日本語を___。 ('Yamada-sensei teaches Japanese to students.')",
+      "choices": ["A=に / B=教えます", "A=から / B=教えます", "A=に / B=習います", "A=を / B=教えます"],
+      "answer": "A=に / B=教えます",
+      "explanation": "教える = teach (giver perspective). Subject (giver) = 山田先生. Recipient (learners) → に. 学生たち = students. ⚠ Option 3 (習う) would reverse the subject role."
+    },
+    {
+      "id": "b7h-018",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["私は学校から日本語を習いました。", "私は田中先生に日本語を習いました。", "私は田中先生から日本語を習いました。", "私はテレビで日本語を勉強します。"],
+      "answer": "私は学校から日本語を習いました。",
+      "explanation": "⚠ Subtle trap: 習う = learn from a TEACHER (a person). When the source is an institution like 学校, the more natural verb is 勉強する (general study). 学校から習う sounds unusual. The other three are natural."
+    },
+    {
+      "id": "b7h-019",
+      "question": "Choose particle: 母___クリスマスにセーターを___。 ('I received a sweater from my mother for Christmas.')",
+      "choices": ["A=に or から / B=もらいました", "A=に / B=あげました", "A=から / B=あげました", "A=を / B=もらいました"],
+      "answer": "A=に or から / B=もらいました",
+      "explanation": "Receiver (私) is implied subject. Source (mother, person) → に or から. もらいました for receiving. Option 2/3 reverse the action (gave to mother)."
+    },
+    {
+      "id": "b7h-020",
+      "question": "Translate: 'I gave my father a tie for his birthday.'",
+      "choices": ["私は父に誕生日にネクタイをあげました。", "私は父から誕生日にネクタイをあげました。", "私の父は私にネクタイをあげました。", "私は父にネクタイを誕生日でもらいました。"],
+      "answer": "私は父に誕生日にネクタイをあげました。",
+      "explanation": "あげる + recipient に. Two に in this sentence: 父に (recipient) + 誕生日に (time). ⚠ Both are correct uses; Japanese allows multiple に for different functions. Option 3 reverses subject."
+    },
+    {
+      "id": "b7h-021",
+      "question": "What is special about |送ります| and |電話をかけます| regarding particles?",
+      "choices": ["The destination can be marked with に OR へ (not just に)", "They only take から, not に", "They only take で", "They take を for the destination"],
+      "answer": "The destination can be marked with に OR へ (not just に)",
+      "explanation": "⚠ Special rule: 送る (send) and 電話をかける (call) — when the recipient/destination is a PLACE (company, country), either に or へ works. Example: 会社に電話する OR 会社へ電話する."
+    },
+    {
+      "id": "b7h-022",
+      "question": "Choose: 私は来週、家族___手紙を送ります。",
+      "choices": ["に", "から", "で", "へ"],
+      "answer": "に",
+      "explanation": "Recipient (family) is a PERSON/people → に is the standard choice. へ would also work but only really applies when the destination is more place-like. Person → prefer に."
+    },
+    {
+      "id": "b7h-023",
+      "question": "Choose: 田中さんはアメリカ___ファクスを送りました。",
+      "choices": ["に or へ (both work)", "に only", "へ only", "から"],
+      "answer": "に or へ (both work)",
+      "explanation": "Destination is a PLACE (America) → both に and へ work for 送る. へ slightly emphasizes direction; に slightly emphasizes recipient/arrival point."
+    },
+    {
+      "id": "b7h-024",
+      "question": "Choose: 山田さんは会社___電話をかけました。",
+      "choices": ["に or へ (both work)", "から", "で", "を"],
+      "answer": "に or へ (both work)",
+      "explanation": "電話をかける with a place destination → に or へ both work. Same flexibility as 送る."
+    },
+    {
+      "id": "b7h-025",
+      "question": "Find the INCORRECT particle use:",
+      "choices": ["友達でメールを送りました。", "友達にメールを送りました。", "友達へメールを送りました。", "Both 'friend に' and 'friend へ' are correct."],
+      "answer": "友達でメールを送りました。",
+      "explanation": "⚠ 友達で is wrong — で marks action-location, not recipient. 送る for a person → に. 友達へ also works (less common for a person, but acceptable)."
+    },
+    {
+      "id": "b7h-026",
+      "question": "What does |で| mean when used as: はし___食べます?",
+      "choices": ["means / instrument (with chopsticks)", "action location", "destination", "time"],
+      "answer": "means / instrument (with chopsticks)",
+      "explanation": "⚠ One of で's many meanings: INSTRUMENT/TOOL. はしで食べる = eat with chopsticks. Same particle as transport (バスで行く), language (日本語で話す), material (紙で作る)."
+    },
+    {
+      "id": "b7h-027",
+      "question": "Choose: 私は手___ご飯を食べます。 ('I eat with my hands.')",
+      "choices": ["で", "に", "が", "と"],
+      "answer": "で",
+      "explanation": "Body parts used as 'tools' also take で. 手で = with hands. Like instrument: rice eaten by means of hands."
+    },
+    {
+      "id": "b7h-028",
+      "question": "Choose: このパンはナイフ___切ります。",
+      "choices": ["で", "を", "に", "と"],
+      "answer": "で",
+      "explanation": "ナイフ = knife (tool) → で. 切る = cut. ⚠ Pattern: [Object]は [Tool]で [Verb]. The bread (pan) is topic, knife is the instrument."
+    },
+    {
+      "id": "b7h-029",
+      "question": "Choose: この紙___封筒(ふうとう)を作(つく)ります。 ('Make an envelope FROM this paper.') (作る = make)",
+      "choices": ["で", "を", "から", "に"],
+      "answer": "で",
+      "explanation": "⚠ で here = MATERIAL (made from). Different from から which would suggest 'starting point'. 紙で作る = make out of paper. Common pattern: 木で家を作る (build a house out of wood)."
+    },
+    {
+      "id": "b7h-030",
+      "question": "Translate: 'I write reports in Japanese.'",
+      "choices": ["私は日本語でレポートを書きます。", "私は日本語にレポートを書きます。", "私は日本語をレポートに書きます。", "私は日本語からレポートを書きます。"],
+      "answer": "私は日本語でレポートを書きます。",
+      "explanation": "Language as MEANS → で. 日本語で書く = write in Japanese. ⚠ Same で as instruments; both express 'means of doing something'."
+    },
+    {
+      "id": "b7h-031",
+      "question": "Translate the question: 「『ありがとう』は英語で何ですか?」",
+      "choices": ["How do you say 'arigatou' in English?", "What language is 'arigatou'?", "What is the English word for thanks?", "Both options 1 and 3 are valid translations."],
+      "answer": "Both options 1 and 3 are valid translations.",
+      "explanation": "Pattern: [Word]は [Language]で 何ですか = 'What is [word] in [language]?' Used to ask translations. で here marks the language as MEANS of expression."
+    },
+    {
+      "id": "b7h-032",
+      "question": "Translate: 'How do you say \"book\" in Japanese?'",
+      "choices": ["「Book」は日本語で何ですか。", "「Book」は日本語に何ですか。", "「Book」を日本語で何ですか。", "「Book」は何で日本語ですか。"],
+      "answer": "「Book」は日本語で何ですか。",
+      "explanation": "Standard translation question pattern: [Original word]は [Target language]で 何ですか. The で marks language as means."
+    },
+    {
+      "id": "b7h-033",
+      "question": "Read this exchange: A: 「『Goodbye』は日本語で何ですか?」 B: 「『さようなら』です。」 What is happening?",
+      "choices": ["A is asking how to say 'Goodbye' in Japanese.", "A doesn't know any Japanese.", "A is teaching B English.", "B is confused."],
+      "answer": "A is asking how to say 'Goodbye' in Japanese.",
+      "explanation": "Standard translation-request pattern. A asks; B provides the Japanese equivalent."
+    },
+    {
+      "id": "b7h-034",
+      "question": "What does |もう| mean when paired with a past-tense verb?",
+      "choices": ["already (an action has been completed)", "more (additional quantity)", "still (ongoing state)", "not yet"],
+      "answer": "already (an action has been completed)",
+      "explanation": "⚠ もう has multiple meanings: (1) with past-tense verb = 'already'. (2) with quantity = 'more' (もう一杯 = one more cup). Context decides. Here (with verb), it's 'already'."
+    },
+    {
+      "id": "b7h-035",
+      "question": "Choose the natural reply to 「もう昼ご飯を食べましたか?」 if YES:",
+      "choices": ["はい、もう食べました。", "はい、まだ食べました。", "はい、まだです。", "いいえ、もう食べました。"],
+      "answer": "はい、もう食べました。",
+      "explanation": "Standard affirmative reply pattern: はい、[もう] verb+ました. もう can be repeated or dropped. Option 2 mixes まだ with affirmative (contradiction). Option 3 means 'not yet' — used for NO."
+    },
+    {
+      "id": "b7h-036",
+      "question": "Choose the natural reply to 「もう宿題をしましたか?」 if NO:",
+      "choices": ["いいえ、まだです。", "いいえ、しませんでした。", "いいえ、もうしました。", "いいえ、まだしませんでした。"],
+      "answer": "いいえ、まだです。",
+      "explanation": "⚠ CRITICAL N5 RULE: for 'not yet' replies to もう…ましたか questions, use まだです — NEVER しませんでした. The past negative would mean 'did not do (and won't)' rather than 'haven't yet'."
+    },
+    {
+      "id": "b7h-037",
+      "question": "Find the INCORRECT reply: A asks 「もう手紙を書きましたか?」",
+      "choices": ["いいえ、書きませんでした。", "いいえ、まだです。", "はい、書きました。", "はい、もう書きました。"],
+      "answer": "いいえ、書きませんでした。",
+      "explanation": "⚠ Top trap: 書きませんでした means 'did not write' (in past). For 'haven't written yet', use まだです. The distinction is between 'didn't do (period)' vs 'haven't done (yet, but might)'."
+    },
+    {
+      "id": "b7h-038",
+      "question": "Why is |まだ書きませんでした| INCORRECT as a reply to 「もう...ましたか?」?",
+      "choices": ["The past negative form implies the action will NOT happen — but the speaker means 'haven't done it yet (but might)'", "It's grammatically wrong by all standards", "まだ never pairs with negatives", "It's only correct in formal Japanese"],
+      "answer": "The past negative form implies the action will NOT happen — but the speaker means 'haven't done it yet (but might)'",
+      "explanation": "⚠ Semantic distinction: ませんでした = past negative (didn't do, with finality). まだです = haven't yet (incomplete, suggests possibility of future completion). N5 explicitly tests this distinction."
+    },
+    {
+      "id": "b7h-039",
+      "question": "Translate: 'Have you already sent the package?'",
+      "choices": ["もう荷物を送りましたか。", "まだ荷物を送りましたか。", "もう荷物を送りませんでしたか。", "もう荷物を送ります。"],
+      "answer": "もう荷物を送りましたか。",
+      "explanation": "もう + past affirmative + question = 'already?' Standard pattern. Option 2 mixes まだ with affirmative question (illogical). Option 3 is past negative (wrong sense)."
+    },
+    {
+      "id": "b7h-040",
+      "question": "Translate this exchange: A: 「もう昼ご飯を食べましたか?」 B: 「いいえ、まだです。」 What does B mean?",
+      "choices": ["Not yet (haven't eaten lunch yet, may eat later).", "Never (won't eat lunch).", "Already (ate lunch).", "Doesn't eat lunch."],
+      "answer": "Not yet (haven't eaten lunch yet, may eat later).",
+      "explanation": "まだです = 'not yet'. The semantic implication is incompleteness — the action hasn't happened YET, but might happen soon. Different from declining lunch entirely."
+    },
+    {
+      "id": "b7h-041",
+      "question": "Translate: 'Have you bought the gift yet?'",
+      "choices": ["もうプレゼントを買いましたか。", "まだプレゼントを買いましたか。", "もうプレゼントが買いますか。", "もうプレゼントを買いません。"],
+      "answer": "もうプレゼントを買いましたか。",
+      "explanation": "Standard pattern. もう + past ました + か = 'Have you already...?'"
+    },
+    {
+      "id": "b7h-042",
+      "question": "What does |これから| mean?",
+      "choices": ["from now (the action is about to start or will start soon)", "after this (later)", "after that (referring to previous context)", "already"],
+      "answer": "from now (the action is about to start or will start soon)",
+      "explanation": "これから = from now on, starting now. Often signals an upcoming action. Different from それから (after that, sequencing past actions) and 後で (later, with no specified start)."
+    },
+    {
+      "id": "b7h-043",
+      "question": "Choose: 「___昼ご飯を食べに行きます。」 ('I'm going to eat lunch now.')",
+      "choices": ["これから", "それから", "もう", "まだ"],
+      "answer": "これから",
+      "explanation": "これから = from now/right now. Indicates an action about to start. それから would chain to a previous action. もう=already; まだ=still/not yet — neither fits."
+    },
+    {
+      "id": "b7h-044",
+      "question": "What's the difference between |これから| and |それから|?",
+      "choices": ["これから = from now (starting); それから = after that (sequencing past actions)", "They are exactly the same", "これから = past; それから = future", "これから = formal; それから = casual"],
+      "answer": "これから = from now (starting); それから = after that (sequencing past actions)",
+      "explanation": "⚠ Subtle: これ vs それ matter. これから anchors to NOW. それから anchors to a previously mentioned point. 朝ご飯を食べました。それから… (after eating breakfast). これから昼ご飯を食べます (going to eat lunch now)."
+    },
+    {
+      "id": "b7h-045",
+      "question": "How do you politely refer to YOUR OWN mother when speaking to outsiders?",
+      "choices": ["母", "お母さん", "母さん", "母様"],
+      "answer": "母",
+      "explanation": "⚠ Critical cultural rule: HUMBLE form for own family in formal speech. Use 父, 母, 兄, 姉. お父さん, お母さん etc. are for OTHERS' family or for addressing your own parents directly at home."
+    },
+    {
+      "id": "b7h-046",
+      "question": "How do you politely refer to ANOTHER PERSON'S mother?",
+      "choices": ["お母さん", "母", "彼女の母", "母様"],
+      "answer": "お母さん",
+      "explanation": "⚠ RESPECTFUL form for others' family: お母さん, お父さん, お兄さん, お姉さん (with お and さん). Mirror of own-family rule."
+    },
+    {
+      "id": "b7h-047",
+      "question": "Find the INCORRECT sentence (formal speech to a colleague):",
+      "choices": ["私のお父さんは医者です。", "私の父は医者です。", "山田さんのお父さんは医者ですか。", "父は会社員です。"],
+      "answer": "私のお父さんは医者です。",
+      "explanation": "⚠ Don't say 私のお父さん in formal contexts to outsiders. Use 私の父 or just 父. Option 3 correctly uses お父さん for ANOTHER PERSON'S father."
+    },
+    {
+      "id": "b7h-048",
+      "question": "When ADDRESSING your own father at home, what do you call him?",
+      "choices": ["お父さん (or just Otou-san)", "父", "あなた", "おじさん"],
+      "answer": "お父さん (or just Otou-san)",
+      "explanation": "⚠ Two different uses: REFERRING to him to outsiders → 父 (humble). ADDRESSING him directly → お父さん (intimate/respectful). Same word, different speech acts."
+    },
+    {
+      "id": "b7h-049",
+      "question": "Translate: 'I received this watch from my father.' (formal speech)",
+      "choices": ["私は父にこの時計をもらいました。", "私はお父さんにこの時計をもらいました。", "Both are acceptable; option 1 is more formal/standard.", "私はお父さんからこの時計をあげました。"],
+      "answer": "私は父にこの時計をもらいました。",
+      "explanation": "⚠ Formal speech to outsider → 父 (humble). Option 2 (お父さん) sounds childish/informal. Option 4 reverses the verb (gave). The standard formal phrasing uses 父."
+    },
+    {
+      "id": "b7h-050",
+      "question": "Read: 「私のお父さんは銀行で働いています。」 What's slightly off about this sentence?",
+      "choices": ["お父さん is too informal/childish for talking ABOUT own father; should be 父 in formal/neutral speech.", "Nothing is wrong.", "Should use ある instead of 働く.", "銀行で should be 銀行に."],
+      "answer": "お父さん is too informal/childish for talking ABOUT own father; should be 父 in formal/neutral speech.",
+      "explanation": "⚠ Common error among Japanese learners (and Japanese children). When speaking ABOUT one's own father to outsiders, use 父. お父さん is reserved for addressing or referring within family / talking about others' fathers."
+    },
+    {
+      "id": "b7h-051",
+      "question": "What does |ごめんください| mean and when is it used?",
+      "choices": ["'Hello/Anyone home?' — used when arriving at someone's house and announcing presence", "'Excuse me/sorry' for an action", "'Goodbye'", "'Thank you'"],
+      "answer": "'Hello/Anyone home?' — used when arriving at someone's house and announcing presence",
+      "explanation": "⚠ ごめんください is a SPECIFIC cultural greeting — said at someone's entryway to announce arrival. Literally ≈ 'excuse my intrusion'. Not used in stores or other contexts."
+    },
+    {
+      "id": "b7h-052",
+      "question": "What does |いらっしゃい| mean and when is it used?",
+      "choices": ["'Welcome' — said by the host to a guest arriving", "'Goodbye'", "'Sorry'", "'Please come in'"],
+      "answer": "'Welcome' — said by the host to a guest arriving",
+      "explanation": "いらっしゃい = welcome (from いらっしゃる, honorific 'come'). Said by host to guest at the door. ⚠ Different from いらっしゃいませ which is from shopkeepers to customers (more formal/business)."
+    },
+    {
+      "id": "b7h-053",
+      "question": "What does |どうぞお上がりください| (どうぞ おあがり ください) mean?",
+      "choices": ["'Please come in / Please step up' — invitation to enter a Japanese home", "'Please sit down'", "'Please leave'", "'Please eat'"],
+      "answer": "'Please come in / Please step up' — invitation to enter a Japanese home",
+      "explanation": "⚠ Cultural nuance: 上がる literally = 'go up'. Japanese homes have a raised floor (after the genkan/entryway), so 'going inside' = 'stepping up'. The phrase is the host's way of inviting the guest to enter."
+    },
+    {
+      "id": "b7h-054",
+      "question": "What does |失礼します| (しつれいします) mean in the context of entering someone's home?",
+      "choices": ["'Excuse me / pardon my intrusion' — said by the guest when entering", "'Goodbye'", "'I'm sorry'", "'Welcome'"],
+      "answer": "'Excuse me / pardon my intrusion' — said by the guest when entering",
+      "explanation": "⚠ 失礼します literally = 'I will be impolite'. Used to humbly acknowledge intrusion — when entering rooms, hanging up phones, leaving, etc. In home-entry context: said by guest after being invited in."
+    },
+    {
+      "id": "b7h-055",
+      "question": "What does |いただきます| mean and when is it said?",
+      "choices": ["'I (humbly) receive' — said before eating or drinking", "'Thank you for the meal' (after eating)", "'Goodbye'", "'I'm hungry'"],
+      "answer": "'I (humbly) receive' — said before eating or drinking",
+      "explanation": "⚠ いただきます is the humble verb いただく (receive) — said BEFORE eating to express gratitude. ⚠ Don't confuse with ごちそうさまでした (said AFTER eating, 'thank you for the feast')."
+    },
+    {
+      "id": "b7h-056",
+      "question": "What does |いかがですか| mean?",
+      "choices": ["'How is it? / Would you like some?' — polite version of どうですか, often used when offering", "'When?'", "'How much?'", "'Why?'"],
+      "answer": "'How is it? / Would you like some?' — polite version of どうですか, often used when offering",
+      "explanation": "いかがですか is the polite/honorific version of どうですか. Common use: offering food/drink (お茶はいかがですか? = Would you like some tea?). Also asking for opinions politely."
+    },
+    {
+      "id": "b7h-057",
+      "question": "Read this exchange: A (visitor) at the door: 「ごめんください。」 B (host): 「いらっしゃい。どうぞお上がりください。」 A: 「失礼します。」 What is happening?",
+      "choices": ["Standard cultural greeting flow for entering a Japanese home.", "An argument.", "A business meeting.", "A phone conversation."],
+      "answer": "Standard cultural greeting flow for entering a Japanese home.",
+      "explanation": "Each phrase has a specific role: ごめんください (visitor announces presence) → いらっしゃい (host welcomes) → どうぞお上がりください (host invites in) → 失礼します (visitor humbly enters). Memorize this entire sequence."
+    },
+    {
+      "id": "b7h-058",
+      "question": "Choose: A: 「お茶___いかがですか?」 B: 「ありがとうございます。いただきます。」",
+      "choices": ["は", "を", "に", "で"],
+      "answer": "は",
+      "explanation": "は marks the offered item as TOPIC. お茶はいかがですか = 'As for tea, how about (it)?' / 'Would you like some tea?'. This is the standard offering pattern."
+    },
+    {
+      "id": "b7h-059",
+      "question": "What does |[～は]すてきですね| express?",
+      "choices": ["Praise / admiration for an item or idea ('That's wonderful/nice!')", "Surprise", "Confusion", "Disagreement"],
+      "answer": "Praise / admiration for an item or idea ('That's wonderful/nice!')",
+      "explanation": "すてき (素敵) = wonderful, lovely. Pattern: [Item]は すてきですね = '(That) [item] is lovely.' Used to compliment gifts, clothing, ideas. ね adds soft confirmation tone."
+    },
+    {
+      "id": "b7h-060",
+      "question": "Read: A gives B a flower. B says: 「___ですね。ありがとうございます。」 Pick the most natural fill-in:",
+      "choices": ["きれいな花", "きれいいお花", "あおいですね", "高い花"],
+      "answer": "きれいな花",
+      "explanation": "Reaction to receiving a flower: きれいな花ですね = 'What a beautiful flower'. ⚠ きれい is な-adj, so insert な before noun. Option 4 (high/expensive) is awkward as a thank-you reaction."
+    },
+    {
+      "id": "b7h-061",
+      "question": "What does |お土産(おみやげ)| mean?",
+      "choices": ["souvenir / gift brought back from travels or for a visit", "money gift", "birthday present", "any kind of gift"],
+      "answer": "souvenir / gift brought back from travels or for a visit",
+      "explanation": "⚠ Cultural specificity: お土産 is SPECIFICALLY a gift brought back from a trip or when visiting someone. Different from プレゼント (general present) and 贈り物 (おくりもの, general gift)."
+    },
+    {
+      "id": "b7h-062",
+      "question": "Translate: 'I bought a souvenir for my mother in Kyoto.'",
+      "choices": ["京都で母にお土産を買いました。", "京都に母でお土産を買いました。", "京都で母をお土産を買いました。", "京都で母にお土産が買いました。"],
+      "answer": "京都で母にお土産を買いました。",
+      "explanation": "Three particles: 京都で (action location), 母に (recipient — buying FOR mother), お土産を (object). Notice 母 (humble form for own mother)."
+    },
+    {
+      "id": "b7h-063",
+      "question": "Read: 「先週、ヨーロッパへ旅行しました。スペインでお土産をたくさん買いました。」 Where did the speaker buy souvenirs?",
+      "choices": ["Spain", "All of Europe", "Japan", "France"],
+      "answer": "Spain",
+      "explanation": "ヨーロッパへ旅行 (traveled to Europe — general). スペインで…買いました (bought IN Spain — specific). Spain is a country in Europe; the speaker shopped specifically there."
+    },
+    {
+      "id": "b7h-064",
+      "question": "What does |パンチ| (パンチ) mean as an office supply in N5?",
+      "choices": ["hole puncher", "boxing punch", "hole punching paper", "thumb drive"],
+      "answer": "hole puncher",
+      "explanation": "⚠ Japanese context: パンチ in office settings = hole puncher (the device). Borrowed from English 'punch'. Not the boxing meaning here."
+    },
+    {
+      "id": "b7h-065",
+      "question": "What does |ホッチキス| mean and what's interesting about the word?",
+      "choices": ["stapler — named after E.H. Hotchkiss (an American manufacturer)", "scissors", "stamp", "ink"],
+      "answer": "stapler — named after E.H. Hotchkiss (an American manufacturer)",
+      "explanation": "ホッチキス = stapler. ⚠ The Japanese word comes from a US company's name (E.H. Hotchkiss). Now used generically. Reading: ホッチキス (small ッ for double consonant)."
+    },
+    {
+      "id": "b7h-066",
+      "question": "Choose: パン___ナイフ___切ります。",
+      "choices": ["A=を / B=で", "A=で / B=を", "A=に / B=で", "A=を / B=に"],
+      "answer": "A=を / B=で",
+      "explanation": "Object (bread) → を. Instrument (knife) → で. Word order is flexible: ナイフでパンを切る also works. Both pairs of particles correct."
+    },
+    {
+      "id": "b7h-067",
+      "question": "Choose: 紙___はさみ___切ります。",
+      "choices": ["A=を / B=で", "A=で / B=を", "A=に / B=で", "A=と / B=を"],
+      "answer": "A=を / B=で",
+      "explanation": "Same pattern as b7h-066. Paper (object) → を. Scissors (tool) → で. Standard transitive verb pattern."
+    },
+    {
+      "id": "b7h-068",
+      "question": "Choose particle: 私はワープロ___手紙を書きます。",
+      "choices": ["で", "を", "に", "に or で"],
+      "answer": "で",
+      "explanation": "ワープロ (word processor) is the tool/instrument → で. 手紙 is object → を. Pattern: write with a tool = [Tool]で [Object]を 書く."
+    },
+    {
+      "id": "b7h-069",
+      "question": "Choose particle: 「テレサちゃんは何___英語の勉強をしますか?」 ('What does Teresa study English with?')",
+      "choices": ["で", "を", "に", "から"],
+      "answer": "で",
+      "explanation": "Means/method → で. 何で = 'with what/by what means'. The answer would specify a tool: ビデオで, CDで, テキストで, etc."
+    },
+    {
+      "id": "b7h-070",
+      "question": "Find the INCORRECT verb usage:",
+      "choices": ["電話を切ります。", "りんごを切ります。", "紙を切ります。", "ケーキを切ります。"],
+      "answer": "電話を切ります。",
+      "explanation": "⚠ Different meaning! 電話を切る IS a valid Japanese expression meaning 'hang up the phone' (cut the call). All four are actually correct — but as an INCORRECT translation match the first one might be misleading if interpreted literally. (Actually grammatical in all four contexts; the expected 'wrong' choice is more about students assuming 切る only means physical cutting.) For testing purposes, 切る for りんご/紙/ケーキ are physical cuts; 電話を切る is idiomatic hang-up."
+    },
+    {
+      "id": "b7h-071",
+      "question": "Choose: 母___ナイフ___りんご___切ります。",
+      "choices": ["A=は / B=で / C=を", "A=が / B=で / C=を", "A=は / B=に / C=を", "A=は / B=で / C=が"],
+      "answer": "A=は / B=で / C=を",
+      "explanation": "Three particles: 母は (topic/subject), ナイフで (instrument), りんごを (object). 'My mother cuts apples with a knife.'"
+    },
+    {
+      "id": "b7h-072",
+      "question": "Translate: 'I gave my mother flowers for Mother's Day.'",
+      "choices": ["私は母の日に母に花をあげました。", "私は母の日で母に花をあげました。", "私の母は私に花をあげました。", "私は母から母の日に花をもらいました。"],
+      "answer": "私は母の日に母に花をあげました。",
+      "explanation": "Two に: 母の日に (time, specific event) + 母に (recipient — own mother, humble). 花を (object). ⚠ Note: two に for different functions in the same sentence is grammatical and common."
+    },
+    {
+      "id": "b7h-073",
+      "question": "Read: 「私は田中さんに英語を習います。田中さんはアメリカ人で、英語の先生です。」 Who teaches English?",
+      "choices": ["Tanaka-san (the American teacher)", "The speaker", "Both", "Cannot be determined"],
+      "answer": "Tanaka-san (the American teacher)",
+      "explanation": "⚠ 田中さんに習う = 'I learn FROM Tanaka' (with に marking the source/teacher). 田中さんは英語の先生 confirms Tanaka is the teacher. The speaker is the learner."
+    },
+    {
+      "id": "b7h-074",
+      "question": "Read: 「私の兄はピアノが上手です。毎週日曜日、私は兄にピアノを習います。」 Who teaches piano?",
+      "choices": ["The older brother", "The speaker", "Neither", "Both"],
+      "answer": "The older brother",
+      "explanation": "兄にピアノを習う = learn piano from older brother (に = source). The brother is good at piano and teaches the speaker."
+    },
+    {
+      "id": "b7h-075",
+      "question": "Translate: 'I will call my father at 7 PM.'",
+      "choices": ["私は午後7時に父に電話をかけます。", "私は午後7時に父へ電話をかけます。", "Both are acceptable; person recipient slightly prefers に.", "私は午後7時で父に電話をかけます。"],
+      "answer": "Both are acceptable; person recipient slightly prefers に.",
+      "explanation": "電話をかける with a person → に is more natural. With a place (会社, アメリカ), either に or へ. Option 4 has wrong particle (で is action-place)."
+    },
+    {
+      "id": "b7h-076",
+      "question": "Read: 「友達は私に誕生日のプレゼントをくれました。」 In modern Japanese, what is being said?",
+      "choices": ["My friend gave ME a birthday present. (くれる = give to me — but this is lesson 24)", "I gave my friend a birthday present.", "My friend received a birthday present.", "Cannot be determined"],
+      "answer": "My friend gave ME a birthday present. (くれる = give to me — but this is lesson 24)",
+      "explanation": "⚠ Beyond N5 lesson 7: くれる specifically means 'give TO ME or my in-group'. At N5 lesson 7, the equivalent is rephrasing with もらう: 私は友達から誕生日のプレゼントをもらいました."
+    },
+    {
+      "id": "b7h-077",
+      "question": "Convert to N5 lesson 7 grammar: 「兄は私にCDをくれました。」 (Using only もらう or あげる)",
+      "choices": ["私は兄にCDをもらいました。", "兄は私にCDをあげました。", "私は兄からCDをあげました。", "兄は私にCDをくれます。"],
+      "answer": "私は兄にCDをもらいました。",
+      "explanation": "⚠ N5 conversion technique: when くれる describes a gift TO speaker, restructure with 私 as subject + もらう. Option 2 is grammatical but feels unnatural. Option 3 reverses (I gave from brother). Option 4 is just くれる, still beyond scope."
+    },
+    {
+      "id": "b7h-078",
+      "question": "Choose: 来週、私はスペイン___旅行します。",
+      "choices": ["へ or に (both work)", "で", "を", "が"],
+      "answer": "へ or に (both work)",
+      "explanation": "旅行する is a movement-like activity. Destination → へ or に. に slightly more event-oriented, へ slightly more directional. Both natural."
+    },
+    {
+      "id": "b7h-079",
+      "question": "Read: 「先月、家族とヨーロッパへ旅行しました。フランス、イタリア、スペインへ行きました。スペインで家族にお土産を買いました。」 Where did the speaker buy souvenirs for family?",
+      "choices": ["Spain", "France", "Italy", "All three countries"],
+      "answer": "Spain",
+      "explanation": "Trip went to France, Italy, Spain. But 'スペインで…買いました' specifies Spain as the SHOPPING location. ⚠ Don't confuse travel destinations with the specific shopping place."
+    },
+    {
+      "id": "b7h-080",
+      "question": "Read: A: 「これは父からの誕生日のプレゼントです。すてきでしょう?」 B: 「ええ、すてきですね。」 What is the gift's relation to A?",
+      "choices": ["A received the gift from A's father.", "A gave the gift to A's father.", "B's father gave the gift.", "Cannot be determined."],
+      "answer": "A received the gift from A's father.",
+      "explanation": "父からの = 'from (my) father' (からの modifier). A is showing/sharing a gift received from own father. The 父 (humble form) confirms it's A's own father."
+    },
+    {
+      "id": "b7h-081",
+      "question": "Translate: 'I'm going to send a fax to the company now.'",
+      "choices": ["これから会社にファクスを送ります。", "これから会社へファクスを送ります。", "Both are acceptable; institution destination accepts both.", "これから会社でファクスを送ります。"],
+      "answer": "Both are acceptable; institution destination accepts both.",
+      "explanation": "送る + place destination = either に or へ. Both work. Option 4 (で = action location) is wrong — the company is the destination, not where you're located while sending."
+    },
+    {
+      "id": "b7h-082",
+      "question": "Find the INCORRECT particle choice:",
+      "choices": ["パンを手で食べました。", "パンを手に食べました。", "パンをはしで食べました。", "パンをナイフで切りました。"],
+      "answer": "パンを手に食べました。",
+      "explanation": "⚠ 手 (hands) as a tool → で, not に. 手に would mean 'into the hand' (direction), not 'using the hands'. The other three use で correctly for instruments."
+    },
+    {
+      "id": "b7h-083",
+      "question": "Read: 「日本では、ご飯をはしで食べます。でも、スープはスプーンで飲みます。」 What is eaten with chopsticks in Japan?",
+      "choices": ["Rice", "Soup", "Both rice and soup", "Neither"],
+      "answer": "Rice",
+      "explanation": "Map: ご飯 (rice) はしで (chopsticks). スープ (soup) スプーンで (spoon). ⚠ Note: スープを飲む (soup is DRUNK, not eaten — top N5 idiom)."
+    },
+    {
+      "id": "b7h-084",
+      "question": "Translate: 'I learned this from my older sister.'",
+      "choices": ["私はこれを姉に習いました。", "私はこれを姉から習いました。", "Both options 1 and 2 are acceptable.", "私はこれを姉にもらいました。"],
+      "answer": "Both options 1 and 2 are acceptable.",
+      "explanation": "習う with PERSON source → either に or から. Both natural. Option 4 (もらう) changes verb to 'receive' (an item, not knowledge)."
+    },
+    {
+      "id": "b7h-085",
+      "question": "Choose: 「私___姉___ピアノ___教えています。」 ('I teach piano to my older sister.')",
+      "choices": ["A=は / B=に / C=を", "A=は / B=から / C=を", "A=は / B=に / C=が", "A=が / B=に / C=を"],
+      "answer": "A=は / B=に / C=を",
+      "explanation": "Subject (I) topic は. Recipient (older sister) → に. Object (piano) → を. Standard teach-pattern: [Teacher]は [Student]に [Subject]を 教える."
+    },
+    {
+      "id": "b7h-086",
+      "question": "Read: 「私の母は毎日新しい料理を作ります。母にカレーを教えました。母はとても喜(よろこ)びました。」 Who taught whom?",
+      "choices": ["The speaker taught the mother (curry).", "The mother taught the speaker.", "Both teach each other.", "Cannot be determined."],
+      "answer": "The speaker taught the mother (curry).",
+      "explanation": "母にカレーを教えました = 'taught curry TO (my) mother' (に = recipient). The speaker is the teacher. The mother is happy because she learned a new dish."
+    },
+    {
+      "id": "b7h-087",
+      "question": "Read: 「父は毎週末、いろいろな国の言葉(ことば)を勉強します。今月はスペイン語を習っています。先生は近所(きんじょ)のおばあさんで、スペインから来ました。」 Where is the father's teacher from?",
+      "choices": ["Spain", "Near home (neighborhood)", "Japan", "Cannot be determined"],
+      "answer": "Spain",
+      "explanation": "先生はおばあさん (the teacher is an older woman) で = and (te-form) スペインから来ました (came from Spain). So the teacher is FROM Spain, living near home now. The question asks origin, not current location."
+    },
+    {
+      "id": "b7h-088",
+      "question": "Translate: 'My friend taught me how to use this computer.'",
+      "choices": ["友達がこのパソコンの使(つか)い方を教えてくれました。", "私は友達にこのパソコンの使い方を習いました。", "Option 2 is correct at N5 level; option 1 is more natural but uses てくれる (beyond N5 lesson 7).", "友達はこのパソコンの使い方を私から習いました。"],
+      "answer": "Option 2 is correct at N5 level; option 1 is more natural but uses てくれる (beyond N5 lesson 7).",
+      "explanation": "⚠ Translation strategy: restructure with 私 as subject + 習う (learner perspective) to stay within N5 grammar. The most natural Japanese (with くれる/てくれる) is N4-level."
+    },
+    {
+      "id": "b7h-089",
+      "question": "Read: 「クリスマスに、両親(りょうしん)から大きいプレゼントをもらいました。中には新しいパソコンがありました。」 What did the speaker receive for Christmas?",
+      "choices": ["A new computer (in a big package)", "Just a big box", "Christmas decorations", "Both parents but no gift"],
+      "answer": "A new computer (in a big package)",
+      "explanation": "両親 (parents) からプレゼントをもらいました (received a present). 中には…パソコンがありました = inside (the package) was a computer. Two-step inference."
+    },
+    {
+      "id": "b7h-090",
+      "question": "Read: A (visiting): 「ごめんください。」 B (host): 「あ、___さん、いらっしゃい。どうぞお上がりください。」 A: 「失礼します。」 B: 「これ、つまらないものですが…」 (offering souvenir) A: 「あ、ありがとうございます。何ですか?」 B: 「お土産です。京都へ旅行しましたから。」 Why did B give A a gift?",
+      "choices": ["B traveled to Kyoto and brought back a souvenir.", "It's A's birthday.", "B owes A.", "B is selling souvenirs."],
+      "answer": "B traveled to Kyoto and brought back a souvenir.",
+      "explanation": "Reason marker: 京都へ旅行しましたから = 'because (I) traveled to Kyoto'. Standard cultural practice: bringing お土産 back from trips for friends/family."
+    },
+    {
+      "id": "b7h-091",
+      "question": "Choose the right particle: 「もう___お土産___買いました___?」",
+      "choices": ["A=(nothing) / B=を / C=か", "A=で / B=を / C=か", "A=に / B=で / C=か", "A=(nothing) / B=で / C=か"],
+      "answer": "A=(nothing) / B=を / C=か",
+      "explanation": "もう is an adverb — takes no particle. お土産 (object) → を. Question marker → か. 'Have you already bought the souvenir?'"
+    },
+    {
+      "id": "b7h-092",
+      "question": "Read: 「私はまだ昼ご飯を食べていません。これから食べに行きます。一緒に行きませんか?」 (食べていません is N4 grammar, ≈ 'haven't eaten yet')What is the speaker proposing?",
+      "choices": ["Going to lunch together right now.", "Going to lunch later.", "Skipping lunch.", "Eating at home."],
+      "answer": "Going to lunch together right now.",
+      "explanation": "Parse: まだ食べていません (haven't eaten yet) → これから食べに行きます (going to eat now). 一緒に行きませんか = polite invitation to come along."
+    },
+    {
+      "id": "b7h-093",
+      "question": "Choose the natural reply to 「もうレポートを書きましたか?」 if you've written but not finished:",
+      "choices": ["まだ書いています。 (still writing — N4 grammar, but acceptable colloquially)", "いいえ、まだです。", "はい、書きました。", "Both option 1 and option 2 are natural depending on how strict 'finished' is."],
+      "answer": "Both option 1 and option 2 are natural depending on how strict 'finished' is.",
+      "explanation": "Subtle: if you've started but not finished, まだです (not yet done) is acceptable. ています form (still doing) is more precise but N4-level. The point: don't use 書きませんでした (didn't write, with finality)."
+    },
+    {
+      "id": "b7h-094",
+      "question": "Translate: 'I called my mother and then sent her a letter.'",
+      "choices": ["私は母に電話をかけました。それから手紙を送りました。", "私は母で電話をかけました。それから手紙を送りました。", "私は母に電話をかけました。これから手紙を送りました。", "私は母を電話をかけました。それから手紙を送りました。"],
+      "answer": "私は母に電話をかけました。それから手紙を送りました。",
+      "explanation": "Two sequential actions: 電話をかける (call) → それから (after that) → 手紙を送る (send letter). 母に for both actions. ⚠ Option 3 mistakenly uses これから (from now) where past sequence needs それから."
+    },
+    {
+      "id": "b7h-095",
+      "question": "Read: 「私は毎週日曜日に近所の図書館へ行きます。先週は本を3冊借りました。1冊はもう読みましたが、2冊はまだです。」 How many books has the speaker NOT read yet?",
+      "choices": ["2 books", "1 book", "3 books", "0 books"],
+      "answer": "2 books",
+      "explanation": "Parse: 3冊借りました (borrowed 3 books). 1冊はもう読みました (1 already read). 2冊はまだです (2 not yet). Math: 3 total, 1 read, 2 unread."
+    },
+    {
+      "id": "b7h-096",
+      "question": "Find the natural English translation of: 「これから図書館へ行って、本を3冊借ります。」",
+      "choices": ["I'm going to the library now to borrow 3 books.", "I went to the library and borrowed 3 books.", "I'll borrow 3 books from the library next week.", "I'm at the library borrowing 3 books."],
+      "answer": "I'm going to the library now to borrow 3 books.",
+      "explanation": "これから = from now (future, imminent). 行って (te-form, sequence) → 借ります (will borrow, future habitual). Single action: about to go and borrow."
+    },
+    {
+      "id": "b7h-097",
+      "question": "Read: 「先月、私の誕生日に山田さんから本をもらいました。本のタイトルは『日本の文化』でした。とても面白くて、今、毎日少しずつ読んでいます。」 What is the relationship between Yamada-san and the speaker?",
+      "choices": ["Yamada gave the speaker a birthday gift (a book).", "Yamada received a book from the speaker.", "Yamada is the author of the book.", "Yamada is the speaker's family."],
+      "answer": "Yamada gave the speaker a birthday gift (a book).",
+      "explanation": "山田さんから本をもらいました = received a book FROM Yamada (に or から both work, here から). 誕生日に = on (my) birthday. The speaker is the receiver."
+    },
+    {
+      "id": "b7h-098",
+      "question": "Translate this exchange — A: 「ごめんください。」 B: 「はい、いらっしゃい。あ、山田さん!どうぞお上がりください。」 A: 「失礼します。あ、これ、つまらないものですが、お土産です。京都へ行きましたから。」 B: 「わー、ありがとうございます。すてきですね。」",
+      "choices": ["Standard exchange: A arrives at B's house, gives a souvenir from Kyoto.", "A is selling souvenirs to B.", "B is angry that A brought a gift.", "They are at a restaurant."],
+      "answer": "Standard exchange: A arrives at B's house, gives a souvenir from Kyoto.",
+      "explanation": "Cultural reading: standard entry sequence (ごめんください / いらっしゃい / お上がりください / 失礼します) + gift-giving with つまらないものですが (humble phrase 'this is just a trifle, but...') + reason から."
+    },
+    {
+      "id": "b7h-099",
+      "question": "Translate the Japanese: 「友達は私にすてきな時計をくれました。お礼に晩ご飯を作って、招待(しょうたい)しました。」 (くれました = gave to me; N4)What did the speaker do as a thank-you?",
+      "choices": ["Cooked dinner and invited the friend.", "Bought a watch.", "Wrote a thank-you letter.", "Did nothing."],
+      "answer": "Cooked dinner and invited the friend.",
+      "explanation": "Parse: お礼に = as a thank-you. 晩ご飯を作って (cooked dinner, te-form) 招待しました (invited). Two actions: made dinner AND invited (the friend over)."
+    },
+    {
+      "id": "b7h-100",
+      "question": "Final challenge — read carefully: 「先週、私は両親と一緒にスペインへ旅行しました。スペインでたくさん写真を撮って、家族にお土産も買いました。お父さんには赤いシャツを、お母さんには小さい花の絵をあげました。妹にはきれいな指輪(ゆびわ)をあげました。妹は『ありがとう、お兄ちゃん!』と言いました。来週、東京に住んでいる友達に手紙でこの旅行の話をします。」 Who said 'thank you, older brother'?",
+      "choices": ["The speaker's younger sister.", "The mother.", "The father.", "A friend in Tokyo."],
+      "answer": "The speaker's younger sister.",
+      "explanation": "Long passage parsing. Map gifts: 父 → 赤いシャツ, 母 → 花の絵, 妹 → 指輪. 妹は『ありがとう、お兄ちゃん!』と言いました = the younger sister said 'thanks, older brother'. ⚠ Note: お兄ちゃん (informal address) confirms the speaker is her older brother. The Tokyo friend gets a letter, not a gift."
+    }
+  ]
+}

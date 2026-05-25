@@ -1,0 +1,704 @@
+{
+  "questions": [
+    {
+      "id": "b8h-001",
+      "question": "Classify: |きれい| is which type of adjective?",
+      "choices": ["な-adjective", "い-adjective", "Both (depends on context)", "Neither — it's a noun"],
+      "answer": "な-adjective",
+      "explanation": "⚠ TOP TRAP: きれい ENDS in い-sound but kanji 綺麗 doesn't end in い-okurigana. Behaves as な-adj. Attach with な (きれいな花). Conjugate like noun (きれいでした, きれいじゃない)."
+    },
+    {
+      "id": "b8h-002",
+      "question": "Classify: |嫌い| is which type of adjective?",
+      "choices": ["な-adjective", "い-adjective", "Both", "Neither"],
+      "answer": "な-adjective",
+      "explanation": "⚠ TRAP #2: 嫌い (きらい) = dislike. Ends in い but is な-ADJECTIVE. 嫌いな食べ物 = disliked food. Conjugates like a noun."
+    },
+    {
+      "id": "b8h-003",
+      "question": "Classify: |有名| is which type of adjective?",
+      "choices": ["な-adjective", "い-adjective", "Both", "Neither"],
+      "answer": "な-adjective",
+      "explanation": "有名 (ゆうめい) ends in い-VOWEL (sound /i/) but the KANJI is 名 — no い okurigana. な-adj. 有名な人 = famous person."
+    },
+    {
+      "id": "b8h-004",
+      "question": "Classify: |おいしい| is which type of adjective?",
+      "choices": ["い-adjective", "な-adjective", "Both", "Neither"],
+      "answer": "い-adjective",
+      "explanation": "おいしい IS a true い-adjective. The okurigana ends in しい. Attach directly: おいしい料理. Conjugates as い-adj: おいしくない, おいしかった."
+    },
+    {
+      "id": "b8h-005",
+      "question": "Classify: |楽しい| is which type of adjective?",
+      "choices": ["い-adjective", "な-adjective", "Both", "Neither"],
+      "answer": "い-adjective",
+      "explanation": "楽しい (たのしい) = fun. True い-adj (okurigana しい). ⚠ Don't confuse with 楽 (らく) alone, which is な-adj (楽な = easy/comfortable)."
+    },
+    {
+      "id": "b8h-006",
+      "question": "Classify: |便利| is which type of adjective?",
+      "choices": ["な-adjective", "い-adjective", "Both", "Neither"],
+      "answer": "な-adjective",
+      "explanation": "便利 (べんり) = convenient. Ends in り (i-sound but not い-vowel ending). な-adj. 便利な場所 = convenient place. Opposite: 不便 (ふべん) = inconvenient, also な-adj."
+    },
+    {
+      "id": "b8h-007",
+      "question": "Classify: |すてき| is which type of adjective?",
+      "choices": ["な-adjective", "い-adjective", "Both", "Neither"],
+      "answer": "な-adjective",
+      "explanation": "すてき (素敵) = wonderful, lovely. Ends in き → な-adj. すてきなプレゼント = lovely present. Used to praise gifts/clothing/ideas."
+    },
+    {
+      "id": "b8h-008",
+      "question": "Find the only い-adjective among these:",
+      "choices": ["忙しい", "親切", "便利", "暇"],
+      "answer": "忙しい",
+      "explanation": "忙しい (いそがしい) = busy. True い-adj. The others (親切 kind, 便利 convenient, 暇 free) are all な-adj. ⚠ Hint: い-adj almost always ends in い + has kanji + い-okurigana."
+    },
+    {
+      "id": "b8h-009",
+      "question": "Find the only な-adjective among these:",
+      "choices": ["ハンサム", "暑い", "おいしい", "新しい"],
+      "answer": "ハンサム",
+      "explanation": "ハンサム (handsome) — katakana loanword, no okurigana. な-adj. The other three are い-adj (暑い, おいしい, 新しい)."
+    },
+    {
+      "id": "b8h-010",
+      "question": "Choose the correct attachment: 大きい___家。",
+      "choices": ["(no insertion needed)", "な", "の", "い"],
+      "answer": "(no insertion needed)",
+      "explanation": "⚠ い-adj attaches DIRECTLY to nouns — no particle. 大きい家 = big house. Inserting な (大きいな家) is WRONG."
+    },
+    {
+      "id": "b8h-011",
+      "question": "Choose the correct attachment: 静か___町。",
+      "choices": ["な", "い", "の", "(no insertion)"],
+      "answer": "な",
+      "explanation": "静か is な-adj → insert な before noun. 静かな町 = quiet town. The 'な' is mandatory."
+    },
+    {
+      "id": "b8h-012",
+      "question": "Choose the correct attachment: きれい___人。",
+      "choices": ["な", "い", "の", "(no insertion)"],
+      "answer": "な",
+      "explanation": "⚠ Despite ending in い, きれい is a な-adj. Always insert な. きれいな人 = beautiful person."
+    },
+    {
+      "id": "b8h-013",
+      "question": "Choose the correct attachment: 親切___先生。",
+      "choices": ["な", "い", "の", "(no insertion)"],
+      "answer": "な",
+      "explanation": "親切 (kind) is な-adj. 親切な先生 = kind teacher. Same pattern as 静かな町, 便利な店."
+    },
+    {
+      "id": "b8h-014",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["これは新しいな車です。", "これは新しい車です。", "あれはきれいな花です。", "あの人は有名な歌手です。"],
+      "answer": "これは新しいな車です。",
+      "explanation": "⚠ 新しい is い-adj → NO な. The correct form is 新しい車. The other three correctly use な (or no particle) as appropriate."
+    },
+    {
+      "id": "b8h-015",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["この公園は静かいです。", "この公園は静かです。", "この公園はにぎやかです。", "この公園はきれいです。"],
+      "answer": "この公園は静かいです。",
+      "explanation": "⚠ 静か is な-adj → predicate is 静かです (no い added). 静かい is not a word. The others are correct in predicate position."
+    },
+    {
+      "id": "b8h-016",
+      "question": "What is the present negative of |大きい|?",
+      "choices": ["大きくないです", "大きじゃないです", "大きいじゃないです", "大きくありますじゃないです"],
+      "answer": "大きくないです",
+      "explanation": "い-adj negative: drop い → add くない. Also acceptable: 大きくありません (more formal). ⚠ Don't treat い-adj like noun (大きじゃない is wrong)."
+    },
+    {
+      "id": "b8h-017",
+      "question": "What is the present negative of |安い|?",
+      "choices": ["安くないです", "安じゃないです", "安いじゃないです", "安くありますじゃないです"],
+      "answer": "安くないです",
+      "explanation": "安い (cheap) → 安くないです (not cheap). Standard い-adj negation."
+    },
+    {
+      "id": "b8h-018",
+      "question": "What is the present negative of |元気|?",
+      "choices": ["元気じゃないです", "元気くないです", "元気でないです", "元気がないです"],
+      "answer": "元気じゃないです",
+      "explanation": "な-adj negative: replace です with じゃないです (or じゃありません formal). ⚠ Don't use くない (that's for い-adj)."
+    },
+    {
+      "id": "b8h-019",
+      "question": "What is the present negative of |有名|?",
+      "choices": ["有名じゃないです", "有名くないです", "有名いです", "有名ありません"],
+      "answer": "有名じゃないです",
+      "explanation": "⚠ Trap: 有名 ends in い-vowel but is な-adj. Negative uses じゃない, NOT くない. Don't be fooled by the 'い' sound."
+    },
+    {
+      "id": "b8h-020",
+      "question": "What is the present negative of |きれい|?",
+      "choices": ["きれいじゃないです", "きれくないです", "きれいくないです", "きれじゃないです"],
+      "answer": "きれいじゃないです",
+      "explanation": "⚠ TOP TRAP: きれい is な-adj despite ending in い. Negative = じゃないです. NEVER きれくない (treating as i-adj is wrong)."
+    },
+    {
+      "id": "b8h-021",
+      "question": "What is the present negative of |いい|?",
+      "choices": ["よくないです", "いくないです", "いいじゃないです", "いいくないです"],
+      "answer": "よくないです",
+      "explanation": "⚠ いい IS IRREGULAR. Uses the older form 良い (よい) for all conjugations except dictionary. Present neg = よくないです. Top student error: いくない."
+    },
+    {
+      "id": "b8h-022",
+      "question": "Choose the correct conjugation of |いい| in 「天気がいい」 (Present negative):",
+      "choices": ["天気がよくないです", "天気がいくないです", "天気がいいじゃないです", "天気がよくありませんでした"],
+      "answer": "天気がよくないです",
+      "explanation": "いい → よくない for negative. Pattern works in any context: 頭がよくない (not smart), 仲がよくない (not on good terms)."
+    },
+    {
+      "id": "b8h-023",
+      "question": "Find the INCORRECT conjugation:",
+      "choices": ["きれいくないです", "きれいじゃないです", "面白くないです", "静かじゃないです"],
+      "answer": "きれいくないです",
+      "explanation": "⚠ きれい is な-adj — must use じゃない, NOT くない. Classic trap."
+    },
+    {
+      "id": "b8h-024",
+      "question": "Find the INCORRECT conjugation:",
+      "choices": ["いいじゃないです", "よくないです", "面白くないです", "静かじゃないです"],
+      "answer": "いいじゃないです",
+      "explanation": "⚠ いい is い-adj, NOT な-adj. Cannot use じゃない. Must use よくない (irregular stem)."
+    },
+    {
+      "id": "b8h-025",
+      "question": "Translate: 'This restaurant is not famous.'",
+      "choices": ["このレストランは有名じゃないです。", "このレストランは有名くないです。", "このレストランは有名いです。", "このレストランは有名ありません。"],
+      "answer": "このレストランは有名じゃないです。",
+      "explanation": "有名 is な-adj → negative uses じゃない. ⚠ Don't conjugate with くない just because ending sounds like い."
+    },
+    {
+      "id": "b8h-026",
+      "question": "Translate: 'My room is not clean.'",
+      "choices": ["私の部屋はきれいじゃないです。", "私の部屋はきれくないです。", "私の部屋はきれいくないです。", "私の部屋はきれいないです。"],
+      "answer": "私の部屋はきれいじゃないです。",
+      "explanation": "きれい is な-adj → じゃないです. Most common student errors trap-set in options 2 and 3."
+    },
+    {
+      "id": "b8h-027",
+      "question": "Translate: 'Today's weather is not good.'",
+      "choices": ["今日の天気はよくないです。", "今日の天気はいくないです。", "今日の天気はいいじゃないです。", "今日の天気はいいくないです。"],
+      "answer": "今日の天気はよくないです。",
+      "explanation": "いい → よくない (irregular). 天気 (weather) takes が internally in 天気がいい, but in topic position with は."
+    },
+    {
+      "id": "b8h-028",
+      "question": "What's the difference between |暑い| and |熱い|?",
+      "choices": ["暑い = hot weather/climate; 熱い = hot to the touch (objects, drinks)", "Both are exactly the same — interchangeable", "暑い = winter; 熱い = summer", "暑い = burning hot; 熱い = warm"],
+      "answer": "暑い = hot weather/climate; 熱い = hot to the touch (objects, drinks)",
+      "explanation": "⚠ Both read あつい. Distinguish by kanji: 暑 (with 日 sun) for climate, 熱 (with 灬 fire) for objects/drinks. お茶が熱い (tea is hot), 今日は暑い (today is hot)."
+    },
+    {
+      "id": "b8h-029",
+      "question": "Choose the correct kanji for: 「コーヒーは___ですから、気をつけて。」 (Coffee is hot, be careful.)",
+      "choices": ["熱い", "暑い", "厚い", "篤い"],
+      "answer": "熱い",
+      "explanation": "⚠ Object (coffee) → 熱い (with fire radical). 暑い is wrong here — that's for weather. 厚い = thick, 篤い = devout (irrelevant)."
+    },
+    {
+      "id": "b8h-030",
+      "question": "Choose the correct kanji for: 「今日は___ですね。」 (Today is hot.)",
+      "choices": ["暑い", "熱い", "温かい", "重い"],
+      "answer": "暑い",
+      "explanation": "Weather context → 暑い. Mnemonic: 暑 has 日 (sun) — climate/weather. 熱い would be wrong here (suggesting today is 'hot to touch')."
+    },
+    {
+      "id": "b8h-031",
+      "question": "What's the difference between |寒い| and |冷たい|?",
+      "choices": ["寒い = cold weather/climate; 冷たい = cold to the touch (objects, drinks, person's heart)", "寒い = cold object; 冷たい = cold weather", "Both are exactly the same", "寒い = winter only; 冷たい = summer cold"],
+      "answer": "寒い = cold weather/climate; 冷たい = cold to the touch (objects, drinks, person's heart)",
+      "explanation": "⚠ Critical pair: 寒い (さむい) for climate/feeling cold. 冷たい (つめたい) for things you touch (冷たい水 cold water) or metaphorically (冷たい人 cold-hearted person)."
+    },
+    {
+      "id": "b8h-032",
+      "question": "Choose: 「ビールは___です。」 (Beer is cold.)",
+      "choices": ["冷たい", "寒い", "暑い", "熱い"],
+      "answer": "冷たい",
+      "explanation": "Drink/object cold → 冷たい. 寒い for beer would be weird (suggesting beer 'feels chilly weather-wise')."
+    },
+    {
+      "id": "b8h-033",
+      "question": "Choose: 「冬は東京より北海道のほうが___です。」 (Hokkaido is colder than Tokyo in winter.)",
+      "choices": ["寒い", "冷たい", "暑い", "悪い"],
+      "answer": "寒い",
+      "explanation": "Climate/weather → 寒い. 冷たい would be wrong for weather/place. Note: より…のほうが is comparison structure (N4 grammar, here for natural translation context)."
+    },
+    {
+      "id": "b8h-034",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["今日は冷たいですね。", "今日は寒いですね。", "このお茶は熱いです。", "このジュースは冷たいです。"],
+      "answer": "今日は冷たいですね。",
+      "explanation": "⚠ 'Today' refers to weather → use 寒い, not 冷たい. 冷たい applies to objects/feelings, not the day itself."
+    },
+    {
+      "id": "b8h-035",
+      "question": "What does |難しい| mean and what is its opposite?",
+      "choices": ["difficult; opposite = 易しい (easy)", "easy; opposite = 難しい (difficult)", "complicated; opposite = simple", "important; opposite = unimportant"],
+      "answer": "difficult; opposite = 易しい (easy)",
+      "explanation": "難しい (むずかしい) = difficult. Opposite: 易しい (やさしい) = easy. ⚠ Note 易しい has the same reading as 優しい (やさしい = kind) — different kanji."
+    },
+    {
+      "id": "b8h-036",
+      "question": "What does |易しい| mean? Watch the kanji!",
+      "choices": ["easy", "kind / gentle", "Both 'easy' AND 'kind' — context decides", "difficult"],
+      "answer": "easy",
+      "explanation": "⚠ Reading trap: 易しい (やさしい) = easy. 優しい (also やさしい) = kind. SAME reading, DIFFERENT kanji. Context and kanji distinguish. At N5, often both are written in kana やさしい."
+    },
+    {
+      "id": "b8h-037",
+      "question": "What does |高い| mean?",
+      "choices": ["tall AND expensive (both depending on context)", "tall only", "expensive only", "important"],
+      "answer": "tall AND expensive (both depending on context)",
+      "explanation": "⚠ 高い has TWO meanings: tall (height) AND expensive (price). Context decides. Opposites: 低い (low/short) for height, 安い (cheap) for price."
+    },
+    {
+      "id": "b8h-038",
+      "question": "Choose the natural translation: 'Tokyo Tower is tall.'",
+      "choices": ["東京タワーは高いです。", "東京タワーは大きいです。", "東京タワーは長いです。", "東京タワーは広いです。"],
+      "answer": "東京タワーは高いです。",
+      "explanation": "Height → 高い. 大きい (big in size) wouldn't capture 'tall'. 長い (long) is for length. 広い (wide) is for area."
+    },
+    {
+      "id": "b8h-039",
+      "question": "Choose the natural translation: 'This watch is expensive.'",
+      "choices": ["この時計は高いです。", "この時計は大きいです。", "この時計は重いです。", "この時計は高くないです。"],
+      "answer": "この時計は高いです。",
+      "explanation": "Price → 高い (same kanji as 'tall', context distinguishes). Option 4 says 'not expensive'."
+    },
+    {
+      "id": "b8h-040",
+      "question": "What is the past affirmative of |大きい|?",
+      "choices": ["大きかったです", "大きでした", "大きいでした", "大きいかったです"],
+      "answer": "大きかったです",
+      "explanation": "い-adj past affirmative: drop い → add かった. ⚠ Don't say 大きいでした (treating it as a noun)."
+    },
+    {
+      "id": "b8h-041",
+      "question": "What is the past affirmative of |いい|?",
+      "choices": ["よかったです", "いかったです", "いいでした", "いいかったです"],
+      "answer": "よかったです",
+      "explanation": "⚠ いい → よかった (irregular). Famous expression: よかった = 'Thank goodness!' NEVER いかった."
+    },
+    {
+      "id": "b8h-042",
+      "question": "What is the past affirmative of |静か|?",
+      "choices": ["静かでした", "静かかったです", "静かいでした", "静かたです"],
+      "answer": "静かでした",
+      "explanation": "な-adj past affirmative: replace です with でした. ⚠ Don't use かった (that's for い-adj)."
+    },
+    {
+      "id": "b8h-043",
+      "question": "What is the past affirmative of |きれい|?",
+      "choices": ["きれいでした", "きれかったです", "きれいかったです", "きれくなかったです"],
+      "answer": "きれいでした",
+      "explanation": "⚠ きれい is な-adj → past affirmative is でした (not かった). The classic trap caught here."
+    },
+    {
+      "id": "b8h-044",
+      "question": "What is the past negative of |寒い|?",
+      "choices": ["寒くなかったです", "寒くないでした", "寒じゃなかったです", "寒いじゃありませんでした"],
+      "answer": "寒くなかったです",
+      "explanation": "い-adj past negative: drop い → くなかった. Pattern: present neg ends in ない → past neg replaces ない with なかった."
+    },
+    {
+      "id": "b8h-045",
+      "question": "What is the past negative of |元気|?",
+      "choices": ["元気じゃなかったです", "元気くなかったです", "元気でなかったです", "元気がなかったです"],
+      "answer": "元気じゃなかったです",
+      "explanation": "な-adj past negative: replace です with じゃなかったです (or じゃありませんでした formal). Same pattern as nouns."
+    },
+    {
+      "id": "b8h-046",
+      "question": "What is the past negative of |いい|?",
+      "choices": ["よくなかったです", "いくなかったです", "いいじゃなかったです", "よかったじゃないです"],
+      "answer": "よくなかったです",
+      "explanation": "いい past negative = よくなかったです. Full irregular set: いい / よくない / よかった / よくなかった. Memorize all four together."
+    },
+    {
+      "id": "b8h-047",
+      "question": "Find the INCORRECT past form:",
+      "choices": ["昨日は暑いでした。", "昨日は暑かったです。", "昨日は雨でした。", "昨日は元気でした。"],
+      "answer": "昨日は暑いでした。",
+      "explanation": "⚠ 暑い is い-adj. Past = 暑かったです (not 暑いでした). The other three are correct (雨 is noun, 元気 is な-adj — both use でした)."
+    },
+    {
+      "id": "b8h-048",
+      "question": "Find the INCORRECT past form:",
+      "choices": ["この本はおもしろいでした。", "この本はおもしろかったです。", "この本は新しかったです。", "この本は古かったです。"],
+      "answer": "この本はおもしろいでした。",
+      "explanation": "⚠ おもしろい is い-adj. Past = おもしろかったです (NOT おもしろいでした). Common student error."
+    },
+    {
+      "id": "b8h-049",
+      "question": "Translate: 'Yesterday's weather was good.'",
+      "choices": ["昨日の天気はよかったです。", "昨日の天気はいかったです。", "昨日の天気はいいでした。", "昨日の天気はいいかったです。"],
+      "answer": "昨日の天気はよかったです。",
+      "explanation": "いい → よかった. Standard 'It was good' = よかったです, with multiple uses (relief, past evaluation, etc.)."
+    },
+    {
+      "id": "b8h-050",
+      "question": "Translate: 'The room was not clean.'",
+      "choices": ["部屋はきれいじゃなかったです。", "部屋はきれくなかったです。", "部屋はきれいくなかったです。", "部屋はきれかったです。"],
+      "answer": "部屋はきれいじゃなかったです。",
+      "explanation": "きれい (な-adj) past negative = きれいじゃなかったです. Option 2/3 conjugate as i-adj (wrong). Option 4 is past affirmative."
+    },
+    {
+      "id": "b8h-051",
+      "question": "Pair: |とても| pairs with which sentence type?",
+      "choices": ["affirmative", "negative", "Both equally", "Past tense only"],
+      "answer": "affirmative",
+      "explanation": "とても (very) = strong affirmation. Pairs with affirmative: とても暑いです (very hot). For negatives, use あまり (あまり暑くない = not very hot)."
+    },
+    {
+      "id": "b8h-052",
+      "question": "Pair: |あまり| pairs with which sentence type?",
+      "choices": ["negative", "affirmative", "Both equally", "Present tense only"],
+      "answer": "negative",
+      "explanation": "あまり + neg = 'not very / not much'. Pattern: あまり…じゃありません / あまり…くないです. ⚠ Cannot say あまり面白いです (must be あまり面白くない)."
+    },
+    {
+      "id": "b8h-053",
+      "question": "Find the INCORRECT pairing:",
+      "choices": ["この本はあまり面白いです。", "この本はあまり面白くないです。", "この本はとても面白いです。", "この本はとても面白かったです。"],
+      "answer": "この本はあまり面白いです。",
+      "explanation": "⚠ あまり requires NEGATIVE form. 面白いです (affirmative) is wrong. Should be 面白くない. Options 2-4 use correct pairings."
+    },
+    {
+      "id": "b8h-054",
+      "question": "Find the INCORRECT pairing:",
+      "choices": ["この公園はとても静かじゃないです。", "この公園はとても静かです。", "この公園はあまり静かじゃないです。", "この公園はとてもにぎやかです。"],
+      "answer": "この公園はとても静かじゃないです。",
+      "explanation": "⚠ とても pairs with AFFIRMATIVE, not negative. とても静かじゃない is contradictory in standard Japanese. (Some natives use it colloquially for emphasis, but it's against the textbook rule.)"
+    },
+    {
+      "id": "b8h-055",
+      "question": "Choose the natural adverb: 「日本の食べ物は___おいしいです。」",
+      "choices": ["とても", "あまり", "ちょっと", "全然"],
+      "answer": "とても",
+      "explanation": "Affirmative + degree = とても (very). あまり/全然 require negative. ちょっと (a little) is too weak for おいしい emphasis. Pattern: とても + positive adj."
+    },
+    {
+      "id": "b8h-056",
+      "question": "Choose: 「私の町は___便利じゃないです。」",
+      "choices": ["あまり", "とても", "ちょっと", "もう"],
+      "answer": "あまり",
+      "explanation": "Negative form (便利じゃないです) → pair with あまり. 'My town is not very convenient.' とても + neg is unnatural."
+    },
+    {
+      "id": "b8h-057",
+      "question": "What does |どう| ask?",
+      "choices": ["how (asking for impression, opinion, or quality)", "what kind of", "which", "where"],
+      "answer": "how (asking for impression, opinion, or quality)",
+      "explanation": "どう = how (general impression). 日本はどうですか = 'How is Japan?' Expecting an opinion/description answer."
+    },
+    {
+      "id": "b8h-058",
+      "question": "What does |どんな| ask and how is it used?",
+      "choices": ["what kind of (always followed directly by a noun)", "how", "which one", "where"],
+      "answer": "what kind of (always followed directly by a noun)",
+      "explanation": "どんな = what kind of (category). ALWAYS + noun. どんな映画 = what kind of movie. ⚠ Don't confuse with どう (how, used independently)."
+    },
+    {
+      "id": "b8h-059",
+      "question": "What does |どれ| ask?",
+      "choices": ["which one (from 3 or more visible options)", "what kind of", "how", "where"],
+      "answer": "which one (from 3 or more visible options)",
+      "explanation": "どれ = which one. Used when selecting from a group of 3+ items. ⚠ For 2 items: どちら. For modifying nouns: どの (どの本).  Different question words for different scopes."
+    },
+    {
+      "id": "b8h-060",
+      "question": "What's the difference between |どれ| and |どの|?",
+      "choices": ["どれ = standalone 'which one'; どの = used before a noun like 'which book'", "They are exactly the same", "どれ = formal; どの = casual", "どれ = past; どの = present"],
+      "answer": "どれ = standalone 'which one'; どの = used before a noun like 'which book'",
+      "explanation": "⚠ Distinction: どれ standalone (どれが好きですか = which do you like?). どの + noun (どの本が好きですか = which book do you like?). Similar to これ/この."
+    },
+    {
+      "id": "b8h-061",
+      "question": "Choose: 「東京は___ですか?」 A: 「とてもにぎやかな町です。」",
+      "choices": ["どんな町", "どう", "どれ", "どこ"],
+      "answer": "どんな町",
+      "explanation": "Answer describes a TYPE/quality (にぎやかな町). Question matches: どんな + 町 = 'what kind of city'. どう alone would also work but doesn't specify '町' in the question."
+    },
+    {
+      "id": "b8h-062",
+      "question": "Choose: A: 「日本の食べ物は___ですか?」 B: 「とてもおいしいです。」",
+      "choices": ["どう", "どんな", "どこ", "どれ"],
+      "answer": "どう",
+      "explanation": "⚠ どう vs どんな: B's response describes 'how it is' (a quality), so どう is used. どんな would expect a category ('Japanese food is a Y-kind of food'). どう = 'how is it?'"
+    },
+    {
+      "id": "b8h-063",
+      "question": "Translate: 'What kind of person is Yamada-san?'",
+      "choices": ["山田さんはどんな人ですか。", "山田さんはどう人ですか。", "山田さんはどれの人ですか。", "山田さんはどの人ですか。"],
+      "answer": "山田さんはどんな人ですか。",
+      "explanation": "どんな + 人 = what kind of person. Option 2 (どう人) is ungrammatical — どう doesn't directly modify nouns. Option 4 (どの人) asks 'which person' (identification from a group)."
+    },
+    {
+      "id": "b8h-064",
+      "question": "Translate: 'Which one is your bag?' (from several visible bags)",
+      "choices": ["どれがあなたのかばんですか。", "どんなかばんがあなたのですか。", "どうあなたのかばんですか。", "どこにあなたのかばんですか。"],
+      "answer": "どれがあなたのかばんですか。",
+      "explanation": "どれ for selecting from visible group. ⚠ Note: あなた sounds slightly direct; natives often drop it. The grammar pattern is what's being tested."
+    },
+    {
+      "id": "b8h-065",
+      "question": "Choose the natural reply to 「あなたのかばんはどれですか?」",
+      "choices": ["あの赤いかばんです。", "とても新しいです。", "私はかばんが好きです。", "どんなですか。"],
+      "answer": "あの赤いかばんです。",
+      "explanation": "どれ question expects identification of ONE specific item from group. Reply names/describes the specific item. The other options don't identify a specific bag."
+    },
+    {
+      "id": "b8h-066",
+      "question": "Choose colors that are い-adjectives:",
+      "choices": ["白い、黒い、赤い、青い", "白、黒、赤、青", "白色、黒色、赤色、青色", "ホワイト、ブラック、レッド、ブルー"],
+      "answer": "白い、黒い、赤い、青い",
+      "explanation": "⚠ These four basic colors have い-adj forms: 白い (white), 黒い (black), 赤い (red), 青い (blue/green). Other colors (緑 green, 茶色 brown, ピンク pink, オレンジ orange) DO NOT have い-adj forms — they're nouns + の."
+    },
+    {
+      "id": "b8h-067",
+      "question": "Choose the correct way to say 'green car':",
+      "choices": ["緑の車", "緑い車", "緑な車", "緑車"],
+      "answer": "緑の車",
+      "explanation": "⚠ 緑 (green) is a NOUN, not an い-adjective. Use の to connect to nouns: 緑の車 = green car. Option 2 (緑い) is wrong because no い-adj form exists."
+    },
+    {
+      "id": "b8h-068",
+      "question": "Choose the correct way to say 'brown bag':",
+      "choices": ["茶色のかばん", "茶色いかばん", "Both options 1 and 2 are acceptable", "茶色なかばん"],
+      "answer": "Both options 1 and 2 are acceptable",
+      "explanation": "⚠ 茶色 is special — works as both noun (茶色の) and irregularly as い-adj (茶色い). Both are natural. Standard form: 茶色の. Casual variation: 茶色い."
+    },
+    {
+      "id": "b8h-069",
+      "question": "Find the INCORRECT color usage:",
+      "choices": ["私はピンクいシャツが好きです。", "私はピンクのシャツが好きです。", "私は赤いシャツが好きです。", "私は黒いシャツが好きです。"],
+      "answer": "私はピンクいシャツが好きです。",
+      "explanation": "⚠ ピンク (pink) is a noun (loanword) — NO い-adj form. Correct: ピンクのシャツ. The other three use correct forms (赤い/黒い are い-adj; ピンクの is noun + の)."
+    },
+    {
+      "id": "b8h-070",
+      "question": "Translate: 'I want a small, white car.'",
+      "choices": ["小さくて白い車が欲しいです。", "小さいで白い車が欲しいです。", "小さい白い車が欲しいです。", "小さくと白い車が欲しいです。"],
+      "answer": "小さくて白い車が欲しいです。",
+      "explanation": "⚠ Chain two い-adj with て-form. 小さい → 小さくて. Pattern: drop い, add くて. Then directly attach next adj. Option 3 is too compact (no connector); awkward."
+    },
+    {
+      "id": "b8h-071",
+      "question": "Translate: 'A famous and kind teacher.'",
+      "choices": ["有名で親切な先生", "有名な親切な先生", "有名と親切の先生", "有名い親切な先生"],
+      "answer": "有名で親切な先生",
+      "explanation": "⚠ Chain two な-adj with て-form of だ: で. 有名で = is famous AND. Final adj keeps な: 親切な先生. Don't repeat な on the first adj when chaining."
+    },
+    {
+      "id": "b8h-072",
+      "question": "Translate: 'Cheap but delicious.'",
+      "choices": ["安くておいしいです。", "安いでおいしいです。", "安いがおいしいです。", "Both options 1 and 3 are acceptable."],
+      "answer": "Both options 1 and 3 are acceptable.",
+      "explanation": "⚠ Subtle: 安くて (te-form) = 'cheap AND' (additive). 安いが = 'cheap BUT' (contrast). Both work for this English translation, depending on whether 'but' is emphatic. Native speakers use both."
+    },
+    {
+      "id": "b8h-073",
+      "question": "What does |が| mean as a connector between two clauses?",
+      "choices": ["but / however (contrast between two clauses)", "and (additive)", "because (reason)", "if (condition)"],
+      "answer": "but / however (contrast between two clauses)",
+      "explanation": "が as a sentence-connector = but/however. Different from が as a subject marker. Pattern: 文1ですが、文2 = 'Sentence 1, but Sentence 2'."
+    },
+    {
+      "id": "b8h-074",
+      "question": "Translate: 'Japanese food is delicious, but expensive.'",
+      "choices": ["日本の食べ物はおいしいですが、高いです。", "日本の食べ物はおいしくて、高いです。", "日本の食べ物はおいしいから、高いです。", "Both options 1 and 2 are grammatical, but they differ in nuance."],
+      "answer": "Both options 1 and 2 are grammatical, but they differ in nuance.",
+      "explanation": "⚠ が = contrast ('delicious BUT expensive'). て = additive ('delicious AND expensive'). The English 'but' fits が better, but both are grammatical. Option 3 (から = because) doesn't fit logically."
+    },
+    {
+      "id": "b8h-075",
+      "question": "Find the INCORRECT use of が as 'but':",
+      "choices": ["雨ですが、暑いですね。", "雨が、暑いですね。", "雨ですが、出かけました。", "難しいですが、面白いです。"],
+      "answer": "雨が、暑いですね。",
+      "explanation": "⚠ が as 'but' requires です/ます before it. 雨が、暑い alone is ungrammatical (が here would read as a subject marker, leaving the sentence incomplete). Need 雨ですが."
+    },
+    {
+      "id": "b8h-076",
+      "question": "What does |お元気ですか| mean and when is it used?",
+      "choices": ["'How are you?' — typically after a period of separation, not daily", "'Good morning'", "'Goodbye'", "'Are you healthy?' (literal medical question)"],
+      "answer": "'How are you?' — typically after a period of separation, not daily",
+      "explanation": "⚠ Cultural distinction: お元気ですか is NOT a daily greeting (unlike English 'How are you?'). It's used when meeting someone you haven't seen for a while. Daily greeting = おはよう / こんにちは / こんばんは."
+    },
+    {
+      "id": "b8h-077",
+      "question": "What does |そうですね| mean in conversation?",
+      "choices": ["'Let me see / well…' — a thinking pause before answering", "'That's right' — agreement", "Both depending on intonation", "'Really?'"],
+      "answer": "Both depending on intonation",
+      "explanation": "⚠ Polysemous: そうですね with flat intonation = thinking pause ('hmm, let me see'). With rising or confirming intonation = agreement ('yes, that's so'). Context and tone decide."
+    },
+    {
+      "id": "b8h-078",
+      "question": "Choose the natural response: A: 「日本の生活はどうですか?」 B: 「___、楽しいですが、ちょっと忙しいです。」",
+      "choices": ["そうですね", "ありがとうございます", "すみません", "失礼します"],
+      "answer": "そうですね",
+      "explanation": "そうですね as thinking pause before giving an opinion. Common before describing impressions. B is about to give a nuanced answer."
+    },
+    {
+      "id": "b8h-079",
+      "question": "What does |もう一杯いかがですか| mean and when is it used?",
+      "choices": ["'Would you like one more (cup/glass)?' — offering a refill", "'Already one cup?' — asking if you've had only one", "'How is the cup?'", "'How much is one cup?'"],
+      "answer": "'Would you like one more (cup/glass)?' — offering a refill",
+      "explanation": "もう = more (in quantity context, not 'already'). 一杯 = one cup/glass. いかがですか = polite offer. Together: standard refill offer at meals or tea time."
+    },
+    {
+      "id": "b8h-080",
+      "question": "What does |いいえ、けっこうです| mean as a reply?",
+      "choices": ["'No, I'm fine / no thank you' — polite refusal", "'Yes, OK'", "'No, it's bad'", "'Yes, great'"],
+      "answer": "'No, I'm fine / no thank you' — polite refusal",
+      "explanation": "⚠ けっこう (結構) has two meanings: 'fine, splendid' AND 'no thanks/I'm fine'. In refusal context, it means 'I've had enough, thank you'. Listen for いいえ as the cue."
+    },
+    {
+      "id": "b8h-081",
+      "question": "Choose the natural exchange: A: 「もう一杯ビールはいかがですか?」 B: 「___」 (B has had enough.)",
+      "choices": ["いいえ、けっこうです。", "はい、けっこうです。", "ええ、もう一杯ください。", "いいえ、お願いします。"],
+      "answer": "いいえ、けっこうです。",
+      "explanation": "⚠ Standard polite refusal of a refill. The pattern いいえ、けっこうです explicitly signals 'no, I've had enough'. Option 2 (はい、けっこう) is contradictory in this context."
+    },
+    {
+      "id": "b8h-082",
+      "question": "What does |そろそろ失礼します| mean and when is it said?",
+      "choices": ["'It's about time I should be going' — said when guest is preparing to leave", "'I'm sorry to be rude'", "'Excuse me, where is the bathroom?'", "'I just arrived'"],
+      "answer": "'It's about time I should be going' — said when guest is preparing to leave",
+      "explanation": "⚠ Cultural phrase: そろそろ = 'gradually/about now'. 失礼します here = 'I'll take my leave'. Used at end of a visit to signal politely it's time to go. Pairs with また来てください from host."
+    },
+    {
+      "id": "b8h-083",
+      "question": "What does |またいらっしゃってください| mean?",
+      "choices": ["'Please come (visit) again' — host's farewell", "'Please come quickly'", "'Sorry to bother you'", "'Welcome'"],
+      "answer": "'Please come (visit) again' — host's farewell",
+      "explanation": "いらっしゃってください = honorific imperative of 来る (come). Standard farewell from host inviting future visits. Often paired with the guest's そろそろ失礼します."
+    },
+    {
+      "id": "b8h-084",
+      "question": "Read this exchange: Guest: 「そろそろ失礼します。」 Host: 「___。」 Choose the natural reply:",
+      "choices": ["またいらっしゃってください。", "いただきます。", "おはようございます。", "失礼します。"],
+      "answer": "またいらっしゃってください。",
+      "explanation": "Standard farewell pair: guest says 'I should be going' → host says 'Please come again'. Cultural literacy: both phrases pair together."
+    },
+    {
+      "id": "b8h-085",
+      "question": "Translate: 'My room is small but quiet and clean.'",
+      "choices": ["私の部屋は小さいですが、静かできれいです。", "私の部屋は小さいが、静かできれいです。", "私の部屋は小さいで、静かできれいです。", "私の部屋は小さいですが、静かでときれいです。"],
+      "answer": "私の部屋は小さいですが、静かできれいです。",
+      "explanation": "Two clauses: 小さいですが (small BUT — contrast) → 静かできれいです (quiet AND clean — additive with で connecting two な-adj). Option 2 is grammatical but slightly informal (drops です before が)."
+    },
+    {
+      "id": "b8h-086",
+      "question": "Translate: 'Mt. Fuji is very tall and beautiful.'",
+      "choices": ["富士山はとても高くてきれいです。", "富士山はとても高いできれいです。", "富士山はとても高いがきれいです。", "富士山はとても高いです、きれいです。"],
+      "answer": "富士山はとても高くてきれいです。",
+      "explanation": "Chain い-adj (高い → 高くて) with な-adj (きれい). Final adj is predicate きれいです. Option 2 wrongly uses で. Option 3 (が) implies contrast (wrong here)."
+    },
+    {
+      "id": "b8h-087",
+      "question": "Read: 「東京はとてもにぎやかですが、ちょっとうるさいです。京都は静かで、きれいです。」 Which city is described as quiet?",
+      "choices": ["京都", "東京", "Both", "Neither"],
+      "answer": "京都",
+      "explanation": "Parse: 東京はにぎやか…うるさい (busy/loud). 京都は静か (quiet) で…きれい (and beautiful). 京都 is the quiet one."
+    },
+    {
+      "id": "b8h-088",
+      "question": "Read: 「ベトナム料理はとてもおいしくて、安いです。でも、ちょっと辛(から)いです。」 (辛い = spicy) What is true about Vietnamese food per this?",
+      "choices": ["Delicious AND cheap, but a bit spicy.", "Delicious, cheap, AND mild.", "Spicy AND expensive.", "Bad and cheap."],
+      "answer": "Delicious AND cheap, but a bit spicy.",
+      "explanation": "Two adjectives chained (おいしくて + 安い = both positive). でも (but) introduces contrast: 辛い (spicy). All three traits stated."
+    },
+    {
+      "id": "b8h-089",
+      "question": "Read: 「私の町は静かで、便利で、きれいです。でも、店があまりありません。」 What does the speaker NOT like about the town?",
+      "choices": ["Few shops (店があまりありません)", "It's too quiet", "It's not convenient", "It's not clean"],
+      "answer": "Few shops (店があまりありません)",
+      "explanation": "Three positives (静か, 便利, きれい) chained with で. でも introduces drawback: 店があまりありません = 'not many shops'. あまり + neg = 'not very many'."
+    },
+    {
+      "id": "b8h-090",
+      "question": "Read: A: 「日本の生活はどうですか?」 B: 「そうですね…とても楽しいですが、ちょっと忙しいです。日本語の勉強もまだ難しいです。」 What does B find difficult?",
+      "choices": ["Japanese language study", "Daily life in general", "The weather", "The food"],
+      "answer": "Japanese language study",
+      "explanation": "Three pieces: 楽しい (fun, +) ですが (but) 忙しい (busy, -). 日本語の勉強もまだ難しい (Japanese study is still difficult). The 難しい specifically modifies 日本語の勉強."
+    },
+    {
+      "id": "b8h-091",
+      "question": "Read: 「私の母はとても親切で、料理も上手です。父は静かな人ですが、面白いです。」 Which parent is good at cooking?",
+      "choices": ["The mother (親切で、料理も上手)", "The father (静かですが、面白い)", "Both", "Neither"],
+      "answer": "The mother (親切で、料理も上手)",
+      "explanation": "Mother: 親切で (kind, te-form) + 料理も上手 (also good at cooking). Father: 静かですが + 面白い (quiet but interesting). Cooking skill linked to mother."
+    },
+    {
+      "id": "b8h-092",
+      "question": "Read: 「先週、京都へ旅行しました。京都はとても古くて、きれいな町でした。お寺もたくさんありました。とても楽しかったです。」 How does the speaker describe Kyoto?",
+      "choices": ["Old and beautiful (with many temples).", "Modern and new.", "Quiet but boring.", "Loud and dirty."],
+      "answer": "Old and beautiful (with many temples).",
+      "explanation": "古くてきれいな町 (old AND beautiful — chained i-adj + な-adj). お寺もたくさん (many temples too). 楽しかった (was fun)."
+    },
+    {
+      "id": "b8h-093",
+      "question": "Read: 「日本の電車はとても便利です。きれいで、静かで、いつも時間どおりに来ます。でも、朝はとても込んでいます。」 (時間どおり = on time; 込んでいる = crowded) What is the negative point about Japanese trains?",
+      "choices": ["They're crowded in the morning.", "They're not convenient.", "They're dirty.", "They're never on time."],
+      "answer": "They're crowded in the morning.",
+      "explanation": "Positives: 便利, きれい, 静か, 時間どおり. でも introduces negative: 朝はとても込んでいます (very crowded in mornings). The contrast is clearly marked by でも."
+    },
+    {
+      "id": "b8h-094",
+      "question": "Read: 「私の友達のミラーさんはアメリカ人です。背(せ)が高くて、ハンサムで、とても親切な人です。でも、漢字はあまり上手じゃないです。」 What is Miller-san NOT good at?",
+      "choices": ["Kanji", "English", "Being kind", "Being tall"],
+      "answer": "Kanji",
+      "explanation": "Three positives chained (高くて + ハンサムで + 親切な人). でも introduces weakness: 漢字はあまり上手じゃないです (not very good at kanji). Note: 上手 takes が, but here particle is は (contrast)."
+    },
+    {
+      "id": "b8h-095",
+      "question": "Read: 「富士山はとても高い山です。日本で一番(いちばん)高いです。3776メートルです。」 What altitude is Mt. Fuji?",
+      "choices": ["3776 meters", "Cannot be determined", "Tallest in the world", "Highest in Asia"],
+      "answer": "3776 meters",
+      "explanation": "3776メートルです directly states the height. 日本で一番高い = tallest IN JAPAN (not world). Don't extrapolate beyond what's stated."
+    },
+    {
+      "id": "b8h-096",
+      "question": "Read: 「先週、有名なレストランへ行きました。料理はとてもおいしかったですが、ちょっと高かったです。店もきれいで、店員(てんいん)も親切でした。また行きたいです。」 What does the speaker think of this restaurant overall?",
+      "choices": ["Positive overall — wants to go again, despite high price.", "Negative — too expensive.", "Indifferent — won't decide.", "Will never return."],
+      "answer": "Positive overall — wants to go again, despite high price.",
+      "explanation": "Positives: おいしい, きれい, 親切. Single drawback: 高い. Conclusion: また行きたい (want to go again) — speaker considers experience worth the price."
+    },
+    {
+      "id": "b8h-097",
+      "question": "Read: A: 「日本はどうですか?」 B: 「とてもいいです。日本の食べ物はおいしいですが、ちょっと高いです。生活は便利で、町もきれいです。」 What is B's complaint?",
+      "choices": ["Food is expensive.", "Life is inconvenient.", "Towns are dirty.", "Nothing — all positive."],
+      "answer": "Food is expensive.",
+      "explanation": "Positives: いい, おいしい, 便利, きれい. The が introduces ONE caveat: 高いです. Food is the single source of complaint."
+    },
+    {
+      "id": "b8h-098",
+      "question": "Choose the most natural exchange: A: 「日本語はどうですか?」 B: 「___」",
+      "choices": ["難しいですが、面白いです。", "難しいでおもしろいです。", "難しいがおもしろい。", "難しいですおもしろいです。"],
+      "answer": "難しいですが、面白いです。",
+      "explanation": "Standard answer: 難しいですが、面白いです (difficult BUT interesting — contrast with が). Option 2 mistakenly uses で. Option 3 drops です/missing です before が. Option 4 missing connector."
+    },
+    {
+      "id": "b8h-099",
+      "question": "Read: 「私の犬はとても小さくて、白くて、かわいいです。3歳です。私は犬が大好きです。」 Which description does NOT apply to the dog?",
+      "choices": ["Old (年とった)", "Small (小さい)", "White (白い)", "Cute (かわいい)"],
+      "answer": "Old (年とった)",
+      "explanation": "Three positives mentioned: 小さい, 白い, かわいい. Age: 3歳 (3 years old) — young. The dog is NOT old. 'Old' is not in the description."
+    },
+    {
+      "id": "b8h-100",
+      "question": "Final challenge — read carefully: 「先週、家族と京都へ旅行しました。京都はとても古くて、きれいな町です。一日目(いちにちめ)に有名な金閣寺(きんかくじ)を見ました。金閣寺はとても美しくて、写真をたくさん撮りました。二日目に静かな寺をいくつか見て、おいしい料理を食べました。三日目に大きいお土産屋(おみやげや)で家族にお土産を買いました。お母さんには赤いハンカチを、お父さんには黒い時計をあげました。とても楽しい旅行でしたが、ちょっと疲(つか)れました。」 What did the speaker give to the FATHER?",
+      "choices": ["A black watch (黒い時計)", "A red handkerchief (赤いハンカチ)", "Souvenirs from Kinkaku-ji", "Cannot be determined"],
+      "answer": "A black watch (黒い時計)",
+      "explanation": "Long passage. Map gifts: お母さん → 赤いハンカチ (red handkerchief). お父さん → 黒い時計 (black watch). Question targets father. ⚠ Note adjective-color modifications: 赤い (i-adj attached directly), 黒い (i-adj attached directly)."
+    }
+  ]
+}

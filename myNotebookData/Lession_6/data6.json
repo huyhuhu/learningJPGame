@@ -1,0 +1,704 @@
+{
+  "questions": [
+    {
+      "id": "b6h-001",
+      "question": "Choose particle: 私は毎朝パン___食べます。",
+      "choices": ["を", "が", "は", "で"],
+      "answer": "を",
+      "explanation": "を marks the DIRECT OBJECT of a transitive verb (他動詞). 食べる is transitive → object パン takes を. Pattern: [Object]を [Verb]."
+    },
+    {
+      "id": "b6h-002",
+      "question": "Choose particle: 友達___手紙を書きます。",
+      "choices": ["に", "を", "で", "へ"],
+      "answer": "に",
+      "explanation": "⚠ Trap: 書く itself takes を for the OBJECT WRITTEN (手紙を書く). But 友達 is the RECIPIENT of writing → に. Full sentence: 友達に手紙を書きます = write a letter TO a friend."
+    },
+    {
+      "id": "b6h-003",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["私はテニスが します。", "私はテニスをします。", "私は毎日サッカーをします。", "私は宿題をしました。"],
+      "answer": "私はテニスが します。",
+      "explanation": "⚠ する takes を for the activity/action object, NOT が. テニスをします (correct). が is for state expressions (好き, 上手, わかる, ある, いる) — NOT for action verbs."
+    },
+    {
+      "id": "b6h-004",
+      "question": "Choose particle: 図書館___本を読みます。",
+      "choices": ["で", "に", "へ", "を"],
+      "answer": "で",
+      "explanation": "⚠ Particle distinction: 読む is an ACTION verb → its location takes で. 図書館で読みます = read AT the library. Compare: 図書館に本があります (existence → に)."
+    },
+    {
+      "id": "b6h-005",
+      "question": "Choose particle: 私は東京___住んでいます。 (住む = live)",
+      "choices": ["に", "で", "へ", "を"],
+      "answer": "に",
+      "explanation": "⚠ EXCEPTION to action-place=で: 住む (live, reside) is treated as a STATE verb, not action verb → takes に. Same with 勤める (work at), いる, ある. Memorize: not all action-looking verbs are で-takers."
+    },
+    {
+      "id": "b6h-006",
+      "question": "Choose: A: 「明日、何___しますか?」 B: 「映画を見ます。」",
+      "choices": ["を", "が", "に", "で"],
+      "answer": "を",
+      "explanation": "何 (what) is the OBJECT of する here. を marks it. ⚠ Don't drop the particle even with question words. The fact that 何 is a question word doesn't change the grammatical role."
+    },
+    {
+      "id": "b6h-007",
+      "question": "Choose: 私はレストラン___晩ご飯___食べます。",
+      "choices": ["A=で / B=を", "A=に / B=を", "A=で / B=が", "A=へ / B=を"],
+      "answer": "A=で / B=を",
+      "explanation": "Two particles: で for action-location (restaurant where eating happens), を for object (dinner being eaten). Full: 'I eat dinner AT the restaurant.'"
+    },
+    {
+      "id": "b6h-008",
+      "question": "Find the INCORRECT use of で:",
+      "choices": ["私は東京で住んでいます。", "私は東京で働きます。", "私は東京で勉強します。", "私は東京で映画を見ます。"],
+      "answer": "私は東京で住んでいます。",
+      "explanation": "⚠ 住む is a state verb in Japanese → takes に, not で. Correct: 東京に住んでいます. The other three use action verbs (働く, 勉強する, 見る) which correctly take で."
+    },
+    {
+      "id": "b6h-009",
+      "question": "Translate: 'I will write a report at home tomorrow.'",
+      "choices": ["明日、家でレポートを書きます。", "明日、家にレポートを書きます。", "明日に家でレポートを書きます。", "明日、家でレポートが書きます。"],
+      "answer": "明日、家でレポートを書きます。",
+      "explanation": "Three particles: 明日 takes NO に (relative time word). 家で (action location). レポートを (object of writing). ⚠ Triple trap covered: time particle, place particle, object particle."
+    },
+    {
+      "id": "b6h-010",
+      "question": "Translate: 'What did you eat for breakfast?'",
+      "choices": ["朝ご飯に何を食べましたか。", "朝ご飯で何を食べましたか。", "朝ご飯が何を食べましたか。", "朝ご飯に何が食べましたか。"],
+      "answer": "朝ご飯に何を食べましたか。",
+      "explanation": "⚠ Subtle: 朝ご飯に here means 'for breakfast' (purpose/occasion, takes に). 何 = object of 食べる → を. Past tense ました."
+    },
+    {
+      "id": "b6h-011",
+      "question": "How is |何| read in: |何|を買いますか?",
+      "choices": ["なに", "なん", "Both readings are acceptable", "なんに"],
+      "answer": "なに",
+      "explanation": "⚠ Reading rule: before を (and most particles like も, が), 何 is read なに. Before た/だ/な-row sounds and counters, it becomes なん."
+    },
+    {
+      "id": "b6h-012",
+      "question": "How is |何| read in: |何|歳ですか?",
+      "choices": ["なん", "なに", "Both readings are acceptable", "いく"],
+      "answer": "なん",
+      "explanation": "⚠ Before COUNTERS, 何 is read なん. 何歳 = なんさい (how old). Same pattern: 何時, 何人, 何冊, 何階."
+    },
+    {
+      "id": "b6h-013",
+      "question": "How is |何| read in: |何|ですか?",
+      "choices": ["なん", "なに", "Both readings are acceptable", "なし"],
+      "answer": "なん",
+      "explanation": "⚠ Before だ/です (DA-row sound), 何 is read なん. 何ですか = なんですか. Memorize the た/だ/な rule."
+    },
+    {
+      "id": "b6h-014",
+      "question": "How is |何| read in: |何|の本ですか?",
+      "choices": ["なん", "なに", "Both readings are acceptable", "なんの"],
+      "answer": "なん",
+      "explanation": "⚠ Before の (N-row), 何 is なん. 何の本 (なんの ほん) = what kind of book. ⚠ Different from なにの — which doesn't exist as a standard form."
+    },
+    {
+      "id": "b6h-015",
+      "question": "How is |何| read in: |何|時に起きますか?",
+      "choices": ["なん", "なに", "Both readings are acceptable", "いつ"],
+      "answer": "なん",
+      "explanation": "何時 (なんじ) = what time. 時 is a counter for hours → なん. Pattern: counters always trigger なん."
+    },
+    {
+      "id": "b6h-016",
+      "question": "How is |何| read in: |何|で行きますか?",
+      "choices": ["なん", "なに", "Both depending on meaning", "Cannot be determined"],
+      "answer": "Both depending on meaning",
+      "explanation": "⚠ Ambiguity: なんで = 'why' (informal), なにで = 'by what means' (transportation). Even though で starts with D-sound (suggesting なん), the なに reading is preserved when asking about means/instrument."
+    },
+    {
+      "id": "b6h-017",
+      "question": "How is |何| read in: |何|も食べません?",
+      "choices": ["なに", "なん", "Both are acceptable", "なんに"],
+      "answer": "なに",
+      "explanation": "⚠ Before も (M-row), 何 is なに. 何も + negative = 'nothing'. Pattern: M-row, W-row → なに."
+    },
+    {
+      "id": "b6h-018",
+      "question": "Find the INCORRECT reading:",
+      "choices": ["何(なに)歳ですか。", "何(なに)を食べますか。", "何(なん)時ですか。", "何(なん)ですか。"],
+      "answer": "何(なに)歳ですか。",
+      "explanation": "⚠ Before COUNTERS (歳), 何 must be なん, not なに. The other three are correctly read."
+    },
+    {
+      "id": "b6h-019",
+      "question": "Choose the correct reading: |何|曜日ですか?",
+      "choices": ["なんようび", "なにようび", "Both are acceptable", "なんよびに"],
+      "answer": "なんようび",
+      "explanation": "曜日 starts with Y-row (や行), but 曜日 is treated as a COUNTER-like word for days. なんようび is the standard. Pattern: think of it as 'what day-name' = counter."
+    },
+    {
+      "id": "b6h-020",
+      "question": "What does |吸います| mean?",
+      "choices": ["smoke (inhale, e.g., cigarettes)", "suck (food)", "breathe", "Both inhaling and breathing"],
+      "answer": "smoke (inhale, e.g., cigarettes)",
+      "explanation": "吸います (すいます) = inhale, smoke. Most commonly used as: たばこを吸います = smoke cigarettes. Also literally 'suck/inhale' but in N5 context, almost always means smoking."
+    },
+    {
+      "id": "b6h-021",
+      "question": "Choose: たばこ___吸いますか?",
+      "choices": ["を", "が", "に", "で"],
+      "answer": "を",
+      "explanation": "たばこ (cigarettes) is the OBJECT of 吸う → を. Standard transitive verb pattern."
+    },
+    {
+      "id": "b6h-022",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["薬を食べます。", "薬を飲みます。", "ジュースを飲みます。", "水を飲みます。"],
+      "answer": "薬を食べます。",
+      "explanation": "⚠ Idiom: medicine is DRUNK (飲む) in Japanese, not eaten — even pills. Same idiom applies for soup: スープを飲む (drink soup), not 食べる."
+    },
+    {
+      "id": "b6h-023",
+      "question": "What is the correct verb for: スープ___?",
+      "choices": ["を飲みます", "を食べます", "を吸います", "を飲みません"],
+      "answer": "を飲みます",
+      "explanation": "⚠ Japanese idiom: soup (スープ) is DRUNK (飲む), not eaten. Even thick stews. This is one of the most-tested N5 idioms."
+    },
+    {
+      "id": "b6h-024",
+      "question": "What does |会います| mean and what particle does it take for the person?",
+      "choices": ["meet; に", "meet; を", "meet; と", "meet; で"],
+      "answer": "meet; に",
+      "explanation": "⚠ 会う takes に for the PERSON MET. 友達に会います = meet a friend. Even though English uses 'meet X' (X looks like object), Japanese marks it with に. This is a top trap."
+    },
+    {
+      "id": "b6h-025",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["私は友達を会います。", "私は友達に会います。", "私は駅で友達に会います。", "明日、母に会います。"],
+      "answer": "私は友達を会います。",
+      "explanation": "⚠ 会う takes に, not を. The error: marking the person with を. Correct: 友達に会います."
+    },
+    {
+      "id": "b6h-026",
+      "question": "Translate: 'I will meet my friend at the station tomorrow.'",
+      "choices": ["明日、駅で友達に会います。", "明日、駅に友達で会います。", "明日、駅で友達を会います。", "明日に駅で友達に会います。"],
+      "answer": "明日、駅で友達に会います。",
+      "explanation": "Three particles correctly placed: 明日 (no に), 駅で (action location: meeting place), 友達に (person met)."
+    },
+    {
+      "id": "b6h-027",
+      "question": "What does |撮ります| mean?",
+      "choices": ["take a photo", "take a hold", "take something away", "take a trip"],
+      "answer": "take a photo",
+      "explanation": "撮ります (とります) = take (a photo, video). Standard pattern: 写真を撮ります = take a photo. ⚠ Note: 取ります (also とります) means 'take/grab' — DIFFERENT kanji, related meaning."
+    },
+    {
+      "id": "b6h-028",
+      "question": "Choose: 写真___撮ります。",
+      "choices": ["を", "に", "が", "で"],
+      "answer": "を",
+      "explanation": "写真 = object of 撮る → を. Standard transitive pattern."
+    },
+    {
+      "id": "b6h-029",
+      "question": "Translate: 'Let's take a photo at the park.'",
+      "choices": ["公園で写真を撮りましょう。", "公園に写真を撮りましょう。", "公園で写真が撮りましょう。", "公園で写真を撮りませんか。"],
+      "answer": "公園で写真を撮りましょう。",
+      "explanation": "公園で (action location), 写真を (object), 撮りましょう (volitional 'let's'). Option 4 is 'shall we take a photo?' (a question/invitation), not 'let's' (assertive)."
+    },
+    {
+      "id": "b6h-030",
+      "question": "What is the difference between |ませんか| and |ましょう|?",
+      "choices": ["ませんか = polite invitation (giving choice); ましょう = active suggestion (assuming agreement)", "They are exactly the same", "ませんか = past invitation; ましょう = future", "ませんか = formal; ましょう = casual"],
+      "answer": "ませんか = polite invitation (giving choice); ましょう = active suggestion (assuming agreement)",
+      "explanation": "⚠ Subtle but important: ませんか allows the listener to easily refuse (literally 'won't you...?'). ましょう assumes agreement / actively proposes ('let's...'). Use ませんか for first-time invitations; ましょう after agreement is established."
+    },
+    {
+      "id": "b6h-031",
+      "question": "Choose the most natural FIRST invitation: 'Would you like to go to a movie with me?'",
+      "choices": ["いっしょに映画を見ませんか。", "いっしょに映画を見ましょう。", "いっしょに映画を見ます。", "いっしょに映画を見ますか。"],
+      "answer": "いっしょに映画を見ませんか。",
+      "explanation": "First-time invitation → use ませんか (polite, gives space to refuse). ましょう would assume agreement too early. ますか is too direct/literal."
+    },
+    {
+      "id": "b6h-032",
+      "question": "Choose the most natural response to 「いっしょに昼ご飯を食べませんか?」 if you AGREE:",
+      "choices": ["ええ、食べましょう。", "ええ、食べませんか。", "ええ、食べます。", "ええ、食べました。"],
+      "answer": "ええ、食べましょう。",
+      "explanation": "Standard agreement pattern after ませんか invitation: respond with ましょう ('let's'). Shows you're enthusiastically agreeing to participate. ええ = informal はい."
+    },
+    {
+      "id": "b6h-033",
+      "question": "Choose the most natural REFUSAL: 'いっしょにカラオケへ行きませんか?'",
+      "choices": ["すみません、ちょっと…。", "いいえ、行きません。", "いいえ、嫌(きら)いです。", "嫌です。"],
+      "answer": "すみません、ちょっと…。",
+      "explanation": "⚠ Cultural rule: Japanese refusals are INDIRECT. すみません、ちょっと… (Sorry, a little...) leaves the rest unsaid — the listener understands it's a refusal. 'No, I won't go' (option 2) is too blunt and considered rude."
+    },
+    {
+      "id": "b6h-034",
+      "question": "What does |ちょっと| signal in refusals?",
+      "choices": ["A polite, indirect 'no'", "An enthusiastic 'yes'", "A request for more information", "Neutral acknowledgment"],
+      "answer": "A polite, indirect 'no'",
+      "explanation": "ちょっと literally = 'a little'. As a refusal, it implies 'it's a little [inconvenient/difficult]' without stating reasons. Native speakers immediately understand this means 'no'. Cultural literacy is essential."
+    },
+    {
+      "id": "b6h-035",
+      "question": "Translate: 'Let's rest for a little while.'",
+      "choices": ["ちょっと休みましょう。", "ちょっと休みませんか。", "ちょっと休みます。", "ちょっと休みません。"],
+      "answer": "ちょっと休みましょう。",
+      "explanation": "Active suggestion → ましょう. ちょっと here = 'for a little while' (literal usage, not refusal). Context decides."
+    },
+    {
+      "id": "b6h-036",
+      "question": "Where should |いっしょに| typically go in a sentence?",
+      "choices": ["Before the verb or at the start of the suggestion", "At the very end", "Right after the subject", "Anywhere is fine"],
+      "answer": "Before the verb or at the start of the suggestion",
+      "explanation": "Adverbs like いっしょに usually come BEFORE the verb (or at the start of the suggestion clause). Example: 明日いっしょに行きませんか or いっしょに明日行きませんか. Both work; placement near the verb is more natural."
+    },
+    {
+      "id": "b6h-037",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["私はサッカーが好きです。私はサッカーをします。", "明日、いっしょに買い物に行きませんか。", "ちょっと休みませんか、すみません。", "それから、コーヒーを飲みました。"],
+      "answer": "ちょっと休みませんか、すみません。",
+      "explanation": "⚠ Sentence-ordering error: すみません (politeness opener) should come AT THE START of a request/suggestion, not after. Correct: すみません、ちょっと休みませんか. Politeness markers prepare the listener; they don't appear afterward."
+    },
+    {
+      "id": "b6h-038",
+      "question": "What does |いつも| mean and what verb form does it typically pair with?",
+      "choices": ["always; affirmative present (habitual)", "always; past tense", "sometimes; negative", "never; negative"],
+      "answer": "always; affirmative present (habitual)",
+      "explanation": "いつも = always (high frequency). Pairs with habitual present: 私はいつもコーヒーを飲みます = I always drink coffee. With negative: いつも…ない = always not (= never)."
+    },
+    {
+      "id": "b6h-039",
+      "question": "What does |ときどき| mean?",
+      "choices": ["sometimes (medium frequency)", "always", "never", "rarely"],
+      "answer": "sometimes (medium frequency)",
+      "explanation": "ときどき (時々) = sometimes (occasionally). Frequency scale: いつも > よく > ときどき > たまに > あまり〜ない > 全然〜ない. ときどき sits in the middle."
+    },
+    {
+      "id": "b6h-040",
+      "question": "Translate: 'I sometimes go to that café.'",
+      "choices": ["私はときどきあの喫茶店(きっさてん)へ行きます。", "私はときどきあの喫茶店へ行きません。", "私はいつもあの喫茶店へ行きます。", "私はあの喫茶店ときどき行きます。"],
+      "answer": "私はときどきあの喫茶店(きっさてん)へ行きます。",
+      "explanation": "ときどき (sometimes) + affirmative habitual. Position: typically AFTER the topic but BEFORE the verb/destination. Option 4 puts it after the place, which is grammatically possible but awkward."
+    },
+    {
+      "id": "b6h-041",
+      "question": "Choose: 私___毎日コーヒーを飲みます。",
+      "choices": ["は", "が", "に", "で"],
+      "answer": "は",
+      "explanation": "は marks the TOPIC. 私は毎日… = 'As for me, every day...'. Standard subject-topic marker for stating habits."
+    },
+    {
+      "id": "b6h-042",
+      "question": "Order the words to make a natural sentence: [食べました] [パンを] [私は] [今朝]",
+      "choices": ["私は今朝パンを食べました。", "今朝、私はパンを食べました。", "Both are natural and grammatically equivalent.", "パンを今朝私は食べました。"],
+      "answer": "Both are natural and grammatically equivalent.",
+      "explanation": "Japanese has flexible word order for time expressions. Both 'topic-time-object-verb' and 'time-topic-object-verb' are common. Option 4 (putting the object first) is grammatical but emphasizes the object — less neutral."
+    },
+    {
+      "id": "b6h-043",
+      "question": "What does |それから| mean and how is it used?",
+      "choices": ["after that / then (connects sequential actions)", "because of that (cause)", "however (contrast)", "for example"],
+      "answer": "after that / then (connects sequential actions)",
+      "explanation": "それから = 'after that, then'. Connects actions in temporal sequence. Example: 朝ご飯を食べました。それから学校へ行きました = 'I ate breakfast. Then I went to school.'"
+    },
+    {
+      "id": "b6h-044",
+      "question": "Choose the natural sentence: 'I read a book yesterday. After that, I watched TV.'",
+      "choices": ["昨日本を読みました。それからテレビを見ました。", "昨日本を読みました。でもテレビを見ました。", "昨日本を読みました。だからテレビを見ました。", "昨日本を読みます。それからテレビを見ます。"],
+      "answer": "昨日本を読みました。それからテレビを見ました。",
+      "explanation": "それから for sequence. でも (but) shows contrast (wrong context). だから (therefore) shows cause-effect (wrong context). Option 4 uses present tense — should be past for both."
+    },
+    {
+      "id": "b6h-045",
+      "question": "Translate: 'After breakfast, I read the newspaper and then went to work.'",
+      "choices": ["朝ご飯を食べました。それから新聞を読みました。それから仕事に行きました。", "朝ご飯を食べました。新聞を読みました。仕事に行きました。", "Both are acceptable; option 1 is more explicit about sequence.", "朝ご飯と新聞を読みました。それから仕事に行きました。"],
+      "answer": "Both are acceptable; option 1 is more explicit about sequence.",
+      "explanation": "Both work. Option 1 with それから explicitly chains the sequence. Option 2 (without conjunctions) is fine but feels list-like. Option 4 changes meaning ('ate breakfast and newspaper')."
+    },
+    {
+      "id": "b6h-046",
+      "question": "What is the basic difference between |ええ| and |はい|?",
+      "choices": ["ええ = informal/casual; はい = standard polite", "They are exactly the same", "ええ = past; はい = present", "ええ = surprised; はい = neutral"],
+      "answer": "ええ = informal/casual; はい = standard polite",
+      "explanation": "ええ is a softer, more conversational 'yes' — common between friends or in relaxed settings. はい is the standard polite affirmative — appropriate in any formal context. Both mean yes."
+    },
+    {
+      "id": "b6h-047",
+      "question": "What does |わかりました| literally and pragmatically mean?",
+      "choices": ["literally 'understood'; pragmatically 'OK / I got it'", "literally 'knew'; pragmatically 'I knew that'", "literally 'agree'; pragmatically 'yes'", "literally 'thanks'; pragmatically 'thank you'"],
+      "answer": "literally 'understood'; pragmatically 'OK / I got it'",
+      "explanation": "わかりました = 'I understood' (past tense of わかる). Pragmatically used as 'OK, got it, will do'. ⚠ Use after receiving instructions or confirming information."
+    },
+    {
+      "id": "b6h-048",
+      "question": "Choose the most natural exchange: A: 「明日、9時に来てください。」 B: 「___」",
+      "choices": ["わかりました。", "そうですか。", "そうですね。", "いいです。"],
+      "answer": "わかりました。",
+      "explanation": "Acknowledging an instruction → わかりました ('Got it'). そうですか (Is that so?) sounds detached. そうですね (Well...) sounds non-committal. いいです can mean 'no thanks' in some contexts — risky."
+    },
+    {
+      "id": "b6h-049",
+      "question": "When does |お〜| in 「お酒」 add politeness, and when is it lexicalized?",
+      "choices": ["お in お酒 is lexicalized (almost mandatory); just 酒 alone sounds rough/blunt", "お is purely optional and adds politeness", "お in お酒 means 'small amount of alcohol'", "お in お酒 indicates non-alcoholic drinks"],
+      "answer": "お in お酒 is lexicalized (almost mandatory); just 酒 alone sounds rough/blunt",
+      "explanation": "⚠ Cultural rule: 酒 without お sounds masculine/rough (used by, e.g., older men in casual settings). お酒 is the standard polite form for everyday speech, regardless of speaker gender."
+    },
+    {
+      "id": "b6h-050",
+      "question": "Which word does NOT take the お〜 prefix in modern usage?",
+      "choices": ["パン", "茶", "酒", "金"],
+      "answer": "パン",
+      "explanation": "⚠ The prefix お〜 applies almost exclusively to native Japanese (wago) or sino-Japanese (kango) words — NOT to loanwords (katakana). パン (from Portuguese 'pão') is a loanword → no お prefix. お茶, お酒, お金 are all standard."
+    },
+    {
+      "id": "b6h-051",
+      "question": "Choose: 私はいつも___お茶を飲みます。 (Pick the time word.)",
+      "choices": ["朝", "明日", "昨日", "来週"],
+      "answer": "朝",
+      "explanation": "いつも (always) pairs with HABITUAL frequency words like 朝 (mornings), 毎日, 夜. Single-time words like 明日/昨日/来週 conflict with always (habitual)."
+    },
+    {
+      "id": "b6h-052",
+      "question": "Find the INCORRECT pairing:",
+      "choices": ["いつも昨日コーヒーを飲みました。", "いつも朝コーヒーを飲みます。", "ときどき映画を見ます。", "毎日日本語を勉強します。"],
+      "answer": "いつも昨日コーヒーを飲みました。",
+      "explanation": "⚠ Logical contradiction: いつも (always = habitual) doesn't combine with 昨日 (specific past day). Should be either いつも毎朝… or 昨日…coffee was drunk."
+    },
+    {
+      "id": "b6h-053",
+      "question": "Choose: 私は___ビールを飲みません。 (Pick the most natural adverb.)",
+      "choices": ["あまり", "いつも", "ときどき", "とても"],
+      "answer": "あまり",
+      "explanation": "あまり + negative = 'not much / not very'. 私はあまりビールを飲みません = 'I don't drink beer much'. ⚠ Other options: いつも + neg = 'never', ときどき is mismatched, とても doesn't pair with negative."
+    },
+    {
+      "id": "b6h-054",
+      "question": "Read: 「私はいつも7時に起きます。それから朝ご飯を食べて、会社へ行きます。仕事は9時に始まります。」 What does the speaker do AFTER eating breakfast?",
+      "choices": ["Goes to work.", "Wakes up.", "Starts work.", "Drinks coffee."],
+      "answer": "Goes to work.",
+      "explanation": "Sequence: 起きる → 朝ご飯を食べて (te-form connector, 'and then') → 会社へ行く. After eating: goes to work. Work starting at 9 is what happens AT work."
+    },
+    {
+      "id": "b6h-055",
+      "question": "Read: 「昨日、友達と公園でお花見をしました。たくさん写真を撮りました。それからレストランで晩ご飯を食べました。」 What did the speaker do FIRST?",
+      "choices": ["Cherry-blossom viewing (お花見).", "Taking photos.", "Eating dinner.", "Going to the restaurant."],
+      "answer": "Cherry-blossom viewing (お花見).",
+      "explanation": "Sequence: お花見をしました → たくさん写真を撮りました → それから晩ご飯を食べました. お花見 is the first action; photo-taking happens during it; dinner comes after."
+    },
+    {
+      "id": "b6h-056",
+      "question": "Translate: 'On Sundays, I sometimes play tennis with my friends at the park.'",
+      "choices": ["日曜日、私はときどき公園で友達とテニスをします。", "日曜日、私はときどき公園に友達とテニスをします。", "日曜日にときどき公園で友達とテニスをします。", "Both option 1 and option 3 are acceptable."],
+      "answer": "Both option 1 and option 3 are acceptable.",
+      "explanation": "Days of the week may take optional に. Both versions are natural. Option 2 has wrong particle (に instead of で for action location)."
+    },
+    {
+      "id": "b6h-057",
+      "question": "Translate: 'Shall we eat sushi at that new restaurant?'",
+      "choices": ["あの新しいレストランで寿司を食べませんか。", "あの新しいレストランに寿司を食べませんか。", "あの新しいレストランで寿司が食べませんか。", "あの新しいレストランで寿司を食べますか。"],
+      "answer": "あの新しいレストランで寿司を食べませんか。",
+      "explanation": "Polite invitation → ませんか. Restaurant is action-place → で. 寿司 is object → を. Option 4 (ますか) is a literal question, not an invitation."
+    },
+    {
+      "id": "b6h-058",
+      "question": "Read: A: 「いっしょに映画を見ませんか?」 B: 「ええ、見ましょう。何時にどこで会いますか?」 What did B agree to?",
+      "choices": ["Watching a movie together; now needs to set time/place.", "Doing the dishes.", "Going home.", "Refused the invitation."],
+      "answer": "Watching a movie together; now needs to set time/place.",
+      "explanation": "ええ、見ましょう = enthusiastic agreement. The follow-up question is to coordinate meeting details. Standard polite Japanese conversation flow."
+    },
+    {
+      "id": "b6h-059",
+      "question": "Read: A: 「今晩、いっしょにお酒を飲みませんか?」 B: 「すみません、今晩はちょっと…。」 What did B do?",
+      "choices": ["Politely declined.", "Agreed enthusiastically.", "Asked for more information.", "Suggested a different time."],
+      "answer": "Politely declined.",
+      "explanation": "⚠ Cultural reading: すみません、…ちょっと… is a CLASSIC indirect refusal. B is busy or doesn't want to. The trailing … indicates 'no need to spell it out'. Native speakers immediately know it's a no."
+    },
+    {
+      "id": "b6h-060",
+      "question": "Read: 「私の友達の田中さんはいつもお茶を飲みます。コーヒーは飲みません。ときどき紅茶を飲みます。」 What does Tanaka NEVER drink?",
+      "choices": ["Coffee", "Green tea (お茶)", "Black tea (紅茶)", "Cannot be determined"],
+      "answer": "Coffee",
+      "explanation": "Map drinks: お茶 = always (いつも). コーヒーは飲みません = does NOT drink coffee. 紅茶 = sometimes. Coffee is the never-drink."
+    },
+    {
+      "id": "b6h-061",
+      "question": "What does |ビデオ| mean in N5 context?",
+      "choices": ["video (recording or video tape)", "computer", "TV show", "Camera"],
+      "answer": "video (recording or video tape)",
+      "explanation": "ビデオ in N5 vocabulary = video (the recording or, historically, a video tape). Modern usage often refers to digital videos. Common collocation: ビデオを見る = watch a video."
+    },
+    {
+      "id": "b6h-062",
+      "question": "Choose the most natural sentence: '私は毎晩、家で___見ます。'",
+      "choices": ["ビデオを", "ビデオが", "ビデオに", "ビデオで"],
+      "answer": "ビデオを",
+      "explanation": "見る is transitive → ビデオを (object marker). Standard pattern: [Object]を [Verb]."
+    },
+    {
+      "id": "b6h-063",
+      "question": "What does |レポート| mean?",
+      "choices": ["report (school assignment or work document)", "newspaper", "magazine", "book"],
+      "answer": "report (school assignment or work document)",
+      "explanation": "レポート = report (academic paper, work report). Common use: レポートを書く = write a report. Loanword from English 'report'."
+    },
+    {
+      "id": "b6h-064",
+      "question": "Choose: 学校で___をします。 (Pick what does NOT fit.)",
+      "choices": ["写真", "宿題", "勉強", "テニス"],
+      "answer": "写真",
+      "explanation": "⚠ Idiomatic verb pairing: 写真 takes 撮る (撮ります), NOT する. 写真をします is incorrect. The other three (宿題, 勉強, テニス) all naturally take する."
+    },
+    {
+      "id": "b6h-065",
+      "question": "Find the INCORRECT verb-object pairing:",
+      "choices": ["音楽を撮ります。", "音楽を聞きます。", "写真を撮ります。", "テニスをします。"],
+      "answer": "音楽を撮ります。",
+      "explanation": "⚠ 音楽 (music) takes 聞く (listen), NOT 撮る (take a photo). 音楽を撮ります is nonsensical — like 'take a photo of music'. Memorize verb-object idioms."
+    },
+    {
+      "id": "b6h-066",
+      "question": "Choose the natural verb: 「映画を___。」",
+      "choices": ["見ます", "聞きます", "読みます", "撮ります"],
+      "answer": "見ます",
+      "explanation": "Movies are WATCHED (見る). ⚠ Even though you 'listen' to dialogue, the conventional verb is 見る. Same for TV (テレビを見る)."
+    },
+    {
+      "id": "b6h-067",
+      "question": "Choose the natural verb: 「CDを___。」",
+      "choices": ["聞きます", "見ます", "読みます", "撮ります"],
+      "answer": "聞きます",
+      "explanation": "CDs are LISTENED to (聞く). Music-related media uses 聞く. Compare: 音楽を聞く (listen to music), ラジオを聞く (listen to radio)."
+    },
+    {
+      "id": "b6h-068",
+      "question": "Choose the natural verb: 「新聞を___。」",
+      "choices": ["読みます", "見ます", "聞きます", "書きます"],
+      "answer": "読みます",
+      "explanation": "Newspapers are READ (読む). ⚠ 見る (look at) also works casually for skimming, but the standard/expected verb is 読む."
+    },
+    {
+      "id": "b6h-069",
+      "question": "Choose: 「友達に手紙を___。」",
+      "choices": ["書きます", "読みます", "送ります", "撮ります"],
+      "answer": "書きます",
+      "explanation": "手紙を書く = write a letter. 送る (send) also works but is less common in N5. The basic action is writing (書く)."
+    },
+    {
+      "id": "b6h-070",
+      "question": "Find the natural translation: 'Let's drink something cold at the café.'",
+      "choices": ["喫茶店(きっさてん)で冷たい飲み物を飲みましょう。", "喫茶店に冷たい飲み物を飲みましょう。", "喫茶店で冷たい飲み物が飲みましょう。", "喫茶店で冷たい飲み物を飲みませんか。"],
+      "answer": "喫茶店(きっさてん)で冷たい飲み物を飲みましょう。",
+      "explanation": "Café is action location → で. 冷たい (cold) directly modifies 飲み物 (drink) — い-adj attaches without particle. 飲みましょう (let's drink). Option 4 (ませんか) is an invitation, not a 'let's' statement."
+    },
+    {
+      "id": "b6h-071",
+      "question": "Choose the natural sentence: 'I want to take a photo with my new camera.'",
+      "choices": ["新しいカメラで写真を撮りたいです。", "新しいカメラに写真を撮りたいです。", "新しいカメラを写真を撮りたいです。", "新しいカメラで写真が撮りたいです。"],
+      "answer": "新しいカメラで写真を撮りたいです。",
+      "explanation": "⚠ Two particles: で for INSTRUMENT (camera as tool), を for OBJECT (photo). Pattern: [Tool]で[Object]を[Verb]. ~たい = want to (lesson 13, mentioned here for natural translation)."
+    },
+    {
+      "id": "b6h-072",
+      "question": "Translate the Japanese: 「いつも会社で昼ご飯を食べますが、今日は友達と外で食べました。」",
+      "choices": ["I usually eat lunch at the company, but today I ate outside with a friend.", "I always eat lunch with my company friends, today outside.", "I will eat lunch at the company today with friends.", "Lunch today was at the company with a friend outside."],
+      "answer": "I usually eat lunch at the company, but today I ate outside with a friend.",
+      "explanation": "Parse: いつも会社で = usually at the company. 食べますが = eat (habitual)+ but. 今日は = today (contrast). 友達と外で食べました = ate outside with a friend (past). The が is contrast."
+    },
+    {
+      "id": "b6h-073",
+      "question": "Read: 「私は毎週水曜日と土曜日にテニスをします。日曜日はサッカーをします。月曜日から金曜日まで仕事があります。」 On which days does the speaker do sports?",
+      "choices": ["Wed, Sat, Sun (3 days)", "Mon-Fri (5 days)", "Every day", "Only weekends"],
+      "answer": "Wed, Sat, Sun (3 days)",
+      "explanation": "水曜日 (Wed) + 土曜日 (Sat) → tennis. 日曜日 (Sun) → soccer. Mon-Fri = work (not sports). Total sport days: 3 (Wed, Sat, Sun)."
+    },
+    {
+      "id": "b6h-074",
+      "question": "Read: A: 「明日、何をしますか?」 B: 「朝、図書館で本を読みます。それから午後は友達と買い物に行きます。」 What does B do FIRST tomorrow?",
+      "choices": ["Read a book at the library.", "Go shopping.", "Meet friends.", "Both at the same time."],
+      "answer": "Read a book at the library.",
+      "explanation": "Sequence with それから: 朝 = morning → 図書館で本を読みます (read at library) FIRST. それから午後 = then in the afternoon → shopping. Morning comes before afternoon."
+    },
+    {
+      "id": "b6h-075",
+      "question": "Translate: 'I never eat meat.'",
+      "choices": ["私は全然肉を食べません。", "私は全然肉を食べます。", "私はいつも肉を食べません。", "Both option 1 and option 3 are acceptable."],
+      "answer": "Both option 1 and option 3 are acceptable.",
+      "explanation": "Two natural ways: 全然 + neg = 'not at all (= never)'. いつも + neg = 'always not (= never)'. Both work. 全然 is slightly more emphatic ('not at all')."
+    },
+    {
+      "id": "b6h-076",
+      "question": "Choose: 「私の妹はいつもジュースを飲みます。コーヒーは___飲みません。」",
+      "choices": ["全然", "とても", "いつも", "それから"],
+      "answer": "全然",
+      "explanation": "全然 + neg = doesn't drink at all. Logical contrast with 'always drinks juice'. ⚠ いつも飲みません literally = always doesn't drink (= never), also works, but 全然 fits the contrast better here."
+    },
+    {
+      "id": "b6h-077",
+      "question": "Read: 「日本では、お正月(おしょうがつ)に家族とおせち料理を食べます。お酒も飲みます。テレビで紅白(こうはく)歌合戦(うたがっせん)を見ます。」 What do people do at New Year (in this description)?",
+      "choices": ["Eat osechi, drink sake, watch Kohaku on TV.", "Go to temples only.", "Take photos with family.", "Sleep all day."],
+      "answer": "Eat osechi, drink sake, watch Kohaku on TV.",
+      "explanation": "Three activities mentioned: おせち料理を食べます (eat osechi), お酒も飲みます (also drink sake), テレビで…を見ます (watch Kohaku on TV). All three are stated."
+    },
+    {
+      "id": "b6h-078",
+      "question": "Translate: 'Where do you eat lunch?'",
+      "choices": ["どこで昼ご飯を食べますか。", "どこに昼ご飯を食べますか。", "どこで昼ご飯が食べますか。", "どこを昼ご飯で食べますか。"],
+      "answer": "どこで昼ご飯を食べますか。",
+      "explanation": "Action location → どこで. Object → 昼ご飯を. Standard pattern. ⚠ どこに would only work with state verbs (どこにありますか = where is it?)."
+    },
+    {
+      "id": "b6h-079",
+      "question": "Translate: 'Yesterday at home, I read books, watched TV, and slept.' (use それから)",
+      "choices": ["昨日、家で本を読みました。それからテレビを見ました。それから寝ました。", "昨日、家で本を読みます。それからテレビを見ます。それから寝ます。", "昨日、家で本とテレビと睡眠をしました。", "昨日、家で本を読んで、テレビを見て、寝ました。"],
+      "answer": "昨日、家で本を読みました。それからテレビを見ました。それから寝ました。",
+      "explanation": "Past tense throughout (昨日 = yesterday). それから chains the sequence. Option 4 uses te-form (also natural, but the prompt asked for それから). Option 2 is present tense — wrong."
+    },
+    {
+      "id": "b6h-080",
+      "question": "Read: 「うちの父はいつも7時に晩ご飯を食べます。それからビールを飲みながら、テレビを見ます。」 (ながら ≈ 'while'; advanced) What does the father do AFTER dinner?",
+      "choices": ["Watches TV while drinking beer.", "Goes to sleep.", "Cooks more food.", "Goes to work."],
+      "answer": "Watches TV while drinking beer.",
+      "explanation": "それから = after dinner. ビールを飲みながらテレビを見ます = 'watches TV while drinking beer'. Two simultaneous actions."
+    },
+    {
+      "id": "b6h-081",
+      "question": "Find the natural FIRST invitation: 'Would you go to lunch with me today?'",
+      "choices": ["今日、いっしょに昼ご飯を食べませんか。", "今日、いっしょに昼ご飯を食べましょう。", "今日、私と昼ご飯を食べてください。", "今日、私が昼ご飯を食べます。"],
+      "answer": "今日、いっしょに昼ご飯を食べませんか。",
+      "explanation": "First-time invitation → ませんか. ましょう would assume agreement (too pushy). 食べてください is a request/command. Option 4 is a self-statement."
+    },
+    {
+      "id": "b6h-082",
+      "question": "Read: A: 「今晩、何をしますか?」 B: 「家で晩ご飯を食べます。それから、ちょっとビデオを見ます。」 What will B do AFTER dinner?",
+      "choices": ["Watch a video for a little while.", "Cook dinner.", "Go out.", "Read a book."],
+      "answer": "Watch a video for a little while.",
+      "explanation": "それから = after that. ちょっと = a little/briefly (literal usage here, not refusal). ビデオを見ます = watch a video."
+    },
+    {
+      "id": "b6h-083",
+      "question": "Choose: 「___ご飯を食べましたか?」 (Past habit question: 'Did you eat?' — pick the natural opener.)",
+      "choices": ["もう", "まだ", "いつも", "ときどき"],
+      "answer": "もう",
+      "explanation": "もう + past = 'already?' Standard pattern: もう+verb+ました+か = 'Did you already...?' まだ + past would be illogical."
+    },
+    {
+      "id": "b6h-084",
+      "question": "Choose the natural reply to 「もう昼ご飯を食べましたか?」 if YES:",
+      "choices": ["はい、もう食べました。", "はい、まだ食べました。", "いいえ、もう食べません。", "いいえ、もう食べました。"],
+      "answer": "はい、もう食べました。",
+      "explanation": "Standard pattern: もう+past+ました to confirm 'already done'. Other options have logical contradictions."
+    },
+    {
+      "id": "b6h-085",
+      "question": "Choose the natural reply to 「もう昼ご飯を食べましたか?」 if NO:",
+      "choices": ["いいえ、まだです。", "いいえ、もう食べました。", "いいえ、まだ食べました。", "いいえ、もう食べません。"],
+      "answer": "いいえ、まだです。",
+      "explanation": "⚠ Standard 'not yet' reply: まだです (concise, natural). Full form: まだ食べていません (uses te-form + ない, lesson 14). At N5 level, the simple まだです is the expected form."
+    },
+    {
+      "id": "b6h-086",
+      "question": "Translate the Japanese: 「私は毎晩晩ご飯を食べてから、家族とテレビを見ます。」",
+      "choices": ["Every night after eating dinner, I watch TV with my family.", "Every night I eat dinner while watching TV with family.", "Every night, before dinner, I watch TV.", "Every night I eat dinner and family watches TV."],
+      "answer": "Every night after eating dinner, I watch TV with my family.",
+      "explanation": "Parse: 毎晩 = every night. 晩ご飯を食べてから = after eating dinner (てから = after doing X — lesson 16). 家族とテレビを見ます = watch TV with family. Sequence: dinner THEN TV."
+    },
+    {
+      "id": "b6h-087",
+      "question": "Choose: 「___見ましたか?」 (Pick the appropriate question word for 'What did you watch?')",
+      "choices": ["何を", "何で", "何に", "何が"],
+      "answer": "何を",
+      "explanation": "What as OBJECT of 見る → 何を. ⚠ Don't forget the particle even with question words. 何で would ask 'with what / how / why'. 何に would expect a location/recipient."
+    },
+    {
+      "id": "b6h-088",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["明日いっしょに友達を会いませんか。", "明日いっしょに友達に会いませんか。", "明日いっしょに公園で会いませんか。", "明日いっしょに昼ご飯を食べませんか。"],
+      "answer": "明日いっしょに友達を会いませんか。",
+      "explanation": "⚠ 会う takes に for the person met, NOT を. Correct: 友達に会う. Option 1 has the classic particle error."
+    },
+    {
+      "id": "b6h-089",
+      "question": "Find the INCORRECT sentence:",
+      "choices": ["私は東京で住んでいます。", "私は東京に住んでいます。", "私は東京で勉強しています。", "私は東京で働いています。"],
+      "answer": "私は東京で住んでいます。",
+      "explanation": "⚠ 住む is treated as a state verb in Japanese → に. Even though 'live' feels like an action in English, Japanese categorizes it with state verbs (like いる)."
+    },
+    {
+      "id": "b6h-090",
+      "question": "Read: 「明日は土曜日です。山田さんと田中さんはいっしょにお花見をします。公園でお弁当(べんとう)を食べます。それから写真をたくさん撮ります。」 What is the SECOND activity?",
+      "choices": ["Eating bento.", "Taking photos.", "Cherry blossom viewing.", "Going home."],
+      "answer": "Eating bento.",
+      "explanation": "Sequence: お花見をします (cherry-blossom viewing, main activity)→ 公園でお弁当を食べます (eat bento at park, embedded within) → それから写真を撮ります (then take photos). お弁当 comes BEFORE photos."
+    },
+    {
+      "id": "b6h-091",
+      "question": "Translate: 'I will write a long letter to my mother tonight.'",
+      "choices": ["今晩、母に長い手紙を書きます。", "今晩、母に長くて手紙を書きます。", "今晩、母を長い手紙を書きます。", "今晩に母に長い手紙を書きます。"],
+      "answer": "今晩、母に長い手紙を書きます。",
+      "explanation": "今晩 (tonight) takes NO に (relative time). 母に (recipient). 長い modifies 手紙 directly (i-adj). 手紙を (object of writing). ⚠ Three particle decisions, all of them N5 traps."
+    },
+    {
+      "id": "b6h-092",
+      "question": "Read: 「私は朝、コーヒーを飲みます。父も毎朝コーヒーを飲みます。母はコーヒーが嫌いですから、紅茶を飲みます。妹はまだ小さいですから、ミルクを飲みます。」 Who drinks coffee?",
+      "choices": ["The speaker and the father.", "Everyone in the family.", "Only the speaker.", "The mother and the speaker."],
+      "answer": "The speaker and the father.",
+      "explanation": "Map family members to drinks: 私 (coffee), 父も (also coffee — も = also), 母 (tea, dislikes coffee), 妹 (milk, too young). Coffee drinkers: speaker + father."
+    },
+    {
+      "id": "b6h-093",
+      "question": "Translate: 'I sometimes meet my friend at the café and we drink tea.'",
+      "choices": ["私はときどき友達に喫茶店で会って、お茶を飲みます。", "私はときどき友達と喫茶店で会って、お茶を飲みます。", "Both are acceptable, with subtle nuance.", "私はときどき友達を喫茶店で会って、お茶を飲みます。"],
+      "answer": "Both are acceptable, with subtle nuance.",
+      "explanation": "⚠ Both work but mean slightly different things: 友達に会う = meet a friend (focus on the meeting action). 友達と会う = meet WITH a friend (focus on co-participation). For drinking tea together, と is slightly more natural."
+    },
+    {
+      "id": "b6h-094",
+      "question": "Choose: 私は毎週末、お花見___します。",
+      "choices": ["を", "に", "で", "が"],
+      "answer": "を",
+      "explanation": "お花見 is the object of する → を. Standard pattern: [activity]を します. 花見, 買い物, 散歩 all follow the same を + する pattern."
+    },
+    {
+      "id": "b6h-095",
+      "question": "Find the natural translation: 'I take photos every day with my phone.'",
+      "choices": ["毎日、携帯(けいたい)で写真を撮ります。", "毎日、携帯に写真を撮ります。", "毎日、携帯を写真を撮ります。", "毎日に携帯で写真を撮ります。"],
+      "answer": "毎日、携帯(けいたい)で写真を撮ります。",
+      "explanation": "毎日 (no に — relative time). 携帯で = with phone (instrument → で). 写真を (object of 撮る). Three correct particle decisions."
+    },
+    {
+      "id": "b6h-096",
+      "question": "Read this exchange — A: 「明日、京都へ行きませんか?」 B: 「すみません、明日はちょっと…。」 A: 「じゃ、来週はどうですか?」 B: 「来週は大丈夫(だいじょうぶ)です。」 What is happening?",
+      "choices": ["A invites B for tomorrow, B refuses politely, A suggests next week, B agrees.", "A and B are arguing about Kyoto.", "A and B already went to Kyoto.", "B refuses both times."],
+      "answer": "A invites B for tomorrow, B refuses politely, A suggests next week, B agrees.",
+      "explanation": "Classic Japanese conversation flow: invitation → indirect refusal (ちょっと…) → counter-proposal → acceptance (大丈夫 = OK/fine). Understanding indirect refusal is key."
+    },
+    {
+      "id": "b6h-097",
+      "question": "Translate: 'I always drink milk in the morning. But this morning, I drank coffee.'",
+      "choices": ["私はいつも朝ミルクを飲みます。でも、今朝はコーヒーを飲みました。", "私はいつも朝ミルクを飲みません。でも、今朝はコーヒーを飲みました。", "私はときどき朝ミルクを飲みます。でも、今朝はコーヒーを飲みました。", "私はいつも朝ミルクを飲みます。それから、今朝はコーヒーを飲みました。"],
+      "answer": "私はいつも朝ミルクを飲みます。でも、今朝はコーヒーを飲みました。",
+      "explanation": "いつも + affirmative present = habit. でも = but (contrast). 今朝 = this morning (irregular reading けさ). コーヒーを飲みました = past tense (specific event). Option 4 wrongly uses それから (sequence) where contrast is needed."
+    },
+    {
+      "id": "b6h-098",
+      "question": "Read: 「日本では、晩ご飯に魚を食べる家族が多いです。それから、お風呂(ふろ)に入って、寝ます。」 What do families typically do AFTER dinner?",
+      "choices": ["Take a bath and sleep.", "Watch TV.", "Eat more.", "Go out."],
+      "answer": "Take a bath and sleep.",
+      "explanation": "それから = after that. お風呂に入って = take a bath (te-form connector). 寝ます = sleep. Two sequential actions: bath → sleep."
+    },
+    {
+      "id": "b6h-099",
+      "question": "Translate the Japanese: 「ともだち:「いっしょにビールを飲みませんか。」 私:「ありがとうございます。でも、お酒はあまり飲みません。コーヒーをお願いします。」」",
+      "choices": ["Friend invites for beer; I politely refuse alcohol and request coffee.", "Friend and I both drink beer.", "I'm angry about the beer invitation.", "I demand alcohol."],
+      "answer": "Friend invites for beer; I politely refuse alcohol and request coffee.",
+      "explanation": "⚠ Polite refusal pattern: ありがとうございます (thank — softens) + でも (but) + 〜あまり飲みません (don't drink much — indirect 'no') + counter-suggestion (お願いします = please)."
+    },
+    {
+      "id": "b6h-100",
+      "question": "Final challenge — read carefully: 「私は毎週土曜日にいつも図書館で日本語を勉強します。でも、今週の土曜日は山田さんと京都へ行きます。京都ではお寺をたくさん見ます。それから、有名なレストランで晩ご飯を食べます。来週からまた図書館で勉強します。」 What will the speaker do THIS SATURDAY?",
+      "choices": ["Go to Kyoto with Yamada, see temples, eat at a famous restaurant.", "Study at the library as usual.", "Study Japanese with Yamada.", "Cannot be determined."],
+      "answer": "Go to Kyoto with Yamada, see temples, eat at a famous restaurant.",
+      "explanation": "Long passage requires careful parsing. 毎週…いつも… (usually study at library) BUT 今週の土曜日 (THIS Saturday, contrast with でも) → go to Kyoto. Sequence in Kyoto: 寺を見る → それから晩ご飯. 来週から = from next week, resume library studying. Question asks about THIS SAT specifically."
+    }
+  ]
+}

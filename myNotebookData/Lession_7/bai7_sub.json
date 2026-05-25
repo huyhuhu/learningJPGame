@@ -1,0 +1,147 @@
+{
+    "questions": [],
+    "kanji": {
+        "封": {
+            "reading": "フウ, ホウ",
+            "meaning": "seal, envelope — 封筒 (envelope), 封 (seal)",
+            "label": "noun"
+        },
+        "筒": {
+            "reading": "トウ, つつ",
+            "meaning": "tube, pipe, cylinder — 封筒 (envelope), 水筒 (water bottle)",
+            "label": "noun"
+        },
+        "作": {
+            "reading": "サク, サ, つく(る)",
+            "meaning": "make, create, produce — 作る (to make), 作品 (work/creation)",
+            "label": "verb"
+        },
+        "荷": {
+            "reading": "カ, に",
+            "meaning": "luggage, baggage, load — 荷物 (にもつ, luggage)",
+            "label": "noun"
+        },
+        "失": {
+            "reading": "シツ, うしな(う)",
+            "meaning": "lose, miss, fail — 失礼 (rude/excuse me), 失う (to lose)",
+            "label": "verb"
+        },
+        "礼": {
+            "reading": "レイ, ライ",
+            "meaning": "thanks, etiquette, bow, courtesy — 失礼, お礼 (thanks), 礼儀 (manners)",
+            "label": "noun"
+        },
+        "産": {
+            "reading": "サン, う(む), う(まれる)",
+            "meaning": "give birth, produce, local product — お土産 (souvenir), 産業 (industry)",
+            "label": "verb"
+        },
+        "旅": {
+            "reading": "リョ, たび",
+            "meaning": "travel, trip, journey — 旅行 (りょこう, travel), 旅 (journey)",
+            "label": "noun"
+        },
+        "喜": {
+            "reading": "キ, よろこ(ぶ)",
+            "meaning": "rejoice, be glad, delight — 喜ぶ (to be happy), 喜び (joy)",
+            "label": "verb"
+        },
+        "葉": {
+            "reading": "ヨウ, は",
+            "meaning": "leaf, blade — 葉 (leaf), 言葉 (ことば, word/language), 紅葉 (autumn leaves)",
+            "label": "noun"
+        },
+        "所": {
+            "reading": "ショ, ジョ, ところ",
+            "meaning": "place, location — 場所 (place), 住所 (address), 台所 (kitchen)",
+            "label": "noun-suffix"
+        },
+        "使": {
+            "reading": "シ, つか(う)",
+            "meaning": "use, employ, messenger — 使う (to use), 大使館 (embassy)",
+            "label": "verb"
+        },
+        "両": {
+            "reading": "リョウ",
+            "meaning": "both, two; counter for train cars — 両親 (parents), 両方 (both), 両手 (both hands)",
+            "label": "prefix"
+        },
+        "冊": {
+            "reading": "サツ",
+            "meaning": "counter for books and bound volumes — sound changes: 一冊 いっさつ, 八冊 はっさつ, 十冊 じっさつ",
+            "label": "counter"
+        },
+        "文": {
+            "reading": "ブン, モン, ふみ",
+            "meaning": "sentence, writing, literature — 文化 (culture), 文学 (literature), 作文 (composition)",
+            "label": "noun"
+        },
+        "化": {
+            "reading": "カ, ケ, ば(ける)",
+            "meaning": "change, transform, -ization — 文化 (culture), 変化 (change), suffix like English '-ize/-tion'",
+            "label": "noun-suffix"
+        },
+        "招": {
+            "reading": "ショウ, まね(く)",
+            "meaning": "invite, beckon — 招待 (invitation), 招く (to invite/beckon)",
+            "label": "verb"
+        },
+        "待": {
+            "reading": "タイ, ま(つ)",
+            "meaning": "wait, await, expect — 待つ (to wait), 招待 (invitation), 期待 (expectation)",
+            "label": "verb"
+        },
+        "絵": {
+            "reading": "カイ, エ",
+            "meaning": "picture, drawing, painting — 絵 (え, picture), 絵本 (picture book)",
+            "label": "noun"
+        },
+        "指": {
+            "reading": "シ, ゆび, さ(す)",
+            "meaning": "finger, point, indicate — 指 (finger), 指輪 (ring), 指す (to point at)",
+            "label": "noun"
+        },
+        "輪": {
+            "reading": "リン, わ",
+            "meaning": "ring, wheel, circle, loop — 指輪 (ring), 車輪 (wheel)",
+            "label": "noun"
+        }
+    },
+    "words": {
+        "教えます": {
+            "reading": "おしえます",
+            "meaning": "to teach, to tell, to inform (polite) — dictionary form: 教える. Pattern: 人に〜を教える (teach something to someone)",
+            "label": "verb-ichidan"
+        },
+        "送ります": {
+            "reading": "おくります",
+            "meaning": "to send, to see (someone) off (polite) — dictionary form: 送る. Pattern: 人に〜を送る (send something to someone)",
+            "label": "verb-godan"
+        },
+        "電話をかけます": {
+            "reading": "でんわをかけます",
+            "meaning": "to make a phone call (polite) — dictionary form: 電話をかける. Particle trap: ALWAYS を with かける, never に for the phone itself. To indicate who you're calling: 〜に電話をかける",
+            "label": "phrase-verb"
+        },
+        "まだ書きませんでした": {
+            "reading": "まだかきませんでした",
+            "meaning": "still haven't written / didn't write yet — IMPORTANT trap: native Japanese prefers まだ書いていません (haven't written yet) using ていません form. まだ + past negative literally means 'still didn't' and sounds unnatural in most contexts. Lesson 7 introduces the contrast",
+            "label": "phrase-verb"
+        },
+        "どうぞお上がりください": {
+            "reading": "どうぞおあがりください",
+            "meaning": "Please come in (to a Japanese home) — literally 'please step up'; said because guests step UP from the genkan (entryway) onto the raised floor. Use this, NOT どうぞ入ってください, when welcoming someone into a home",
+            "label": "set-phrase"
+        },
+        "失礼します": {
+            "reading": "しつれいします",
+            "meaning": "Excuse me / Pardon me / I'm leaving now — literally 'I commit a rudeness'. Used when: entering a room, leaving before others, interrupting, ending a phone call. Past form 失礼しました = 'sorry for the intrusion'",
+            "label": "set-phrase"
+        },
+        "お土産(おみやげ)": {
+            "reading": "おみやげ",
+            "meaning": "souvenir, gift brought back from a trip — exception reading trap: 土産 is read みやげ (jukujikun, irregular). NOT どさん or つちうみ. Always with お prefix in polite use",
+            "label": "noun"
+        }
+    }
+}

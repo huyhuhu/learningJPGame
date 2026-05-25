@@ -1,0 +1,137 @@
+{
+    "questions": [],
+    "kanji": {
+        "昼": {
+            "reading": "チュウ, ひる",
+            "meaning": "daytime, noon — 昼ご飯 (lunch), 昼間 (daytime)",
+            "label": "noun"
+        },
+        "喫": {
+            "reading": "キツ",
+            "meaning": "consume, drink, eat, smoke — 喫茶店 (coffee shop), 喫煙 (smoking)",
+            "label": "verb"
+        },
+        "宿": {
+            "reading": "シュク, やど",
+            "meaning": "lodging, inn — 宿題 (homework), 宿 (inn)",
+            "label": "noun"
+        },
+        "題": {
+            "reading": "ダイ",
+            "meaning": "topic, theme, title, problem — 宿題 (homework), 問題 (problem)",
+            "label": "noun"
+        },
+        "送": {
+            "reading": "ソウ, おく(る)",
+            "meaning": "send, escort, see off — 送る (to send), 放送 (broadcast)",
+            "label": "verb"
+        },
+        "正": {
+            "reading": "セイ, ショウ, ただ(しい), まさ",
+            "meaning": "correct, right, just — 正しい (correct), お正月 (New Year)",
+            "label": "i-adjective"
+        },
+        "合": {
+            "reading": "ゴウ, ガッ, あ(う), あ(わせる)",
+            "meaning": "fit, join, match, combine — 試合 (match), 合う (to match)",
+            "label": "verb"
+        },
+        "戦": {
+            "reading": "セン, たたか(う), いくさ",
+            "meaning": "war, battle, fight — 試合 (しあい, sports match), 戦争 (war)",
+            "label": "verb"
+        },
+        "睡": {
+            "reading": "スイ",
+            "meaning": "sleep, doze — 睡眠 (すいみん, sleep)",
+            "label": "noun"
+        },
+        "眠": {
+            "reading": "ミン, ねむ(い), ねむ(る)",
+            "meaning": "sleep, sleepy — 眠い (sleepy), 眠る (to sleep)",
+            "label": "i-adjective"
+        },
+        "弁": {
+            "reading": "ベン",
+            "meaning": "speech, dialect, valve, manage — 弁当 (bento), 弁護士 (lawyer)",
+            "label": "noun"
+        },
+        "当": {
+            "reading": "トウ, あ(たる), あ(てる)",
+            "meaning": "hit, correct, this, appropriate — 弁当 (bento), 本当 (really)",
+            "label": "verb"
+        },
+        "末": {
+            "reading": "マツ, バツ, すえ",
+            "meaning": "end, tip, close — 週末 (weekend), 月末 (end of month)",
+            "label": "noun-suffix"
+        },
+        "携": {
+            "reading": "ケイ, たずさ(える)",
+            "meaning": "portable, carry, take along — 携帯 (mobile phone), 携帯電話",
+            "label": "verb"
+        },
+        "帯": {
+            "reading": "タイ, お(びる), おび",
+            "meaning": "belt, zone, sash — 携帯 (mobile/portable), 帯 (kimono sash)",
+            "label": "noun"
+        },
+        "丈": {
+            "reading": "ジョウ, たけ",
+            "meaning": "length, height, stature — 大丈夫 (alright, OK), 丈 (length of clothing)",
+            "label": "noun"
+        },
+        "夫": {
+            "reading": "フ, フウ, おっと",
+            "meaning": "husband, man — 夫 (husband), 大丈夫 (alright), 夫婦 (married couple)",
+            "label": "noun"
+        },
+        "多": {
+            "reading": "タ, おお(い)",
+            "meaning": "many, much — 多い (many) — exception trap: i-adjective but cannot precede noun directly (use 多くの instead of 多い人)",
+            "label": "i-adjective"
+        },
+        "風": {
+            "reading": "フウ, フ, かぜ",
+            "meaning": "wind, style, manner — 風呂 (bath), 風邪 (cold/flu), 風 (wind)",
+            "label": "noun"
+        },
+        "呂": {
+            "reading": "ロ, リョ",
+            "meaning": "spine, backbone — almost exclusively in お風呂 (おふろ, bath)",
+            "label": "noun"
+        },
+        "入": {
+            "reading": "ニュウ, はい(る), い(れる)",
+            "meaning": "enter, put in, insert — 入る (intransitive, to enter), 入れる (transitive, to put in)",
+            "label": "verb"
+        },
+        "願": {
+            "reading": "ガン, ねが(う)",
+            "meaning": "wish, request, pray — お願いします (please), 願う (to wish)",
+            "label": "verb"
+        }
+    },
+    "words": {
+        "何": {
+            "reading": "なに / なん",
+            "meaning": "what — read なん before counters/copula (何ですか, 何時) and なに in most other cases (何を, 何が)",
+            "label": "pronoun"
+        },
+        "吸います": {
+            "reading": "すいます",
+            "meaning": "to smoke, to inhale, to suck (polite) — dictionary form: 吸う. Most common use: タバコを吸う (smoke a cigarette)",
+            "label": "verb-godan"
+        },
+        "会います": {
+            "reading": "あいます",
+            "meaning": "to meet (polite) — dictionary form: 会う. Particle trap: takes に not を (友達に会う, NOT 友達を会う)",
+            "label": "verb-godan"
+        },
+        "撮ります": {
+            "reading": "とります",
+            "meaning": "to take (a photograph) (polite) — dictionary form: 撮る. Specifically for photos/videos; 取る (also とる) means 'take/grab' generally",
+            "label": "verb-godan"
+        }
+    }
+}
